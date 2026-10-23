@@ -1,0 +1,84 @@
+﻿l_french:
+  ## Generic ##
+ omen_caleb_joshua:1 "Kaleb"
+ omen_caleb_joshua_desc:4 "Comme Kaleb (mieux connu en anglais sous le nom de Caleb) vit jadis une opportunité là où ses pairs ne voyaient que des ennemis, notre peuple doit chercher des solutions là où les autres n'en verront aucune. Tant que nous avons Dieu à nos côtés et suivons sa parole, nous sommes certains de réussir."
+
+ deity_abishua:0 "$omen_abishua$"
+ omen_abishua:0 "'Abishou'"
+ omen_abishua_desc:0 "Comme 'Abishou', le Grand Prêtre, arrière-petit-fils d'Aharon, aurait consigné par écrit les livres de Moshé à son entrée en Terre Sainte, ainsi investirons-nous dans l'étude religieuse et les Écritures."
+
+ deity_uzzi:0 "$omen_uzzi$"
+ omen_uzzi:0 "'Ouzi"
+ omen_uzzi_desc:0 "'Ouzi, le Grand Prêtre légitime, cacha le Tabernacle dans une grotte du mont sacré Garizim pour le protéger du sorcier 'Éli, empêchant ainsi sa profanation. Il disparut alors miraculeusement. Nous sommes fiers de notre fidélité continue à la vraie Loi transmise à Moshé."
+
+ deity_abdel:0 "$omen_abdel$"
+ omen_abdel:0 "'Abda'él"
+ omen_abdel_desc:0 "Comme 'Abda'él, le Grand Prêtre, persuada Cyrus de permettre notre retour de l'exil assyrien et de récupérer nos terres, nous rassemblerons les nôtres, même ceux qui ont été dispersés."
+
+ deity_manasseh:0 "$omen_manasseh$"
+ omen_manasseh:0 "Menashshe"
+ omen_manasseh_desc:0 "Portant le nom du patriarche de la tribu de Menashshe, fidèle à la vraie Loi transmise à Moshé, Menashshe le Grand Prêtre bâtit le sanctuaire sur le mont sacré Garizim. Nous construirons, nous aussi, de nouvelles synagogues et monuments."
+
+ deity_aaron:0 "$omen_aaron$"
+ omen_aaron:0 "'Aharon"
+ omen_aaron_desc:0 "Comme 'Aharon (connu des Grecs sous le nom d'Aaron) servit comme premier Grand Prêtre et porte-parole de son frère, le prophète Moshé, nous soutiendrons le sacerdoce afin qu'il prêche auprès des fidèles."
+
+ deity_joshua:0 "$omen_joshua$"
+ omen_joshua:0 "Yehoshou'"
+ omen_joshua_desc:0 "Mieux connu en anglais sous le nom de Joshua, Yehoshou' mena l'invasion de la Terre Promise et détruisit les villes cananéennes. À son exemple, nous ne craindrons aucune frontière pour revendiquer les terres qui nous reviennent."
+
+ deity_jacob:0 "$omen_jacob$"
+ omen_jacob:0 "Ya'qob"
+ omen_jacob_desc:0 "Comme Ya'qob (ou Jacob), appelé aussi Israël après avoir lutté avec l'Ange du Seigneur, engendra le peuple d'Israël et les chefs des douze tribus, nous encouragerons la croissance de notre population."
+
+ deity_miriam:0 "$omen_miriam$"
+ omen_miriam:0 "Maryam"
+ omen_miriam_desc:0 "Aussi connue sous le nom de Miriam, Maryam était la sœur d'Aharon et du prophète Moshé. Comme le mérite de Maryam fit jaillir un puits pour sustenter notre peuple dans le désert, et qu'elle mena le peuple dans sa louange après notre salut face à l'armée du Pharaon à la mer des Roseaux, nous mènerons notre population dans de grandes célébrations."
+
+ deity_samson:0 "$omen_samson$"
+ omen_samson:0 "Shimshon"
+ omen_samson_desc:0 "Comme Shimshon lutta sans relâche contre les Philistins, et en tant que naziréen dès la naissance s'abstint de vin, de se raser la barbe ou de se couper les cheveux, nos armées ne faibliront pas et notre peuple supportera tous les sacrifices demandés."
+
+ deity_adam:0 "$omen_adam$"
+ omen_adam:0 "'Adam"
+ omen_adam_desc:0 "Comme 'Adam, le Premier Homme, reçut la domination sur la nature et engendra l'humanité entière, nous nous souviendrons et célébrerons cette responsabilité et cette autorité présente en chaque aspect de notre société."
+
+ deity_eve:0 "$omen_eve$"
+ omen_eve:0 "Havva"
+ omen_eve_desc:0 "Comme Havva (ou Ève) donna naissance à l'humanité entière en obéissant au commandement du Seigneur de croître et de se multiplier, notre population sera féconde dans tous les aspects de la vie."
+
+ deity_enoch:0 "$omen_enoch$"
+ omen_enoch:0 "Hanok"
+ omen_enoch_desc:0 "Appelé Hénok par les Grecs, Hanok vécut dans la droiture et marcha avec Dieu, étant emporté corporellement au ciel pour voir la face du Seigneur. Nous combattrons la corruption et étudierons ses révélations apocalyptiques."
+
+ deity_noah:0 "$omen_noah$"
+ omen_noah:0 "Noh"
+ omen_noah_desc:0 "Noh, ou Noah comme l'appelaient les Grecs, fut l'unique homme juste sur une Terre pécheresse. Il construisit son arche afin que ses fils puissent repeupler le monde après le Déluge. De même, nous nous tournerons vers la mer."
+
+ deity_ruth:0 "$omen_ruth$"
+ omen_ruth:0 "Rut"
+ omen_ruth_desc:0 "Comme Rut (connue des Grecs sous le nom de Ruth), une Moabite, fut la première convertie, suivant sa belle-mère Na'omi jusqu'en Israël après la mort de son mari — allant où elle allait, logeant où elle logeait, prenant le peuple de Na'omi pour sien, et son Dieu pour son Dieu, mourant là où elle mourrait, et y étant enterrée —, ainsi intégrerons-nous les étrangers parmi nous à notre propre peuple."
+
+ deity_nehemiah:0 "$omen_nehemiah$"
+ omen_nehemiah:0 "Nehemyah"
+ omen_nehemiah_desc:0 "Comme Nehemyah revint à Jérusalem depuis la cour de Perse pour reconstruire la ville et ses murailles, nous rénoverons les espaces publics et veillerons à nos défenses."
+
+ deity_job:0 "$omen_job$"
+ omen_job:0 "'Iyyob"
+ omen_job_desc:0 "Comme 'Iyyob (ou Job) demeura fidèle aux voies de la justice malgré de terribles épreuves, et que tous ceux qui commerçaient avec lui en tant qu'homme riche furent bénis, nous garantirons que la justice soit maintenue."
+
+ deity_isaiah:0 "$omen_isaiah$"
+ omen_isaiah:0 "Yesha'yahu"
+ omen_isaiah_desc:0 "Yesha'yahu (appelé Isaïe par les Grecs) nous enjoignit à devenir une nation de prêtres du Seigneur et de serviteurs de notre Dieu, afin que nous jouissions de la richesse des nations et que nous nous réjouissions dans leurs trésors. En célébrant notre droiture, nous verrons le commerce enrichir notre pays."
+
+ deity_jeremiah:0 "$omen_jeremiah$"
+ omen_jeremiah:0 "Yarmiyahu"
+ omen_jeremiah_desc:0 "Comme Yarmiyahu (ou Jérémie), le prophète pleurant, enseigna la justice et la parole du Seigneur malgré la persécution et les faux prophètes, nous resterons fidèles à notre foi."
+
+ deity_elijah:0 "$omen_elijah$"
+ omen_elijah:0 "'Eliyyahu"
+ omen_elijah_desc:0 "Comme 'Eliyyahu (connu des Grecs sous le nom d'Élie) défia les prophètes de Ba‘al et affirma notre foi face à l'idolâtrie, ressuscita le fils d'une veuve qu'il avait nourrie par miracle, et fut emporté au ciel sur un char de feu, ainsi défierons-nous les dieux des idolâtres."
+
+ deity_yahweh:0 "$omen_yahweh$"
+ omen_yahweh:0 "Yahweh"
+ omen_yahweh_desc:0 "Yahweh est le dieu de la tempête des Hébreux. Son culte, au sein de la religion israélite, est unique en Palestine, car il implique le rejet de toutes les autres divinités. Yahweh était à l'origine une variante locale hébréo-cananéenne du puissant dieu des orages Hadad."

@@ -1,0 +1,59 @@
+﻿l_french:
+
+ deity_zeus_oromasdes:0 "$omen_zeus_oromasdes$"
+ omen_zeus_oromasdes:0 "Zeus-Oromasdès"
+ omen_zeus_oromasdes_desc:0 "Une divinité de la Commagène, Zeus-Oromasdès combine des influences arméniennes, grecques et perses. Dieu de la culture, Zeus-Oromasdès aurait été un dieu suprême du panthéon commagénien."
+
+ deity_zeus_oromasdes_par:0 "$omen_zeus_oromasdes$"
+ omen_zeus_oromasdes_par:0 "Zeus-Oromasdès"
+ omen_zeus_oromasdes_par_desc:0 "Une divinité de la Commagène, Zeus-Oromasdès combine des influences arméniennes, grecques et perses. Dieu de la culture, Zeus-Oromasdès aurait été un dieu suprême du panthéon commagénien."
+
+ deity_apollo_mithras:0 "$omen_apollo_mithras$"
+ omen_apollo_mithras:0 "Apollon-Mithras"
+ omen_apollo_mithras_desc:0 "Apollon-Mithras, une divinité de la Commagène, combine des influences arméniennes, grecques et perses. Dieu de l'économie, Apollon-Mithras réunit les arts d'Apollon avec la lumière de Mithras."
+
+ deity_herakles_artagnes:0 "$omen_herakles_artagnes$"
+ omen_herakles_artagnes:0 "Héraklès-Artagnès"
+ omen_herakles_artagnes_desc:0 "Le puissant Héraklès-Artagnès, forgé dans les montagnes de la Commagène à partir d'influences anahitiques, zoroastriennes et helléniques. Il est un dieu de la guerre."
+
+ deity_kommagene:0 "$omen_kommagene$"
+ omen_kommagene:0 "Kommagènè"
+ omen_kommagene_desc:0 "Kommagènè, déesse de la fortune, de la chance et du peuple de Commagène. Cette divinité tutélaire était vénérée parmi d'autres dieux commagéniens. C'est une déesse de la fertilité."
+
+ deity_tork_angegh:0 "$omen_tork_angegh$"
+ omen_tork_angegh:0 "Tork Angegh"
+ omen_tork_angegh_desc:0 "Tork Angegh, à l'origine un dieu syncrétique, est vénéré dans la foi arménienne anahitique. L'un des ancêtres du fondateur légendaire du peuple arménien, Hayk, Tork Angegh est un dieu de la force surhumaine, du courage et du pouvoir. On dit qu'il est laid, mais un grand guerrier."
+
+ deity_vanatur:0 "$omen_vanatur$"
+ omen_vanatur:0 "Vanatur"
+ omen_vanatur_desc:0 "Possiblement un épithète de la déesse Astlik, ou peut-être du dieu Aanor, Vanatur était le seigneur de Van, ce qui signifiait « donner asile ». C'était un dieu de l'hospitalité."
+
+ deity_amanor:0 "$omen_amanor$"
+ omen_amanor:0 "Amanor"
+ omen_amanor_desc:0 "Amanor, possiblement le même dieu que Vanatur, ou signifiant le plus divin, Amanor était le porteur des nouveaux fruits, et associé comme dieu de la nouvelle année."
+
+ deity_barshamin:0 "$omen_barshamin$"
+ omen_barshamin:0 "Barshamin"
+ omen_barshamin_desc:0 "Le dieu anahitique du ciel, des tempêtes et du climat, issu de multiples influences des religions environnantes. L'influence grecque dans la région, ainsi que les croyances des peuples sémitiques et leur dieu Bal Shamin, ont contribué à la naissance du puissant dieu guerrier du tonnerre, Barshamin."
+
+ deity_hayk:0 "$omen_hayk$"
+ omen_hayk:0 "Hayk"
+ omen_hayk_desc: "Hayk, le fondateur semi-divin légendaire du peuple arménien. On disait qu'il mena les Arméniens dans une rébellion contre le méchant roi babylonien Bél. Grâce à son incroyable habileté à l'arc, il tua Bél sur le champ de bataille, assurant ainsi l'autonomie de l'Arménie face aux Babyloniens."
+
+ deity_astlik:0 "$omen_astlik$"
+ omen_astlik:0 "Astlik"
+ omen_astlik_desc:0 "Astlik fut fortement associée à la déesse grecque Aphrodite. Elle provenait vraisemblablement de la même racine que Inanna et était une grande déesse de l'amour. Son rôle diminua avec le temps, mais elle resta une déesse importante jusqu'à l'époque chrétienne."
+
+ deity_omanos:0 "$omen_omanos$"
+ omen_omanos:0 "Omanos"
+ omen_omanos_desc:0 "Un dieu de la bonne pensée et des bonnes intentions, Omanos est la variante anahitique déifiée du concept zoroastrien Vohu Manah. Vohu Manah était une facette d'Ahura Mazda associée spécialement au bétail. Ainsi, Omanos était un dieu du bétail."
+
+ deity_anadatus:0 "$omen_anadatus$"
+ omen_anadatus:0 "Andatus"
+ omen_anadatus_desc:0 "Andatus est une version déifiée du concept zoroastrien d'immortalité, ou Ameretat. En anahitique, il est un dieu représentant la divinité et la condition divine."
+
+ omen_anahit_desc:3 "Anahit, déesse de l'amour, de la fertilité, de la naissance, et l'une des divinités les plus importantes du peuple arménien. Ses apparentés incluent Inanna, Astlik et Anunit. Anahit est souvent identifiée à Artémis, et parfois à Aphrodite. Elle possédait de nombreux temples à travers les terres arméniennes, et fut peut-être leur divinité la plus vénérée. Elle était l'épouse d'Armazd et la sœur de Mihr et Nane.\n\nNous espérons que la bienveillante Anahit bénira notre nation en protégeant nos enfants, ses fidèles vivent sereinement avec la certitude que leurs enfants pourront désormais venir au monde en sécurité."
+
+ deity_vahagn:0 "$omen_vahagn$"
+ omen_vahagn:1 "Vahagn" # [LocEditor:AwaitingBatchUpdate]
+ omen_vahagn_desc:3 "Nous devons vénérer Vahagn, dans l'espoir qu'il protégera le pays. Sous sa protection, nous pourrons rassembler toutes les richesses de notre peuple et connaître une prospérité inconnue jusqu'à nos jours." # [LocEditor:AwaitingBatchUpdate]

@@ -1,0 +1,33 @@
+﻿l_spanish:
+###Resource modifiers
+###Province modifiers
+ cr_carthage_vaga_citadel:0 "Ciudadela de Vaga"
+ desc_cr_carthage_vaga_citadel:0 "Vaga es una antigua ciudad bereber  fortificada por los Cartaginenses para asegurar su dominio sobre el valle de Bagradas."
+ cr_carthage_walls_of_carthage_national:0 "Murallas de Cartago"
+ desc_cr_carthage_walls_of_carthage_national:0 "Estoy aquí simplemente para ayudar en el inicio de la campaña."
+ cr_carthage_walls_of_carthage:0 "Las Murallas de Cartago"
+ desc_cr_carthage_walls_of_carthage:0 "Tres líneas de fortificaciones, empezando por una mera zanja y una empalizada hasta llegar a las enormes murallas de 10 metros de ancho y 15 metros de alto, están construidas a lo largo del istmo que conecta Cartago con tierra firme. Al ser esta la única dirección desde la que poder dirigirse a la ciudad, estas murallas son el principal obstáculo que cualquier potencial conquistador de Cartago debe superar."
+ cr_carthage_megara:0 "Suburbio de Megara"
+ desc_cr_carthage_megara:0 "Directamente al norte de Cartago se encuentran los frondosos suburbios de Megara. Protegidos por las enormes murallas a lo largo del istmo, estos suburbios son la residencia favorita de las élites de la ciudad, así como una importante fuente de productos frescos para la ciudad."
+ cr_carthage_elephant_pens:0 "Establos de Elefantes"
+ desc_cr_carthage_elephant_pens:0 "Las murallas de Cartago, con cimientos de 10 metros de grosor, proporcionan espacio tan amplios como para albergar incluso a las más grandes criaturas: los elefantes. En su construcción, las murallas incluían suficientes establos para albergar y entrenar a más de 200 elefantes con los que defender la ciudad."
+ cr_carthage_elephant_pens_national:0 "Establos de Elefantes"
+ desc_cr_carthage_elephant_pens_national:0 "Las murallas de Cartago, con cimientos de 10 metros de grosor, proporcionan espacio tan amplios como para albergar incluso a las más grandes criaturas: los elefantes. En su construcción, las murallas incluían suficientes establos para albergar y entrenar a más de 200 elefantes con los que defender la ciudad."
+ cr_rich_vein_of_silver:0 "Veta rica en plata"
+ desc_cr_rich_vein_of_silver:0 "Una veta rica en plata existe en este lugar."
+ cr_charax:0 "Charax"
+ desc_cr_charax:0 "Un sitio clandestino, Charax, es el lugar de encuentro preferido para los comerciantes y contrabandistas que intentan romper con el monopolio Cirenaico sobre el silfio, una hierba medicinal muy potente y valiosa."
+ cr_silphium_trade:0 "El Comercio del Silfio"
+ desc_cr_silphium_trade:0 "Nuestros mercaderes han tenido éxito en adentrarse en el comercio del silfio, trayendo grandes riquezas a la ciudad."
+ cr_crack_down_smuggling:0 "Tomando medidas contra el contrabando"
+ desc_cr_crack_down_smuggling:0 "Tomando medidas contra el contrabando"
+ cr_choma:0 "Choma"
+ desc_cr_choma:0 "Una choma, también llamado muelle, ha sido construido junto a las costas de esta ciudad, incrementando en gran medida el número de barcos que pueden comerciar aquí."
+
+
+
+
+ ##Opinion Modifiers
+ cr_carthage_matter_of_aelymas_numidian_allies_opmod:0 "Enemigo en común"
+ cr_carthage_matter_of_aelymas_numidian_enemies_opmod:0 "Se alió con nuestro enemigo"
+ cr_carthage_matter_of_aelymas_no_support_opmod:0 "No prometió apoyo"

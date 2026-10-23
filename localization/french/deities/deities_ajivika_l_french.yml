@@ -1,0 +1,57 @@
+﻿l_french:
+
+ deity_makkhali_gosala:0 "$omen_makkhali_gosala$"
+ omen_makkhali_gosala:0 "Makkhali Gosala"
+ omen_makkhali_gosala_desc:0 "Le fondateur des Ajivika, Makkhali Gosala est né dans un petit village, dans une famille de basse caste, dans une étable. Il devint disciple ascétique de Mahavira trois ans après le début de l'ascétisme de ce dernier. Cependant, des disputes philosophiques entre les deux conduisirent Makkhali Gosala à se séparer de la secte jaïnite de Mahavira et à fonder une nouvelle branche des Ajivika. Bien que les Ajivika existent depuis longtemps à cette époque, Makkhali Gosala réussit à unifier la secte et à en faire un rival dangereux pour le bouddhisme et le jaïnisme. Cela attira la méfiance des sectes jaïnistes, mais surtout un examen encore plus sévère des bouddhistes, qui considéraient Makkhali comme un « homme stupide » et les Ajivika comme « la secte la plus dangereuse de toutes ».\n\nMakkhali Gosala prétendait appartenir à une lignée de réincarnations abritant en leur sein l'âme d'Udai Kundiyayaniya, qui résida en lui pendant seize ans alors qu'il vivait à Halahala, à Savatthi. Il est possible qu'il ait fait cette affirmation pour se démarquer de son passé auprès de Mahavira et des religions jaïnistes."
+
+ deity_kisa_sankicca:0 "$omen_kisa_sankicca$"
+ omen_kisa_sankicca:0 "Kisa Sankicca"
+ omen_kisa_sankicca_desc:0 "Connu uniquement comme l'une des figures importantes des Ajivika, Kisa Sankicca est, d'après les archives, le deuxième leader des Ajivika. Rien n'est connu de lui, si ce n'est l'estime implicite qu'il devait susciter pour être considéré comme l'un des trois grands chefs de cette foi. Il est possible qu'il ait été contemporain de Makkhali et Nanda, et sa deuxième place dans la liste pourrait indiquer qu'il fut le second des trois à émerger en importance pour les Ajivika. Puisque c'est Purana qui l'a nommé comme l'un des grands dirigeants Ajivika, Kisa était probablement vénéré par Purana Kassapa, le leader ayant succédé à Makkhali chez les Ajivika."
+
+ deity_nanda_vaccha:0 "$omen_nanda_vaccha$"
+ omen_nanda_vaccha:0 "Nanda Vaccha"
+ omen_nanda_vaccha_desc:0 "Premier sur la liste des dirigeants importants, précédé par Kisa Sankicca et Makkhali Gosala, Nanda Vaccha aurait pu être le premier des trois leaders Ajivika à l'époque de Makkhali Gosala. Il était souvent mentionné aux côtés de Kisa et Makkhali, et figurait en première position, ce qui pourrait indiquer qu'il précède effectivement les deux autres. Quoi qu'il en soit, il est clair qu'il était très respecté parmi les Ajivika. Puisque c'est Purana qui l'a désigné comme l'un des grands leaders Ajivika, Nanda était probablement vénéré par Purana Kassapa, le chef ayant succédé à Makkhali chez les Ajivika."
+
+ deity_niyati:0 "$omen_niyati$"
+ omen_niyati:0 "Niyati"
+ omen_niyati_desc:0 "Niyati désigne le concept de destin. C'est ce principe des Ajivika qui les distingue des autres religions shramaniques. Niyati est immuable, inébranlable, et les humains ne peuvent le modifier. Niyati contrôle chaque action et tous les phénomènes, ne laissant aucune place à la volonté humaine. C'est la volonté prédéterminée de l'esprit universel. Toute action qui a été, est, ou sera, doit nécessairement se produire. Les humains ne peuvent pas pécher puisque cela est prédéterminé. Un bouddhiste pourrait demander : si c'est le cas, qu'est-ce qui empêche quelqu'un de voler ? Les Ajivika répondent : si cela doit arriver, cela arrivera, tout comme la punition et la réaction, qui elles aussi se produiront. Un jaïniste pourrait demander : pourquoi pratiquer l'ascétisme si tout ce qui arrivera doit arriver et ne peut être changé ? Les Ajivika répondent encore une fois : l'ascétisme est apprécié par ceux qui sont destinés à en jouir, et parmi eux se trouvent les Ajivika."
+
+ deity_paramanu:0 "$omen_paramanu$"
+ omen_paramanu:0 "Paramanu"
+ omen_paramanu_desc:0 "Paramanu est un terme désignant le concept d'atome. L'atomisme a été intégré aux Ajivika comme l'une de leurs croyances fondamentales. Il s'accordait bien avec la doctrine de Niyati, et fut probablement la première religion indienne à conceptualiser une théorie atomique. Pour cette raison, les Ajivika, plus que le jaïnisme ou le bouddhisme, penchaient vers l'athéisme, car l'atomisme s'accorde naturellement avec un athéisme matérialiste, dont découle la compréhension moderne de l'athéisme. Quoi qu'il en soit, le paramanu est la plus petite substance dont tout est composé et il est indivisible, car c'est la plus petite unité qui puisse exister."
+
+ deity_enejjaga:0 "$omen_enejjaga$"
+ omen_enejjaga:0 "Enejjaga"
+ omen_enejjaga_desc:0 "La figure originelle mystérieuse, dite être la première à être une réincarnation de l'âme d'Udai. Makkhali Gosala affirmait avoir été la réincarnation de plusieurs leaders importants des Ajivika, dont Enejja fut le premier. Celui-ci vécut pendant 22 ans sous l'âme d'Udai au Rayagiha Caitya, près de Mandiyyakucchi."
+
+ deity_mallarama:0 "$omen_mallarama$"
+ omen_mallarama:0 "Mallarama"
+ omen_mallarama_desc:0 "La figure mystérieuse dite être le deuxième des sept grands maîtres des Ajivika. Makkhali Gosala affirmait avoir été la réincarnation de plusieurs leaders importants des Ajivika, dont Mallarama fut le deuxième. Celui-ci vécut pendant 21 ans sous l'âme d'Udai au Mandiya Caitya, près d'Uddandapura."
+
+ deity_mandiya:0 "$omen_mandiya$"
+ omen_mandiya:0 "Mandiya"
+ omen_mandiya_desc:0 "La troisième figure mystérieuse dont Makkhali affirmait être la réincarnation. On théorise qu'il s'agit du troisième des sept grands maîtres des Ajivika, auquel Makkhali Gosala s'est identifié pour se détacher de ses origines jaïnes. Celui qui résida pendant 20 ans avec l'âme d'Udai, au Angamandira Caitya, près de Campa."
+
+ deity_roha:0 "$omen_roha$"
+ omen_roha:0 "Roha"
+ omen_roha_desc:0 "Roha, le quatrième nom mentionné dans une liste de sept dirigeants semi-mystiques des Ajivika selon Makkhali Gosala. Makkhali Gosala affirmait que Roha était l'une de ses réincarnations, durant laquelle il vécut 19 ans sous l'âme d'Udai au Pattakalagaya Caitya, près de Vanarasi."
+
+ deity_bharaddai:0 "$omen_bharaddai$"
+ omen_bharaddai:0 "Bharaddai"
+ omen_bharaddai_desc:0 "La cinquième figure énigmatique mentionnée par Makkhali. Considéré comme le cinquième grand maître des Ajivika, Makkhali Gosala affirmait être réincarné de lui ainsi que des six autres maîtres. Bharaddai vécut avec l'âme d'Udai pendant 18 ans au Pattakalagaya Caitya, près d'Alabhiya."
+
+ deity_ajjuna:0 "$omen_ajjuna$"
+ omen_ajjuna:0 "Ajjuna Goyamaputta"
+ omen_ajjuna_desc:0 "La sixième figure dont Makkhali Gosala affirmait être la réincarnation, Ajjuna Goyamaputta, est celle qui a le plus de chances d'avoir réellement existé. Il est probable qu'avant Makkhali, Ajjuna ait été le principal chef des Ajivika, et être sa réincarnation conférait à Makkhali Gosala une grande légitimité dans sa place ultérieure comme le plus grand de tous les chefs Ajivika. On disait qu'Ajjuna avait vécu 17 ans avec l'âme d'Udai au Kondiyanya Caitya, près de Vesali."
+
+ deity_udai:0 "$omen_udai$"
+ omen_udai:0 "Udai Kundiyayaniya"
+ omen_udai_desc:0 "Le mystérieux Udai Kundiyayaniya serait peut-être le fondateur semi-mythique originel des Ajivika. Il est possible qu'il ait vécu avant que le concept d'Ajivika ne soit pleinement formé, mais c'est de lui que descend la secte Ajivika. Avec le temps, le nom complet d'Udai fut retenu et une idée se forma selon laquelle, en lui, son âme devint la première âme migratoire. L'âme d'Udai aurait résidé dans plusieurs corps, créant à chaque fois un nouveau maître Ajivika. Dans l'ordre, l'âme d'Udai reposa en Enejjaga pendant 22 ans, Mallarama pendant 21, Mandiya pendant 20, Roha pendant 19, Bharaddai pendant 18, Ajjuna Goyamaputta pendant 17, et Gosala Mankhaliputta (Makkhali Gosala) pendant 16 ans."
+
+ deity_purana:0 "$omen_purana$"
+ omen_purana:0 "Purana Kassapa"
+ omen_purana_desc:0 "Purana Kassapa fut le chef de la secte Ajivika après Makkhali Gosala. Il était considéré comme une grande menace pour le bouddhisme et contribua probablement à l'hostilité des bouddhistes envers les Ajivika. Purana Kassapa fut également celui qui affirma que les trois plus grands chefs Ajivika étaient Nanda Vaccha, Kisa Sankiccha et Makkhali Gosala. Il est probable que ce choix reflète l'influence majeure que ces trois hommes ont eue sur la secte Ajivika et sa révolution, notamment Makkhali Gosala.\n\nPurana Kassapa était le moine principal du monastère des Ajivika situé à Kukkutangara. Il gagna parmi ses disciples l'épithète de « Seigneur des Puranan, sans égal en intelligence ». Un autre surnom qu'il reçut fut simplement « Purana l'Aîné ». Purana Kassapa était particulièrement important pour les Ajivika tamouls, qui le considéraient comme le plus grand des maîtres Ajivika, après Makkhali Gosala lui-même.\n\nUne légende entoure l'origine de Purana, plus mythique encore que celle de Makkhali. On disait que Purana était né esclave, traité avec bonté, mais qu'en dépit de cela, il s'enfuit de ses maîtres. Lors de sa fuite, des voleurs lui volèrent ses vêtements, et il n'eut ni la volonté ni la conscience de se couvrir en entrant dans un village. Les villageois crurent alors qu'il devait être un homme sacré, vêtu uniquement de sa pure forme, qu'ils nommèrent dharma-sata-pratticchana. Finalement, il accepta cette nudité, refusa les vêtements quand on lui en offrit, et il rassembla un groupe de 500 Ajivika."
+
+ deity_pakudha:0 "$omen_pakudha$"
+ omen_pakudha:0 "Pakudha Kaccayana"
+ omen_pakudha_desc:0 "Pakudha Kaccayana fut probablement le successeur de Purana Kassapa à la tête des Ajivika. Contrairement à ses deux prédécesseurs, Pakudha apporta des idées nouvelles à la philosophie Ajivika. Il est surtout connu pour avoir élaboré la doctrine des sept éléments éternels et immuables : la terre, l'eau, le feu, l'air, la vie, la joie et la douleur. Il fut également peut-être le premier philosophe indien à présenter une théorie atomique. Bien que l'atomisme devint une composante des Ajivika, à son époque, Pakudha n'était pas aussi estimé que Purana ou Makkhali, et il affirmait ne pas avoir atteint l'éveil pur. Cependant, ses croyances atomistes continuèrent de perdurer après la disparition des Ajivika en tant que foi."

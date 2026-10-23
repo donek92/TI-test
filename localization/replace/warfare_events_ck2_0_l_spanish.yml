@@ -1,0 +1,3 @@
+﻿l_spanish:
+
+ warfare.1.desc:1 "[SCOPE.sChar('siege_instigator').GetName] ha llevado a los hombres de [SCOPE.sChar('siege_instigator').GetHerHis] a una gloriosa victoria durante el asedio de [SCOPE.sP('temp_city_scope_warfare_1').GetName]. El enemigo huye avergonzado y solo queda decidir qué hacer con los residentes que quedan dentro.\n\nEl botín de guerra probablemente hará que los que se han quedado en [SCOPE.sChar('siege_instigator').GetEmployer.GetCapital.GetName] admiren enormemente a [SCOPE.sChar('siege_instigator').GetPraenomen], pero dejar tanta riqueza en manos de un solo [SCOPE.sChar('siege_instigator').GetWomanMan] podría causar problemas en el futuro..."

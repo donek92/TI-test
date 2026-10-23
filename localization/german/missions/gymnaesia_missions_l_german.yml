@@ -1,0 +1,171 @@
+﻿l_german:
+  
+  #################### 
+  # Title #Done 15.09.2026 - 1.11.0.3 - Germanicus
+  #################### 
+ gymnaesian_mission_01: "Die Baliarides"
+ gymnaesian_mission_01_BUTTON_TOOLTIP: "Unsere Feinde ignorieren unsere Existenz auf eigene Gefahr ..."
+ gymnaesian_mission_01_BUTTON_DETAILS: ""
+ gymnaesian_mission_01_DESCRIPTION: "Die Balearides, die Inseln, die unser Volk Heimat nennt, sind weit entfernt von den Unruhen und Kriegen, die das östliche Mittelmeer verwüsten. Gelegentlich erreichen uns durch vorbeikommende Händler Nachrichten von diesen Unruhen, und wir danken den Göttern, dass diese Katastrophen unsere Heimat bislang verschont haben. Auch wenn unsere Inseln als verschlafene Hinterland gelten, das kaum Beachtung verdient, bedeutet das nicht, dass wir keine eigenen Ambitionen hegen."
+ gymnaesian_mission_01_CRITERIA_DESCRIPTION: "Die Mission gilt als abgeschlossen, sobald die Bewohner der Balearides eine Seeherrschaft über die benachbarten Inseln errichtet haben."
+ gymnaesian_mission_01_REWARD_DESCRIPTION: ""
+  
+  
+  #################### 
+  # Mission Tasks 
+  #################### 
+  
+ gymnaesian_mission_01_task_01: "Die Krone der Balearides"
+ gymnaesian_mission_01_task_01_DESC: "Wir als Volk haben einen sehr langen Weg zurückgelegt, und diese Veränderung in unseren Verhältnissen würde am besten durch einen Regierungswechsel zum Ausdruck kommen. Anstatt von Magistraten regiert zu werden, wünscht sich unser Volk einen König. \n\n\n\n\n\n\n\n\n\n\n@greek_mil10!"
+  
+ gymnaesian_mission_01_task_02: "Der erste Schritt"
+ gymnaesian_mission_01_task_02_DESC: "Wir haben westlich unserer Hauptstadt eine kleine Insel entdeckt, [GetProvince('(int32)1464').GetName], die offenbar ein Vasallenstaat eines größeren Landes ist. Vielleicht können wir ihr Land schnell annektieren, während ihr Oberherr durch einen Krieg gebunden ist... \n\n\n\n\n\n\n\n\n\n\n@celt_mil7!"
+  
+ gymnaesian_mission_01_task_03: "Die Eroberung Ibasims"
+ gymnaesian_mission_01_task_03_DESC: "Uns liegen Berichte vor, dass [GetProvince('(int32)3256').GetArea.GetName] nun in einen Krieg verwickelt ist – wir müssen schnell handeln, solange ihre Armeen beschäftigt sind! Wir brauchen jeden Vorteil, den wir uns sichern können. \n\n\n\n\n\n\n\n\n\n\n@egypt_mil21!"
+  
+ gymnaesian_mission_01_task_04: "Die Flotte von Gymnaesia"
+ gymnaesian_mission_01_task_04_DESC: "Da wir die Vorteile einer starken Flotte erkannt haben, müssen wir auch unsere Flotte ausbauen, wenn wir unsere Truppen erfolgreich auf feindlichem Boden landen wollen. Außerdem wird der Ausbau unserer Flottenkapazitäten auch gesellschaftliche Vorteile mit sich bringen – ein Grund mehr, damit zu beginnen. \n\n\n\n\n\n\n\n\n\n\n@egypt_mil24!"
+ gymnaesian_mission_01_task_04_tt: "Besitzt eine Flotte von mindestens 12 Schiffen"
+  
+ gymnaesian_mission_01_task_05: "Die Stadt Palma"
+ gymnaesian_mission_01_task_05_DESC: "Wir sind zwar zweifellos stolz auf unsere Hauptstadt [GetProvince('(int32)1465').GetName] und wissen, dass unsere Vorfahren bei der Errichtung der ersten Wohnstätten eine kluge Wahl getroffen haben, doch sollten wir eine Modernisierung unserer Infrastruktur in Betracht ziehen. Glücklicherweise gibt es viele uns vertraute Baustile:  lasst uns unsere Holzbauten durch etwas Dauerhafteres ersetzen. \n\n\n\n\n\n\n\n\n\n\n@celt_mil8!"
+  
+ gymnaesian_mission_01_task_06: "Expedition nach Osten"
+ gymnaesian_mission_01_task_06_DESC: "Bereitet unsere Siedler vor; wir entsenden sie nach [GetProvince('(int32)3515').GetArea.GetName], in der Hoffnung, dass sie dort ein neues Leben für sich selbst und unser Volk aufbauen können. Wie mutig unser Volk doch ist, die Sicherheit unserer Heimat zu verlassen, um ferne Küsten zu erkunden! \n\n\n\n\n\n\n\n\n\n\n@egypt_mil10!"
+  
+ gymnaesian_mission_01_task_07: "Das Leben eines Piraten"
+ gymnaesian_mission_01_task_07_DESC: Es ist keine Schande, sich Dinge mit Gewalt zu nehmen, schließlich gilt: Macht verleiht Recht. Da wir nun über eine große Flotte und einen fähigen Befehlshaber verfügen, können wir damit beginnen, unsere Nachbarn zu überfallen. \n\n\n\n\n\n\n\n\n\n\n@egypt_mil19!"
+ gymnaesian_mission_01_task_07_tt: "Besitzt eine Flotte von mindestens 35 Schiffen und einen Kommandanten mit einem Kriegskunstwert von mindestens 10."
+ gymnaesian_mission_01_task_07_tt_a: "Die #Y Sklavenüberfall#! Fähigkeit wird aktiviert."
+  
+ gymnaesian_mission_01_task_08: "Die Stadt Ibasim"
+ gymnaesian_mission_01_task_08_DESC: "Nach der Eroberung von [GetProvince('(int32)1464').GetName] von der punischen Regionalmacht müssen wir diese Insel wieder aufbauen und die Infrastruktur verbessern, um unsere neue Bevölkerung schneller zu integrieren. Wir haben eine großartige Vision für die Stadt Ibasim... \n\n\n\n\n\n\n\n\n\n\n@greek_mil4!"
+  
+ gymnaesian_mission_01_task_09: "Expansion auf Korsika"
+ gymnaesian_mission_01_task_09_DESC: "Die gesamte Insel [GetProvince('(int32)3515').GetArea.GetName] östlich von uns wäre eine unglaubliche Bereicherung unserer Herrschaftsgebiet. Sie ist wesentlich größer als unser Heimatland und verfügt über reichlich natürliche Ressourcen, die wir äußerst begehren. Dort gibt es sogar Städte wie [GetProvince('(int32)3515').GetName], die wir eines Tages bald in unseren Besitz bringen werden. \n\n\n\n\n\n\n\n\n\n\n@greek_mil18!"
+  
+ gymnaesian_mission_01_task_10: "Piraterie annehmen"
+ gymnaesian_mission_01_task_10_DESC: "Seit langem schon überfallen die Piraten von [GetProvince('(int32)1469').GetName] ungestraft das Mare Sardoum – niemand ist vor diesen Freibeutern sicher, nicht einmal unser eigenes Volk. Und doch...vielleicht sollten wir sie, anstatt sie von der Insel zu vertreiben, lieber willkommen heißen? Diese Piraten sind äußerst erfahren, da sie schon seit sehr langer Zeit in dieser Region ihr Handwerk ausüben, und könnten uns sicherlich das eine oder andere beibringen. \n\n\n\n\n\n\n\n\n\n\n@egypt_mil6!"
+  
+ gymnaesian_mission_01_task_11: "Inselparadies"
+ gymnaesian_mission_01_task_11_DESC: "Es ist allgemein anerkannt, dass unsere Heimat zu den schönsten Orten gehört, die man sich vorstellen kann. Wirklich, wir leben auf einem Inselparadies. Es wäre von Vorteil für uns, unsere Besitzungen auf den Inseln auszubauen; wenn wir nur die Anzahl der Gebäude erhöhen, sind wir fest davon überzeugt, dass unser Ruf weiter wachsen wird. \n\n\n\n\n\n\n\n\n\n\n@event_pic4!"
+  
+ gymnaesian_mission_01_task_12: "Konsolidierung Korsikas"
+ gymnaesian_mission_01_task_12_DESC: "Nachdem wir nun alle Gebiete kolonisiert haben, die wir auf [GetProvince('(int32)3515').GetArea.GetName] kolonisieren konnten, sollten wir uns daran machen, die verbleibenden Gebiete von [GetProvince('(int32)3504').GetArea.GetName] zu erobern. Doch diese Gebiete sind Schauplatz heftiger Kämpfe zwischen großen Mächten, was unsere Pläne erschwert. Niemand hat behauptet, dass dies ein einfaches Unterfangen wäre, aber die Vorzeichen stehen günstig... \n\n\n\n\n\n\n\n\n\n\n@celt_mil11!"
+  
+ gymnaesian_mission_01_task_13: "Befestigte Häfen"
+ gymnaesian_mission_01_task_13_DESC: "Nun, da wir diese Städte annektiert haben, wäre es klug, diese Häfen zu befestigen, damit sie als wirksames Bollwerk gegen unsere Feinde dienen können, die neidisch auf unsere Erfolge sind und hoffen, uns unsere Siege zu entreißen. \n\n\n\n\n\n\n\n\n\n\n@greek_mil19!"
+  
+ gymnaesian_mission_01_task_14: "Sieg auf Sardinien"
+ gymnaesian_mission_01_task_14_DESC: "Nachdem wir nun die Kontrolle über die Insel [GetProvince('(int32)3515').GetArea.GetName] übernommen und den Widerstand in [GetProvince('(int32)3483').GetArea.GetName] endgültig niedergeschlagen haben, werfen wir unsere gierigen Blicke aus wie ein Fischer seine Netze, durchkämmen die Meere und suchen nach unseren nächsten Eroberungen. Nur die Götter wissen, wohin wir als Nächstes segeln werden! \n\n\n\n\n\n\n\n\n\n\n@egypt_mil18!"
+  
+ gymnaesian_mission_01_task_15: "Überschuss an Holz"
+ gymnaesian_mission_01_task_15_DESC: "Dank unserer Flotten sind wir in der Lage, unsere Stärke auch außerhalb unserer Landesgrenzen zu demonstrieren, weshalb die Sicherung der Holzversorgung zu unseren wichtigsten Anliegen zählt. Für unsere Zukunft ist es unerlässlich, dass wir genügend Holz importieren, um eine stetige Versorgung unserer Flotte zu gewährleisten. \n\n\n\n\n\n\n\n\n\n\n@celt_mil6!"
+ gymnaesian_mission_01_task_15_tt: "Die Provinz Balearides muss mindestens 1 Holz @wood! und 1 Zeder @cedar! importieren."
+  
+ gymnaesian_mission_01_task_16: "Ausübung unseres Einflusses"
+ gymnaesian_mission_01_task_16_DESC: "Von unserem Standort in [ROOT.GetCountry.GetCapital.GetName] aus sehen wir eine Welt, der es an vielem mangelt und die verzweifelt nach unserem Einfluss verlangt. Lasst uns alles tun, was nötig ist, um eine Inselmetropole zu schaffen, die ein Leuchtfeuer für alle [ROOT.GetCountry.GetAdjective]en Menschen sein wird. \n\n\n\n\n\n\n\n\n\n\n@event_pic12!"
+  
+ gymnaesian_mission_01_task_17: "Brotkorb des Mittelmeers"
+ gymnaesian_mission_01_task_17_DESC: "Obwohl wir in [GetProvince('(int32)1466').GetName] über fruchtbare Felder verfügen, reichen die Anbauflächen auf unserer Heimatinsel nicht aus, um alle Menschen zu ernähren – wir müssen Maßnahmen ergreifen, um die Landwirtschaft in unseren überseeischen Besitzungen auszubauen. \n\n\n\n\n\n\n\n\n\n\n@celt_mil14!"
+  
+  #################### 
+  # Events 
+  #################### 
+  
+  
+ me_gymnaesian_1_title: "Die balearidische Krone"
+ me_gymnaesian_1_desc: "Der Tag ist endlich gekommen, einer, der so weit und fern schien, dass er mit einem Traum hätte verwechselt werden können: der Aufstieg unseres Monarchen [ROOT.GetCountry.GetRuler.GetName] als neuer Herrscher des glorreichen Königreichs der Balearides. Nach unzähligen Jahren als föderierter Stamm wurde beschlossen, [ROOT.GetCountry.GetRuler.GetFirstName], der maßgeblich für unsere derzeitige Lage verantwortlich ist, mit der Krone zu belohnen. Wir werden nicht länger von Räten aus Magistraten und Ältesten regiert werden, sondern wir werden endlich einen wahren Souverän haben, der uns führt.\n\nFür die Krönungszeremonie wurden keine Kosten gescheut, die besten Weine und Delikatessen wurden aus dem Ausland importiert und ergänzten die traditionellen Gerichte unseres Volkes. Auf einer Sänfte aus Silber und Elfenbein getragen, wurde [ROOT.GetCountry.GetRuler.GetFirstName] durch die Straßen von [GetProvince('(int32)1465').GetName] getragen und überschüttete die versammelte Menge mit Goldmünzen, in der Hoffnung, einen Blick auf auf den königlichen Zug zu erhaschen. Das Festmahl und die Feierlichkeiten werden bis weit in den Abend hinein andauern, vielleicht sogar bis in die frühen Morgenstunden. Ein Tag, an den sich unsere Landsleute für immer erinnern werden!"
+ me_gymnaesian_1.a: "Lang lebe [ROOT.GetCountry.GetRuler.GetName]!"
+  
+ me_gymnaesian_2_title: "Die ersten Schritte"
+ me_gymnaesian_2_desc: "Wir haben westlich unserer Hauptstadt eine kleine Vasalleninsel entdeckt; wir haben keine Ahnung, wie lange sie schon unterjocht sind, aber das ist für uns unerheblich. Wir sind ihnen jedoch zweifellos näher als ihre Oberherren, was uns einen Vorteil verschafft; wenn wir zu einem strategisch günstigen Zeitpunkt zuschlagen, können wir sie schnell annektieren, bevor ihr Oberherr es bemerkt."
+ me_gymnaesian_2.a: "Die Stammesführer versammeln"
+  
+ me_gymnaesian_3_title: "Die erste Eroberung"
+ me_gymnaesian_3_desc: "Nach feierlichen Beratungen, in denen es zu so manch hitziger Auseinandersetzung kam, sind die Stammesführer zu einer Entscheidung gelangt, und es gibt kein Zurück mehr. Während die Ältesten in gleicher Weise geteilter Meinung waren, gab [ROOT.GetCountry.GetRuler.GetName] den Ausschlag, indem er eloquent für das plädierte, was getan werden muss. Es ist die Angst, die unsere Handlungen leitet, denn wir sehen, wie unsere Nachbarn Sklaven einer fernen Macht sind, und wir haben keinerlei Wunsch, selbst zu Leibeigenen eines fremden Herrschers zu werden. Um unsere Zukunft zu sichern, müssen wir diese Feinde vertreiben, damit wir nicht als Nächste fallen. \n\nDer Überraschungseffekt wird unser größter Verbündeter sein. Wir werden unsere Inselnachbarn angreifen, sobald ihr Oberherr in einen Krieg verwickelt ist."
+ me_gymnaesian_3.a: "Wir müssen uns vorbereiten!"
+  
+ me_gymnaesian_4_title: "Die Zeit naht"
+ me_gymnaesian_4_desc: "Es scheint, als seien die Karthager in einen Krieg verwickelt worden. Wenn wir jetzt zuschlagen, solange sie beschäftigt sind, können wir ihren Vasallen hoffentlich annektieren, bevor sie es bemerken. Auch wenn wir Bedenken haben, einen so gewagten Schritt zu wagen – insbesondere angesichts der möglichen Folgen, die es mit sich bringen könnte, Karthago zu verärgern –, könnte dies unsere einzige Chance sein."
+ me_gymnaesian_4.a: "In einem Monat schlagen wir zu"
+  
+ me_gymnaesian_5_title: "Die Eroberung Ibasims"
+ me_gymnaesian_5_desc: "Nach wochenlangen, nervenaufreibenden Vorbereitungen ist nun alles bereit. Wir haben unsere Stammeskrieger aufgeboten, die täglich ihre Schlachformationen eingeübt haben, und wir haben unsere Flotte nach besten Kräften einsatzbereit gemacht. Selbst jetzt werden unsere Schiffe noch mit Proviant  beladen, und es ist nur noch eine Frage der Zeit, bis [ROOT.GetCountry.GetRuler.GetName] den Befehl zum Auslaufen der Flotte erteilt.\n\nMacht euch bereit, denn jetzt ist der Zeitpunkt zum Zuschlagen gekommen. Wir werden [GetProvince('(int32)3256').GetOwner.GetName] keine Vorwarnung geben, da er zu abgelenkt sein wird, um ihnen zu Hilfe zu eilen...schon bald wird jeder wissen, was wir getan haben."
+ me_gymnaesian_5.a: "In den Krieg!"
+  
+ me_gymnaesian_6_title: "Die Flotte Gymnaesias"
+ me_gymnaesian_6_desc: "[ROOT.GetCountry.GetRuler.GetName], wir haben einen Bericht von unseren Flottenkommandanten erhalten, der Ihnen sicherlich sehr gefallen wird. Es scheint, dass unsere Ingenieure – da wir die erforderliche Zeit und die notwendigen Mittel in die Modernisierung unserer Flotten investiert haben – einige Konstruktiontechniken beherrschen gelernt haben, die wir im gesamten Staatsgebiet einsetzen können. Das ist wirklich unser Glückstag!"
+ me_gymnaesian_6.a: "Wir werden uns über diese Wendung der Ereignisse nicht beschweren"
+  
+ me_gymnaesian_7_title: "Die Stadt Palma"
+ me_gymnaesian_7_desc: "In den sanften Hügeln von [GetProvince('(int32)1465').GetName] standen einst vereinzelte Hütten und Hütten, doch die Notunterkünfte und Hütten von einst, die unseren Vorfahren Schutz vor den Elementen boten, sind heute nur noch eine verblassende Erinnerung, ein Relikt aus einer Zeit, in der unsere Kräfte noch im Wachstum begriffen waren. Geleitet von den staatsmännischen Visionen von [ROOT.GetCountry.GetRuler.GetName], der forderte, dass Kosten bei der Verwirklichung [ROOT.GetCountry.GetRuler.GetHerHis]er Pläne keine Rolle spielen sollten, ist aus der Siedlung Palma eine prächtige Stadt geworden. Es wird nicht lange dauern, bis der Ruhm unserer neu ausgebauten Hauptstadt weit und breit bekannt ist."
+ me_gymnaesian_7.a: "Palma ist der perfekte Standort einer Stadt, gut gemacht."
+  
+ me_gymnaesian_8_title: "Expedition nach Osten"
+ me_gymnaesian_8_desc: "Es ist an der Zeit, unsere Siedler auf eine Reise nach Osten, auf die Insel Korsika, vorzubereiten. Unsere Kundschafter berichten, dass es auf der Insel noch andere besetzte Gebiete gibt, und obwohl die Ostküste der Insel unbeansprucht ist, müssen wir darauf achten, sie nicht zu überschreiten. Man muss kein militärisches Genie sein, um vorauszusehen, dass wir möglicherweise gegen die Einheimischen kämpfen müssen, wenn wir ihr Gebiet einnehmen wollen, und unsere Krieger sind bereit, die Siedlungen der Korsen zu überfallen und zu plündern."
+ me_gymnaesian_8.a: "Bereiten wir uns auf Krieg vor!"
+  
+ me_gymnaesian_9_title: "Expedition nach Osten"
+ me_gymnaesian_9_desc: "Als sich in den Ländern von [ROOT.GetCountry.GetName] die Nachricht verbreitete, dass [ROOT.GetCountry.GetRuler.GetName] eine Invasion der Insel #E Korsika#! plante, reisten viele unserer Landsleute nach [ROOT.GetCountry.GetCapital.GetName] in der Hoffnung, von den bevorstehenden Kriegen zu profitieren. Auf unseren Inseln ist allgemein bekannt, dass es auf Korsika fruchtbares Ackerland gibt, und viele unserer Brüder würden ihr Leben riskieren, um ein Stück Küste für sich und ihre Angehörigen zu beanspruchen."
+ me_gymnaesian_9.a: "Sobald wir gesiegt haben, wird es Land im Überfluss geben"
+  
+ me_gymnaesian_10_title: "Seeraubzüge"
+ me_gymnaesian_10_desc: "Es ist wirklich ein schwarzer Tag für unsere Nachbarn, denn wir haben die Nachricht erhalten, dass unsere Flotte groß genug ist, um mit der Überfällen auf nahe gelegene Häfen zu beginnen. Bald schon werden uns alle fürchten und hoffen, niemals mit dem Anblick unserer Kriegsschiffe am Horizont aufzuwachen! Sagt den Männern, sie können nehmen, was immer sie tragen können!"
+ me_gymnaesian_10.a: "Hisst die Piratenflagge..."
+ me_gymnaesian_10_tt: "#Y Sklavenüberfall#! Fähigkeit wird aktiviert."
+  
+ me_gymnaesian_11_title: "Ibasim"
+ me_gymnaesian_11_desc: "Obwohl der Aufbau von [GetProvince('(int32)1464').GetName] mit erheblichen Kosten verbunden war, wurde uns endlich mitgeteilt, dass die Bauarbeiten abgeschlossen sind. Über alle Maßen dankbar für das, was wir erreicht haben, nehmen die Einheimischen unsere Lebensweise mit Begeisterung an, in der Hoffnung, vollwertige Teilhaber unserer Kultur zu werden.  Es gibt heute Morgen viel zu feiern, [ROOT.GetCountry.GetRuler.GetFirstName]."
+ me_gymnaesian_11.a: "Die Götter kümmern sich um die ihren"
+  
+ me_gymnaesian_12_title: "Korsische Expansion"
+ me_gymnaesian_12_desc: "Es wird Euch freuen, [ROOT.GetCountry.GetRuler.GetName], zu hören, dass unser Volk, das auf #E Korsika#! lebt,  gedeiht. Selbst jetzt noch bewirtschaften unsere Bauern das Land und machen die wilden Felder langsam, aber sicher fruchtbar, und die Steuereinnahmen, die sie nach Hause schicken, steigen von Jahr zu Jahr. Wir haben keinen Zweifel daran, dass in wenigen Jahren niemand mehr zwischen unseren neuen Kolonien im Ausland und unseren etablierten Städten in der Heimat unterscheiden können wird.\n\nInsbesondere #E Saone#! blüht auf, wobei sein berühmter #E 'Gymnaesischer Bezirk'#! für unser Volk bei Besuchen auf der Insel zu einer zweiten Heimat geworden ist. Vielleicht habt Ihr eines Tages das Vergnügen, Saone selbst zu sehen, mein [ROOT.GetCountry.GetRulerTitle]."
+ me_gymnaesian_12.a: "Niemand weiß, was die Zukunft bringt, aber wir hoffen auf sie"
+  
+ me_gymnaesian_13_title: "Schurken und Banditen"
+ me_gymnaesian_13_desc: "Wir haben kürzlich unsere Verhandlungen mit den Piraten abgeschlossen, die auf der Insel [GetProvince('(int32)1469').GetName] leben. Es dauerte nicht lange, sie von der Klugheit unseres Vorschlags zu überzeugen, denn die Piraten schienen allzu begierig darauf zu sein, unsere diplomatischen Angebote anzunehmen – gut. Sie haben zweifellos erkannt, dass die Zusammenarbeit mit uns in ihrem besten Interesse ist, da wir viel voneinander lernen können."
+ me_gymnaesian_13.a: "Es ist ein Piratenleben für mich..."
+  
+ me_gymnaesian_14_title: "Ein Inselparadies"
+ me_gymnaesian_14_desc: "Manche Menschen leben in Berghöhlen, wo sie den grausamen Launen der Natur ausgeliefert sind, andere wiederum haben sich in der Wüste niedergelassen und sehnen sich verzweifelt nach ein paar Tropfen Wasser. Unser Volk hingegen lebt im Paradies: Sanfte Brisen, warmes Wasser und Nahrung im Überfluss sind unsere ständigen Begleiter. Wir importieren die besten Waren aus aller Welt, und Reisende aus nah und fern kommen in unsere Häfen, um unsere Errungenschaften zu bestaunen."
+ me_gymnaesian_14.a: "Es gibt keinen Ort, den wir lieber Heimat nennen"
+  
+ me_gymnaesian_15_title: "Befestigte Häfen"
+ me_gymnaesian_15_desc: "Unsere Flotten sind die Quelle unserer Stärke, unsere Flotten wegzunehmen hieße, uns unserer Macht zu berauben. In der Erkenntnis, dass der Schlüssel unseres Erfolgs auf einer ausreichenden Seemacht beruht, ordnete [ROOT.GetCountry.GetRuler.GetName] an, die Staatskasse zu öffnen und die Infrastruktur unserer Häfen zu modernisieren. Wir wollen uns keinesfalls von unseren Feinden überraschen lassen, und die Sicherung unserer Wasserstraßen wird dafür sorgen, dass dieses Unglück niemals eintritt. Unsere gestärkten Häfen sollen das Fundament unseres zukünftigen Ruhmes werden!"
+ me_gymnaesian_15.a: "Wehe dem Feind, der davon träumt, unsere Häfen einzunehmen"
+  
+ me_gymnaesian_16_title: "Siege auf Sardinien" 
+ me_gymnaesian_16_desc: "Als wir zum ersten Mal aufbrachen, die Insel Sardinien zu unterwerfen, waren wir uns der Möglichkeiten, die uns erwarteten, sehr wohl bewusst – die Erweiterung unserer Grenzen und neue Handelsmöglichkeiten waren dabei unsere Hauptmotivation. Doch wer hätte den Reichtum voraussehen können, den wir anhäufen würden? Der Handel in [GetProvince('(int32)1465').GetName] ist geradezu explodiert, und immer mehr Steuern und Abgaben fließen in unsere Hauptstadt zurück. Der Reichtum Sardiniens übertrifft unsere kühnsten Erwartungen...vielleicht gibt es noch weitere Inseln, die wir einnehmen könnten.
+ me_gymnaesian_16.a: "Genau so, wie wir es geplant haben!"
+  
+ me_gymnaesian_17_title: "Holz im Überfluss"
+ me_gymnaesian_17_desc: "Angesichts der Bedeutung unserer Flotten ist es bedauerlich, dass wir unter einem Mangel an Bauholz leiden; auf unseren Inseln wachsen einfach nicht genug Bäume, um unsere vielbeschäftigten Bootsbauer zu versorgen. Glücklicherweise haben wir uns eine stetige Versorgung mit Holz und Zedernholz von denen gesichert, die mit einem Überfluss gesegnet sind – mögen diese wirtschaftlichen Verbindungen zu einer noch tieferen Freundschaft heranwachsen."
+ me_gymnaesian_17.a: "Wir freuen uns, dass wir Freunde in Übersee haben"
+  
+ me_gymnaesian_18_title: "Ausübung unseres Einflusses"
+ me_gymnaesian_18_desc: "Obwohl es viele Zivilisationen gibt, die über den #E Mittelmeerraum #! verstreut sind, sind wir Gymnaesier fest davon überzeugt, dass unsere Kultur etwas zu bieten hat, was die anderen Länder nicht haben. Glücklicherweise sind wir nun, da wir in [GetProvince('(int32)1465').GetName] eine prächtige Stadt errichtet haben, die den Hauptstädten der Könige und Generäle des Ostens in nichts nachsteht, bereit, das zivilisatorische Licht von [ROOT.GetCountry.GetName] bis in die entlegensten Winkel des Meeres zu tragen."
+ me_gymnaesian_18.a: "Weit und breit werden wir unsere gymnaesischen Wege verbreiten"
+  
+ me_gymnaesian_19_title: "Brotkorb des Mittelmeers"
+ me_gymnaesian_19_desc: "Fremde, die unsere Ländereien in [GetProvince('(int32)3497').GetArea.GetName] besuchen, sagen oft, dass sie den Duft von frisch Gebackenem aus unseren ertragreichen [ROOT.GetCountry.GetAdjective]en Öfen schon riechen können, bevor sie überhaupt einen Fuß in unsere Häfen setzen. Indem [ROOT.GetCountry.GetRuler.GetName] den Bau von Bauernsiedlungen auf ganz Sardinien angewiesen hat, hat er dafür gesorgt, dass unser gesamtes Volk gut versorgt ist, was [ROOT.GetCountry.GetRuler.GetHerHim] die unerschütterliche Liebe des einfachen Volkes eingebracht hat.\n\nWenn du das nächste Mal in der Gegend bist, Reisender, empfehlen wir dir, unsere Bäckereien zu besuchen und das Brot selbst zu probieren...du wirst feststellen, dass es das beste ist, das du je gegessen hast."
+ me_gymnaesian_19.a: "Mir läuft das Wasser im Mund zusammen, wenn ich nur daran denke..."
+  
+  #################### 
+  # Modifiers 
+  #################### 
+  
+ fortified_ports: "Befestigte Häfen"
+ punic_integration: "Punische Integration"
+ king_of_gymnaesia: "König von Gymnaesia"
+ gymnaesian_pirate_haven: "Umarmter Piratenhafen"
+ gymnaesian_piracy: "Gymnaesische Piraterie"
+ island_paradise: "Inselparadies"
+ victory_in_sardinia: "Sieg auf Sardinien"
+ surplus_of_wood: "Überschuss an Holz"
+ gymnaesian_influence: "Gymnaesischer Einfluss"
+ gymnaesian_breadbasket: "Gymnaesischer Brotkorb"
+ gymaensia_colony_modifier: "Gymnaesischer Bezirk"
+  
+ we_receive_claims_corsica_tt: "Wir erhalten Ansprüche auf die Insel #T Korsika#!"  

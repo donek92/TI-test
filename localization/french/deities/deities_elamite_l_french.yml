@@ -1,0 +1,199 @@
+﻿l_french:
+ ## Please delete if this is found in TI ##
+ deity_inshushinak:0 "$omen_inshushinak$"
+ omen_inshushinak:0 "Inshushinak"
+ omen_inshushinak_desc:0 "Inshushinak est le dieu de la ville élamite de Suse. Il est parfois appelé le plus grand de tous les dieux de la mythologie élamite. Il est considéré comme un puissant dieu des Enfers, et parfois intégré à la suite de la puissante déesse mésopotamienne Ereshkigal.\n\nSous la Perse achéménide, Inshushinak perdit beaucoup de son importance en dehors de Suse elle-même. Alors qu'il était autrefois le plus grand des dieux, d'autres divinités comme Humban prirent plus d'importance après la période néo-élamite. Cela dit, les avis divergent quant à savoir s'il perdit réellement en importance pour les Élamites eux-mêmes, ou si ce sont simplement les peuples indo-iraniens qui négligèrent et rejetèrent son culte."
+
+ deity_napirisha:0 "$omen_napirisha$"
+ omen_napirisha:0 "Napirisha"
+ omen_napirisha_desc:0 "Napirisha est le grand dieu du royaume d'Anshan, vénéré depuis les temps anciens du troisième millénaire av. J.-C. Napirisha prend souvent la forme d'un serpent primordial représentant les eaux originelles du monde. Pour cette raison, les Mésopotamiens le comparaient fréquemment à leur dieu Enki, seigneur des eaux douces. Napirisha et sa parèdre Kiririsha étaient vénérés à Suse aux côtés de leur dieu tutélaire, Inshushinak."
+
+ deity_ishnikarab:0 "$omen_ishnikarab$"
+ omen_ishnikarab:0 "Ishmekaraba"
+ omen_ishnikarab_desc:0 "Ishmekaraba était à l'origine une divinité akkadienne connue sous le nom d'Ishnikarab, mais elle acquit aussi une grande importance chez les Élamites. Ishmekaraba était une déesse de la justice et des serments. Dans la mythologie élamite, bien que cela soit débattu, beaucoup pensent qu'elle était l'épouse du dieu de Suse, Inshushinak. Elle demeura influente par la suite, et aurait peut-être contribué, avec son époux et un dieu nommé Lagamal, à la croyance zoroastrienne en une triade de divinités jugeant les âmes."
+
+ deity_lagamal:0 "$omen_lagamal$"
+ omen_lagamal:0 "Lagamal"
+ omen_lagamal_desc:0 "Lagamal était à l'origine une divinité akkadienne, mais il devint une composante intégrale du panthéon élamite après son introduction à Suse. Lagamal était un dieu des Enfers chargé de juger les âmes des morts. Il fut inclus dans un groupe de trois dieux — lui-même, Inshushinak et Ishnikarab — qui auraient peut-être influencé la conception zoroastrienne d'une triade divine chargée du jugement des âmes."
+
+ deity_manzat:0 "$omen_manzat$"
+ omen_manzat:0 "Manzat"
+ omen_manzat_desc:0 "Déesse de l'arc-en-ciel, Manzat était principalement vénérée dans les basses terres élamites, ainsi qu'en Sumer et en Akkad, bien qu'on ignore si elle est originaire de Mésopotamie ou d'Élam. Manzat était particulièrement honorée dans une région proche de Suse appelée Hubshen. Elle était associée à la prospérité, notamment celle des cités. Elle est parfois appelée la « Grande Dame » en langue élamite. Après le premier millénaire av. J.-C., elle devient extrêmement rare dans les attestations, signe probable de son déclin."
+
+ deity_tepti:0 "$omen_tepti$"
+ omen_tepti:0 "Tepti"
+ omen_tepti_desc:0 "On sait peu de choses sur la mystérieuse divinité appelée Tepti. Elle apparaît dans des textes de la période néo-élamite, ainsi que dans les noms de certains rois élamites. Une inscription mentionne Tepti, Napirisha et Kiririsha comme des divinités ayant toujours protégé les eaux et la terre. Tandis que Kiririsha est communément associée à la protection de la terre, et Napirisha bien attesté comme dieu de l'eau, le rôle de Tepti dans cette triade reste inconnu."
+
+ deity_tirutur:0 "$omen_tirutur$"
+ omen_tirutur:0 "Tirutur"
+ omen_tirutur_desc:0 "Tirutur est un dieu mystérieux dont peu d'écrits subsistent. Il est mentionné dans des sources néo-élamites. Tirutur, avec Inshushinak, Tepti et Humban, était associé à de grands pouvoirs divins et royaux, ainsi qu'à un concept appelé 'Ktin', qui peut être décrit comme une protection divine accordée au peuple ou aux rois d'une terre. Sous la domination achéménide, Tirutur fut assimilé à Humban par les Perses."
+
+ deity_shihhash:0 "$omen_shihhash$"
+ omen_shihhash:0 "Shihhash"
+ omen_shihhash_desc:0 "Shihhash est la version élamite du dieu cananéen Adad. On ignore s'il s'agit de trois dieux différents ou d'un seul et même dieu, mais les Élamites utilisaient trois épithètes pour Shihhash : Shihhash, Shennukushu et Kunzibami. En tant que version d'Adad, Shihhash, dans la religion élamite, est probablement bien plus proche des versions mésopotamiennes, son nom étant lui-même probablement d'origine mésopotamienne."
+
+ deity_simut:0 "$omen_simut$"
+ omen_simut:0 "Simut"
+ omen_simut_desc:0 "Simut, aussi appelé Shimut, est connu comme le 'Messager des Dieux' dans la mythologie élamite. Il était associé au concept de 'Ktin', à l'instar de nombreuses divinités majeures du panthéon élamite. Simut était souvent comparé ou assimilé au dieu mésopotamien Nergal, mais des recherches récentes remettent en cause l'idée qu'il s'agissait d'un dieu infernal pour les Élamites. Il est possible qu'il ait joué un autre rôle, simplement identifié à celui de Nergal."
+
+ deity_pinigir:0 "$omen_pinigir$"
+ omen_pinigir:0 "Pinigir"
+ omen_pinigir_desc:0 "Aussi appelée Pinikir, Pinigir est une puissante déesse d'origine élamite, également répandue dans la religion hourrite. Elle était associée à des thèmes similaires à ceux d'Ishtar. Déesse de l'amour et du sexe, elle était aussi liée à la guerre et aux étoiles, en particulier dans sa version hourrite. Pinigir fut vénérée en Élam jusqu'au moins 500 av. J.-C., date à laquelle les Néo-Assyriens incendièrent son temple à Suse. Il est plus que probable qu'elle soit restée une divinité importante, étant donné son influence dans les panthéons du Moyen-Orient."
+
+ deity_hutran:0 "$omen_hutran$"
+ omen_hutran:0 "Hutran"
+ omen_hutran_desc:0 "Hutran est un dieu de la divinité et de la royauté, à l'image de Humban et d'Inshushinak. Il formait d'ailleurs avec eux une triade divine dans la mythologie élamite. Cette triade était souvent comparée à la triade Hormazd-Mithra-Anahita dans les panthéons indo-iraniens. Hutran était le seul enfant de la mère des dieux, Kiririsha, et peut-être le fils de Napirisha, si ces deux divinités formaient bien un couple sacré."
+
+ deity_kirmashir:0 "$omen_kirmashir$"
+ omen_kirmashir:0 "Kirmashir"
+ omen_kirmashir_desc:0 "Kirmashir est l'un des cinq dieux d'Aswan, juste au nord de Suse. Avec lui étaient vénérés Humban, Pinigir, Hutran et Nahhunte. On sait peu de choses sur Kirmashir, si ce n'est son origine à Aswan. De nombreux dieux d'Aswan restèrent influents jusqu'à la période achéménide et au-delà, mais Kirmashir semble avoir eu une moindre importance. Malgré cela, il donna son nom au roi Kuk-Kirmash de la dynastie Sukkalmah, vers la fin de la période élamite ancienne, entre 1900 et 1500 av. J.-C."
+
+ deity_narundi:0 "$omen_narundi$"
+ omen_narundi:0 "Narundi"
+ omen_narundi_desc:0 "Déesse de Suse, Narundi est en réalité la plus ancienne divinité connue du panthéon élamite, apparaissant pour la première fois dans les archives vers 2260 av. J.-C. Ses mentions cessent après 1800 av. J.-C., probablement en raison de son assimilation à d'autres divinités dans le cadre d'une religion élamite décentralisée. Elle impressionna les Mésopotamiens, qui la comparèrent à Ishtar. Pour eux, elle faisait partie des 'Sept Divinités Divines d'Élam', un groupe de sept dieux guerriers. On ignore si les Élamites partageaient cette vision, bien qu'il soit probable qu'il existât certains éléments communs entre les deux versions de la déesse."
+
+ deity_nahiti:0 "$omen_nahiti$"
+ omen_nahiti:0 "Nahhunte"
+ omen_nahiti_desc:0 "Nahhunte, connu dans l'Élam ancien sous le nom de Nahiti, était le seigneur du soleil dans la religion élamite. Il était considéré comme le garant des serments et de la justice. Ses statues étaient érigées pour inciter les dirigeants des cités ou des États à gouverner avec vérité et droiture. En Mésopotamie, il était souvent associé au dieu lunaire Sîn. Il faisait aussi partie des 'Sept Divinités Divines d'Élam', notamment aux côtés de la déesse Narundi. Fait intéressant : bien que Nahhunte n'ait jamais été assimilé à Shamash ni à Utu, son nom est écrit de la même manière qu'Utu dans les textes."
+
+ deity_humban:0 "$omen_humban$"
+ omen_humban:0 "Humban"
+ omen_humban_desc:0 "La plus puissante des divinités élamites, dispensateur du Ktin, souverain des cieux et des airs, le plus grand des dieux, vénéré du Tigre à l'Euphrate, de Suse à Anshan, et des sommets du Zagros aux grandes cités perses — tel est Humban. Autrefois, Humban était le dieu suprême de l'Élam oriental, tandis qu'Inshushinak régnait sur l'ouest. À l'époque achéménide, toutefois, la popularité de Humban explosa. Il est parfois considéré à cette période comme un dieu plus perse qu'élamite, preuve de la vénération dont il jouissait. Dans les archives de Persépolis, Humban est mentionné 26 fois — plus que toute autre divinité. Ahura Mazda, par exemple, n'apparaît que 10 fois dans le même document. En Mésopotamie, il est le troisième dieu le plus cité durant la période kassite. À l'époque néo-assyrienne, Humban était souvent comparé à Enlil par son importance et sa grandeur. Aucun dieu n'est aussi étroitement lié aux Élamites de la période post-néo-élamite que le grand Humban."
+
+ deity_hishmitik:0 "$omen_hishmitik$"
+ omen_hishmitik:0 "Hishmitik"
+ omen_hishmitik_desc:0 "Hishmitik est une divinité d'Anshan, à l'est de l'Élam. Elle partage un temple à Chogha Zanbil avec le dieu Ruhurater, ce que certains prennent pour une preuve qu'elle serait son épouse. Toutefois, cela ne fait pas l'unanimité. Peu d'écrits existent à son sujet, mais si elle est bien l'épouse de Ruhurater, elle pourrait jouer un rôle similaire ou complémentaire à celui-ci."
+
+ deity_ruhurater:0 "$omen_ruhurater$"
+ omen_ruhurater:0 "Ruhurater"
+ omen_ruhurater_desc:0 "Dieu créateur d'Anshan, Ruhurater est l'un des rares dieux capables de conférer le ktin aux hommes. Bien qu'il soit fortement associé à Anshan — où il atteint peut-être sa plus grande importance avec son épouse potentielle Hishmitik —, il est à l'origine lié à la cité antique de Huhnur. Ruhurater est souvent comparé à Ishushinak, considéré comme l'Ishushinak d'Anshan."
+
+ deity_kiririsha:0 "$omen_kiririsha$"
+ omen_kiririsha:0 "Kiririsha"
+ omen_kiririsha_desc:0 "Mère des dieux, Kiririsha était l'une des divinités les plus importantes du panthéon élamite. Avec Tepti et Napirisha, elle fait partie des dieux qui permettent à la terre de prospérer, en particulier à travers l'eau et la terre. Napirisha étant bien attesté comme dieu des eaux, Kiririsha serait sans doute la déesse de la terre. Napirisha et Kiririsha forment un couple divin dont l'union engendra un autre dieu, Hutran. Kiririsha est aussi la déesse tutélaire de Liyan, connue sous l'épithète « zana Liyan lahakara », c'est-à-dire « dame de la mort à Liyan ». Son culte est attesté dès le XIXe siècle av. J.-C. et perdura même après la domination achéménide."
+
+ deity_silir_qatru:0 "$omen_silir_qatru$"
+ omen_silir_qatru:0 "Silir Qatru"
+ omen_silir_qatru_desc:0 "Silir Qatru, également appelé Silir Katru, est connu comme dieu protecteur de l'Élam lui-même. On sait très peu de choses à son sujet, si ce n'est qu'il était invoqué en Élam pour la protection, probablement contre les envahisseurs, les pillards, ou même pour des problèmes plus modestes comme le vol ou le crime."
+
+ deity_upurkupak:0 "$omen_upurkupak$"
+ omen_upurkupak:0 "Upur-Kubak"
+ omen_upurkupak_desc:0 "Upur-Kubak, aussi appelée Uper-Kupak ou même Upurkubak, est une déesse de la lumière. Elle n'est connue que par une seule invocation dans laquelle le roi élamite Huteltush-Inshushinak, au XIe siècle av. J.-C., la nomme « la dame qui dispense la lumière »."
+
+ deity_napir:0 "$omen_napir$"
+ omen_napir:0 "Napir"
+ omen_napir_desc:0 "Napir, aussi appelé Nap, est le dieu de la lune dans le panthéon élamite. Il ne semble pas avoir été un dieu particulièrement populaire, mais l'écriture de son nom en élamite linéaire implique qu'il a été vénéré au moins jusqu'au VIe siècle av. J.-C., durant la période perse."
+
+ deity_ishmekarab:0 "$omen_ishmekarab$"
+ omen_ishmekarab:0 "Ishmekarab"
+ omen_ishmekarab_desc:0 "Serviteur du grand Inshushinak et protecteur des serments, le dieu d'origine akkadienne-mésopotamienne Ishmekarab est devenu associé à l'Élam durant l'époque néo-babylonienne. Il fut vénéré au moins jusqu'à la période néo-élamite, voire au-delà. Une seule mention le désigne comme le dieu de Suse, mais il est probable qu'il s'agisse soit d'une erreur de traduction ou de transcription pour Inshushinak, soit d'une manière de reconnaître Ishmekarab comme son assistant."
+
+ deity_shala:0 "$omen_shala$"
+ omen_shala:0 "Shala"
+ omen_shala_desc:0 "Shala, l'épouse d'Adad, fut introduite en Élam en même temps que le culte de son mari. Il faut noter que ces deux divinités étaient probablement les versions mésopotamiennes, et non les versions cananéennes plus connues. Comme son époux, elle était une déesse de la météo, associée à la divinité élamite Shihhash. Shala fut vraisemblablement vénérée à Anshan ainsi que dans les basses terres de l'Élam près de Suse."
+
+ deity_jabru:0 "$omen_jabru$"
+ omen_jabru:0 "Jabru"
+ omen_jabru_desc:0 "Le dieu Jabru est un cas particulier. Il est clairement désigné dans les sources mésopotamiennes comme un dieu de l'Élam, mais on ne le retrouve dans aucune source élamite. Plusieurs théories tentent d'expliquer cela. Selon l'une d'elles, Jabru serait le père de Humban, roi des dieux, à l'instar d'Anu. Comme Anu, Jabru n'aurait pas été largement vénéré malgré son statut divin supérieur. Une autre théorie affirme que Jabru serait un nom tabou désignant Tepti, mais cette idée est très controversée. Elle implique que plusieurs divinités que nous considérons distinctes ne seraient en réalité que des noms secrets pour d'autres dieux élamites."
+
+ deity_mashti:0 "$omen_mashti$"
+ omen_mashti:0 "Mashti"
+ omen_mashti_desc:0 "Mashti est une déesse-mère élamite. On en sait peu sur elle. Elle pourrait provenir d'un syncrétisme indo-iranien avec la religion élamite, introduisant une forme d'Anahita. Une autre hypothèse la relie à la déesse dravidienne Mastamma, mais cela reste très spéculatif. Il est aussi possible que le nom Mashti soit une corruption du dieu solaire babylonien Ninib."
+
+ ## Kassite Deities ##
+
+ deity_turgu:0 "$omen_turgu$"
+ omen_turgu:0 "Turgu"
+ omen_turgu_desc:0 "Turgu est une divinité dont l'existence ne nous est connue que par des noms personnels kassites l'ayant intégré. Ces noms sont Kadashman-Turgu et Me-Turgu."
+
+ deity_tiliash:0 "$omen_tiliash$"
+ omen_tiliash:0 "Tiliash"
+ omen_tiliash_desc:0 "Tiliash est une divinité — ou un élément — attesté dans les noms personnels kassites. On ignore s'il s'agit simplement d'un épithète ou d'une divinité à part entière ; toutefois, en raison de son lien avec un élément naturel, on peut supposer que son domaine d'influence incluait cet élément kassite."
+
+ deity_shuriash:0 "$omen_shuriash$"
+ omen_shuriash:0 "Shuriash"
+ omen_shuriash_desc:0 "Shuriash est un dieu solaire mineur. Il est parfois considéré comme un simple épithète du grand dieu solaire Sah. Une autre théorie propose que Shuriash vienne des mots kassites « suri » et « iash » ; cependant, si « iash » signifie bien « terre », on ignore encore ce que signifie « suri »."
+
+ deity_shuqammuna:0 "$omen_shuqammuna$"
+ omen_shuqammuna:0 "Shuqammuna"
+ omen_shuqammuna_desc:0 "Shuqammuna est la divinité kassite la mieux attestée. Il aurait pu apparaître pour la première fois dans les sources akkadiennes, mais il est devenu étroitement associé aux Kassites. Son épouse est Shumaliya, et ils sont connus sous le nom de « ilanu murtamu », une expression douce signifiant « les dieux qui s'aiment »."
+
+ deity_shumaliya:0 "$omen_shumaliya$"
+ omen_shumaliya:0 "Shumaliya"
+ omen_shumaliya_desc:0 "Shumaliya, déesse des montagnes, est l'épouse de la divinité kassite la mieux attestée, Shuqammuna. Ensemble, ils forment un couple divin désigné par la plus douce expression qui soit : « ilanu murtamu », ce qui signifie « les dieux qui s'aiment ». Parfois, ils sont même représentés comme une paire d'oiseaux perchés côte à côte. N'est-ce pas adorable ?"
+
+ deity_shuhur:0 "$omen_shuhur$"
+ omen_shuhur:0 "Shuhur"
+ omen_shuhur_desc:0 "Shuhur n'est attesté que dans un seul nom personnel kassite : Shuhur-Ni. On ne sait rien d'autre au sujet de ce dieu."
+
+ deity_shugab:0 "$omen_shugab$"
+ omen_shugab:0 "Shugab"
+ omen_shugab_desc:0 "Shugab est présent dans plusieurs noms personnels kassites. Il est toutefois possible qu'il s'agisse d'un épithète ou d'un nom dialectal de la déesse Shuqamuna. Shugab est probablement d'origine akkadienne."
+
+ deity_shikme:0 "$omen_shikme$"
+ omen_shikme:0 "Shikme"
+ omen_shikme_desc:0 "Shikme, peut-être identique à Shimige du panthéon hourrite, est attesté dans le nom Burra-Shikme. Comme c'est la seule attestation connue, l'hypothèse selon laquelle Shikme serait Shimige est retenue. Shimige était un dieu solaire mal compris, qui a peut-être été confondu avec Shamash."
+
+ deity_shipak:0 "$omen_shipak$"
+ omen_shipak:0 "Shipak"
+ omen_shipak_desc:0 "Shipak est un dieu kassite curieux, associé à la Lune. Il est mentionné comme semblable au mésopotamien Sîn, mais il semble également être rapproché de Marduk dans certaines sources."
+
+ deity_sah:0 "$omen_sah$"
+ omen_sah:0 "Sah"
+ omen_sah_desc:0 "Sah est le grand dieu solaire bien attesté du panthéon kassite. Il est en fait la divinité la plus fréquemment mentionnée dans la liste des noms kassites retrouvée à Nippur. Cela indique qu'il était une divinité très populaire, probablement assimilée à Shamash."
+
+ deity_mirizir:0 "$omen_mirizir$"
+ omen_mirizir:0 "Mirizir"
+ omen_mirizir_desc:0 "Mirizir est une déesse kassite possiblement liée aux chevaux, comme l'indique son nom, retrouvé dans des noms équins. Alternativement, son nom pourrait désigner plus généralement les animaux, ce qui ferait d'elle une sorte de déesse-chasseresse ou de la nature. Elle n'est jamais attestée chez les Mésopotamiens, bien qu'elle ait pu apparaître sous l'épithète Beltu."
+
+ deity_maruttash:0 "$omen_maruttash$"
+ omen_maruttash:0 "Maruttash"
+ omen_maruttash_desc:0 "Maruttash a fait l'objet de nombreuses hypothèses linguistiques, le reliant au dieu védique Maruts ou au dieu louvite Runtiya, mais aucune de ces théories n'est retenue par la recherche moderne. Maruttash est bien attesté, et il pourrait être une version kassite de Ninurta, comme le suggère la proximité fréquente des noms Maruttash et Ninurta."
+
+ deity_kamulla:0 "$omen_kamulla$"
+ omen_kamulla:0 "Kamulla"
+ omen_kamulla_desc:0 "Kamulla est soit un dieu des montagnes, soit la déification du mont Kamulla. Il apparaît dans quelques noms, et la montagne qui lui est associée se situerait vraisemblablement au sud de la rivière Radanu."
+
+ deity_hudak:0 "$omen_hudak$"
+ omen_hudak:0 "Hudak"
+ omen_hudak_desc:0 "Hudak, également appelé Hudha, est mentionné à plusieurs reprises, notamment dans une lettre lexicale qui le décrit comme Adad, ce qui signifie qu'il est probablement la version kassite d'Adad."
+
+ deity_harbe:0 "$omen_harbe$"
+ omen_harbe:0 "Harbe"
+ omen_harbe_desc:0 "Le puissant Harbe, Roi des Dieux, est très probablement le chef du panthéon kassite. Il est l'une des divinités les plus fréquemment citées dans les listes de noms théophores kassites, et son nom pourrait signifier 'Seigneur'. Il n'est donc pas surprenant qu'on le compare parfois à Enlil.\n\nSon symbole divin est un oiseau dont la tête est tournée vers l'arrière, symbole connu sous le nom de 'Kudurru'."
+
+ deity_hala:0 "$omen_hala$"
+ omen_hala:0 "Hala"
+ omen_hala_desc:0 "La déesse Hala est assimilée à la mésopotamienne Gula. Il a été proposé qu'elle soit une déesse de la guérison, apparaissant dans plusieurs noms propres."
+
+ deity_gindar:0 "$omen_gindar$"
+ omen_gindar:0 "Gindar"
+ omen_gindar_desc:0 "Le dieu Gindar est connu grâce à une liste lexicale qui l'identifie au mésopotamien Ninurta. Il est également mentionné dans d'autres listes lexiques, peut-être davantage si 'Kintar' est une variante orthographique de Gindar. Gindar pourrait aussi être l'époux de la déesse de la guérison, Hala."
+
+ deity_duzagash:0 "$omen_duzagash$"
+ omen_duzagash:0 "Duzagash"
+ omen_duzagash_desc:0 "Duzagash est connu par une inscription sur un poids de pierre en forme de canard, attribuée à un roi vassal kassite, Hammurabi de Hana. Duzagash est vraisemblablement d'origine kassite."
+
+ deity_dur:0 "$omen_dur$"
+ omen_dur:0 "Dur"
+ omen_dur_desc:0 "À part son association avec Nergal, peu de choses sont connues sur ce dieu. En fait, il n'apparaît dans aucun nom propre théophore kassite."
+
+ deity_duniash:0 "$omen_duniash$"
+ omen_duniash:0 "Duniash"
+ omen_duniash_desc:0 "Duniash serait une divinité totalement inconnue et invérifiable sans un seul mot kassite. Karduniash était le mot kassite pour désigner Babylone. Il n'existe aucun consensus sur la nature de Duniash, ni même sur le fait qu'il s'agisse réellement d'un dieu."
+
+ deity_buriash:0 "$omen_buriash$"
+ omen_buriash:0 "Buriash"
+ omen_buriash_desc:0 "Buriash est un dieu kassite du climat, souvent assimilé ou comparé à Adad. Il est mentionné dans plusieurs noms kassites, et pourrait avoir été un épithète de Harbe, le dieu principal du panthéon kassite. Buriash signifierait peut-être 'Seigneur de la Terre'."
+
+ deity_bugash:0 "$omen_bugash$"
+ omen_bugash:0 "Bugash"
+ omen_bugash_desc:0 "Bugash est une possible divinité kassite, attestée par des noms théophores. On ne sait rien d'autre à son sujet."
+
+ deity_apku:0 "$omen_apku$"
+ omen_apku:0 "Apku"
+ omen_apku_desc:0 "Apku est attesté dans le nom Karzi-Apku, mais on ignore tout de cette divinité : sa nature, son rôle, voire même son genre."
+
+ deity_ban:0 "$omen_ban$"
+ omen_ban:0 "Ban"
+ omen_ban_desc:0 "Ban, également appelé Alban, est une divinité dont l'existence ne nous est connue que par des noms propres kassites. Il pourrait s'agir de divinités distinctes, mais beaucoup pensent qu'il s'agit simplement de deux variantes orthographiques d'un même nom."

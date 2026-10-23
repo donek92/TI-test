@@ -1,0 +1,63 @@
+﻿l_french:
+ 
+ inv_pop_events.1.t: "Tensions parmi les hommes libres"
+ inv_pop_events.1.desc: "Comme vous le savez, [ROOT.GetCountry.GetRuler.GetName], il y a beaucoup d'hommes libres qui vivent à [pop_province.GetName], et si cela est une bonne chose lorsqu'il s'agit de recruter des hommes pour nos levées, parfois il y a des problèmes auxquels nous devons faire face.\n\nDes émeutes ont éclaté à cause des résultats de certaines compétitions sportives parmi les locaux, et à moins que nous n'intervenions, ils menacent de dégénérer hors de contrôle.\n\nUn des locaux, un homme nommé [SCOPE.sChar('free_man').GetName], a voyagé depuis [pop_province.GetName] jusqu'à [ROOT.GetCountry.GetCapital.GetName] pour partager cette nouvelle grave."
+ inv_pop_events.1.a: "Tu viens vraiment m'embêter avec ça maintenant ?"
+ inv_pop_events.1.b: "Envoyez des gardes pour surveiller la région locale et rétablir l'ordre"
+ 
+ inv_pop_events.2.t: "Tensions tribales"
+ inv_pop_events.2.desc: "[ROOT.GetCountry.GetRuler.GetName], il y a des querelles sanglantes entre nos tribus qui menacent d'exploser en quelque chose de pire à moins que nous ne fassions ce que nous pouvons pour apaiser les tensions. Les escarmouches entre tribus, que nous considérons comme une partie inévitable de la vie [ROOT.GetCountry.GetAdjective], deviennent de plus en plus sanglantes et un conflit régional pourrait s'enflammer si nous n'y mettons pas fin.\n\nUn guerrier local nommé [SCOPE.sChar('free_man').GetName] a fait le voyage jusqu'à notre capitale pour nous informer de ces développements."
+ inv_pop_events.2.a: "Menacez tout le monde et dites-leur d'arrêter leurs raids"
+ inv_pop_events.2.b: "Je m'en fiche... que le plus fort prenne ce qu'il veut"
+ 
+ inv_pop_events.3.t: "Conflits entre citoyens et hommes libres"
+ inv_pop_events.3.desc: "Il y a des tensions de classe à [pop_province.GetName] qui s'aggravent de plus en plus - il semble que les citoyens et les hommes libres de cette région ne s'entendent pas et se battent publiquement.\n\nÉvénements politiques, festivals religieux, compétitions sportives - tout est devenu un catalyseur d'émeutes, avec beaucoup de morts des deux côtés. Il est clair que nous ne pouvons plus ignorer cela."
+ inv_pop_events.3.a: "Je crains qu'il n'y ait pas le temps de s'en occuper pour le moment"
+ inv_pop_events.3.b: "Envoyez nos soldats pour rétablir l'ordre à [pop_province.GetName]"
+ 
+ inv_pop_events.4.t: "Les nobles exigent de la soie"
+ inv_pop_events.4.desc: "Les habitants de [pop_province.GetName], connus pour leur richesse et leur luxe extravagants, exigent que nous commencions à apporter des textiles fins, comme la soie, sur leurs marchés.\n\nIls se moquent de la rareté de ce tissu léger, de son prix élevé et de la difficulté à l'acquérir - il semble que seule leur cupidité compte."
+ inv_pop_events.4.a: "Nous construirons un nouveau quartier de luxe pour l'importation de la soie"
+ inv_pop_events.4.b: "Qui peut prédire ce que les routes commerciales nous apportent ? Certainement pas moi"
+ 
+ inv_pop_events.5.t: "Un noble assassiné brutalement"
+ inv_pop_events.5.desc: "[ROOT.GetCountry.GetRuler.GetName], une rumeur circule à [pop_province.GetName] que vous devriez connaître. Nous entendons dire qu'un des nobles locaux a été attiré au carrefour par une promesse inconnue, où il a ensuite été battu à mort avec des briques.\nQuoi que nous fassions, le noble est mort, mais nous pourrions peut-être envoyer des gardes au carrefour pour éviter que cela ne se reproduise."
+ inv_pop_events.5.a: "Nous ne pouvons pas nous le permettre - quelle demande ridicule !"
+ inv_pop_events.5.b: "La sécurité de notre peuple n'a pas de prix - faites ce qu'il faut"
+ 
+ inv_pop_events.6.t: "Nobles infâmes tuent un propriétaire terrien"
+ inv_pop_events.6.desc: "Terribles nouvelles de [pop_province.GetName] - il semble qu'une cabale de nobles cupides ait assassiné un propriétaire terrien local qui avait refusé de leur vendre sa propriété.\n\nUn crime si flagrant et ouvert mérite une punition, mais les nobles ont anticipé le retour de bâton inévitable en envoyant un pot-de-vin à [ROOT.GetCountry.GetCapital.GetName] dans l'espoir que nous fermions les yeux."
+ inv_pop_events.6.a: "Combien ont-ils envoyé ? C'est une belle somme..."
+ inv_pop_events.6.b: "Envoyez des soldats pour saisir les terres et les mettre aux enchères"
+ 
+ inv_pop_events.7.t: "Les nobles contribuent à la recherche"
+ inv_pop_events.7.desc.1: "La noblesse de [pop_province.GetName] compte parmi les membres les plus éduqués et raffinés de notre société, avec beaucoup d'historiens et de philosophes issus de leurs familles d'élite. Grâce à un surplus de papyrus dans la région, nous pourrions financer les nobles pour augmenter leur recherche civile si nous le souhaitons - ils seraient heureux de faire ce travail, mais auront besoin de fonds."
+ inv_pop_events.7.desc.2: "La noblesse de [pop_province.GetName] compte parmi les membres les plus éduqués et raffinés de notre société, avec beaucoup d'historiens et de philosophes issus de leurs familles d'élite. Grâce à un surplus de papyrus dans la région, nous pourrions financer les nobles pour augmenter leur recherche militaire si nous le souhaitons - ils seraient heureux de faire ce travail, mais auront besoin de fonds."
+ inv_pop_events.7.desc.3: "La noblesse de [pop_province.GetName] compte parmi les membres les plus éduqués et raffinés de notre société, avec beaucoup d'historiens et de philosophes issus de leurs familles d'élite. Grâce à un surplus de papyrus dans la région, nous pourrions financer les nobles pour augmenter leur recherche oratoire si nous le souhaitons - ils seraient heureux de faire ce travail, mais auront besoin de fonds."
+ inv_pop_events.7.desc.4: "La noblesse de [pop_province.GetName] compte parmi les membres les plus éduqués et raffinés de notre société, avec beaucoup d'historiens et de philosophes issus de leurs familles d'élite. Grâce à un surplus de papyrus dans la région, nous pourrions financer les nobles pour augmenter leur recherche religieuse si nous le souhaitons - ils seraient heureux de faire ce travail, mais auront besoin de fonds."
+ inv_pop_events.7.a: "Nous ne pouvons pas nous le permettre pour le moment"
+ inv_pop_events.7.b: "Bien sûr ! Nous sommes heureux de financer cela"
+ 
+ inv_pop_events.8.t: "Esclaves tués injustement"
+ inv_pop_events.8.desc: "Nous avons reçu un rapport de [pop_province.GetName] très inquiétant. Il semble que les vastes domaines là-bas aient la réputation d'être des lieux de cruauté et de misère, où les esclaves sont travaillés à mort et torturés s'ils ne remplissent pas leurs quotas quotidiens, qui sont presque impossibles pour une seule personne.\n\nLes habitants de [ROOT.GetCountry.GetCapital.GetName], touchés par ces terribles histoires, exigent qu'on agisse."
+ inv_pop_events.8.a: "Que pouvons-nous faire réellement ? Rien."
+ inv_pop_events.8.b: "Nous devons envoyer des soldats à [pop_province.GetName] pour rétablir l'ordre"
+ 
+ inv_pop_events.9.t: "Nobles calomnieux"
+ inv_pop_events.9.desc: "Nous avons reçu des rapports selon lesquels circulent des rumeurs diffamatoires à propos de [SCOPE.GetRootScope.GetCountry.GetRuler.GetName], apparemment originaires de [pop_province.GetName] - il semble que certains nobles locaux se plaisent à inventer de nouvelles insultes pour le [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetRulerTitle]."
+ inv_pop_events.9.a: "Qu'ils parlent, cela m'est égal..."
+ inv_pop_events.9.b: "Envoyez nos agents dans la région pour les intimider et les faire taire"
+ 
+ inv_pop_events.10.t: "Les citoyens demandent plus de libertés"
+ inv_pop_events.10.desc: "[ROOT.GetCountry.GetRuler.GetName] a reçu une pétition des habitants de [pop_province.GetName] se plaignant de notre main lourde dans leur région.\n\nIls demandent, sur un ton quelque peu inapproprié, plus de libertés locales, espérant que les choses reviendront comme avant notre arrivée."
+ inv_pop_events.10.a: "Ils n'auront rien"
+ inv_pop_events.10.b: "Libérez certains locaux de leurs obligations militaires"
+ 
+ local_unrest_generic_unrest: "Troubles généraux"
+ desc_local_unrest_generic_unrest: "À cause d'événements locaux, cette région subit des troubles généraux et la population est mécontente."
+ local_unrest_heavy_unrest: "Troubles importants"
+ desc_local_unrest_heavy_unrest: "À cause d'événements locaux, cette région subit de graves troubles et la population est très mécontente."
+ local_noble_research_boost: "Chercheurs nobles"
+ desc_local_noble_research_boost: "Les nobles de cette région profitent du surplus de papyrus pour enregistrer les résultats de leurs recherches scientifiques."
+ silk_quarter_merchant_modifier: "Infrastructure étendue"
+ desc_silk_quarter_merchant_modifier: "En raison de la demande de soie dans nos villes, nous avons étendu l'infrastructure locale pour satisfaire les souhaits des habitants."

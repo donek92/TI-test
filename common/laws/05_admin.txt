@@ -1,0 +1,209 @@
+﻿administration_laws_rom = {
+	potential= {
+		tag = ROM
+	}
+	administration_law_1_rom = { #Consular imperium
+		modifier = {
+			governor_loyalty = -10
+			monthly_governor_wage = -0.2
+			global_monthly_state_loyalty = -0.05
+		}
+		allow = {
+			rank <= local_power
+		}
+	}
+	administration_law_2_rom = { #praetors
+		modifier = {
+			governor_loyalty = 10
+			global_unrest = -2
+			change_governor_policy_cost_modifier = 1
+		}
+		allow = {
+			rank >= local_power
+		}
+	}
+	administration_law_3_rom = { #procunlus amd propraters
+		modifier = {
+			monthly_corruption = 0.03
+			global_monthly_state_loyalty = 0.04
+			governor_loyalty = 5
+		}
+		allow = {
+			civic_tech > 5
+		}
+	}
+	administration_law_4_rom = { #lex provincia
+		modifier = {
+			global_monthly_state_loyalty = 0.06
+			global_tax_modifier = -0.1
+			governor_loyalty = 10
+		}
+		allow = {
+			rank >= great_power
+			civic_tech > 8
+		}
+	}
+	administration_law_5_rom = { #Military oversight
+		modifier = {
+			global_unrest = -5
+			monthly_tyranny = 0.1
+			army_maintenance_cost = 0.1
+		}
+		allow = {
+			or = {
+				has_law = administration_law_3_rom
+				has_law = administration_law_4_rom
+			}
+			has_legion_trigger = yes
+		}
+	}
+}
+monarchy_contract_law = {
+	potential = {
+		is_chinese_trigger = no
+		is_tribal = no
+		not = {
+			tag = ROM
+		}
+	}
+	no_contract_law = { 
+		modifier = {
+			monthly_governor_wage = -0.2
+			global_monthly_state_loyalty = -0.05
+			governor_loyalty = -5
+		}
+	}
+	trusted_beyond_measure = {
+		modifier = {
+			governor_loyalty = 5
+			change_governor_policy_cost_modifier = 1
+			
+		}
+	}
+	centralized_bureaucracy = {
+		allow = {
+			civic_tech >= 4
+		}
+		modifier = {
+			change_governor_policy_cost_modifier = -0.5
+			global_monthly_state_loyalty = 0.04
+			global_tax_modifier = -0.1
+		}
+	}
+	public_notaries_law = { #public notaries
+		modifier = {
+			global_tax_modifier = -0.2
+			global_monthly_state_loyalty = 0.08
+			governor_loyalty = 10
+		}
+		allow = {
+			invention = civic_gov_inv_1
+		}
+	}
+	vast_bureaucracy = { 
+		modifier = {
+			monthly_tyranny = 0.1
+			global_unrest = -5
+			army_maintenance_cost = 0.1
+		}
+		allow = {
+			or = {
+				invention = tyranny_inv_2
+				invention = polycentric_administration_inv
+			}
+			civic_tech >= 15
+			has_legion_trigger = yes
+		}
+	}
+}
+chinese_administration_laws = {
+	potential = {
+		is_chinese_trigger = yes
+		is_tribal = no
+	}
+	
+	zhou_feudalism = { 
+		modifier = {
+			governor_loyalty  = -5
+			monthly_political_influence = 0.1
+			global_nobles_happyness = 0.08
+		}
+	}
+	county_and_commandery_law = {
+		modifier = {
+			global_nobles_happyness = -0.08
+			global_monthly_state_loyalty = 0.04
+			global_tax_modifier = -0.05
+		}
+	}
+	qin_administration = {
+		allow = {
+			tag = QIN
+		}
+		modifier = {
+			monthly_tyranny = 0.1
+			monthly_corruption = -0.03
+			global_unrest = -5
+		}
+	}
+	han_inspectors = { #
+		modifier = {
+			governor_loyalty = 10
+			monthly_corruption = -0.05
+			global_tax_modifier = -0.1
+		}
+		allow = {
+			civic_tech >= 10
+		}
+	}
+	legendary_bureaucracy  = { 
+		modifier = {
+			global_monthly_state_loyalty = 0.1
+			monthly_corruption = -0.05
+			global_tax_modifier = -0.2
+		}
+		allow = {
+			civic_tech > 20
+		}
+	}
+}
+tribal_centralized_laws = {
+	potential = {
+		is_tribal = yes
+	}
+		
+	tribal_centralized_laws_1 = { 
+		modifier = {
+			global_unrest = 1
+			global_monthly_state_loyalty = -0.05
+		}
+	}
+
+	tribal_centralized_laws_2 = {
+		modifier = {
+			global_unrest = -2
+			monthly_centralization = -0.05
+			governor_loyalty = -5
+		}
+	}
+	trusted_envoys_law = {
+		allow = {
+			centralization >= 10
+		}
+		modifier = {
+			monthly_centralization = 0.05
+			monthly_political_influence_modifier = -0.2
+			global_monthly_state_loyalty = 0.05
+		}
+	}
+	tribal_centralized_laws_3 = {
+		allow = {
+			centralization >= 30
+		}
+		modifier = {
+			global_pop_promotion_speed = 2
+			global_unrest = -2
+			monthly_centralization = 0.1
+		}
+	}
+}

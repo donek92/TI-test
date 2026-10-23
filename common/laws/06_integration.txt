@@ -1,0 +1,272 @@
+﻿republic_integration_laws = { 
+	potential = {
+		is_republic = yes
+		is_chinese_trigger = no
+		nor = {
+			tag = ROM
+		}
+	}
+	republican_integration_1 = { #war council/rite of conqyest
+		modifier = {
+			agressive_expansion_impact = -0.05
+			tribute_income_modifier = 0.1
+		}
+		allow  = {
+			rank <= regional_power
+		}
+	}
+	
+	republican_integration_2 = { #ad hoc  integration
+		allow  = {
+			civic_tech >= 4
+		}
+		modifier = {
+			agressive_expansion_monthly_change = -0.02
+			diplomatic_relations = 1
+			integrate_speed = 0.1
+		}
+		allow  = {
+			rank = regional_power
+		}
+	}
+	republican_integration_3 = { #rights for foeginers
+		allow  = {
+			rank >= regional_power
+			civic_tech >= 10
+			or = {
+				invention = civic_foreign_2b
+				invention = happiness_for_wrong_culture_modifier_inv_2
+			}
+		}
+		modifier = {
+			happiness_for_wrong_culture_group_modifier = 0.06
+			agressive_expansion_monthly_decay = 0.05
+		}
+	}
+	republican_integration_4 = { #sclient states
+		allow  = {
+			civic_tech >= 12
+		}
+		modifier = {
+			diplomatic_relations = 2
+			integrate_speed = -2
+			diplomatic_reputation = 2
+		}
+	}
+	republican_integration_5 = { #stable integration
+		allow = {
+			civic_tech >= 15
+		}
+		modifier = {
+			agressive_expansion_monthly_decay = 0.15
+			stability_monthly_change = -0.05
+			integrate_speed = 1
+		}
+	}
+}
+republic_integration_laws_rom = { # Integration Laws
+	potential = {
+		is_republic = yes
+		tag = ROM
+	}
+	integration_law_1_rom = { #Rerum Repetito
+		modifier = {
+			agressive_expansion_impact = -0.05
+			global_pop_assimilation_speed_modifier = 0.03
+		}
+		allow  = {
+			rank <= regional_power
+		}
+	}
+	subject_law_1_rom = { #rights of socii
+		modifier = {
+			subject_pays_feudatory_cost_modifier = 0.1
+			happiness_for_wrong_culture_modifier = 0.05
+			subject_loyalty = 15
+		}
+	}
+	integration_law_3_rom = {#peregrini
+		allow  = {
+			civic_tech >= 10
+			rank >= major_power
+		}
+		modifier = {
+			happiness_for_wrong_culture_group_modifier = 0.05
+			agressive_expansion_monthly_decay = 0.02
+			global_freemen_output = 0.02
+		}
+		
+	}
+	integration_law_4_rom = {#client states
+		allow  = {
+			civic_tech >= 14
+			rank >= major_power
+		}
+		#inlocks most governor abilities?
+		modifier = {
+			tribute_income_modifier = 0.2
+			diplomatic_relations = 2
+		}
+	}
+	integration_law_5_rom = { #Agusutan reform
+		allow  = {
+			civic_tech >= 18
+			rank >= major_power
+		}
+		modifier = {
+			integrate_speed = 0.3
+			agressive_expansion_monthly_decay = -0.15
+		}
+	}
+}
+monarchy_subject_laws = { 
+	potential = {
+		is_monarchy = yes
+		is_chinese_trigger = no
+	}
+	humility_status_law = { 
+		allow = {
+			rank <= local_power
+		}
+		modifier = {
+			global_freemen_happyness = happiness_large_svalue
+			agressive_expansion_impact = -0.05
+			loyalty_to_overlord = 10
+		}
+	}
+	autonomous_satrapies = {
+		modifier = {
+			loyalty_to_overlord = -20
+			diplomatic_relations = 2
+			subject_loyalty = 15
+			integrate_speed = -2
+		}
+	}
+	foreign_law_for_minorities = { #rights for foeginers
+		allow  = {
+			civic_tech >= 6
+			or = {
+				invention = happiness_for_wrong_culture_modifier_inv_2
+			}
+		}
+		modifier = {
+			happiness_for_wrong_culture_group_modifier = 0.05
+			agressive_expansion_monthly_decay = 0.05
+		}
+	}
+	king_of_kings = {
+		allow = {
+			rank = major_power 
+		}
+		modifier = {
+			diplomatic_relations = 2
+			agressive_expansion_monthly_change = -0.06
+		}
+	}
+	imperial_ambition = { #bureaucratic integration
+		allow = {
+			civic_tech >= 15
+			rank = great_power
+			has_law = royal_bureaucracy
+		}
+		modifier = {
+			agressive_expansion_monthly_decay = -0.15
+			stability_monthly_change = -0.05
+			integrate_speed = 0.3
+		}
+	}
+}
+chinese_subject_laws = { #ceremonial heritage
+	potential = {
+		is_chinese_trigger = yes
+		is_tribal = no
+	}
+	zhou_fealty ={
+		modifier = {
+			loyalty_to_overlord = 10
+			subject_loyalty = 10
+		}
+	}
+	chinese_warlord_integration = { 
+		allow = {
+			rank <= local_power
+		}
+		modifier = {
+			agressive_expansion_impact = -0.1
+		}
+	}
+	qin_ambitions = {
+		modifier = {
+			agressive_expansion_monthly_decay = 0.05
+			agressive_expansion_monthly_change = -0.033
+		}
+		allow = {
+			rank >= regional_power
+			not = {
+				rank >= great_power
+			}
+		}
+	}
+	school_of_diplomacy = { #rights for foeginers
+		allow  = {
+			rank >= regional_power
+			not = {
+				has_law = subject_mandate_of_heaven
+			}
+		}
+		modifier = {
+			diplomatic_relations = 1
+			happiness_for_wrong_culture_modifier = 0.06
+			agressive_expansion_impact = 0.1
+		}
+	}
+	subject_mandate_of_heaven = { #bureaucratic integration
+		allow = {
+			rank = great_power
+		}
+		modifier = {
+			agressive_expansion_monthly_decay = 0.1
+			integrate_speed = -0.33
+			subject_pays_tributary_cost_modifier = 0.33
+		}
+	}
+}
+tribal_foreign_policy_laws = {
+	potential = {
+		is_tribal = yes
+	}
+	
+	tribal_identity_law = {
+		modifier = {
+			war_score_cost = 1
+			improve_relation_cost_modifier = -0.5
+		}
+	}
+	
+	hearthlaw = {
+		modifier = {
+			diplomatic_relations = 1
+			stability_monthly_change = 0.15
+		}
+	}
+	
+	tribal_sumptuary_law = {
+		allow = {
+
+		}
+		modifier = {
+			discipline = 0.03
+			diplomatic_reputation = 1
+		}
+	}
+	declaration_of_hegemony_law = {
+		allow = {
+			#invention = 
+		}
+		modifier = {
+			war_no_cb_cost_modifier = -2
+			land_morale_modifier = 0.05
+			global_pop_assimilation_speed_modifier = 0.2
+		}
+	}
+}

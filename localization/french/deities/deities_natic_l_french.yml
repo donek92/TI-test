@@ -1,0 +1,129 @@
+﻿l_french:
+
+#Universal Deities, made with proto-monic
+ deity_kroon:0 "$omen_kroon$"
+ omen_kroon:0 "Kro'on Nat"
+ omen_kroon_desc:0 "Kro'on Nat, le Nat des rivières. Les rivières soutiennent la vie et transmettent l'essence du Nat à tous les êtres vivants. Que Kro'on Nat accorde à nos animaux, à nos récoltes et à nous-mêmes l'élément vital qu'est l'eau."
+
+ deity_tii:0 "$omen_tii$"
+ omen_tii:0 "Ti'i Nat"
+ omen_tii_desc:0 "Ti'i Nat, le Nat du sol et de la terre sur laquelle nous nous tenons. La terre nourrit nos plantes et leurs Nats. Que Ti'i Nat fasse prospérer nos cultures et les rende fertiles."
+
+ deity_kuntuu:0 "$omen_kuntuu$"
+ omen_kuntuu:0 "Kuntu'u Nat"
+ omen_kuntuu_desc:0 "Kuntu'u Nat, le Nat de la Lune. La grande lumière du ciel nocturne, toujours changeante mais constante, nous permettant de suivre le temps. Que Kuntu'u Nat nous guide."
+
+ deity_gerger:0 "$omen_gerger$"
+ omen_gerger:0 "Ger-Ger Nat"
+ omen_gerger_desc:0 "Ger-Ger Nat, le Nat du tonnerre. Un éclair suivi du puissant fracas de Ger-Ger. Que Ger-Ger Nat rugisse et fasse trembler nos ennemis."
+
+ deity_chuu:0 "$omen_chuu$"
+ omen_chuu:0 "Chu'u Nat"
+ omen_chuu_desc:0 "Chu'u Nat, le Nat des arbres. Les arbres dont nous bâtissons nos maisons et nos outils. Les arbres qui peuplent nos forêts et nos jungles. Que Chu'u Nat nous donne sa force."
+
+ deity_puur:0 "$omen_puur$"
+ omen_puur:0 "Pu'ur Nat"
+ omen_puur_desc:0 "Pu'ur Nat, le Nat des colombes. La colombe délicate et gracieuse vole au-dessus de nos têtes. Soyons bénis par Pu'ur Nat afin de traverser notre vie avec autant de grâce."
+
+ deity_sloon:0 "$omen_sloon$"
+ omen_sloon:0 "Slo'on Nat"
+ omen_sloon_desc:0 "Slo'on Nat, le Nat des hommes qui se dressent comme des montagnes. Que nous atteignions les cieux et les sommets, et soyons honorés par Slo'on Nat."
+
+ deity_thar:0 "$omen_thar$"
+ omen_thar:0 "Thar Nat"
+ omen_thar_desc:0 "Thar Nat, le Nat de l'or. L'or enrichit notre société et nous permet de créer beauté et bijoux. Que nous recevions l'abondance de Thar Nat."
+
+#Specific Geography
+ deity_irrawaddy:0 "$omen_irrawaddy$" #Exclusif au groupe Pu birman
+ omen_irrawaddy:0 "Irrawaddy Nat"
+ omen_irrawaddy_desc:0 "Irrawaddy Nat, le Nat du grand fleuve Irrawaddy. L'Irrawaddy est puissant, le plus grand fleuve de la région, et emplit la vallée de Nat et de vie."
+
+#Pu group
+ deity_kujii:0 "$omen_kujii$"
+ omen_kujii:0 "Kuji'i Nat"
+ omen_kujii_desc:0 "Kuji'i Nat, le Nat des arbres Upas. L'arbre Upas est dangereux. Nul ne peut en gravir le sommet sans tomber raide mort. Que Kuji'i Nat nous protège de nos ennemis."
+
+#Bon-Natic
+ deity_mahagiri:0 "$omen_mahagiri$"
+ omen_mahagiri:0 "Min Mahagiri"
+ omen_mahagiri_desc:0 "Le Nat suprême de Min Mahagiri. De son vivant, il était connu sous le nom de Muang Tintdei. On disait qu'il était si fort qu'il pouvait briser une défense d'éléphant. Bien que des récits plus détaillés aient été racontés des siècles plus tard, il est probable que la forme originelle de Min Mahagiri comme Nat représentait simplement une personne d'une grande force. Il deviendra plus tard le co-dirigeant du Panthéon des 37 Nat, mais à cette époque, il fait seulement partie du Culte des 37 Nat. Il est important de noter que ces figures n'étaient pas encore considérées comme des dieux, mais plutôt comme des esprits, appelés Nats."
+
+ deity_shwemyethna:0 "$omen_shwemyethna$"
+ omen_shwemyethna:0 "Shwemyethna"
+ omen_shwemyethna_desc:0 "Le Nat de la princesse dorée Shwemyethna, également sœur de Min Mahagiri, fut co-dirigeante avec son frère dans le Panthéon des 37 Nat qui émergera des siècles plus tard. Cependant, à cette époque, elle était probablement simplement le Nat d'une femme royale vénérée. Pour l'instant, elle fait partie du Culte des 37 Nat avec son frère. Il est important de noter que ces figures n'étaient pas encore considérées comme des divinités, mais plutôt comme des esprits, appelés Nats."
+
+ deity_shwenabay:0 "$omen_shwenabay$"
+ omen_shwenabay:0 "Shwenabay"
+ omen_shwenabay_desc:0 "Fille d'un dragon d'eau, Shwenabay était la sœur-reine de Shwemyethna et la compagne de Muang Tintdei. Elle mourut d'une crise cardiaque en croyant que Min Mahagiri était mort. Les détails de cette histoire ont probablement été élaborés plus tard, à mesure que le Culte des 37 Nat se transformait peu à peu en panthéon. Il est probable que Shwenabay était à l'origine un Nat d'une rivière ou d'un plan d'eau, peut-être mêlé à un Nat ancêtre. À cette époque, elle n'était qu'un Nat, et non encore une déesse. Il est important de noter que ces figures n'étaient pas encore des divinités, mais perçues comme des esprits, autrement dit des Nats."
+
+ deity_thirty_seven:0 "$omen_thirty_seven$"
+ omen_thirty_seven:0 "Pi'ichewaz Tmpah Nat"
+ omen_thirty_seven_desc:0 "Pi'ichewaz Tmpah Nat signifie approximativement « le Culte des Trente-Sept Nat ». Ce culte religieux pré-panthonique fut introduit par les migrations Pyu, mais était aussi pratiqué par les peuples Mon du sud. Le culte évoluera finalement en véritable panthéon, et sera désormais désigné sous le nom de « Panthéon des 37 Nat », mais cela n'arrivera qu'au VIIIe siècle de notre ère. Pour l'heure, le Culte des Trente-Sept Nat existe comme une voie médiane entre croyance polythéiste et animiste."
+
+ deity_tuangmagyishinnyo:0 "$omen_tuangmagyishinnyo$"
+ omen_tuangmagyishinnyo:0 "Tuang Magyi Shwenyo"
+ omen_tuangmagyishinnyo_desc:0 "Tuang Magyi Shwenyo était l'un des deux fils conçus par Shwenabay et Maung Tintdei. Comme son père, Tuang Magyi Shwenyo, avec son frère, était très fort. Cela inspira la crainte au gouverneur local, qui les piégea pour qu'ils s'affrontent. Le combat entraîna d'abord la mort du frère cadet, puis celle de Tuang Magyi Shwenyo. Les détails de cette histoire ont probablement été élaborés plus tard, à mesure que le Culte des 37 Nat se transformait peu à peu en panthéon. Il est important de noter que ces figures n'étaient pas encore des divinités, mais perçues comme des esprits, autrement dit des Nats."
+
+ deity_minshinmyaukphyu:0 "$omen_minshinmyaukphyu$"
+ omen_minshinmyaukphyu:0 "Myauk Min Shwenphyu"
+ omen_minshinmyaukphyu_desc:0 "Myauk Min Shwenphyu était l'un des deux fils conçus par Shwenabay et Maung Tintdei. Comme son père, Myauk Min Shwenphyu, avec son frère, était très fort. Cela inspira la crainte au gouverneur local, qui les piégea pour qu'ils s'affrontent. Le combat entraîna d'abord la mort de Myauk Min Shwenphyu, puis celle du frère aîné. Les détails de cette histoire ont probablement été élaborés plus tard, à mesure que le Culte des 37 Nat se transformait peu à peu en panthéon. Il est important de noter que ces figures n'étaient pas encore des divinités, mais perçues comme des esprits, autrement dit des Nats."
+
+ deity_maungtintdei:0 "$omen_maungtintdei$"
+ omen_maungtintdei:0 "Maung Tintdei"
+ omen_maungtintdei_desc:0 "Maung Tintdei était la forme originelle de Min Mahagiri. Il était considéré comme incroyablement fort, au point que le roi du pays le voyait comme une menace. Le roi épousa sa sœur, Shwemyethna, et invita Maung Tintdei à sa cour. Là, il fut trahi et noyé. Sa sœur, bouleversée par la trahison et la mort de son frère, se donna la mort à son tour. Maung Tintdei renaquit en tant que Nat Min Mahagiri. Les détails de cette histoire ont probablement été élaborés plus tard, à mesure que le Culte des 37 Nat se transformait peu à peu en panthéon. Il est important de noter que ces figures n'étaient pas encore des divinités, mais perçues comme des esprits, autrement dit des Nats."
+
+ deity_shwemhtwehla:0 "$omen_shwemhtwehla$"
+ omen_shwemhtwehla:0 "Shwenhetwehla Thonepanhla"
+ omen_shwemhtwehla_desc:0 "Shwenhetwehla Thonepanhla était la sœur cadette de Maung Tintdei. À la mort de son frère aîné et de sa sœur aînée, elle s'enfuit avec sa famille auprès du roi de Rhakine. Là, Shwenhetwehla fut adoptée par la famille royale et mariée à un autre roi. Elle mourut finalement d'une forte fièvre et fut dès lors vénérée comme un Nat. Les détails de cette histoire ont probablement été élaborés plus tard, à mesure que le Culte des 37 Nat se transformait peu à peu en panthéon. Il est important de noter que ces figures n'étaient pas encore des divinités, mais perçues comme des esprits, autrement dit des Nats."
+
+ deity_oasis_nat:0 "$omen_oasis_nat$"
+ omen_oasis_nat:0 "Hekon Nat"
+ omen_oasis_nat_desc:0 "Notre capitale est entourée par le Nat de l'Oasis, que Hekon Nat bénisse nos cités."
+
+ deity_jungle_nat:0 "$omen_jungle_nat$"
+ omen_jungle_nat:0 "Tam Nat"
+ omen_jungle_nat_desc:0 "Notre capitale est entourée par le Nat de la Jungle, que Tam Nat bénisse nos cités."
+
+ deity_forest_nat:0 "$omen_forest_nat$"
+ omen_forest_nat:0 "Chik'o'o Nat"
+ omen_forest_nat_desc:0 "Notre capitale est entourée par le Nat de la Forêt, que Chik'o'o Nat bénisse nos cités."
+
+ deity_farmland_nat:0 "$omen_farmland_nat$"
+ omen_farmland_nat:0 "P'kow Nat"
+ omen_farmland_nat_desc:0 "Notre capitale est entourée par le Nat des Terres agricoles, que P'kow Nat bénisse nos cités."
+
+ deity_marsh_nat:0 "$omen_marsh_nat$"
+ omen_marsh_nat:0 "K'sok Nat"
+ omen_marsh_nat_desc:0 "Notre capitale est entourée par le Nat des Marais, que K'sok Nat bénisse nos cités."
+
+ deity_desert_nat:0 "$omen_desert_nat$"
+ omen_desert_nat:0 "Pimtuul Nat"
+ omen_desert_nat_desc:0 "Notre capitale est entourée par le Nat du Désert, que Pimtuul Nat bénisse nos cités."
+
+ deity_hills_nat:0 "$omen_hills_nat$"
+ omen_hills_nat:0 "Bna'a Nat"
+ omen_hills_nat_desc:0 "Notre capitale est entourée par le Nat des Collines, que Bna'a Nat bénisse nos cités."
+
+ deity_mountain_nat:0 "$omen_mountain_nat$"
+ omen_mountain_nat:0 "Trè Nat"
+ omen_mountain_nat_desc:0 "Notre capitale est entourée par le Nat de la Montagne, que Trè Nat bénisse nos cités."
+
+ deity_plains_nat:0 "$omen_plains_nat$"
+ omen_plains_nat:0 "Kunkok Nat"
+ omen_plains_nat_desc:0 "Notre capitale est entourée par le Nat des Plaines, que Kunkok Nat bénisse nos cités."
+
+ deity_steppes_nat:0 "$omen_steppes_nat$"
+ omen_steppes_nat:0 "K'seh Nat"
+ omen_steppes_nat_desc:0 "Notre capitale est entourée par le Nat de la Steppe, que K'seh Nat bénisse nos cités."
+
+ deity_flood_plain_nat:0 "$omen_flood_plain_nat$"
+ omen_flood_plain_nat:0 "Diin Nat"
+ omen_flood_plain_nat_desc:0 "Notre capitale est entourée par le Nat de la Plaine Inondable, que Diin Nat bénisse nos cités."
+
+ deity_desert_hills_nat:0 "$omen_desert_hills_nat$"
+ omen_desert_hills_nat:0 "Bnapimtuul Nat"
+ omen_desert_hills_nat_desc:0 "Notre capitale est entourée par le Nat des Collines désertiques, que Bnapimtuul Nat bénisse nos cités."
+
+ deity_kingdom_nat:0 "$omen_kingdom_nat$"
+ omen_kingdom_nat:0 "Nikem Nat"
+ omen_kingdom_nat_desc:0 "Nikem Nat, le Nat du Royaume et de l'Empire, qui protège les frontières et convoite la guerre, s'est révélé au peuple."

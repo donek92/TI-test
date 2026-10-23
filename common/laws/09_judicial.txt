@@ -1,0 +1,186 @@
+﻿judicial_laws_rep = {
+	potential = {
+		or = {
+			is_republic = yes
+		}
+		is_chinese_trigger = no
+		nor = {
+			tag = ROM
+		}
+	}
+	judicial_law_2_rep = {  #official judges
+		modifier = { 
+			global_citizen_happyness = 0.02
+			court_building_cost = -0.1
+		}
+		allow = {
+			oratory_tech >= 2
+
+		}
+	}
+	judicial_law_3_rep = { # rights of appeal
+		modifier = { 
+			global_citizen_happyness = 0.06
+			monthly_corruption = -0.03
+		}
+		allow = {
+			oratory_tech >= 10
+
+		}
+	}
+	judicial_law_5_rep = {  #established law code
+		modifier = { 
+			happiness_for_same_culture_modifier = 0.02
+			monthly_tyranny = -0.03
+		}
+		allow = {
+			oratory_tech >= 20
+
+		}
+	}
+}
+judicial_laws_rom = {
+	potential = {
+		or = {
+			is_republic = yes
+		}
+		tag = ROM
+	}
+	lex_aternia = {  #lex aternia tarperiaa #set maximumfines
+		modifier = { 
+			global_tax_modifier = 0.05
+			monthly_corruption = -0.02
+		}
+	}
+	lex_porcia = { #lex porcia rights of appea
+		modifier = { 
+			global_freemen_happyness = 0.05
+			monthly_tyranny = -0.033
+		}
+		allow = {
+			oratory_tech >= 8
+
+		}
+	}
+	judicial_law_5_rom = {  #lex aurelia jury reform
+		modifier = { 
+			happiness_for_same_culture_modifier = 0.02
+			stability_monthly_change = 0.02
+		}
+		allow = {
+			oratory_tech >= 14
+
+		}
+	}
+}
+judicial_laws_mon = {
+	potential = {
+		is_monarchy = yes
+		is_chinese_trigger = no
+	}
+
+	established_courts_for_landholders = {  #establish courts for landowners
+		modifier = { 
+			global_freemen_happyness = 0.04
+			court_building_cost = -0.05
+		}
+		allow = {
+			oratory_tech >= 10
+
+		}
+	}
+	judicial_law_4_mon = {  #right of appeal
+		modifier = { 
+			global_citizen_happyness = 0.04
+			monthly_tyranny = -0.02
+		}
+		allow = {
+			oratory_tech >= 12
+
+		}
+	}
+	judicial_law_5_mon = {  #standardized code
+		modifier = { 
+			monthly_corruption = -0.02
+			happiness_for_same_culture_modifier = 0.02
+		}
+		allow = {
+			oratory_tech >= 16
+
+		}
+	}
+}
+chinese_judicial_laws = {
+	potential = {
+		is_chinese_trigger = yes
+		is_tribal = no
+	}
+
+	five_punishments_law = {  #Laws were developed by government officials to regulate ancient Chinese society. The laws of the aristocratic societies of early China put substantial emphasis on maintaining distinct ranks and orders amongst the nobles, in addition to controlling the populace. As a result, lǐ (禮), meaning "ritual" or "etiquette," governed the conduct of the nobles, whilst xíng (刑), the rules of punishment, governed the commoners and slaves.
+		modifier = { 
+			global_nobles_happyness = 0.04
+			global_freemen_happyness = -0.04
+		}
+	}
+	legalist_law = {  
+		modifier = { 
+			global_citizen_happyness = 0.04
+			global_unrest = -1
+		}
+		allow = {
+			civic_tech > 4
+		}
+	}
+	han_judicial_law = {  #right of appeal
+		modifier = { 
+			global_population_happiness = 0.02
+			monthly_tyranny = -0.04
+		}
+		allow = {
+			oratory_tech > 8
+		}
+	}
+}
+tribal_centralization_law = {
+	potential = {
+		is_tribal = yes
+	}
+	
+	anarchic_society_law_tribal = {
+		
+	}
+	
+	property_ownership_law_tribal = {
+		allow = {
+			centralization >= 0
+		}
+		modifier = {
+			monthly_centralization = 0.05
+			global_tribesmen_output = output_huge_svalue
+			global_unrest = -1
+		}
+	}
+	
+	right_of_might_law_tribal = {
+		allow = {
+			centralization <= -10
+		}
+		modifier = {
+			monthly_centralization = -0.1
+			global_tax_modifier = 0.2
+			global_unrest = 1
+
+		}
+	}
+
+	tribal_law_code = { 
+		allow = {
+			centralization > 50
+		}
+		modifier = {
+			monthly_centralization = 0.1
+			global_tax_modifier = 0.1
+			stability_monthly_change = 0.02
+		}
+	}
+}

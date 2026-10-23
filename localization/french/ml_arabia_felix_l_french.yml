@@ -1,0 +1,106 @@
+﻿l_french:
+ # New Heritages
+ #turdetanian_heritage:0 "Turdetanian Heritage"
+ #turdetanian_heritage_desc:0 "Many centuries ago Tartessos was one of the most important commercial and political centers of Iberia. A heritage that lives on to this day, its heirs are the Turdetanians. A culture created by the mixture of Punic and Native Customs, Turdetanians are one of the most Civilized tribes of Iberia."
+
+ # New Canaanite Deity
+ #deity_babai:0 "$omen_babai$"
+ #omen_babai:0 "Babai"
+ #omen_babai_desc:0 "Babai is the God-Father of Nuragic and Corsian cultures of Corsica and Sardinia. Heavily influenced by Phoenician religion and customs, by this time, his worship is now limited in the Hinterland of the Islands, where indigenous communities continue with their traditions."
+ #deity_mother_goddess_nuragic:0 "$omen_mother_goddess_nuragic$"
+ #omen_mother_goddess_nuragic:0 "Mother Goddess"
+ #omen_mother_goddess_nuragic_desc:0 "The Mother Goddess of the Nuragic and Corsian cultures are related to the Mediterranean Mother Goddesses, acting like the source of all beings. Like Babai, her worship is now limited in the Hinterland of the Islands, waiting to reclaim her land."
+ #deity_sardus_can:0 "$omen_sardus$"
+ #omen_sardus_can:0 "Sardus"
+ #omen_sardus_can_desc:0 "Sardus, sometimes called Sardus Pater by the Hellenics, is the mythical founding hero of the Sardinians. Son of Herakles or Makeris, he lived in Libya until he reunited a big expedition to colonize the island of Ichnusa, later called Sardinia in his honor. He has been associated with the God-Father Babai."
+
+ #New Arabia Felix deities
+ deity_haukim:0 "$omen_haukim$"
+ omen_haukim:0 "Hawkim"
+ omen_haukim_desc:0 "Hawkim est une divinité de la justice vénérée dans le royaume de Qataba. Il est souvent invoqué aux côtés d'Anbay, un autre dieu de la loi."
+
+
+
+ # New Treasures
+
+ #treasure_olcadian_necklace:0 "Olcadian Necklace"
+ #treasure_olcadian_necklace_desc:0 "This necklace used by an Olcadian priestess, made of clay, is decorated with ducks and swans."
+ #treasure_celtiberian_plaques:0 "The Four Plaques"
+ #treasure_celtiberian_plaques_desc:0 "The Four Plaques, written in Celtiberian language and made of Bronze, contain the legal corpus of the Celtiberian People."
+
+ # Tooltips
+ #inherit_tartessia_provinces_tooltip:1 "Any #Y Subject#! provinces required to form Tartessia will be annexed."
+ #tartessia_not_exists:0 "#Y Tartessia#! must NOT exist."
+ #form_tartessia_claims_tooltip:0 "Tartessia will gain Claims on the Region of #Y $baetica_region$#!."
+
+ # New Decision
+ found_elephant_training_complex:0 "Découverte d'un complexe complexe d'entraînement des éléphants"
+ found_elephant_training_complex_desc:0 "Faites-le"
+ found_dromedary_training_complex:0 "Découverte d'un complexe d'entraînement de dromadaires trouvé"
+ found_dromedary_training_complex_desc:0 "Faites-le"
+ found_aryan_cavalry_training_complex:0 "Découverte d'un complexe d'entraînement de cavalerie aryenne"
+ found_aryan_cavalry_training_complex_desc:0 "Faites-le"
+ found_celtic_cavalry_training_complex:0 "Découverte d'un complexe d'entraînement de cavalerie celtique"
+ found_celtic_cavalry_training_complex_desc:0 "Faites-le"
+ found_numidian_cavalry_training_complex:0 "Découverte d'un complexe d'entraînement de cavalerie numide"
+ found_numidian_cavalry_training_complex_desc:0 "Faites-le"
+ expand_incense_route:0 "Développer la Route de l'Encens"
+ expand_incense_route_desc:0 "Strabon a décrit Eudaimon comme le principal port d'escale pour le commerce maritime entre l'Inde et l'Égypte."
+ #form_nubia:0 "Form Nubia"
+ #form_punt:0 "Form Punt"
+ form_aethiopia:0 "Form Aethiopia"
+ form_aethiopia_desc: "Though many of northern origins frame \"Aethiopia\" as any land of those with dark skin south of Egypt, we have decided to embrace that foreign name out of practicality; those who live here know this land of fire very well, so they need not such formalities such as a name for the only place they know.\n\nNamed or not, we are the masters of the Upper Nile regardless, and we have created empire where none were able to before."
+ #form_macrobia:0 "Form Macrobia"
+ AETHIOPIA_NAME:0 "Aethiopia"
+ AETHIOPIA_ADJECTIVE:0 "Aethiopian"
+
+
+ # New Tag
+ SOQ:0 "Soqotra"
+ SOQ_ADJ:0 "soqotrie"
+
+ # Starting Events
+ #iberian_starting_country_events.asa.t:0 "Hastaia"
+ #iberian_starting_country_events.asa.desc:0 "Over the island of Cartare, at the mouth of the [GetProvince('(int32)7665').GetName] lay [GetProvince('(int32)1342').GetName], a prosperous city whose riches come from the commerce of metals and goods with the Punics and fellow Turdetanians. Near the natural mouth of the Lacus and beside the channel that ends just in front of [GetProvince('(int32)1344').GetName], [GetProvince('(int32)1342').GetName] grew as one of the biggest Turtedanian cities with a prosperous market full of life.\n\n[GetCountry('ASA').GetAdjective] aren't only merchants. Looking to enlarge their influence, [GetCountry('LSC').GetName] was subjugated. But this pre-eminence is contested by another Turdetanian state, [GetCountry('CRM').GetName]. To prevent the [GetCountry('CRM').GetAdjective] expansion to the south, [GetCountry('ASA').GetName] has created a League with [GetCountry('GAD').GetName] and [GetCountry('ONU').GetName].\n\nWill this be enough? [GetCountry('ASA').GetName] must prepare itself for an inevitable war if it wants to remain the center of the region."
+ #iberian_starting_country_events.asa.a:0 "Time to make history"
+
+ # Province Modifiers
+ pearl_divers_tylos:0 "Pêcheurs de perles de Tylos"
+ desc_pearl_divers_tylos:0 "Pêcheurs de perles de Tylos"
+ royal_ironworks_ganagaras:0 "Forges royales de Ganagaras"
+ desc_royal_ironworks_ganagaras:0 "Forges royales de Ganagaras"
+ dragonsblood_soqotra:0 "Sang de dragon de Soqotra"
+ desc_dragonsblood_soqotra:0 "Sang de dragon de Soqotra"
+ incense_fields_qana:0 "Champs d'encens de l'Hadhramaout"
+ desc_incense_fields_qana:0 "Champs d'encens de l'Hadramaout"
+ incense_route_hub:0 "Plaque tournante de la route de l'encens"
+ desc_incense_route_hub:0 "Strabon a décrit Eudaimon comme le principal port d'escale pour le commerce maritime entre l'Inde et l'Égypte."
+ elephant_training_complex:0 "Complexe d'entraînement des éléphants"
+ desc_elephant_training_complex:0 "Le site actuel de Musawarat al-Sufra est un grand complexe de temples datant du début de la période méroïtique du IIIe siècle av. La grande enceinte et le complexe de bâtiments en forme de labyrinthe s'étendent sur environ 45 000 m2 et portent de nombreuses représentations d'éléphants."
+ dromedary_training_complex:0 "Complexe d'entraînement de dromadaires"
+ desc_dromedary_training_complex:0 "Le site actuel de Musawarat al-Sufra est un grand complexe de temples datant du début de la période méroïtique du IIIe siècle av. La grande enceinte et le complexe de bâtiments en forme de labyrinthe s'étendent sur environ 45 000 m2 et portent de nombreuses représentations d'éléphants."
+ numidian_cavalry_training_complex:0 "Complexe d'entraînement de la cavalerie numide"
+ desc_numidian_cavalry_training_complex:0 "Le site actuel de Musawarat al-Sufra est un grand complexe de temples datant du début de la période méroïtique du IIIe siècle av. La grande enceinte et le complexe de bâtiments en forme de labyrinthe s'étendent sur environ 45 000 m2 et portent de nombreuses représentations d'éléphants."
+ aryan_cavalry_training_complex:0 "Complexe d'entraînement de cavalerie aryenne"
+ desc_aryan_cavalry_training_complex:0 "Le site actuel de Musawarat al-Sufra est un grand complexe de temples datant du début de la période méroïtique du IIIe siècle av. La grande enceinte et le complexe de bâtiments en forme de labyrinthe s'étendent sur environ 45 000 m2 et portent de nombreuses représentations d'éléphants."
+ celtic_cavalry_training_complex:0 "Complexe d'entraînement de cavalerie celtique"
+ desc_celtic_cavalry_training_complex:0 "Le site actuel de Musawarat al-Sufra est un grand complexe de temples datant du début de la période méroïtique du IIIe siècle av. La grande enceinte et le complexe de bâtiments en forme de labyrinthe s'étendent sur environ 45 000 m2 et portent de nombreuses représentations d'éléphants."
+
+
+
+ #Country Modifiers
+ elephant_training_programme:0 "Programme de formation des éléphants"
+ desc_elephant_training_programme:0 "Faites-le"
+ dromedary_training_programme:0 "Programme de dressage de dromadaires"
+ desc_dromedary_training_programme:0 "Faites-le"
+ numidian_cavalry_training_programme:0 "Programme d'entraînement de la cavalerie numide"
+ desc_numidian_cavalry_training_programme:0 "Faites-le"
+ aryan_cavalry_training_programme:0 "Programme de formation de cavalerie aryenne"
+ desc_aryan_cavalry_training_programme:0 "Faites-le"
+ celtic_cavalry_training_programme:0 "Programme de formation de cavalerie celtique"
+ desc_celtic_cavalry_training_programme:0 "Faites-le"
+
+ # Province Flavor
+ #PROV1002_iberia:0 "Indika"
+ #PROV1002_latin:0 "Iuncaria"
+ #PROV1002_hellenic:0 "Iuncaria"

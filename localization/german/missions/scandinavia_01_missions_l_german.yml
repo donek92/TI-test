@@ -1,0 +1,154 @@
+﻿l_german:
+  
+  #################### 
+  # Title 
+  #################### #Done 14.09.2026 - V1.11.0.3 - Germanicus
+  
+ scandinavian_missions_01: "Die skandischen Stämme vereinen" 
+ scandinavian_missions_01_DESCRIPTION: "Im hohen Norden liegen Länder, die den Kartographen und Historikern der zivilisierten Welt unbekannt sind – ein Reich, das von Menschen bewohnt wird, die am äußersten Rand der Welt ein hartes Leben führen: #E Scandia#!. Die Sonne kommt und geht, wie es ihr gefällt, mit langen, grausamen Wintern, die scheinbar das ganze Jahr über andauern, und während der kurzen Perioden, in denen Sonnenschein den Himmel erhellt, färben sich die Felder rot vom Blut kämpfender Heere.\n\nSelbst jetzt ziehen am Horizont dunkle Kriegswolken auf, und es verbreiten sich Gerüchte über Konflikte zwischen den #E scandischen#! Stämmen, die in den wilden Waldgebieten leben."  
+ scandinavian_missions_01_CRITERIA_DESCRIPTION: "Diese Mission wird abgeschlossen, wenn das Land #E Scandia#! gegründet wurde."  
+ scandinavian_missions_01_BUTTON_TOOLTIP: "Unsere zukünftigen Erfolge warten auf uns..."  
+ scandinavian_missions_01_BUTTON_DETAILS: ""
+  
+  #################### 
+  # Mission Tasks 
+  #################### 
+  
+ scandinavian_missions_task_1: "Ultima Thule"  
+ scandinavian_missions_task_1_DESC: "Die westlichsten Gebiete der Provinz #T Ultima Thule#! sind unbewohnt, aber [ROOT.GetCountry.GetRuler.GetName|Y] hat die Absicht, die Region schnell zu kolonisieren.\n\n\n\n\n\n\n\n\n\n\n@celt_mil6!" 
+ scandinavian_missions_task_1_tt: "Wir werden #G Kolonisten#! nach #T Ultima Thule#! entsenden." 
+  
+ scandinavian_missions_task_2: "Herulia" 
+ scandinavian_missions_task_2_DESC: "Die Bodenschätze im Süden von #E Skandinavien#! locken unsere Truppen in diese Region, denn wer auch immer diese reichen Ländereien besitzt, wird in der Tat äußerst reich sein.\n\n\n\n\n\n\n\n\n\n\n@egypt_mil19!" 
+ scandinavian_missions_task_2_tt: "Wir erhalten Ansprüche auf die Provinz #T Herulia#!." 
+  
+ scandinavian_missions_task_3: "Westgothia" 
+ scandinavian_missions_task_3_DESC: "Die mächtigen Stämme, die in den westlichen Regionen von #T Gothia#! leben, gelten als wilde und unübertroffene Kämpfer, doch wir werden sie dennoch besiegen.\n\n\n\n\n\n\n\n\n\n\n@celt_mil5!"  
+ scandinavian_missions_task_3_tt: "Wir erhalten Ansprüche auf die Provinz #T Westgothia#!."
+  
+ scandinavian_missions_task_4: "Ostgothia"
+ scandinavian_missions_task_4_DESC: "Die Eroberung von #T Ostgothia#! wird uns die wertvolle Insel [GetProvince('(int32)6010').GetName|Y] und die maritime Kontrolle über die Handelswege des #E Oceanus Sarmaticus#! sichern.\n\n\n\n\n\n\n\n\n\n\n@celt_mil2!" 
+ scandinavian_missions_task_4_tt: "Wir erhalten Ansprüche auf die Provinz #T Ostgothia#!."  
+  
+ scandinavian_missions_task_5: "Die Beute des Krieges" 
+ scandinavian_missions_task_5_DESC: "Nachdem wir nun den Norden und Süden von #T Scandia#!, erobert haben, lasst uns die Früchte unserer Arbeit genießen, indem wir das Land plündern und Sklaven nach [ROOT.GetCountry.GetCapital.GetName|T] entsenden.\n\n\n\n\n\n\n\n\n\n\n@celt_mil15!" 
+  
+ scandinavian_missions_task_6: "Die Goten zerstören"  
+ scandinavian_missions_task_6_DESC: "Die siegreichen [ROOT.GetCountry.GetAdjective]en Truppen haben die Stämme, die in #T Gothia#!, lebten, zerschlagen und unsere Grenzen erheblich vergrößert – alle begrüßen [ROOT.GetCountry.GetRuler.GetName|Y] und die Armeen von [ROOT.GetCountry.GetName|T]! \n\n\n\n\n\n\n\n\n\n\n@celt_mil5!"  
+  
+ scandinavian_missions_task_7: "Scandia"  
+ scandinavian_missions_task_7_DESC: "Endlich haben wir unsere benachbarten Feinde besiegt und ihre Stammeshäuptlinge zur Unterwerfung gebracht – jetzt sind wir hier, um die Geburt von #Y Scandia#! mitzuerleben.\n\n\n\n\n\n\n\n\n\n\n@celt_mil12!"
+ you_need_to_form_scandinavia: "Wir müssen die Entscheidung treffen, #Y Scandia zu bilden#!." 
+  
+ scandinavian_missions_task_8: "Scandische Plünderer"  
+ scandinavian_missions_task_8_DESC: "Es gibt Städte auf der anderen Seite des Meeres in #T Britannia#! und an anderen zivilisierten Orten, mit denen wir Handelsbeziehungen aufbauen könnten, wenn wir das wollten, aber wir könnten genauso gut Überfälle auf ihre Gebiete durchführen ...\n\n\n\n\n\n\n\n\n\n\n@celt_mil17!"  
+ scandian_pillage_bonus_var_tt: "Wenn unsere Armeen #R Städte zerstören#!, erhalten wir #G 2 % Zivilforschung#!."  
+  
+ scandinavian_missions_task_9: "Kaledonische Ansprüche" 
+ scandinavian_missions_task_9_DESC: "Nun, da wir uns Kerngebiete gesichert haben, erkennen wir, dass es auf der anderen Seite des Wassers Ländereien gibt, die wir leicht einnehmen könnten ...\n\n\n\n\n\n\n\n\n\n\n@celt_mil16!" 
+  
+ scandinavian_missions_task_10: "Eine skandische Hauptstadt" 
+ scandinavian_missions_task_10_DESC: "Das Einzige, was unserem Land noch fehlt, ist eine echte Hauptstadt, aber dieses Problem werden wir lösen. Sobald wir den Standort für unsere Hauptstadt festgelegt haben, werden wir unverzüglich mit dem Bau einer Stadt beginnen.\n\n#Y Wir werden die Gelegenheit erhalten, die Hauptstadt unseres Landes zu verlegen, und es wird eine Stadt gebaut werden.#!\n\n\n\n\n\n\n\n\n\n\n@celt_mil8!"  
+  
+ scandinavian_missions_task_11: "Skandische Gehöfte" 
+ scandinavian_missions_task_11_DESC: "Unser wachsendes Land wird Nahrungsmittel brauchen – lasst uns Bauernhöfe bauen, wo immer wir können, in der Hoffnung, die kalten Winter zu überstehen. \n\n\n\n\n\n\n\n\n\n\n@celt_mil14!"  
+ scandinavian_missions_task_11_tt: "Wir müssen mindestens #Y 5 Bauernsiedlungen#! in der Region #T Scandia#! errichten." 
+  
+ scandinavian_missions_task_12: "Skandische Hengste"  
+ scandinavian_missions_task_12_DESC: "Es gibt vieles, was uns fehlt, aber glücklicherweise gehört der Zugang zu Pferden @horses! nicht dazu; wir sollten [GetProvince('(int32)6024').GetName|Y] ausbauen, um die Größe unserer Herden und die Schlagkraft unserer Kavallerie zu erhöhen.\n\n\n\n\n\n\n\n\n\n\n@greek_mil2!"  
+  
+  
+  #################### 
+  # Events 
+  #################### 
+  
+ me_scandinavia_1_title: "Der ehrgeizige Häuptling" 
+ me_scandinavia_1_desc: "Obwohl die meisten Menschen in den Zivilisationen des Südens und Ostens noch nie von den rauen Wäldern von #E Scandia#! oder dessen Bewohnern gehört haben, ist es ein blühender, pulsierender Ort, der von einer Vielzahl von Stämmen bewohnt wird, die ständig miteinander um die Vorherrschaft ringen.\n\nAuch wenn niemand die Zukunft kennt, geht man davon aus, dass die Vereinigung der nördlichen wilden Länder unvermeidlich ist... Die Geschichtsbücher erwarten die Ankunft des ersten Herrschers, der #E Scandia#! vereinen wird."  
+ me_scandinavia_1.a: "Ich weiß, wer diese Person sein wird..."  
+ me_scandinavia_1_tooltip: "Zeit, Geschichte zu schreiben..."  
+  
+ me_scandinavia_2_title: "Herulia"  
+ me_scandinavia_2_desc: "[ROOT.GetCountry.GetRuler.GetName] war nie jemand, der [ROOT.GetCountry.GetRuler.GetHerHis]e Ambitionen geleugnet hat, und die Besitznahme der Ländereien im Süden von #E Scandia#! war schon lange ein Traum des [ROOT.GetCountry.GetAdjective]en [ROOT.GetCountry.GetRulerTitle]s.\n\nDie Provinz #E Herulia#! kontrolliert den überaus wichtigen Landübergang zu den #E Kimbrischen#! Inseln, die wiederum das Tor zum Festland von #E Europa#! sind. Die Sicherung dieser Gebiete wird uns eine bisher unbekannte Macht verleihen und unser Ansehen in der Region erheblich steigern." 
+ me_scandinavia_2.a: "Die Götter sind auf unserer Seite, das werdet ihr schon noch sehen! Herulia ist unser!"  
+ me_scandinavia_2_tooltip: "$mission_completed_tooltip_1$ '#Y Herulia#!' $mission_completed_tooltip_2$" 
+  
+ me_scandinavia_3_title: "Ultima Thule"  
+ me_scandinavia_3_desc: "[ROOT.GetCountry.GetRuler.GetName] hatte keine Probleme zu verstehen, warum die Westküsten der Provinz #E Ultima Thule#! nicht beansprucht wurden, denn das Land selbst war äußerst arm,  ungeeignet für nennenswerten Ackerbau und darüber hinaus windgepeitscht und regennass. Zwar gab es einige bewaldete Gebiete, in denen wertvolles Waid @woad! zu finden war, doch sonst gab es kaum etwas Erwähnenswertes; die meisten der verstreut in Ultima Thule lebenden Stammesangehörigen verdienten ihren Lebensunterhalt auf See und waren auf den Fischfang angewiesen, um ihre Familien zu ernähren, da die Jagdmöglichkeiten miserabel waren und keine Feldfrüchte die verheerenden Winter überlebten.\n\nTrotz dieser einschränkenden Faktoren erkannten die [ROOT.GetCountry.GetAdjective]e [ROOT.GetCountry.GetRulerTitle] die Notwendigkeit, diese Ländereien zu beanspruchen – wir dürfen nicht zulassen, dass einer unserer konkurrierenden Rivalen Gebiete erwirbt, die ihnen zugute kommen könnten. Deshalb schlugen die #E Stammesältesten#! einen Plan vor, der vorsah, dass unsere Stammesangehörigen vom Hafen in [GetProvince('(int32)6038').GetName] aus in See stechen und kleine Dörfer entlang der Küsten errichten sollten. Das würde zwar kostspielig sein, aber wir wären in der Lage, alle Gebiete, die wir derzeit noch nicht kontrollierten, auf einen Schlag zu übernehmen." 
+ me_scandinavia_3.a: "Das klingt gut – die Kolonisten auf dem Seeweg auszusenden" 
+ me_scandinavia_3.b: "<Die Zeit ist nicht reif für eine Westexpedition..."  
+ me_scandinavia_3_tooltip: "$mission_completed_tooltip_1$ '#Y Ultima Thule#!' $mission_completed_tooltip_2$"  
+ me_scandinavia_3.a_tt: "Wir werden alle unbesiedelten Gebiete in der Provinz #T Ultima Thule#! kolonisieren." 
+  
+ me_scandinavia_4_title: "Westgothia"  
+ me_scandinavia_4_desc: "[ROOT.GetCountry.GetRuler.GetName] hat kühn Ansprüche auf die Heimatgebiete einiger der stärksten und mächtigsten Stämme in ganz #E Scandia#! erhoben, die fast garantieren, dass die [ROOT.GetCountry.GetAdjective]en Kräfte in den kommenden Tagen einen entscheidenden Eroberungskrieg führen werden.\n\nWährend sich die Nachricht drohender Feindseligkeiten durch die ländlichen Siedlungen verbreitet, haben die Söldnertruppen ihre Waffen geschärft und Vorräte für die kommenden Feldzüge gesichert." 
+ me_scandinavia_4.a: "Das Blutvergießen wird den Lohn wert sein – da bin ich mir sicher"  
+ me_scandinavia_4_tooltip: "$mission_completed_tooltip_1$ '#Y Westgothia#!' $mission_completed_tooltip_2$" 
+  
+ me_scandinavia_5_title: "Ostgothia"  
+ me_scandinavia_5_desc: "Die östlichen Gebiete von #E Scandia#! waren schon immer etwas Besonderes für [ROOT.GetCountry.GetRuler.GetName], der aus [ROOT.GetCountry.GetRuler.GetHerHis]er Jugend schöne Erinnerungen an die Sommer mit Reisen entlang der Küsten hat. Die Wälder voller Wildtiere, die kalte Meeresluft, die Ihre Lungen füllt und Ihnen zum ersten Mal in Ihrem Leben das Gefühl gibt, wirklich lebendig zu sein, die atemberaubende Küste mit imposanten Felsen, die aus dem gefrorenen Wasser ragen, die Bedrohung durch umherziehende Piraten und Sklavenüberfälle ... es hat für jeden etwas zu bieten.\n\nVielleicht war es Nostalgie, die [ROOT.GetCountry.GetName] dazu drängte, die Region zu erobern, aber egal, was die Beweggründe des [ROOT.GetCountry.GetRulerTitle]s waren, das Ergebnis wäre dasselbe gewesen." 
+ me_scandinavia_5.a: "Es wird mir eine Freude sein, noch einmal nach Ost-Gothia zurückzukehren ..." 
+ me_scandinavia_5_tooltip: "$mission_completed_tooltip_1$ '#Y Ostgothia#!' $mission_completed_tooltip_2$" 
+  
+ me_scandinavia_6_title: "Die Beute des Krieges"  
+ me_scandinavia_6_desc: "[ROOT.GetCountry.GetRuler.GetName] konnte [ROOT.GetCountry.GetName] in letzter Zeit zu einer Reihe beeindruckender Siege führen, eine Tatsache, die von allen Menschen in [ROOT.GetCountry.GetCapital.GetName] gefeiert wird, die den [ROOT.GetCountry.GetRulerTitle] mit Lob überschütten.\n\nUnser triumphierender [ROOT.GetCountry.GetRulerTitle] hat die fernen Provinzen #E Ultima Thule#! und #E Herulia#! unter unsere Kontrolle gebracht und sich damit einen ewigen Platz in unseren mündlichen Überlieferungen verdient. Um diesen bedeutsamen Anlass zu feiern, durften unsere Heere auf ihrem Rückweg vom Schlachtfeld das Umland plündern, und aus den Sklavenlagern von [ROOT.GetCountry.GetCapital.GetName] drang ein Stöhnen des Elends, als sie mit Hunderten armer Seelen gefüllt wurden." 
+ me_scandinavia_6.a: "Ich werde immer dafür kämpfen, dem [ROOT.GetCountry.GetAdjective]em Volk den Sieg zu bringen!" 
+ me_scandinavia_6_tooltip: "$mission_completed_tooltip_1$ '#Y Die Beute des Krieges#!' $mission_completed_tooltip_2$" 
+  
+ me_scandinavia_7_title: "Die Goten zerschmettern"  
+ me_scandinavia_7_desc: "Am Ende war alles auf eine Handvoll entscheidender Schlachten hinausgelaufen, die zwischen unseren [ROOT.GetCountry.GetAdjective] Truppen und den Stämmen, die in den Wäldern von #E West#! und #E Ostgothien#! lebten, ausgetragen wurden, und die Götter des Krieges zeigten ein für alle Mal, dass sie an der Seite unserer Krieger kämpften.\n\nUnsere siegreichen Streitkräfte haben alles vernichtet, was sich ihnen auf dem Schlachtfeld entgegenstellte, und die Macht von [ROOT.GetCountry.GetRuler.GetName] ist zu einer atemberaubenden Höhe gewachsen." 
+ me_scandinavia_7.a: "Bringt die Sklaven und Beute zurück in die Hauptstadt!"  
+ me_scandinavia_7_tooltip: "$mission_completed_tooltip_1$ '#Y Die Goten zerschmettern#!' $mission_completed_tooltip_2$"  
+  
+ me_scandinavia_8_title: "Scandia" 
+ me_scandinavia_8_desc: "Es ist kaum zu glauben, aber [ROOT.GetCountry.GetRuler.GetName] hat unser Volk an die Spitze des Ruhmes geführt; wir gelten nicht mehr als einfache Stammesangehörige, sondern haben eine Leistung vollbracht, die von den Häuptlingen und Königen in ganz Nordeuropa wahrgenommen wird.\n\nWir sind [ROOT.GetCountry.GetName] – die Welt soll zittern!"  
+ me_scandinavia_8.a: "Unser Name wird für immer mit dem ewigen Sieg verbunden sein"  
+ me_scandinavia_8_tooltip: "$mission_completed_tooltip_1$ '#Y Scandia#!' $mission_completed_tooltip_2$"  
+  
+ me_scandinavia_9_title: "Scandische Plünderer"  
+ me_scandinavia_9_desc: "Die verheerenden Überfälle der [ROOT.GetCountry.GetAdjective]en Stämme haben den Küstengemeinden, die in unmittelbarer Nähe ihrer Häfen leben, zahlloses Leid gebracht, und der Anblick unserer Schiffe, die am Horizont auftauchen, löst bei vielen Menschen echten Schrecken aus.\n\nOb auf dem Land- oder Seeweg haben die Krieger von [ROOT.GetCountry.GetName] viele Siedlungen und Städte verwüstet, und die Bedrohung durch ihre Überfalltrupps hat viele Gemeinden dazu veranlasst, über den Bau stärkerer Befestigungen nachzudenken." 
+ me_scandinavia_9.a: "Nichts wird uns davon abhalten, uns zu nehmen, was wir wollen!" 
+ me_scandinavia_9_tooltip: "$mission_completed_tooltip_1$ '#Y Scandische Plünderer#!' $mission_completed_tooltip_2$" 
+  
+ me_scandinavia_10_title: "Kaledonische Ansprüche" 
+ me_scandinavia_10_desc: "Obwohl jeder sagt, dass die #E Kaledonier#! beeindruckende Krieger sind, hat dies [ROOT.GetCountry.GetRuler.GetName] nicht davon abgehalten, [ROOT.GetCountry.GetAdjective]e Ansprüche auf ihr Land vorzubereiten. Unsere [ROOT.GetCountry.GetAdjective]en Kriegsschiffe haben ihre Küsten viele Male überfallen, und unsere Truppen wissen, dass wir von den feigen Inselbewohnern nichts zu befürchten haben.\n\nSchon bald werden unsere Truppen das #E Mare Hibernicum#! überqueren und Verwüstung über die Ahnungslosen bringen – sie werden sich nicht hinter ihren Mauern verstecken können! Zur Vorbereitung auf dieses glorreiche Ereignis haben unsere Handwerker Schiffe entworfen, die schneller sind als alle anderen auf offener See."  
+ me_scandinavia_10.a: "Ich kann es kaum erwarten! Klingt nach einer tollen Zeit"
+ me_scandinavia_10_tooltip: "$mission_completed_tooltip_1$ '#Y Kaledonische Ansprüche#!' $mission_completed_tooltip_2$"  
+  
+ me_scandinavia_11_title: "Eine scandische Hauptstadt" 
+ me_scandinavia_11_desc: "Nachdem [ROOT.GetCountry.GetRuler.GetName] nun die verschiedenen #E scandischen#! Stämme unter einem Banner vereint hat, wurde vorgeschlagen, dass wir eine vollkommen neue Stadt errichten, die als offizielle Hauptstadt eines so mächtigen Reiches dienen soll. [ROOT.GetCountry.GetRuler.GetFirstName] muss nun entscheiden, wo wir unsere Hauptstadt errichten wollen... eine beneidenswerte Aufgabe, die [ROOT.GetCountry.GetRuler.GetSheHe] jedoch zweifellos verdient." 
+ me_scandinavia_11.a: "Die Ebene von [GetProvince('(int32)6000').GetName] ist ein großartiger Ort"  
+ me_scandinavia_11.b: "[GetProvince('(int32)6012').GetName] an der Küste ist ein ansprechender Ort" 
+ me_scandinavia_11.c: "[GetProvince('(int32)6004').GetName] wäre ein interessanter Ort für eine Hauptstadt..." 
+ me_scandinavia_11.d: "Ich wähle die Waldinsel [GetProvince('(int32)6009').GetName]"  
+ me_scandinavia_11.e: "Wir werden unsere alte Hauptstadt behalten"  
+ me_scandinavia_11_tooltip: "$mission_completed_tooltip_1$ '#Y Eine scandische Hauptstadt#!' $mission_completed_tooltip_2$"  
+  
+ me_scandinavia_12_title: "Scandische Gehöfte"  
+ me_scandinavia_12_desc: "Überall auf dem Land sind die von uns errichteten Bauernhöfe produktiv und ertragreich, und unseren Menschen mangelt es auch in den kargen Wintermonaten nie an Gemüse. Dank der Infrastruktur, über die wir nun verfügen, werden wir mehr Lebensmittel lagern können als bisher – keine geringe Leistung und ein Grund zum Feiern an einem Ort, an dem Hunger eine reale Bedrohung darstellt."  
+ me_scandinavia_12.a: "Dieser Überfluss erfreut mich – ich hoffe, dass unsere Leute glücklich sind" 
+ me_scandinavia_12_tooltip: "$mission_completed_tooltip_1$ '#Y Scandische Gehöfte#!' $mission_completed_tooltip_2$" 
+  
+ me_scandinavia_13_title: "Scandische Hengste"  
+ me_scandinavia_13_desc: "Wir freuen uns, berichten zu können, dass die Pferde, die auf den Ländereien in [GetProvince('(int32)6024').GetName] aufgezogen wurden, unsere hohen Erwartungen noch übertreffen, und dass die Pferde, die an unsere Reiter abgegeben wurden, mit einer fast übernatürlich anmutenden Geschicklichkeit durch die bewaldeten Schluchten von [ROOT.GetCountry.GetName] galoppieren."  
+ me_scandinavia_13.a: "Mögen unsere Reiter uns zum Sieg führen!"  
+ me_scandinavia_13_tooltip: "$mission_completed_tooltip_1$ '#Y Scandische Hengste#!' $mission_completed_tooltip_2$"  
+  
+  #################### 
+  # Modifiers 
+  #################### 
+ scandinavia_abandoned_capital_mod: "Verlassene historische Hauptstadt"  
+ desc_scandinavia_abandoned_capital_mod: "Unsere Stammesangehörigen sind wütend, dass wir die sanften Hügel verlassen haben, in denen ihre Väter begraben sind." 
+ scandinavia_historic_capital_mod: "Erhaltene historische Hauptstadt"
+ desc_scandinavia_historic_capital_mod: "Da unser Volk den Ort unserer angestammten Hauptstadt als heilig betrachtet, hat es beschlossen, in unserer Heimat zu bleiben, anstatt an einen anderen Ort umzusiedeln."  
+ scandinavian_horseworks: "Scandische Hengste"  
+ desc_scandinavian_horseworks: "Unsere Pferde werden in der waldreichen Landschaft unserer Heimat zugeritten und finden sich auf unwegsamem Gelände sicher zurecht."
+ scandinavian_food_mod: "Scandische Getreidelagerung" 
+ desc_scandinavian_food_mod: "Dank der von uns errichteten Bauernhöfe sind wir in der Lage, Getreide für die mageren Winter zu lagern."  
+ muh_fast_viking_boats: "Scandische Langschiffe" 
+ desc_muh_fast_viking_boats: "Unser Volk beherrscht die Kunst, schnelle, schlanke Langschiffe zu bauen, um unsere Feinde zu überfallen."  
+  
+ SCANDIA_FLAG: "Die Flagge des vereinigten Scandias"  
+  
+ scandinavia_main_mission_1_tt: "Mindestens #E #Y 50 %#!#! der Region [GetProvince('(int32)6005').GetArea.GetName|G] gehören #E [SCOPE.GetRootScope.GetCountry.GetName|T]#!." 
+ scandinavia_main_mission_3_tt: "Mindestens #E #Y 50 %#!#! der Region [GetProvince('(int32)6012').GetArea.GetName|G] gehören #E [SCOPE.GetRootScope.GetCountry.GetName|T]#!." 
+ scandinavia_main_mission_4_tt: "Mindestens #E #Y 50 %#!#! der Region [GetProvince('(int32)6010').GetArea.GetName|G] gehören #E [SCOPE.GetRootScope.GetCountry.GetName|T]#!." 

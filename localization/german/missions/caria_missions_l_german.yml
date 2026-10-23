@@ -1,0 +1,397 @@
+﻿l_german:
+  
+ caria_missions: "Erben von Hekatomnos" V1.11.0.3 - Germanicus (24.07.2026) Done 
+ caria_missions_DESCRIPTION: "Die Dynastie der Hekatomniden führte Karien einst zu Größe. Von ihrem Stammsitz in Mylasa aus stiegen die Hekatomniden zu Satrapen von Karien auf, Herrscher über das Hochland und die Küsten gleichermaßen. Unter Mausolos und Artemisia wurde Halikarnassos berühmt für sein gewaltiges Mausoleum, seine Flotten beherrschten die Ägäis, und an seinem Hof versammelten sich Dichter, Gelehrte und Soldaten aus der gesamten hellenischen Welt. Sogar in ihrer Dämmerung lebte die Dynastie noch in Ehren: Königin Ada, die letzte der Hekatomniden, adoptierte Alexander den Großen als ihren Sohn.\n\nNun steht Karien an einem Scheideweg. Stellen Sie die alten Traditionen unter einer wiederauflebenden Hekatomniden-Dynastie wieder her oder schmieden Sie ein Nachfolgekönigreich unter Pleistarchos und erheben Sie Anspruch auf Alexanders Reich!"  
+ caria_missions_CRITERIA_DESCRIPTION: "Diese Mission gilt als erfüllt, wenn wir in Karien ein mächtiges Königreich errichtet und unsere Herrschaft über die Ägäis ausgeweitet haben." 
+ caria_missions_BUTTON_TOOLTIP: ""
+ caria_missions_BUTTON_DETAILS: ""
+  
+  #Missions 
+  
+ caria_missions_task_1: "Stärke im Dienst" 
+ caria_missions_task_1_DESC: "Die Zukunft von Karien ist eindeutig mit der unserer mächtigen #E [ROOT.GetCountry.GetOverlord.GetAdjective]en#! Oberherren  verbunden. Auch wenn es verlockend sein mag, mehr Unabhängigkeit zu fordern, ist jetzt nicht der richtige Zeitpunkt für solche Maßnahmen. Das würde nur zu Konflikten und Misstrauen führen.  Stattdessen gebietet es die Vernunft, einen anderen Kurs einzuschlagen – einen Kurs, der unsere Position stärkt und unsere Bedeutung innerhalb ihres Bereichs sichert."  
+  
+ caria_missions_task_2: "Unseren Wert beweisen"  
+ caria_missions_task_2_DESC: "Karien hat seinen Wert für die Großmächte der Ägäis und des Nahen Ostens schon lange unter Beweis gestellt. Unter persischer Herrschaft spielten unsere erfahrenen Seeleute und Söldner eine wichtige Rolle in ihren Feldzügen, während die Hekatomniden Karien zu beispiellosem Reichtum und Einfluss verhalfen. Alexander der Große vertraute Königin Ada die Regierung Kariens als treue Verbündete und nicht als bloße Untertanin an. Jetzt müssen wir den #E [ROOT.GetCountry.GetOverlord.GetAdjective]en#! noch einmal beweisen, dass [ROOT.GetCountry.GetName] für sie wertvoller wäre, nicht nur als zu regierender Untertan, sondern als unverzichtbarer Verbündeter." 
+  
+ caria_missions_task_3: "Flottenakademie"  
+ caria_missions_task_3_DESC: "Die Karer haben eine lange und traditionsreiche Seefahrertradition und dienten als Kommandanten, Schiffsbauer und Krieger in den Flotten mächtiger Reiche. Schon in der Bronzezeit bereisten unsere Vorfahren als Söldner und Händler die Meere. Unter Lygdamis, Artemisia, Mausolus und Ada stellte Karien beeindruckende Flotten zusammen und sicherte sich die Vorherrschaft über einen Großteil der Ägäis. Doch viel zu lange haben wir unsere Seemacht im Dienste anderer eingesetzt. \n\nWir werden in [ROOT.GetCountry.GetCapital.GetName] eine Marineakademie errichten, um unsere nächste Generation von Seeleuten und Marinekommandanten auszubilden."  
+  
+ caria_missions_task_4: "Kriegsflotte"  
+ caria_missions_task_4_DESC: "Die Karer haben eine lange und traditionsreiche Seefahrertradition und dienten als Kommandanten, Schiffsbauer und Krieger in den Flotten mächtiger Reiche. Schon in der Bronzezeit bereisten unsere Vorfahren als Söldner und Händler die Meere. Unter Lygdamis, Artemisia, Mausolus und Ada stellte Karien beeindruckende Flotten zusammen und sicherte sich die Vorherrschaft über einen Großteil der Ägäis. Doch viel zu lange haben wir unsere Seemacht im Dienste anderer eingesetzt.\n\nNun ist die Zeit gekommen, eine [ROOT.GetCountry.GetAdjective]e Kriegsflotte aufzubauen – nicht für die Ambitionen unserer Herren, sondern um unser eigenes Schicksal auf den Wellen zu sichern!"  
+  
+ caria_missions_task_5: "Die Artemisia"  
+ caria_missions_task_5_DESC: "Schiffe mit zehn oder mehr Ruderern pro Seite wurden zuerst von Alexander dem Großen eingesetzt, wurden aber noch üblicher, nachdem die antigonidische Flotte sie bei der Belagerung von Tyrus und darüber hinaus einsetzte. Ein solches Schiff wird in einer offenen Seeschlacht immer eine äußerst eingeschränkte Manövrierfähigkeit haben. Für Belagerungskriege sind diese „Mega Polyremen“ jedoch ideal, da sie in der Lage sind, seeseitige Mauern aufzubrechen und dann als Plattformen für Artillerie zu fungieren und gleichzeitig die Landung einer großen Anzahl von Truppen zu ermöglichen. Es ist nur richtig, dass wir solche Schiffe für uns selbst bauen, denn welche königliche Marine wäre vollständig ohne ein mächtiges Flaggschiff?"  
+ caria_missions_task_5_tt: "Wir erhalten eine #E Mega Polyreme#! im #Y Mare Icarium#! mit einem äußerst kompetenten #E Admiral#! als Befehlshaber" 
+  
+ caria_missions_task_6: "Das Anlegen des Diadems"  
+ caria_missions_task_6_DESC: "Die größten Diadochen bezeichnen sich jetzt als Könige, „Basileis“, nicht mehr als Satrapen. Karien hat Königinnen und Dynasten, Kriegsherren und Visionäre gekannt. Wir regieren jetzt nicht mehr als bloße Diener entfernter Mächte, sondern als eigenständige Herrscher.\n\nUnd dennoch bezeichnen manche unseren Herrscher als „Satrapen“ – einen Titel, der Unterordnung bedeutet. Damit kann man sich nicht zufrieden geben. Das Diadem wartet auf uns, und mit ihm die Anerkennung unseres rechtmäßigen Platzes unter den Nachfolgern Alexanders."  
+  
+ caria_missions_task_7: "Das Pleistarchidische Königreich"  
+ caria_missions_task_7_DESC: "Pleistarchos' Vater, Antipatros, regierte Makedonien als Regent der Könige,  und sein Bruder Kassandros legte die alten Titel der Unterordnung ab, um sich selbst zum Basileus zu erklären und eine eigene Dynastie zu gründen. Sollen wir weniger mutig sein als Kassandros?\n\nAuch wenn uns die Verbündeten [ROOT.GetCountry.GetName] vermacht haben, sind wir nicht länger an seine engen Grenzen gebunden. Unsere Ambitionen reichen weit darüber hinaus. Lasst uns unseren Platz unter den Nachfolgern Alexanders einnehmen und [ROOT.GetCountry.GetName] zum 'Königreich der Pleistarchiden' umgestalten!"  
+ caria_missions_task_7_tt: "Wir können nun das Kriegsziel  #G Das Erbe Alexanders#! gegen andere Diadochen verwenden.\n#G Wir werden Ansprüche auf [GetCharacter('(int32)39').GetPraenomen]s ehemaliges Imperium geltend machen#!:\n[GetProvince('(int32)418').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)350').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)379').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)790').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)290').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)1883').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)1936').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)830').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)918').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)4799').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)687').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)516').GetArea.GetRegion.GetName|Y], und [GetProvince('(int32)569').GetArea.GetRegion.GetName|Y].\n#R Diese Ansprüche und das Kriegsziel erlöschen mit dem Tod oder der Abdankung von [THIS.GetCountry.GetRuler.GetName].#!"  
+  
+ caria_missions_task_8: "Besserung von Chios'"  
+ caria_missions_task_8_DESC: "Thukydides nannte die Bewohner von Chios einst „die reichsten Griechen“, und das nicht ohne Grund. Mit fast 900 Quadratkilometern fruchtbarem Land, hohen Gipfeln und Zugang zu den östlichen Meeren ist die Insel eine Welt für sich und viel zu wertvoll, um sie den Launen der Demokratie zu überlassen.\n\nIn den Tagen von Mausolos vertrieben die Oligarchen von Chios klugerweise die Demokraten, verbündeten sich mit Karien und bildeten eine Allianz mit Rhodos, Kos und Byzantion. Aber wie bei allen instabilen Dingen kehrte mit Alexanders Eroberungen die Demokratie zurück. Nun ist es an der Zeit, diesen Fehler zu korrigieren. Wir werden den natürlichen Führern der Insel dabei helfen, ihren Platz zurückzuerobern, und Chios auf diese Weise erneut unter die Ägide Kariens bringen. Wir werden ihre Landstreitigkeiten mit den Erythraern durch Verträge oder mit dem Speer beilegen..." 
+ caria_missions_task_8_allow_tt: "Habt eine Flotte von mindestens #G 30#! Schiffen vor der Küste von #E Chios#!#"  
+ caria_missions_task_8_tt: "#E Chios#! wird ein #E @[THIS.GetCountry.GetFlag]!  [THIS.GetCountry.GetAdjective]er#! #Y Bundegenosse#!"  
+  
+ caria_missions_task_9: "Herrscher von Priene"  
+ caria_missions_task_9_DESC: "Hieron, einer der bedeutendsten Adligen von Priene, macht keinen Hehl aus seinem Wunsch nach erblicher Macht. Obwohl die Stadt an dem Schein der Demokratie festhält, sind ihre Bewohner der Fraktionskämpfe und ausländischen Verstrickungen überdrüssig. Wenn wir auch nur einen Teil unserer Streitkräfte zur Unterstützung anbieten, könnte Hieron die Macht ergreifen und als Herrscher regieren, wodurch unter unserer Ägide eine neue Ordnung Einzug halten würde.\n\nAls Heimat des verehrten Heiligtums der Athena Polias und Versammlungsort des Ionischen Bundes besitzt Priene einen immensen symbolischen und strategischen Wert. Die Eroberung von Priene würde dem von den Antigoniden dominierten Ionischen Bund einen vernichtenden Schlag versetzen und den Weg für die Vorherrschaft Kariens in ganz Ionien ebnen."  
+ caria_missions_task_9_tt: "#E Priene#! wird ein #E @[THIS.GetCountry.GetFlag]!  [THIS.GetCountry.GetAdjective]er#! #Y Bundesgenosse#!"  
+  
+ #diasble tasks 14 and 17 
+ #AI ONLY 
+ caria_missions_task_10: "Der Preis des Friedens"  
+ caria_missions_task_10_DESC: "Das Zeitalter der Könige steht bevor. Die Erben Alexanders geben sich nicht länger damit zufrieden, sich Satrapen zu nennen, sondern bezeichnen sich nun als Basileis, und jeder baut sein Reich nach dem Vorbild seines Gründers auf. Die Welt wird nicht mehr allein von Menschen regiert, sondern von wilden Tieren.\n\nIm Süden kreisen die Ptolemäer wie Adler: unnahbar, majestätisch und zum blitzschnellen Angriff bereit. Im Osten rücken die Seleukiden getragen von Elefantenstampfen vor: gewaltig, bedächtig und unaufhaltsam. Im Norden brüllen die Lysimachiden wie Löwen, immer auf der Suche nach Territorium und Ruhm.\n\nJeder hat Karien im Blick, und jeder hegt heimliche Absichten gegenüber unseren Küsten. Aber vielleicht müssen wir uns ihnen nicht im Kampf stellen. Natürlich hat Frieden seinen Preis. Eine königliche Hochzeit, begleitet von der Mitgift Halikarnassos, könnte das Raubtier dennoch zum Partner machen."  
+ caria_missions_task_10_tt: "Ein Heiratsantrag wird an einen der #E Diadochen#! gesendet\nFalls er #G annimmt#!, wird Folgendes geschehen:\n#E @[GetCountry('CIA').GetFlag]!  [GetCountry('CIA').GetName]#! verbündet sich mit dem #E #T Diadochenmonarchen#!#!\n@[GetCountry('CIA').GetFlag]!  [GetCountry('CIA').GetName] erhält #G 250#! @gold! als Mitgift\nEin Spross der Linie des #E #T Diadochenmonarchen#!#! wird ein Mitglied unseres Hauses heiraten\n#E Halikarnassos#! wird ein #Y Bundesgenosse#! des #E #T Nachfolgekönigreiches#!#! "  
+
+  
+ #maybe 75% random chance if AI | then a 75% chance of satrapy between 3-15 years after 
+ ##AI CHANCE IS 60 EGY and 20/20 SEL/TRE 
+  
+ #become feudatories (create them) of egy 
+ #500 gold 
+ #alliance 
+ #150 opinion boost 
+ #navy of 10 ships 
+  
+ #EGYptian one is visible if you do not have other variables (all potential hidden) | bypass if own no land 
+ caria_missions_task_11: "Unter den Flügeln des Adlers"  
+ caria_missions_task_11_DESC: "Die Welt wird von Jahr zu Jahr düsterer. Die Diadochen bekämpfen sich unablässig, Piraten suchen die Meere heim und die Ambitionen brutaler Generäle nehmen mit jeder verstrichenen Jahreszeit zu. In solchen Zeiten muss Besonnenheit vor Stolz stehen.\n\nUnser jüngstes Bündnis mit den Ptolemäern hat Reichtum und Anerkennung gebracht, aber wir müssen uns jetzt fragen, ob eine engere Bindung erforderlich ist. Indem wir offiziell ein ptolemäischer Satrap werden, können wir ein gewisses Maß an Souveränität gegen dauerhafte Sicherheit eintauschen. Der ägyptische Adler wird seinen Schatten über unser Land werfen, aber unter seinen Flügeln werden wir bestehen."  
+ caria_missions_task_11_tt: "[THIS.GetCountry.GetName] hat die Möglichkeit, eine #E @[GetCountry('EGY').GetFlag] zu werden!  [GetCountry('EGY').GetAdjective]e#! #Y Satrapie#! zu werden. Folgendes wird passieren, wenn wir #G#! akzeptieren#!:\n\n"  
+  
+ caria_missions_task_12: "Im Schatten des Löwen"  
+ caria_missions_task_12_DESC: "Die Welt wird von Jahr zu Jahr düsterer. Die Diadochen bekämpfen sich unablässig, Piraten suchen die Meere heim und die Ambitionen brutaler Generäle nehmen mit jeder verstrichenen Jahreszeit zu. In solchen Zeiten muss Besonnenheit vor Stolz stehen.\n\nUnser jüngstes Bündnis mit Lysimachos hat uns Stärke und Ansehen gebracht, doch der Löwe ist nicht leicht gesättigt. Sein Hunger nach Territorium und Vorherrschaft ist wohlbekannt, und schon richtet er seinen wachsamen Blick auf die Ägäis. Indem wir offiziell zu Satrapen der Lysimachiden werden, tauschen wir vielleicht ein Stück Souveränität gegen dauerhafte Sicherheit ein. Der thessalische Löwe wird seinen Schatten über unser Land werfen, doch unter seiner Mähne werden wir bestehen."
+ caria_missions_task_12_tt: "[THIS.GetCountry.GetName] hat die Möglichkeit, eine #E @[GetCountry('TRE').GetFlag]!  [GetCountry('TRE').GetAdjective]e#! #Y Satrapie#! zu werden. Folgendes wird passieren, wenn wir #G#! akzeptieren#!:\n\n"  
+  
+ caria_missions_task_13: "Neben dem Elefanten" 
+ caria_missions_task_13_DESC: "Die Welt wird von Jahr zu Jahr düsterer. Die Diadochen bekämpfen sich unablässig, Piraten suchen die Meere heim und die Ambitionen brutaler Generäle nehmen mit jeder verstrichenen Jahreszeit zu. In solchen Zeiten muss Besonnenheit vor Stolz stehen.\n\nUnser jüngstes Bündnis mit den Seleukiden hat uns Reichtum und mächtige Verbündete beschert, doch der #E Herr der Elefanten#! ist nicht leicht zufriedenzustellen. Sein Streben nach Territorium und Vorherrschaft ist wohlbekannt, und schon jetzt richtet er seinen wachsamen Blick auf die Ägäis. Indem wir offiziell zu seleukidischen Satrapen werden, tauschen wir vielleicht ein Stück Souveränität gegen dauerhafte Sicherheit ein. Besser, an der Seite des Ungeheuers zu gehen, als unter ihm zermalmt zu werden."  
+ caria_missions_task_13_tt: "[THIS.GetCountry.GetName] hat die Möglichkeit, eine #E @[GetCountry('SEL').GetFlag]! [GetCountry('SEL').GetAdjective]e#! #Y Satrapie#! zu werden! Folgendes wird passieren, wenn wir #G#! akzeptieren#!:\n\n" 
+  
+ caria_missions_task_14: "Mauern von Halikarnassos" 
+ caria_missions_task_14_DESC: "Halikarnassos trotzte einst dem größten Eroberer seiner Zeit. Als Alexander die Stadt im Jahr 334 v. Chr. belagerte, hielt sie unter dem Kommando von Memnon von Rhodos monatelang stand, und obwohl sie schließlich fiel, verdiente sich ihre Verteidigung den Respekt ganz Hellas’. Seitdem wechselte Halikarnassos mehr als einmal den Besitzer, während die Diadochen wie Wölfe um die Beute des Reiches kämpften.\n\nDoch damit ist nun Schluss. Mögen die Könige und Satrapen noch so sehr intrigieren – Halikarnassos wird nicht ihre Beute sein. Wir werden ihre Mauern wiederaufbauen, ihre Häfen verstärken und ihre Türme wiederherstellen. Die Stadt wird als uneinnehmbare Bastion der karischen Macht stehen, und wer versucht, sie einzunehmen, muss einen schrecklichen Preis zahlen."  
+  
+ caria_missions_task_15: "Erben von Hekatomnos" 
+ caria_missions_task_15_DESC: "Das Haus der Hekatomniden führte Karien zu seiner Blütezeit. Von ihrem Stammsitz in Mylasa aus stiegen die Hekatomniden als Satrapen von Karien und Herrscher sowohl über das Hochland als auch über die Küstengebiete zur Macht auf. Unter Mausolos und Artemisia erlangte Halikarnassos Ruhm: Seine Denkmäler konnten sich mit denen antiker Dynastien messen, seine Flotten beherrschten die Meere, und an seinem Hof versammelten sich Dichter, Gelehrte und Soldaten. Selbst in ihrer Untergangszeit bestand die Dynastie in Ehren fort: Königin Ada, die Letzte der Hekatomniden, adoptierte Alexander den Großen als ihren Sohn. Nun, da Halikarnassos wieder gesichert ist, ist es nur angemessen, dass wir die Herrschaft darüber einem Nebenzweig dieses edlen Hauses anvertrauen." 
+ caria_missions_task_15_tt: "Ein #E Hekatomnide#! wird zum Herrscher von #E @[GetCountry('HKS').GetFlag]!  [GetCountry('HKS').GetName]#!"  
+  
+ caria_missions_task_16: "Wiederherstellung der Hekatomniden"  
+ caria_missions_task_16_DESC: "Zu lange schon hat Karien vor den Persern, den Makedonen und den selbsternannten Königen, die keine Wurzeln in unserem Boden hatten, die Knie gebeugt. Nicht mehr. Karien erinnert sich. In den Bergheiligtümern von Mylasa, in den Hafentavernen von Halikarnassos, in den Herzen der Menschen leben die alten Loyalitäten weiter. Es gibt Gerüchte von einem Aufstand, von Rache, von Wiederherstellung.\n\nEs ist an der Zeit. Karien soll wieder von den Kariern regiert werden. Die Erben des Hekatomnos werden das zurückerobern, was ihnen rechtmäßig zusteht – nicht als Satrapen, sondern als Herrscher. Der Usurpator möge zittern. Die Revolution steht bevor! Schon erreichen uns Berichte über eine Verschwörung gegen [ROOT.GetCountry.GetRuler.GetTitle] [ROOT.GetCountry.GetRuler.GetName]. In den Hallen [ROOT.GetCountry.GetRuler.GetHerHis]es Palasts  werden im Schatten Dolche gezückt, und in goldenen Bechern schlummert Gift."  
+ caria_missions_task_16_tt: "Wir können uns dafür entscheiden, einzugreifen und [THIS.GetCountry.GetRuler.GetName] zu retten, oder die Fortsetzung des Attentats zuzulassen.\n\nWenn die Verschwörung #G erfolgreich#! ist, wird Folgendes passieren:\nEin #Y Hekatomnide#! wird der Herrscher von [THIS.GetCountry.GetName]"  
+  
+ caria_missions_task_17: "Kaunische Münzen"  
+ caria_missions_task_17_DESC: "Während die materiellen Überreste von Kaunos die Gründung oder frühe Nutzung des Ortes höchstens auf das 9. Jahrhundert v. Chr. datieren, reicht die überlieferte Geschichte der Stadt bis zu ihrem Namensgeber Kaunos zurück, dem Sohn des karischen Königs Miletos und der Najade Kyane. Es heißt, dass sich Kaunos und seine Schwester Byblis ineinander verliebten und dass Kaunos, um Inzest zu vermeiden, vor ihr bis nach Lykien in Anatolien floh. Dorthin folgte ihm Byblis, verfiel jedoch in Trauer und Wahnsinn und starb; sie verwandelte sich in eine Quelle, vergoss unaufhörlich Tränen über das Land und schuf mit ihren tränenreichen Augen den Fluss Kalbys. In Asien heiratete Kaunos die Nymphe Pronoe und zeugte einen Sohn, Aegialus, der später in der Nähe eine Stadt gründete, die nach seinem Vater benannt wurde. Die Stadt selbst war ein hervorragender Handelshafen mit zwei aktiven Häfen, und Herodot berichtet, dass die Einwohner der Stadt hartnäckig gegen den persischen Feldherrn Harpagus kämpften – sie unterlagen jedoch nach einiger Zeit. Der Historiker merkt außerdem an, dass er zwar persönlich ihrer Behauptung, ausländischer Herkunft zu sein, nicht zustimmt, da sie eine Sprache sprechen, die der seiner Heimat ähnelt, er jedoch nicht leugnen kann, dass sie sich auf eigentümliche Weise verhalten, anders als alle anderen Karer und Lykier. Alle Männer, Frauen und sogar die Kinder trinken gemeinsam Wein.\n\nWenn wir den Ehrgeiz hegen, zu den Erben Alexanders zu gehören, müssen wir es ihnen gleichtun. Wir werden in Kaunos eine königliche Münzstätte errichten und dort Münzen in unserem Namen prägen."  
+ caria_missions_task_17_tt: "#E Kaunos#! kann als #E @[THIS.GetCountry.GetFlag]! [THIS.GetCountry.GetAdjective]er#! #Y Bundesgenosse#! entlassen werden"  
+  
+ caria_missions_task_18: "Herr von Lykien" 
+ caria_missions_task_18_DESC: "Mausolos, der große Architekt der karischen Macht, wusste, dass ein Imperium nicht von einer Hand allein errichtet werden kann. Um seine Südgrenze zu sichern, vertraute er die Herrschaft über Lykien seinem Bruder Pixodaros an. Wir täten gut daran, seinem Beispiel zu folgen. Die lykischen Städte, von Xanthos bis Patara, sind stolz und widerspenstig, aber strategisch wichtig"  
+ caria_missions_task_18_tt: "[THIS.GetCountry.GetName] erhält Ansprüche auf die Gebiete #Y Lycia#!, #Y Milyas#!, #Y Pisidia#!, und #Y Pamphylia#!"
+  
+ caria_missions_task_19: "Die Haarsteuer" 
+ caria_missions_task_19_DESC: "Der Hyparch Kondalos, der zur Regierung Lykiens entsandt wurde, bemerkte einmal, dass die Einheimischen ihr Haar im Gegensatz zu den glattrasierten Kariern lang trugen. Kondalos witterte eine Gelegenheit und verkündete dem Volk, dass der Großkönig Artaxerxes Haare für Pferdeperücken benötige und dass jeder Lykier sich den Kopf rasieren und die abgeschnittenen Haare an den königlichen Hof schicken müsse. Wer sich weigerte, konnte stattdessen in Silber bezahlen. Kein Haar hat die Provinz jemals verlassen, aber Kondalos' Plan steigerte die Einnahmen erheblich.\n\nWir werden diese Tradition mit angemessenen Anpassungen an unsere Zeit wiederbeleben. Nennt es Tribut, nennt es Brauch, so oder so wird von den unterworfenen Völkern in unserem Reich erwartet, dass sie ihren Anteil zahlen, in Silber oder in Haaren" 
+ caria_missions_task_19_tt: "Jede #R nicht integrierte#! Kultur erhält den folgenden Modifikator:"  
+  
+ caria_missions_task_20: "Asiatische Expedition" 
+ caria_missions_task_20_DESC: "Die Westküste Kleinasiens ist ein Flickenteppich aus Stadtstaaten, Bundesstädten und verblassenden Satrapien. Viele dieser Städte zahlten einst Mausolos Tribut oder kämpften an der Seite von Artemisia. Einige sind unter dem Einfluss makedonischer Generäle geraten oder klammern sich hinter bröckelnden Mauern an hohle Freiheiten. Die asiatische Küste ist unser Erbe.\n\nEs ist an der Zeit, eine Expedition vorzubereiten, um unsere Herrschaft über Asia für kommende Generationen zu sichern."  
+  
+ caria_missions_task_21: "Dynast von Derbe"  
+ caria_missions_task_21_DESC: "Das Hochland von Lykaonien ist nach wie vor zerklüftet und unbeansprucht, ein wildes Land mit befestigten Städten, Stammeshäuptlingen und Bergfestungen. Zu diesen gehört die Stadt Derbe, die in der Nähe der Pässe zwischen Isauria und der Kilikischen Ebene liegt. Ein Mitglied unseres Hauses soll für eine Expedition nach Derbe ausgerüstet und finanziert werden. Mit genügend Gold, Waffen und [ROOT.GetCountry.GetAdjective]er Unterstützung könnte er sich einen Platz als Herrscher erkämpfen und die Region an unsere Linie binden."  
+ caria_missions_task_21_tt: "#E Derbe#! wird ein #E @[THIS.GetCountry.GetFlag]!  [THIS.GetCountry.GetAdjective]er#! #Y Bundesgenosse#!"  
+  
+ caria_missions_task_22: "Das Hinterland kultivieren"  
+ caria_missions_task_22_DESC: "Auch wenn unsere Küstenstädte in Marmor erstrahlen, liegt das wahre Herzstück von [ROOT.GetCountry.GetName] im Landesinneren – in den Tälern, Hügeln und verstreuten Dörfern, die unsere Städte versorgen und uns Soldaten für unsere Armeen bereitstellen. Wir müssen unseren Blick auf die Hirten, Bauern und Siedler richten, die unsere Stärke erhalten. Mit bescheidenen Zuschüssen und beständiger Betreuung haben wir das Landesinnere zum schlagenden Herzen der [ROOT.GetCountry.GetAdjective]en Macht gemacht. Mögen Straßen durch die Hügel von Mylasa gebaut und Weiden in den felsigen Boden gehauen werden."  
+ caria_settlement_svalue_tt: "Habt mindestens #Y 15#! Gebäude in #Y Siedlungen#!. ([SCOPE.ScriptValue('caria_settlement_svalue')|R0]/#Y 10#!)" 
+ caria_missions_task_22_tt: "Jedes Territorium mit #Y Siedlungs#! Rang in [GetProvince('(int32)1992').GetArea.GetRegion.GetName] oder [GetProvince('(int32)1977').GetArea.GetRegion.GetName] wird G# #E 2#!#! @freemen! #Y Freie Männer#! Bevölkerungstypen und #G #E 1#!#! @citizen! #Y Bürger#! Bevölkerungstypen #G erhalten#!"  
+  
+ caria_missions_task_23: "Der Thron von Makedonien" 
+ caria_missions_task_23_DESC: "Die Adligen von Makedonien haben schon immer die Starken und Fähigen den Schwachen und Gebrechlichen vorgezogen. Wenn wir unsere Karten richtig ausspielen, könnte sich unsere Linie noch als die stärkste von allen erweisen. Soll Alexanders Vermächtnis jedoch jemals wiederhergestellt werden, müssen wir zunächst das erobern, was von seinem Königreich noch übrig ist, es aus den Händen derer befreien, die es in den Ruin treiben, und an seiner Stelle einen neuen, stabileren Staat schaffen, dem die Makedonen, die über die zersplitterten Überreste des Argeadenreichs verstreut sind, dienen können." 
+ caria_missions_task_23_tt: "#G Schaltet#! #T Makedonische Missionen#! #G frei#!\nDer Abschluss von #T Hellenische Beherrschung#! #G schaltet#! #T Hellenistisches Reich#! #G frei#!"  
+  
+ caria_missions_task_24: "Wissensspeicher"  
+ caria_missions_task_24_DESC: "Die hellenistische Welt ist reich an philosophischen Lehren, Kunst, Geschichte und Gelehrsamkeit – von den Werken Platons bis zu den „Historien“ des Herodot. Durch die Bereitstellung öffentlicher Mittel für Bibliotheken in unseren großen Städten können wir [ROOT.GetCountry.GetName] als Hochburg des griechischen Wissens und des wissenschaftlichen Fortschritts etablieren." 
+ caria_missions_task_24_tt: "Ein erfahrener Forscher wird in unser Land reisen." 
+  
+ caria_missions_task_25: "Marken-Status fordern"  
+ caria_missions_task_25_DESC: "Der Reichtum, die Macht und das Prestige von [ROOT.GetCountry.GetName|G] heben uns von anderen #T Satrapen#!, ab, und obwohl keine Seite es gerne zugeben würde, könnten die [ROOT.GetCountry.GetAdjective]en Aufgeboten sich gegen die ihres #T Oberherrn#! behaupten.\n\nWeil wir stark sind, ist [ROOT.GetCountry.GetRuler.GetName|Y] der Meinung, dass wir einen besonderen Status verdienen,  und wird fordern, dass wir als solcher anerkannt werden – eine kühne Provokation." 
+ caria_missions_task_25_tt: "Wir werden in der Lage sein, eine Abmachung mit unserem #T Oberherren#! #Y [THIS.GetCountry.GetOverlord.GetName]#! auszuhandeln, um ein #T #E Mark#!#! zu werden. [THIS.GetCountry.GetRuler.GetPraenomen] wird darum bitten, dass uns besondere Privilegien gewährt werden, und wir werden je nach Verlauf der Verhandlungen unterschiedliche Belohnungen erhalten." 
+  
+ #MERCENARIES (MERC MOIDIFIER) 
+ caria_missions_task_26: ""
+ caria_missions_task_26_DESC: ""
+  
+ # 
+ caria_missions_task_27: ""
+ caria_missions_task_27_DESC: ""
+  
+ ##CARIAN COCKS (INVENTIONS) 
+ caria_missions_task_28: ""
+ caria_missions_task_28_DESC: ""
+  
+ caria_missions_task_29: ""
+ caria_missions_task_29_DESC: ""
+  
+ caria_missions_task_30: ""
+ caria_missions_task_30_DESC: ""
+  
+  #Modifiers 
+ caria_navy: "Kriegsflotte" 
+ donned_diadem_mod: "Das Diadem angelegt" 
+ ARTEMISIA: "Artemisia"  
+ caria_new_administration: "Neue Verwaltung"  
+ walls_of_halikarnassos: "Mauern von Halikarnassos"  
+ carian_opinion_boost: "Wiederherstellung der Hekatomniden"  
+ kaunian_coinage: "Kaunische Münzprägung" 
+ lycia_decentralized: "Dezentrale Verwaltung"  
+ carian_hair_tax: "Haarsteuer"  
+ carian_hair_tax_money: "Haarsteuer"  
+ heart_of_macedon: "Herz von Makedonien" 
+  #Countries 
+ PLEISTARCHID_KINGDOM: "Königreich der Pleistarchiden"
+ PLEISTARCHID_EMPIRE: "Pleistarchidisches Reich"  
+ PLEISTARCHID_ADJ: "Pleistarchidisch"
+ HEKATOMNID_KINGDOM: "Hekatomnidisches Königreich"  
+ HEKATOMNID_EMPIRE: "Hekatomnidisches Reich"  
+ HEKATOMNID_ADJ: "Hekatomnidisch"  
+ DERBE_NAME: "Derbe"  
+ DERBE_ADJ: "Derbisch" 
+ PRIENE_NAME: "Priene" 
+ PRIENE_ADJECTIVE: "Prieneisch" 
+  
+  #Decisions 
+  
+  
+  #Wonders 
+  
+  
+  #Events 
+ me_caria_1_title: "$caria_missions_task_1$"
+ me_caria_1_desc: "Die Zukunft von Karien ist untrennbar mit der unseren mächtigen #E [ROOT.GetCountry.GetOverlord.GetAdjective]en# Oberherren verbunden. Auch wenn es verlockend sein mag, mehr Unabhängigkeit einzufordern, ist jetzt nicht der richtige Zeitpunkt für solche Schritte. Das würde nur Konflikte und Misstrauen schüren. Stattdessen gebietet es die Weisheit, einen anderen Kurs einzuschlagen – einen, der unsere Stellung stärkt und unsere Bedeutung innerhalb ihres Herrschaftsgebiets sichert."  
+ me_caria_1.a: "Lieber Freunde als Feinde." 
+ me_caria_1_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_1$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_2_title: "$caria_missions_task_2$" 
+ me_caria_2_desc: "Karien hat den Großmächten der Ägäis und des Nahen Ostens schon seit langem seinen Wert unter Beweis gestellt. Unter persischer Herrschaft spielten unsere erfahrenen Seeleute und Söldner eine entscheidende Rolle in deren Feldzügen, während die Hekatomniden Karien zu beispiellosem Reichtum und Einfluss verhalfen. Alexander der Große vertraute Königin Ada die Herrschaft über Karien an – als treue Verbündete und nicht als bloße Untertanin.\ n\nNun bittet der Satrap von Karien unter Berufung auf den historischen Präzedenzfall der karischen Autonomie unter persischer Herrschaft und das von Alexander dem Großen entgegengebrachte Vertrauen darum, den Status Kariens als Verbündeter offiziell zu verankern. Der Erlass dieses Antrags würde ihre Loyalität sichern und ihre Beiträge stärken, aber auch einen Präzedenzfall für größere Autonomie unter unseren Untertanen schaffen. Sollten wir sie als Partner und nicht als bloße Provinz anerkennen?" 
+ me_caria_2.a: "Lasst uns eine Allianz mit [caria_ally_country.GetName] formalisieren."  
+ me_caria_2.b: "Karien wird eine Provinz unter unserer Herrschaft bleiben." 
+  
+ me_caria_201_title: "Unseren Wert beweisen"  
+ me_caria_201_desc: "Vom #E [caria_old_overlord.GetAdjective]en#! Hof  ist eine Antwort auf unseren Wunsch eingegangen. Nach sorgfältiger Beratung haben sie zugestimmt, uns als Partner und nicht nur als bloße Provinz anzuerkennen, und uns damit die Autonomie gewährt, sowohl ihren als auch unseren Interessen besser gerecht zu werden."  #
+ me_caria_201.a: "Es ist uns eine Ehre, dass man uns als Partner vertraut."  
+ me_caria_2_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_2$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_202_title: "Unseren Wert beweisen"  
+ me_caria_202_desc: "Der #E [caria_old_overlord.GetAdjective]e#! Hof hat unseren Wunsch nach Anerkennung als Partner abgelehnt. Bedauerlicherweise müssen wir vorsichtig vorgehen und weiterhin unseren Wert unter Beweis stellen, bis wir den Status erlangen können, den wir verdienen."  
+ me_caria_202.a: "Äußerst bedauerlich."
+  
+ me_caria_3_title: "$caria_missions_task_3$"  
+ me_caria_3_desc: "Die Karer blicken auf eine lange und ruhmreiche Seefahrertradition zurück und dienten als Kommandanten, Schiffsbauer und Krieger in den Flotten mächtiger Reiche. Schon in der Bronzezeit bereisten unsere Vorfahren als Söldner und Händler die Meere. Unter Lygdamis, Artemisia, Mausolus und Ada stellte Karien gewaltige Flotten auf und sicherte sich die Vorherrschaft über weite Teile der Ägäis. Doch viel zu lange wurde unsere Seemacht im Dienste anderer eingesetzt.\n\nWir haben wahrlich eine der besten Marineakademien der Welt gegründet! Die Küsten von #E Karien#! werden von den Seeleuten aus #E [ROOT.GetCountry.GetCapital.GetName]#! gesegnet, die bald die besten in ganz Asien sein werden."  
+ me_caria_3.a: "Wir werden großartig sein." 
+ me_caria_3_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_3$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_4_title: "$caria_missions_task_4$"  
+ me_caria_4_desc: "Die Karer blicken auf eine lange und ruhmreiche Seefahrertradition zurück und dienten als Kommandanten, Schiffsbauer und Krieger in den Flotten mächtiger Reiche. Schon in der Bronzezeit bereisten unsere Vorfahren als Söldner und Händler die Meere. Unter Lygdamis, Artemisia, Mausolus und Ada stellte Karien gewaltige Flotten auf und sicherte sich die Vorherrschaft über weite Teile der Ägäis. Doch viel zu lange wurde unsere Seemacht im Dienste anderer eingesetzt.\n\nNun, mit der Fertigstellung der [ROOT.GetCountry.GetAdjective]en Kriegsflotte, wird unser Schicksal auf den Wellen besiegelt sein!"  
+ me_caria_4.a: "Asien wird vor unserer Macht erzittern!"  
+ me_caria_4_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_4$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_5_title: "$caria_missions_task_5$" 
+ me_caria_5_desc: "Schiffe mit zehn oder mehr Ruderern pro Seite wurden erstmals von Alexander dem Großen eingesetzt, verbreiteten sich jedoch erst, nachdem die Flotten der Antigoniden sie bei der Belagerung von Tyros und darüber hinaus einsetzten. Ein solches Schiff verfügt in einer offenen Seeschlacht stets über eine äußerst eingeschränkte Manövrierfähigkeit. Für die Belagerungskriegsführung sind diese „Mega-Polyremen“ jedoch ideal, da sie Küstenbefestigungen durchbrechen und anschließend als Plattformen für Artillerie dienen können, während sie gleichzeitig die Landung einer großen Anzahl von Truppen ermöglichen. Es ist nur folgerichtig, dass wir solche Schiffe für uns selbst bauen, und das erste davon, die „Artemisia“ unter dem Kommando von [sailor_man.GetName], wird als Flaggschiff der karischen Marine dienen." 
+ me_caria_5.a: "Die „Artemisia“ ist nur die erste von vielen..."  
+ me_caria_5_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_5$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_6_title: "$caria_missions_task_6$"  
+ me_caria_6_desc: "Die mächtigsten der Diadochen bezeichnen sich nun als Könige, als „Basileis“, und nicht mehr als Satrapen. Karien hat Königinnen und Dynasten, Kriegsherren und Visionäre gekannt. Wir herrschen nun nicht mehr als bloße Diener ferner Mächte, sondern als souveräne Herrscher aus eigenem Recht.\n\nUnd dennoch bezeichnen manche unseren Herrscher als „Satrapen“ – einen Titel, der Unterordnung bedeutet. Das geht so nicht. Das Diadem wartet auf uns, und mit ihm die Anerkennung unseres rechtmäßigen Platzes unter den Nachfolgern Alexanders."  
+ me_caria_6.a: "Lang lebe [ROOT.GetCountry.GetRuler.GetTitle] [ROOT.GetCountry.GetRuler.GetName] von [ROOT.GetCountry.GetName]!"  
+ me_caria_6.b: "[ROOT.GetCountry.GetRuler.GetPraenomen] wird das Militär stärken und alle anderen verachten."  
+ me_caria_6_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_6$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_7_title: "$caria_missions_task_7$"  
+ me_caria_7_desc: "Pleistarchos' Vater, Antipatros, regierte Makedonien als Regent der Könige,  und sein Bruder Kassandros legte die alten Titel der Unterordnung ab, um sich selbst zum Basileus zu erklären und eine eigene Dynastie zu gründen. Sollen wir weniger mutig sein als Kassandros?\n\nAuch wenn uns die Verbündeten [ROOT.GetCountry.GetName] vermacht haben, sind wir nicht länger an seine engen Grenzen gebunden. Unsere Ambitionen reichen weit darüber hinaus. Lasst uns unseren Platz unter den Nachfolgern Alexanders einnehmen und [ROOT.GetCountry.GetName] zum 'Pleistarchadischen Königreich' umgestalten!"  
+ me_caria_7.a: "Von nun an wird [ROOT.GetCountry.GetName] als das Pleistarchidische Königreich  bekannt sein!" 
+ me_caria_7.b: "Der Status quo genügt."  
+ me_caria_7_tooltip: "Wir können nun das Kriegsziel  #G Das Erbe Alexanders#! gegen andere Diadochen verwenden.\n#G Wir werden Ansprüche auf [GetCharacter('(int32)39').GetPraenomen]s ehemaliges Imperium geltend machen#!:\n[GetProvince('(int32)418').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)350').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)379').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)790').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)290').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)1883').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)1936').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)830').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)918').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)4799').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)687').GetArea.GetRegion.GetName|Y], [GetProvince('(int32)516').GetArea.GetRegion.GetName|Y], und [GetProvince('(int32)569').GetArea.GetRegion.GetName|Y].\n#R Diese Ansprüche und das Kriegsziel erlöschen mit dem Tod oder der Abdankung von [THIS.GetCountry.GetRuler.GetName].#!\nDie Missionsaufgabe '#Y $caria_missions_task_7$#!' wurde nun #G abgeschlossen#!" 
+  
+ me_caria_8_title: "$caria_missions_task_8$"  
+ me_caria_8_desc: "Thukydides nannte die Bewohner von Chios einst „die reichsten Griechen“, und das nicht ohne Grund. Mit fast 900 Quadratkilometern fruchtbarem Land, hohen Gipfeln und Zugang zu den östlichen Meeren ist die Insel eine Welt für sich und viel zu wertvoll, um sie den Launen der Demokratie zu überlassen.\n\nIn den Tagen von Mausolos vertrieben die Oligarchen von Chios klugerweise die Demokraten, verbündeten sich mit Karien und bildeten eine Allianz mit Rhodos, Kos und Byzantion. Aber wie bei allen instabilen Dingen kehrte mit Alexanders Eroberungen die Demokratie zurück.\n\nDieser Fehler wurde behoben. Mit Hilfe unserer Flotte haben die natürlichen Anführer der Insel ihren Platz zurückerobert und Chios erneut unter karische Herrschaft gebracht. Ihr Anführer, [chios_country.GetRuler.GetName], bittet uns, einen umstrittenen Landstreit mit den Erythraern mit Waffengewalt beizulegen."  
+ me_caria_8.a: "Alles für unsere treuen Freunde." 
+ me_caria_8.b: "Wir sollten uns nicht überanstrengen."  
+ me_caria_8_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_8$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_8001_title: "Oligarchen übernehmen Chios"  
+ me_caria_8001_desc: "Überall in der Ägäis verbreitet sich die Nachricht: Das demokratische Regime von Chios ist gestürzt. Unterstützt durch [chios_new_master.GetAdjective]e Gelder und Schiffe hat die oligarchische Fraktion der Insel die Versammlung gestürzt und die Kontrolle unter einem Rat von „natürlichen Anführern“ wiederhergestellt.\n\nDer Schritt erinnert an die Tage von Mausolos, als Chios den Demos vertrieb und sich zusammen mit Rhodos, Kos und Byzantion einem von Karern geführten Bund anschloss. Jetzt neigt sich die wohlhabende Insel erneut der Oligarchie und [chios_new_master.GetName] zu." 
+ me_caria_8001.a: "Interessant..." 
+ me_caria_8001.b: "Diese Kränkung darf nicht ungestraft bleiben!"  
+ me_caria_8001.c: "Diese Kränkung darf nicht ungestraft bleiben!" 
+  
+ me_caria_9_title: "$caria_missions_task_9$"  
+ me_caria_9_desc: "Die ionische Stadt [priene_country.GetName], seit jeher bekannt für ihre erhabenen Tempel und stolzen demokratischen Traditionen, ist verstummt … bis auf das Stampfen der [ROOT.GetCountry.GetAdjective]en Stiefel. Mit der diskreten Unterstützung der [ROOT.GetCountry.GetAdjective]en Truppen hat sich [hieron_scope.GetName] zum „Prinzen von Priene“ erklärt, die Stadtversammlung aufgelöst und das Diadem aufgesetzt. Das Heiligtum der Athena Polias bleibt unberührt, doch seine Verwalter sind nun einem Prinzen statt dem Volk Rechenschaft schuldig.\n\nSchon jetzt regt sich Unruhe im Ionischen Bund. Noch vor wenigen Wochen war Priene der Versammlungsort des Bundes; nun ist es, bis auf den Namen, ein [ROOT.GetCountry.GetAdjective]er Vasall."  
+ me_caria_9.a: "Der Weg nach Ionien liegt offen!"  
+ me_caria_9_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_9$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_9001_title: "Prinz von Priene"  
+ me_caria_9001_desc: "Die ionische Stadt [priene_country.GetName], seit jeher bekannt für ihre erhabenen Tempel und stolzen demokratischen Traditionen, ist verstummt … bis auf das Stampfen karischer Stiefel. Mit der diskreten Unterstützung karischer Truppen hat sich [hieron_scope.GetName], einer der führenden Adligen von Priene, zum „Prinzen von Priene“ erklärt, die Stadtversammlung aufgelöst und das Diadem aufgesetzt. Das Heiligtum der Athena Polias bleibt unberührt, doch seine Verwalter sind nun einem Fürsten statt dem Volk Rechenschaft schuldig.\n\nGanz Ionien ist in Unruhe versetzt. Noch vor wenigen Wochen war Priene der Versammlungsort des Ionischen Bundes; nun ist es, abgesehen vom Namen, ein karischer Vasall." 
+ me_caria_9001.a: "Interessant..."  
+ me_caria_9001.b: "Diese Kränkung darf nicht ungestraft bleiben!" 
+  
+ me_caria_10_title: "$caria_missions_task_10$"  
+ me_caria_10_desc: "Das Zeitalter der Könige steht bevor. Die Erben Alexanders geben sich nicht länger damit zufrieden, sich Satrapen zu nennen, sondern bezeichnen sich nun als Basileis, und jeder baut sein Reich nach dem Vorbild seines Gründers auf. Die Welt wird nicht mehr allein von Menschen regiert, sondern von wilden Tieren.\n\nIm Süden kreisen die Ptolemäer wie Adler: unnahbar, majestätisch und zum blitzschnellen Angriff bereit. Im Osten rücken die Seleukiden getragen von Elefantenstampfen vor: gewaltig, bedächtig und unaufhaltsam. Im Norden brüllen die Lysimachiden wie Löwen, immer auf der Suche nach Territorium und Ruhm.\n\nJeder hat Karien im Blick, und jeder hegt heimliche Absichten gegenüber unseren Küsten. Aber vielleicht müssen wir uns ihnen nicht im Kampf stellen. Natürlich hat Frieden seinen Preis. Eine königliche Hochzeit, begleitet von der Mitgift Halikarnassos, könnte das Raubtier dennoch zum Partner machen." 
+ me_caria_10.a: "Eine Tochter von [GetCountry('EGY').GetRuler.GetPraenomen] wäre geeignet."  
+ me_caria_10.at: "Ein Heiratsantrag wird an [GetCountry('EGY').GetCapital.GetName] gesendet#!\nFalls [GetCountry('EGY').GetRuler.GetPraenomen] #G akzeptiert#!, dann geschieht Folgendes:\n\nEin Spross der Linie von #E #T [GetCountry('EGY').GetRuler.GetPraenomen]#!#! wird ein Mitglied unseres Hauses heiraten"  
+ me_caria_10.b: "[GetCountry('TRE').GetRuler.GetPraenomen] soll zu unseren Verwandten gehören"  
+ me_caria_10.bt: "Ein Heiratsantrag wird an [GetCountry('TRE').GetCapital.GetName] gesendet#!\nFalls [GetCountry('TRE').GetRuler.GetPraenomen] #G akzeptiert#!, dann geschieht Folgendes:\n\nEin Spross der Linie von #E #T [GetCountry('TRE').GetRuler.GetPraenomen]#!#! wird ein Mitglied unseres Hauses heiraten"  
+ me_caria_10.c: "[GetCountry('SEL').GetRuler.GetPraenomen] ist ein vernünftiger Mann." 
+ me_caria_10.ct: "Ein Heiratsantrag wird an [GetCountry('SEL').GetCapital.GetName] gesendet#!\nFalls [GetCountry('SEL').GetRuler.GetPraenomen] #G akzeptiert#!, dann geschieht Folgendes:\n\nEin Spross der Linie von #E #T [GetCountry('SEL').GetRuler.GetPraenomen]#!#! wird ein Mitglied unseres Hauses heiraten" 
+ me_caria_10.d: "Wir werden uns nicht durch Geschenke und Schmeicheleien erniedrigen." 
+ me_caria_10_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_10$#!' $mission_completed_tooltip_2$"  
+  
+  
+  
+ me_caria_1001_title: "Der karische Heiratsantrag"  
+ me_caria_1001_desc: "Nun kommen Gesandte aus Karien, die Schmeicheleien, Silber und etwas noch Gefährlicheres mitbringen: ein Angebot. Sie schlagen eine Verbindung zwischen unseren beiden Häusern vor, besiegelt durch eine Mitgift aus Halikarnassos. Sie hoffen, mit Häfen und verwandtschaftlichen Bindungen Frieden zu erkaufen.\n\nEin kluger Schachzug. Karien will sich uns nicht widersetzen; es will uns überleben. Wir können ihrem Antrag stattgeben und sie durch Blutsverwandtschaft an uns binden … oder ihn ablehnen und die Schakale auf ihre Mauern loslassen."  
+ me_caria_1001.a: "Ein höchst willkommenes Angebot."  
+ me_caria_1001.b: "Was für eine lächerliche Bitte." 
+  
+ me_caria_1002_title: "$caria_missions_task_10$: Erfolg"  
+ me_caria_1002_desc: "Es sind Nachrichten vom Hof von [sucessor_kingdom.GetCapital.GetName] eingetroffen. Eine königliche Verbindung wurde vereinbart. Einer der Unseren soll in deren Familie einheiraten, und im Gegenzug werden uns Schutz, Bündnis und Anerkennung gewährt. Natürlich ist Frieden niemals umsonst: Halikarnassos wird nun als Mitgift in [sucessor_kingdom.GetAdjective]e Hände übergehen." 
+ me_caria_1002.a: "Lasst die Hochzeitsfeierlichkeiten beginnen."  
+  
+ me_caria_1003_title: "$caria_missions_task_10$: Fehlschlag"  
+ me_caria_1003_desc: "Die [sucessor_kingdom.GetAdjective]e Antwort ist eingetroffen und sie ist kühl ausgefallen. Unsere Gesandtschaft wurde abgewiesen, unsere Geschenke abgelehnt, unser Vorschlag rundweg zurückgewiesen. Es wird keine Hochzeit geben, kein Bündnis, keinen mit Mitgiften erkauften Frieden."  
+ me_caria_1003.a: "Dann stehen wir alleine da." 
+  
+ me_caria_11_title: "$caria_missions_task_11$" 
+ me_caria_11_desc: "Die Welt ist ein Ort voller Unruhen. Alexander ist nicht mehr unter uns, und in seiner Abwesenheit teilen die Diadochen die Welt in ihrem Streben nach Herrschaft unter sich auf. Flotten brennen, Städte fallen, und kein Land bleibt vom Krieg verschont. In einer solchen Zeit bedeutet es, auf Messers Schneide zu stehen, wenn man auf sich allein gestellt ist. Viele fordern nun, dass wir uns offiziell unter den Schutz unserer guten und treuen Freunde, den Ptolemäern, begeben." 
+ me_caria_11.a: "Lang lebe [GetCountry('EGY').GetRuler.GetTitle] [GetCountry('EGY').GetRuler.GetName]" 
+ me_caria_11.b: "Wir werden ein freies Volk bleiben."  
+ me_caria_11_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_11$#!' $mission_completed_tooltip_2$."  
+  
+ me_caria_12_title: "$caria_missions_task_12$" 
+ me_caria_12_desc: "Die Welt ist ein Ort voller Unruhen. Alexander ist nicht mehr unter uns, und in seiner Abwesenheit teilen die Diadochen die Welt in ihrem Streben nach Herrschaft unter sich auf. Flotten brennen, Städte fallen, und kein Land bleibt vom Krieg verschont. In einer solchen Zeit bedeutet es, auf Messers Schneide zu stehen, wenn man auf sich allein gestellt ist. Viele fordern nun, dass wir uns offiziell unter den Schutz unserer guten und treuen Freunde, den Alkimachiden, begeben." 
+ me_caria_12.a: "Lang lebe [GetCountry('TRE').GetRuler.GetTitle] [GetCountry('TRE').GetRuler.GetName]" 
+ me_caria_12.b: "Wir werden ein freies Volk bleiben."  
+ me_caria_12_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_12$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_13_title: "$caria_missions_task_13$"  
+ me_caria_13_desc: "Die Welt ist ein Ort voller Unruhen. Alexander ist nicht mehr unter uns, und in seiner Abwesenheit teilen die Diadochen die Welt in ihrem Streben nach Herrschaft unter sich auf. Flotten brennen, Städte fallen, und kein Land bleibt vom Krieg verschont. In einer solchen Zeit bedeutet es, auf Messers Schneide zu stehen, wenn man auf sich allein gestellt ist. Viele fordern nun, dass wir uns offiziell unter den Schutz unserer guten und treuen Freunde, der Seleukiden, begeben."  
+ me_caria_13.a: "Lang lebe [GetCountry('SEL').GetRuler.GetTitle] [GetCountry('SEL').GetRuler.GetName]"  
+ me_caria_13.b: "Wir werden ein freies Volk bleiben."  
+ me_caria_13_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_13$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_14_title: "$caria_missions_task_14$"  
+ me_caria_14_desc: "Halikarnassos trotzte einst dem größten Eroberer seiner Zeit. Als Alexander die Stadt im Jahr 334 v. Chr. belagerte, hielt sie unter dem Kommando von Memnon von Rhodos monatelang stand, und obwohl sie schließlich fiel, verdiente sich ihre Verteidigung den Respekt ganz Hellas’. Seitdem wechselte Halikarnassos mehr als einmal den Besitzer, während die Diadochen wie Wölfe um die Beute des Reiches kämpften.\n\nDoch damit ist nun Schluss. Mögen die Könige und Satrapen noch so sehr intrigieren – Halikarnassos wird nicht ihre Beute sein. Wir haben ihre Mauern wieder aufgebaut, ihre Häfen befestigt und ihre Türme restauriert. Die Stadt ist nun eine uneinnehmbare Bastion der karischen Macht, und wer sie einnehmen will, muss einen schrecklichen Preis dafür zahlen."  
+ me_caria_14.a: "Der Schild von Karien, unzerbrechlich und ewig, ist vollkommen!"  
+ me_caria_14_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_14$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_15_title: "$caria_missions_task_15$" 
+ me_caria_15_desc: "Das Haus der Hekatomniden führte Karien zu seiner Blütezeit. Von ihrem Stammsitz in Mylasa aus stiegen die Hekatomniden als Satrapen von Karien und Herrscher sowohl über das Hochland als auch über die Küstengebiete zur Macht auf. Unter Mausolos und Artemisia erlangte Halikarnassos Ruhm: Seine Denkmäler konnten sich mit denen antiker Dynastien messen, seine Flotten beherrschten die Meere, und an seinem Hof versammelten sich Dichter, Gelehrte und Soldaten. Selbst in ihrer Untergangszeit bestand die Dynastie in Ehren fort: Königin Ada, die Letzte der Hekatomniden, adoptierte Alexander den Großen als ihren Sohn. Nun, da Halikarnassos wieder gesichert ist, ist es nur angemessen, dass wir die Herrschaft darüber [hecatomnid_heir.GetName] anvertrauen, einem Spross eines Nebenzweiges des Hauses Hekatomnos aus Mylassa." 
+ me_caria_15.a: "Lang lebe Basileos [hecatomnid_heir.GetPraenomen]!"  
+ me_caria_15.b: "[hecatomnid_heir.GetPraenomen] wird der erste Mann in Halikarnassos sein."  
+ me_caria_15_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_15$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_16_title: "$caria_missions_task_16$"  
+ me_caria_16_desc: "Zu lange schon hat Karien vor den Persern, den Makedonen und den selbsternannten Königen, die keine Wurzeln in unserem Boden hatten, die Knie gebeugt. Nicht mehr. Karien erinnert sich. In den Bergheiligtümern von Mylasa, in den Hafentavernen von Halikarnassos, in den Herzen der Menschen leben die alten Loyalitäten weiter. Es gibt Gerüchte von einem Aufstand, von Rache, von Wiederherstellung.\n\nEin solches Gerücht hat in der Person eines [hekatomnid_assasain.GetName] Gestalt angenommen, eines Mannes mit Charisma und Ehrgeiz aus der Linie von Hekatomnos, der sich mit vorgetäuschter Loyalität und Schmeichelei das Vertrauen von [ROOT.GetCountry.GetRuler.GetTitle] [ROOT.GetCountry.GetRuler.GetName] verdient hat. [hekatomnid_assasain.GetPraenomen] glaubt, dass es an der Zeit ist, dass die Erben von Hekatomnos das zurückfordern, was ihnen rechtmäßig gehört, nicht als Satrapen, sondern als Herrscher.\n\nAber heute Nacht wird in den dunklen Hallen des Palastes [hekatomnid_assasain.GetHerHis] Verrat offengelegt. Die Wachen von [ROOT.GetCountry.GetRuler.GetPraenomen] haben [hekatomnid_assasain.GetHerHim] dabei erwischt, wie er den Wein von [ROOT.GetCountry.GetRuler.GetPraenomen] vergiftet hat. Ein Wort des Hauptmanns der Wache kann [hekatomnid_assasain.GetPraenomen] in Ketten legen und [ROOT.GetCountry.GetRuler.GetPraenomen] retten.  Doch es gibt noch einen anderen Weg: das Schweigen..." 
+ me_caria_16.a: "Lasst den Usurpator erzittern!" 
+ me_caria_16.at: "Wir werden die Flagge von #T Halikarnassos#! übernehmen" 
+ me_caria_16.b: "Karien für die Karier." 
+ me_caria_16.c: "[hekatomnid_assasain.GetPraenomen] einsperren!"  
+ me_caria_16_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_16$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_17_title: "$caria_missions_task_17$"  
+ me_caria_17_desc: "Während die materiellen Überreste von Kaunos die Gründung oder frühe Nutzung des Ortes höchstens auf das 9. Jahrhundert v. Chr. datieren, reicht die überlieferte Geschichte der Stadt bis zu ihrem Namensgeber Kaunos zurück, dem Sohn des karischen Königs Miletos und der Najade Kyane. Es heißt, dass sich Kaunos und seine Schwester Byblis ineinander verliebten und dass Kaunos, um Inzest zu vermeiden, vor ihr bis nach Lykien in Anatolien floh. Dorthin folgte ihm Byblis, verfiel jedoch in Trauer und Wahnsinn und starb; sie verwandelte sich in eine Quelle, vergoss unaufhörlich Tränen über das Land und schuf mit ihren tränenreichen Augen den Fluss Kalbys. In Asien heiratete Kaunos die Nymphe Pronoe und zeugte einen Sohn, Aegialus, der später in der Nähe eine Stadt gründete, die nach seinem Vater benannt wurde. Die Stadt selbst war ein hervorragender Handelshafen mit zwei aktiven Häfen, und Herodot berichtet, dass die Einwohner der Stadt hartnäckig gegen den persischen Feldherrn Harpagus kämpften – sie unterlagen jedoch nach einiger Zeit. Der Historiker merkt außerdem an, dass er zwar persönlich ihrer Behauptung, ausländischer Herkunft zu sein, nicht zustimmt, da sie eine Sprache sprechen, die der seiner Heimat ähnelt, er jedoch nicht leugnen kann, dass sie sich auf eigentümliche Weise verhalten, anders als alle anderen Karer und Lykier. Alle Männer, Frauen und sogar die Kinder trinken gemeinsam Wein.\n\nWenn wir den Ehrgeiz hegen, zu den Erben Alexanders zu gehören, müssen wir es ihnen gleichtun. Wir werden in Kaunos eine königliche Münzstätte errichten und dort Münzen in unserem Namen prägen."  
+ me_caria_17.a: "Ein autonomes Kaunos entspricht unseren Interessen."  
+ me_caria_17.at: "#E Kaunos#! wird ein #E @[THIS.GetCountry.GetFlag]!  [THIS.GetCountry.GetAdjective]er#! #Y Bundesgenosse#!" 
+ me_caria_17.b: "Die ganze Welt wird das Gesicht von [ROOT.GetCountry.GetRuler.GetTitle] [ROOT.GetCountry.GetRuler.GetName] kennen!" 
+ me_caria_17_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_17$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_18_title: "$caria_missions_task_18$"  
+ me_caria_18_desc: "Mausolos, der große Architekt der karischen Macht, wusste, dass ein Imperium nicht von einer Hand allein aufgebaut werden kann. Um seine Südgrenze zu sichern, vertraute er die Herrschaft über Lykien seinem Bruder Pixodaros an. Wir täten gut daran, seinem Beispiel zu folgen. Die lykischen Städte, von Xanthos bis Patara, sind stolz und widerspenstig, aber strategisch wichtig."  
+ me_caria_18.a: "Lykien wird fortan von einem Satrapen regiert!" 
+ me_caria_18.b: "Die Grenzen Lykiens sollen sich weit und breit erstrecken."  
+ me_caria_18_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_18$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_19_title: "$caria_missions_task_19$"  
+ me_caria_19_desc: "Der Hyparch Kondalos, der zur Regierung Lykiens entsandt wurde, bemerkte einmal, dass die Einheimischen ihr Haar im Gegensatz zu den glattrasierten Kariern lang trugen. Kondalos witterte eine Gelegenheit und verkündete dem Volk, dass der Großkönig Artaxerxes Haare für Pferdeperücken benötige und dass jeder Lykier sich den Kopf rasieren und die abgeschnittenen Haare an den königlichen Hof schicken müsse. Wer sich weigerte, konnte stattdessen in Silber bezahlen. Kein Haar hat die Provinz jemals verlassen, aber Kondalos' Plan steigerte die Einnahmen erheblich."  
+ me_caria_19.a: "Mausolos wusste sicher, wie man sie auswählt..." 
+ me_caria_19_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_19$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_20_title: "$caria_missions_task_20$"  
+ me_caria_20_desc: "Die Westküste Kleinasiens ist ein Flickenteppich aus Stadtstaaten, Bundesstädten und verblassenden Satrapien. Viele dieser Städte zahlten einst Mausolos Tribut oder kämpften an der Seite von Artemisia. Einige sind unter dem Einfluss makedonischer Generäle geraten oder klammern sich hinter bröckelnden Mauern an hohle Freiheiten. Die asiatische Küste ist unser Erbe. Es ist an der Zeit, eine Expedition zu starten, um unsere Herrschaft über Asien für kommende Generationen zu sichern." 
+ me_caria_20.a: "Bald gehört Asien uns!"  
+ me_caria_20_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_20$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_21_title: "$caria_missions_task_21$" 
+ me_caria_21_desc: "Vor nicht allzu langer Zeit war das Hochland von Lykaonien zerklüftet und unbeansprucht, ein wildes Land mit befestigten Städten, Stammeshäuptlingen und Bergfestungen. Unsere Expedition nach Derbe hat Früchte getragen. [derbe_ruler.GetPraenomen] regiert diese Länder nun als Dynastie, nachdem er sich mit Hilfe von [ROOT.GetCountry.GetAdjective]em Gold die Treue seiner Burgen und Städte gesichert hat. Auf [derbe_ruler.GetHerHis]er Seite  steht [derbe_heir.GetPraenomen], der Erbe dieser neuen derbeanischen-Linie."  
+ me_caria_21.a: "Endlich hat Derbe einen Dynasten." 
+ me_caria_21_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_21$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_22_title: "$caria_missions_task_22$"  
+ me_caria_22_desc: "Auch wenn unsere Küstenstädte in Marmor erstrahlen, liegt das wahre Herzstück von [ROOT.GetCountry.GetName] im Landesinneren – in den Tälern, Hügeln und verstreuten Dörfern, die unsere Städte versorgen und uns Soldaten für unsere Armeen bereitstellen. Wir müssen unseren Blick auf die Hirten, Bauern und Siedler richten, die unsere Stärke erhalten. Mit bescheidenen Zuschüssen und beständiger Betreuung haben wir das Landesinnere zum schlagenden Herzen der [ROOT.GetCountry.GetAdjective]en Macht gemacht. Durch die Hügel von Mylasa wurden Straßen gebaut und Weiden auf dem steinigen Boden angelegt."  
+ me_caria_22.a: "Wir kümmern uns um die Unsrigen." 
+ me_caria_22.at: "Jedes Territorium mit #Y Siedlungs#! Rang wird  #E 2#! @freemen! #Y Freie Männer#! Bevölkerungstypen und #G #E 1#!#! @citizen! #Y Bürger#! Bevölkerungstypen #G erhalten."  
+ me_caria_22_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_22$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_23_title: "$caria_missions_task_23$"  
+ me_caria_23_desc: "Die Adligen von Makedonien haben schon immer die Starken und Fähigen den Schwachen und Gebrechlichen vorgezogen. Wenn wir unsere Karten richtig ausspielen, könnte sich unsere Linie noch als die stärkste von allen erweisen. [ROOT.GetCountry.GetRuler.GetName] hat die Überreste von Alexanders Königreich an sich gerissen und es aus der Gewalt derer gerissen, die es in den Ruin trieben, um an seiner Stelle einen neuen, stabileren Staat für die Makedonen zu schaffen, die über die zersplitterten Überreste des Argeadenreichs verstreut sind und ihm dienen sollen"  
+ me_caria_23.a: "[ROOT.GetCountry.GetRuler.GetPraenomen] ist der [ROOT.GetCountry.GetRulerTitle] von Makedonien" 
+ me_caria_23.at: "Wir werden die Flagge und Farben Makedoniens übernehmen." 
+ me_caria_23.b: "Wir herrschen über Makedonien, aber es ist nicht mehr das Makedonien von einst."  
+ me_caria_23.bt: "#R Nichts passiert.#!" 
+ me_caria_23.c: "Dies ist ein neues Kapitel in der Geschichte der Makedonen." 
+ me_caria_23.ct: "Wir werden die Symbole Makedoniens übernehmen, aber unsere Farben beibehalten." 
+ me_caria_23_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_23$#!' $mission_completed_tooltip_2$\n#G Schaltet#! #T Makedonische Missionen#! #G frei#!\nDer Abschluss von #T Hellenische Beherrschung#! #G schaltet#! #T Hellenistisches Reich#! #G frei#!" #hellenistic Empire
+  
+ me_caria_24_title: "$caria_missions_task_24$"  
+ me_caria_24_desc: "Die hellenistische Welt ist reich an Lehren der Philosophie, Kunst, Geschichte und Bildung, von den Werken Platons bis zu den Historien des Herodot.\n\nMit dem Bau öffentlicher Bibliotheken im ganzen Land ist [ROOT.GetCountry.GetName] zu einem Leuchtturm des Hellenismus im Osten geworden, mit dem Klang großer Debatten, der durch die Straßen hallt und viele Gelehrte dazu verleitet, vom griechischen Festland zu reisen. Insbesondere ein Gelehrter, [hellenic_scholar.GetName], hat einen außergewöhnlich scharfen Verstand bewiesen und wäre der ideale Forscher, sollten wir ihm die Möglichkeit geben, für uns zu arbeiten."  
+ me_caria_24.a: "Exzellent."  
+ me_caria_24_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_24$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_25_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_25$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_26_title: "$caria_missions_task_26$" 
+ me_caria_26_desc: ""
+ me_caria_26.a: ""
+ me_caria_26_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_26$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_27_title: "$caria_missions_task_27$" 
+ me_caria_27_desc: ""
+ me_caria_27.a: ""
+ me_caria_27_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_27$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_28_title: "$caria_missions_task_28$" 
+ me_caria_28_desc: ""
+ me_caria_28.a: ""
+ me_caria_28_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_28$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_29_title: "$caria_missions_task_29$" 
+ me_caria_29_desc: ""
+ me_caria_29.a: ""
+ me_caria_29_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_29$#!' $mission_completed_tooltip_2$"  
+  
+ me_caria_30_title: "$caria_missions_task_30$"  
+ me_caria_30_desc: ""
+ me_caria_30.a: ""
+ me_caria_30_tooltip: "$mission_completed_tooltip_1$ '#Y $caria_missions_task_30$#!' $mission_completed_tooltip_2$"  
+  
+  
+ ###Notes 
+  
+  
+ #As of now, Macedon gets an event where (if the conditions are right) the Diadochi agree to let Pleistarchus take a satrapy of his own. He can be given Caria or Cilicia, becoming a satrap, and Macedon gets some former Antigonid subjects in the area they choose. Another of the Diadochi can appoint a satrap to the province not given to Pleistarchus. However, he can also be given the independent governorship of both Cilicia and Caria as a Macedonian ally. 
+ #If we were trying to be a historically accurate as possible, then Pleistarchus should probably be given Cilicia. Demetrius would get an event to retake it and if successful, Pleistarchus/Cassander could appeal to Lysmachus for Caria. Unfortunately, this doesn't work well  from a gameplay perspective. 
+ #I haven't implemented it, but I had planned for some further events about Pleistarchus and Caria. Eupolemus would eventually get gout, and Eupolemus, his second in command, would suggest that Pleistarchus step down and give the reins over to himself. If Pleistarchus refused, then there would be a chance for him to be found dead in his bed a few months later. The court physicians claim that he succumbed to his disease, but there's bruising on his neck that looks like strangulation marks. No matter, Eupolemus will naturally take over the affairs of state. There would also be a chance for Eupolemus to ask a foreign power (usually Lysmachus) for assistance in assassinating Pleistarchus. If Thrace cooperated, then they would invite Pleistarchus to the capital as a guest of honor for a great feast. While attendingPleistarchus will die in bed. The doctors and Eupolemus claim that the consumption got him, but some remark that his room smells like rat urine, a telltale sign of hemlock. If successful, Eupolemus will swear fealty to Lysimachus. 
+  
+  
+ #Add a bunch of events for caria 
+ #Event for Demetrius to declare war on Cilicia 
+ #The overlord should get a event to cede it or prepare for war 
+ #Eupolemus event to take power 
+ #He can ask a foreign power for assistance in assassinating pleistarchus 
+ #The diadochi get an event about pleistarchus getting gout 
+ #5-10 years after getting Caria 
+ #Eupolemus feels that week was cannot be tolerated 
+ #He asks the ruler to step down 
+  
+ #A few months later the ruler might be found dead in his bed. The court physicians claim that he succumbed to his disease, but there's bruising on his neck that loooks like strangulation marks. No matter, Eupolemus will naturally take over the affairs of state. 
+ #Another option requires Thrace's cooperation. They will invite pleistarchus to the capital as a guest of honor for a great feast. There pleistarchus will die in bed. The doctors and Eupolemus claim that the consumption got him, but some remark that his room smells like rat urine, a telltale sign of hemlock 
+ #Eupolemus will swear fealty to lysmachos 
+ #Option for Kassandros to attend 

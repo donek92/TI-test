@@ -1,0 +1,80 @@
+﻿l_german:
+
+  ## CULTURAL ##
+
+  punic_heritage:0 "Punisches Erbe"
+  punic_heritage_desc:0 "Die punischen Städte, die vor langer Zeit von phönizischen Händlern gegründet wurden, sind über das ganze Mittelmeer verteilt. Von der großen Stadt Karthago bis zu den kleineren Städten in Libyen streben alle danach, eines Tages ihre angestammte Heimat von den Diadochen zu befreien und die Herrschaft über das Meer zurückzugewinnen."
+
+  ## REGIONAL ##
+
+ 
+  ## GEOGRAPHICAL ##
+
+  plateau_heritage:0 "Hochebenen Erbe"
+  plateau_heritage_desc:0 "Vom Hochland Persiens bis zur tibetischen Hochebene haben sich diese Völker an das Leben in rauen Gegenden angepasst. Sie wissen genau, was ein Volk braucht, um zu überleben, und können dies nutzen, um Eindringlinge fernzuhalten. Da sie jedoch nicht an die wogende See gewöhnt sind, werden ihre Schiffe dazu neigen, zu fliehen, wenn sie mit Gewalt angegriffen werden."
+
+  ##TF IBERIA##
+  carpetani_heritage:0 "Carpetanisches Erbe"
+  carpetani_heritage_desc:0 "Die Carpetaner sind ein Stamm mit einem bescheidenen Erbe im Zentrum der Halbinsel, der von seinen Nachbarn oft übersehen wird. Was als Schwäche erscheinen mag, ist in Wirklichkeit ihre Stärke: Während die anderen sich endlos untereinander streiten, ziehen es die Carpetaner vor, in Frieden zu leben und mächtige Koalitionen zu bilden, die zuschlagen können, wenn die Zeit für einen Krieg unausweichlich kommt.."
+  celtician_heritage:0 "Keltisches Erbe"
+  celtician_heritage_desc:0 "Die Keltiker waren einer der wenigen Stämme der Halbinsel, die von den Griechen als zivilisiert angesehen wurden, wenn auch weniger als die benachbarten Turdetaner. Viele andere Stämme bauten ihr eigenes Erbe auf, nachdem sie aus dem keltischen Gebiet eingewandert waren."
+  vaccaeian_heritage:0 "Vaccaeisches Erbe"
+  vaccaeian_heritage_desc:0 "Die Vaccaeer waren Meister der Landwirtschaft. Ihr starkes egalitäres Erbe führte dazu, dass sie die fruchtbaren Gebiete der westlichen Hochebene durch ein kollektivistisches System der Landwirtschaft erschlossen."
+
+  ###HIBERNIA###
+  hibernian_heritage:0 "Hibernisches Erbe"
+  hibernian_heritage_desc:0 "Ein Volk, dessen Kultur durch Krieg, Seetraditionen und Vorurteile gegen sie geprägt ist."
+
+
+  ## UNIQUE ##
+
+  zhangzhung_heritage:0 "Das Erbe von Zhangzhung"
+  zhangzhung_heritage_desc:0 "Die Zhangzhung, die vor fast 300 Jahren gegründet wurden, haben ihre relative Isolation bewahrt. Obwohl sie andere Kulturen akzeptieren, wollen sie sich nicht in Konflikte südlich der Berge einmischen. Die Zhangzhung, von denen manche sagen, sie seien die ursprüngliche Heimat der hinduistischen Lehren, haben ihre Macht fast 1.000 Jahre lang bewahrt."
+
+  
+  teutonic_heritage:0 "Teutonisches Erbe"
+  teutonic_heritage_desc:0 "Die Germanen waren als wilde Krieger bekannt und verbündeten sich bei ihrer Invasion in Europa mit den Kimbern. Im Kampf gegen die Römer zerbrachen sie und flohen, aber nicht bevor sie den Armeen der Römischen Republik erheblichen Schaden zugefügt hatten."
+
+
+  ## From Dustin - DoA ##
+  
+  assyrian_heritage:0 "Assyrisches Erbe"
+  assyrian_heritage_desc:0 "Das alte assyrische Reich bestand fast 2.000 Jahre lang in der Region Obermesopotamien und Syrien. Nach Hunderten von Jahren der persischen und griechischen Besatzung haben wir endlich seine Herrlichkeit wiederhergestellt!"
+  balearic_heritage:0 "Talaiotisches Erbe"
+  balearic_heritage_desc:0 "Die für ihre Schleuderer berühmten Gymnasischen Inseln nahmen im westlichen Mittelmeerraum eine wichtige Stellung ein."
+  pyrenean_heritage:0 "Pyrenäisches Erbe"
+  pyrenean_heritage_desc:0 "Unsere Vorfahren haben uns den Weg in die Zukunft gezeigt."
+  yemeni_heritage:0 "Jemenitisches Erbe"
+  yemeni_heritage_desc:0 "Unsere Vorfahren haben uns den Weg in die Zukunft gezeigt."
+  abyssinian_heritage_desc:0 "Unsere Vorfahren haben uns den Weg in die Zukunft gezeigt."
+  abyssinian_heritage:0 "Abessinisches Erbe"
+  hispano_celtic_heritage_desc:0 "Unsere Vorfahren haben uns den Weg in die Zukunft gezeigt."
+  hispano_celtic_heritage:0 "Hispano-keltisches Erbe"
+  berber_heritage:0 "Numidisches Erbe"
+  berber_heritage_desc:0 "Die einheimischen Stämme Nordafrikas sind weithin für ihre militärischen Fähigkeiten bekannt, insbesondere als Kavallerie. Tatsächlich zollten eine Zeit lang sogar die stolzen Karthager den numidischen Königen Tribut."
+  
+  
+  
+  ##SCTYHIA##
+  sarmatian_heritage:0 "Sarmatisches Erbe"
+  sarmatian_heritage_desc:0 "Während ihre skythischen Vettern im Westen begannen, sesshaft zu werden, setzten die Sarmaten ihr gemeinsames nomadisches Erbe fort. Da sie wenig mit Außenstehenden zu tun hatten, verließen sie sich auf ihren eigenen Verstand und ihre Gerissenheit und wurden zu gefürchteten und respektierten Feinden von mehr als einem Imperium."
+  
+  ###DACIA###
+  getian_heritage:0 "Das Erbe der Geten"
+  getian_heritage_desc:0 "Eng verwandt mit den Dakern im Westen, waren die Getae für ihr Erbe als wilde, aber ehrenhafte Krieger geachtet. Als Lysimachus von ihnen gefangen genommen wurde, befreite ihn ihr König Dromichaetes und überzeugte ihn, dass die Getae bessere Verbündete als Feinde wären."
+  dacian_heritage:0 "Das dakische Erbe"
+  dacian_heritage_desc:0 "Die Daker waren eng mit den östlich von ihnen gelegenen Getae verwandt und vereinigten ihr Volk schließlich unter einem König. Bekannt für ihre furchterregenden Krieger und mächtigen Bergfestungen, begründeten sie ein Erbe, das sogar von den Römern gefürchtet wurde."
+  
+ 
+  
+  ##ILLYRIA##
+  illyrian_heritage:0 "Illyrisches Erbe"
+  illyrian_heritage_desc:0 "Die verschiedenen illyrischen Stämme sind vor allem für ihr seemännisches Erbe bekannt - auch wenn einige neidische Nachbarn sie vielleicht für reine Piraten halten."
+   
+  ##INDIA##
+  cholan_heritage:0 "Chola-Erbe"
+  cholan_heritage_desc:0 "Unsere Vorfahren haben uns den Weg in die Zukunft gezeigt."
+  nilotic_heritage:0 "Nilotisches Erbe"
+  nilotic_heritage_desc:0 "Unsere Vorfahren haben uns den Weg in die Zukunft gezeigt."
+  blemmian_heritage:0 "Blemmianisches Erbe"
+  blemmian_heritage_desc:0 "Unsere Vorfahren haben uns den Weg in die Zukunft gezeigt."

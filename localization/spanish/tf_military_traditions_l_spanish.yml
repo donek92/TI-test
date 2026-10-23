@@ -1,0 +1,93 @@
+﻿l_spanish:
+ #####################
+ # Illyrian - Dacian # moved to invictus mil trad
+ #####################
+
+
+  ###########
+```yaml
+# Iberian
+########### Esto es TF Iberian mil trad - no usado pero aún interesante
+
+iberian_philosophy: "Tradiciones ibéricas"
+iberian_philosophydesc: "Las Tradiciones ibéricas engloban los estilos de combate de los pueblos íberos y celtíberos de Hispania. Principalmente confiaban en grandes formaciones de infantería ligeramente acorazada equipada con lanzas o espadas, apoyadas por ágiles formaciones de carros o caballería ligera, y hacían un uso extensivo de tácticas de emboscada, especialmente en bosques.\n\nPuede desbloquear la habilidad '#Y Saquear ciudad#!'\nPuede desbloquear la habilidad '#Y Reclutar milicias#!'\n\n#G Enfoques de la tradición#!\nFuerte #Y Infantería ligera#!\nBuen #Y Uso de jabalinas#!, #Y Caballería ligera#!"
+iberian_philosophy_start_bonus: "Mercenarios ibéricos"
+iberian_philosophy_start_bonus_desc: "Nuestros soldados son frecuentemente empleados en los ejércitos de Cartago, aportando una gran experiencia de combate sin la necesidad de una guerra local constante."
+
+## Cavalry
+iberian_cavalry_path_1: "Caballería"
+iberian_cavalry_path_1_desc: "Crucial para defender los flancos de cualquier formación de infantería, nuestros hombres montados siguen siendo soldados formidables por derecho propio."
+iberian_cavalry_path_2: "Caetrati"
+iberian_cavalry_path_2_desc: "Estos infantes ligeros ibéricos luchan con pequeños escudos redondos, maximizando la maniobrabilidad y la velocidad en el ataque."
+iberian_cavalry_path_3: "Vivir de la tierra"
+iberian_cavalry_path_3_desc: "Nuestra gente conoce los caminos de la tierra mejor que la mayoría; qué bayas y plantas son comestibles y qué remedios naturales pueden usarse para curar heridas."
+iberian_cavalry_path_4: "Boca a boca"
+iberian_cavalry_path_4_desc: "Ya sea por la posibilidad de gloria, una oportunidad de botín o simplemente para regocijarse en la matanza, la noticia de una batalla inminente atrae incluso a los ancianos a nuestras filas."
+iberian_cavalry_path_5: "Maestría ecuestre"
+iberian_cavalry_path_5_desc: "El terror inspirado por un ataque masivo de caballería puede ser suficiente para romper incluso las formaciones más curtidas en batalla."
+iberian_cavalry_path_6: "Cría selectiva"
+iberian_cavalry_path_6_desc: "Venerado desde la Edad del Bronce y antes, como se aprecia en los grabados de colinas de tiza en Gran Bretaña, el caballo doméstico de lomo fuerte es resultado de miles de años de cría selectiva y capaz de llevar a un solo jinete al combate."
+iberian_cavalry_path_7: "Tomar las armas"
+iberian_cavalry_path_7_desc: "Cada hombre tiene un lugar en nuestros ejércitos; incluso aquellos menos capaces en el combate cuerpo a cuerpo pueden contribuir a la lucha."
+iberian_cavalry_path_end_bonus: "Jinetes de Iberia"
+iberian_cavalry_path_end_bonus_desc: "Los íberos fueron más renombrados por su caballería. Impresionando particularmente por su actuación durante la Segunda Guerra Púnica como parte del ejército de Aníbal, los romanos acabaron convirtiéndolos en un pilar de sus fuerzas auxiliares."
+
+## Center
+iberian_center_path_1: "Concursare"
+iberian_center_path_1_desc: "Una táctica ibérica de cargar repetidamente las líneas enemigas, lanzar jabalinas y retirarse de repente se usaba para sembrar el caos en las filas enemigas y dejarles inseguros de cuándo caería el golpe final."
+iberian_center_path_2: "Recursos naturales"
+iberian_center_path_2_desc: "La abundancia de tierras cultivables y vastas extensiones con madera trabajable nos da acceso sin igual a los recursos necesarios para crear armas de guerra."
+iberian_center_path_3: "Terreno ventajoso"
+iberian_center_path_3_desc: "El uso de terrenos más abruptos por nuestra infantería nos da la ventaja tanto en defensa como en ataque."
+iberian_center_path_4: "La gloria de la caza"
+iberian_center_path_4_desc: "La guerra tribal es un asunto brutal. La captura de esclavos, mujeres y bienes es una práctica consagrada por el tiempo que no deberíamos abandonar."
+iberian_center_path_5: "Scutati"
+iberian_center_path_5_desc: "La infantería pesada ibérica estaba bien armada y portaba un gran escudo rectangular similar al romano."
+iberian_center_path_6: "Los jóvenes deben servir"
+iberian_center_path_6_desc: "Aprender el arte de la guerra es una parte vital de la educación de la juventud. Si un niño puede blandir una espada y mantener su equipo, entonces está listo para la guerra."
+iberian_center_path_7: "Lluvia de jabalinas"
+iberian_center_path_7_desc: "Los que no pueden o no quieren empuñar una espada apoyan a nuestros soldados desde la distancia. Puede parecer una herramienta simple, pero es crucial para infligir daño sin exponer a nuestros hombres."
+iberian_center_path_end_bonus: "Adaptabilidad"
+iberian_center_path_end_bonus_desc: "Nuestros valientes soldados pueden ser los más feroces que el mundo haya visto, pero la verdadera humildad viene al aprender de nuestras derrotas. Adoptando tácticas que encontramos en el campo de batalla, de aquellos que se consideran más 'civilizados', podemos superar a cualquier fuerza que encontremos."
+
+## Right
+iberian_right_path_1: "Soliferrum"
+iberian_right_path_1_desc: "Una jabalina de hierro macizo; el peso añadido sobre un eje de madera tradicional daba a esta arma única una ventaja significativa para perforar la armadura enemiga."
+iberian_right_path_2: "Confederaciones"
+iberian_right_path_2_desc: "Muchas tribus mantenían relaciones estrechas con sus vecinos, garantizando cierta cooperación en la batalla. Las bandas de guerra probablemente comprendían miembros de muchas tribus locales diferentes, todos luchando por la gloria."
+iberian_right_path_3: "Las llanuras luchan con nosotros"
+iberian_right_path_3_desc: "Las ondulantes llanuras de Iberia resultan un terreno ideal para el uso de la caballería."
+iberian_right_path_4: "En defensa de nuestro hogar"
+iberian_right_path_4_desc: "Desde herreros hasta comerciantes, cuando nuestros castros y asentamientos rurales están amenazados, todos tomarán las armas y se mantendrán unidos."
+iberian_right_path_5: "Un pueblo en movimiento"
+iberian_right_path_5_desc: "Nuestros antepasados se movían libremente, sin importar fronteras o reclamaciones territoriales. Estas tradiciones nómadas perduran, ya que nuestra gente vive en constante disposición para buscar pastos más verdes que los suyos."
+iberian_right_path_6: "Falcata"
+iberian_right_path_6_desc: "Una espada curva única de los íberos; estas armas resistentes dan a nuestra infantería una ventaja en el combate cuerpo a cuerpo."
+iberian_right_path_7: "¡Escalad los muros!"
+iberian_right_path_7_desc: "Nuestra gente ha llegado a residir en ciudades amuralladas que, aunque bien defendidas, tienen debilidades si uno sabe dónde mirar."
+iberian_right_path_end_bonus: "Guerreros valientes"
+iberian_right_path_end_bonus_desc: "Nuestros combatientes creen que pueden vencer a cualquier oponente en un duelo mano a mano."
+
+iberian_path_1: "Guerra endémica"
+iberian_path_1_desc: "Las tribus de la península estaban en un estado de guerra perpetua, saqueándose constantemente unas a otras por botines. La guerra se convirtió en una forma de vida para los íberos."
+iberian_path_2: "Vida de mercenario"
+iberian_path_2_desc: "Cuando llegaron los cartagineses, los íberos pronto comprendieron que había mucho más que ganar sirviéndoles que saqueándose entre ellos por recursos ya limitados. El suministro constante de veteranos que regresaban del servicio extranjero convirtió la guerra tribal en un asunto más organizado."
+iberian_path_3: "La península que no se doblega"
+iberian_path_3_desc: "Se dice que los guerreros íberos preferían la muerte a la rendición, y que las mujeres preferirían matar a sus hijos y luego a sí mismas antes que arriesgar la captura. La subyugación de Iberia sería una tarea ardua y prolongada para los romanos, con Cicerón describiéndola como no luchar por ganancia, sino por supervivencia."
+iberian_path_4: "Líderes de renombre"
+iberian_path_4_desc: "Los íberos mostraban gran lealtad a quienes los guiaban a la guerra, ya fuera como mercenarios o en defensa de su hogar. Entre ellos hubo muchos grandes estrategas, como Viriato de los lusitanos, llamado por los romanos un Aníbal bárbaro."
+
+iberian_punic_enable: "Adoptar la influencia íbero-púnica"
+iberian_punic_enable_desc: ""
+
+iberian_celtic_enable: "Adoptar la influencia celtibérica"
+iberian_celtic_enable_desc: ""
+
+iberian_italic_enable: "Adoptar la influencia íbero-itálica"
+iberian_italic_enable_desc: ""
+
+tradition_unlock_requirement_celtiberian: "$tradition_unlock_requirement_base$\n   @trigger_no! [GetCultureGroup('celt_iberia').GetName|Y] Grupo cultural\n"
+invention_unlock_requirement_punic: "$tradition_unlock_requirement_base$\n   @trigger_no! [GetCulture('carthaginian').GetName|Y] Cultura\n"
+
+### Embraces para otros ### movido a archivos invictus
+```

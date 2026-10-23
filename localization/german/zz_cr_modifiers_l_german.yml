@@ -1,0 +1,33 @@
+﻿l_german:
+  ###Resource modifiers
+  ###Province modifiers
+  cr_carthage_vaga_citadel:0 "Vaga Zitadelle"
+  desc_cr_carthage_vaga_citadel:0 "Vaga ist eine alte Berberstadt, die von den Karthagern befestigt wurde, um ihren Einfluss auf das Bagradas-Tal zu sichern."
+  cr_carthage_walls_of_carthage_national:0 "Mauern von Karthago"
+  desc_cr_carthage_walls_of_carthage_national:0 "Ich bin nur hier, um Ihnen im frühen Spiel zu helfen."
+  cr_carthage_walls_of_carthage:0 "Die Mauern von Karthago"
+  desc_cr_carthage_walls_of_carthage:0 "Drei Befestigungslinien, die sich von einem Graben und einer Palisade zu einer 10 Meter dicken und 15 Meter hohen Mauer erheben, sind über die Landenge gebaut, die Karthago mit dem Festland verbindet. Da dies der einzige Zugang zur Stadt ist, sind diese Mauern das Haupthindernis, das jeder angehende Eroberer Karthagos überwinden muss."
+  cr_carthage_megara:0 "Vorort von Megara"
+  desc_cr_carthage_megara:0 "Direkt nördlich von Karthago liegt der grüne Vorort Megara. Dieser von massiven Mauern über die Landenge geschützte Vorort ist ein beliebter Wohnsitz der Elite der Stadt sowie eine wichtige Quelle für frische Produkte für die Stadt."
+  cr_carthage_elephant_pens:0 "Elefantengehege"
+  desc_cr_carthage_elephant_pens:0 "Die an ihrer Basis 10 Meter dicken Mauern von Karthago bieten ausreichend Platz, um selbst die größten Kreaturen zu beherbergen: Elefanten. Beim Bau umfassten die Mauern genügend Pferche, um über 200 Elefanten für die Verteidigung der Stadt unterzubringen und zu trainieren."
+  cr_carthage_elephant_pens_national:0 "Elefantengehege"
+  desc_cr_carthage_elephant_pens_national:0 "Die an ihrer Basis 10 Meter dicken Mauern von Karthago bieten ausreichend Platz, um selbst die größten Kreaturen zu beherbergen: Elefanten. Beim Bau umfassten die Mauern genügend Pferche, um über 200 Elefanten für die Verteidigung der Stadt unterzubringen und zu trainieren."
+  cr_rich_vein_of_silver:0 "Reiche Silberader"
+  desc_cr_rich_vein_of_silver:0 "An dieser Stelle existiert eine reiche Silberader."
+  cr_charax:0 "Charax"
+  desc_cr_charax:0 "Charax ist ein geheimer Ort und ein beliebter Treffpunkt von Händlern und Schmugglern, die das Cyrenian-Monopol über Silphium, ein starkes und äußerst wertvolles Heilkraut, brechen wollen."
+  cr_silphium_trade:0 "Der Silphium-Handel"
+  desc_cr_silphium_trade:0 "Unseren Kaufleuten ist es gelungen, in den Silphiumhandel einzusteigen und der Stadt großen Reichtum zu bringen."
+  cr_crack_down_smuggling:0 "Hartes Vorgehen gegen Schmuggel"
+  desc_cr_crack_down_smuggling:0 "Hartes Vorgehen gegen Schmuggel"
+  cr_choma:0 "Choma"
+  desc_cr_choma:0 "Entlang der Uferpromenade dieser Stadt wurde ein Choma oder Kai gebaut, was die Zahl der Schiffe, die hier Handel treiben können, stark erhöht."
+
+
+
+
+  ##Opinion Modifiers  
+  cr_carthage_matter_of_aelymas_numidian_allies_opmod:0 "Gemeinsamer Feind"
+  cr_carthage_matter_of_aelymas_numidian_enemies_opmod:0 "Verbündete sich mit unserem Feind"
+  cr_carthage_matter_of_aelymas_no_support_opmod:0 "Hat keine Unterstützung versprochen"

@@ -1,0 +1,17 @@
+﻿l_french:
+ #From Torugu
+ deity_lamia: "$omen_lamia$"
+ omen_lamia: "Lamia"
+ omen_lamia_desc: "La déesse-serpent libyenne, appelée Lamia par les Grecs. \n\nL'une des divinités les plus importantes de la religion autochtone libyenne, Lamia règne sur les nombreux serpents venimeux et scorpions du désert, protégeant ses fidèles contre leurs morsures mortelles."
+ deity_antaeus: "$omen_antaeus$"
+ omen_antaeus: "Antée"
+ omen_antaeus_desc: "Antée, également connu sous le nom d'Anti, est une divinité géante vénérée par les natifs de Libye. \n\nSelon la mythologie grecque, Antée était invincible tant qu'il restait en contact avec la terre. Il fut finalement tué lorsque le héros grec Héraclès le souleva du sol et le broya en plein vol. \n\nAntée est couramment vu comme la personnification du peuple libyen. Son combat contre Héraclès représente alors la lutte des natifs libyens contre les colons grecs."
+ deity_tritonis: "$omen_tritonis$"
+ omen_tritonis: "Tritonis"
+ omen_tritonis_desc: "Tritonis est le nom grec de la divinité régnant sur le lac Tritonis, un grand lac salé que les Grecs croient être le lieu de naissance de la déesse Athéna. \n\nTritonis semble avoir été la mère d'une déesse libyenne importante qui pourrait être à l'origine de la déesse égyptienne Neith, et que les Grecs ont identifiée à Athéna."
+ deity_ammon: "$omen_ammon$"
+ omen_ammon: "Ammon"
+ omen_ammon_desc: "Ammon est le dieu libyen de l'oasis d'Ammoneion. Les Égyptiens l'ont identifié à leur dieu suprême, Amon. \n\nL'oracle d'Ammon à Ammoneion est l'un des oracles les plus prestigieux du monde : ce sont les prêtres d'Ammon qui ont déclaré qu'Alexandre le Grand était le fils d'Ammon et le pharaon légitime d'Égypte. \n\nLe culte d'Ammon s'est répandu bien au-delà du désert libyen, ses adorateurs s'étendant désormais de la Grèce au Levant."
+ deity_cyre: "$omen_cyre$"
+ omen_cyre: "Cyrene"
+ omen_cyre_desc: "Cyrene est la légendaire chasseuse tueuse de lions vénérée par les Libyens autochtones de Cyrénaïque. \n\nLorsque les premiers colons grecs arrivèrent en Cyrénaïque, ils choisirent Cyrene comme protectrice de leur nouvelle ville, la vénérant aux côtés de leur autre dieu patron, Apollon."

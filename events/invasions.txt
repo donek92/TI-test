@@ -1,0 +1,1419 @@
+﻿#Dementive steppe invasions
+namespace = invasions
+
+invasions.1 = {		#The Xiongnu Horde
+    type = country_event
+    title = invasions_1_title
+    desc = invasions_1_desc
+    picture = steppe_cavalry
+    fire_only_once = yes
+    left_portrait = current_ruler
+
+	weight_multiplier = {
+		modifier = {
+			factor = 15
+			current_date >= 570.1.1
+		}
+		modifier = {
+			factor = 50
+			current_date >= 580.1.1
+		}
+		modifier = {
+			factor = 200
+			current_date >= 590.1.1
+		}
+	}
+
+    trigger = {
+    	NOT = { has_global_variable = steppe_migration_started }
+    	current_date >= 550.1.1
+    }
+
+    immediate = {
+    	set_global_variable = {
+    		name = steppe_migration_started
+    	}
+    }
+
+    option = {	#This can't be good...
+        name = invasions_1.a
+    }
+}
+invasions.2 = {
+	type = country_event
+	title = invasions_2_title
+	desc = invasions_2_warning_desc
+	picture = event_empty_landscape
+	left_portrait = current_ruler
+	weight_multiplier = {
+		modifier = {
+			factor = 15
+			current_date >= 610.1.1
+		}
+		modifier = {
+			factor = 50
+			current_date >= 615.1.1
+		}
+		modifier = {
+			factor = 200
+			current_date >= 630.1.1
+		}
+	}
+	trigger = {
+		current_date >= 600.1.1
+		NOT = { has_global_variable = wusun_invasion_warned }
+		NOT = { has_global_variable = wusun_invasion_happened }
+		has_global_variable = yuezhi_invasion_happened
+		any_owned_province = {
+			is_steppe_invasion_frontier_candidate = yes
+			is_capital = no
+		}
+	}
+	immediate = {
+		set_global_variable = {
+			name = wusun_invasion_warned
+			days = 730
+		}
+	}
+	option = {
+		name = invasions_2.a
+		if = {
+			limit = {
+				any_owned_province = { is_steppe_invasion_frontier_candidate = yes }
+			}
+			trigger_event = { id = invasions.20 days = { 180 365 } }
+		}
+		else = {
+			random_country = {
+				limit = {
+					any_owned_province = { is_steppe_invasion_frontier_candidate = yes }
+				}
+				trigger_event = { id = invasions.20 days = { 180 365 } }
+			}
+		}
+	}
+}
+
+invasions.20 = {		#The Wusun People
+    type = country_event
+    title = invasions_2_title
+    desc = invasions_2_desc
+    picture = event_infantry_horse_bodies_desert
+    left_portrait = current_ruler
+	trigger = {
+		NOT = { has_global_variable = wusun_invasion_happened }
+		any_owned_province = { is_steppe_invasion_frontier_candidate = yes is_capital = no }
+	}
+
+    immediate = {
+    	set_global_variable = wusun_invasion_happened
+		save_scope_as = wusun_invasion_defender
+    	hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_steppe_invasion_frontier_candidate = yes
+					is_capital = no
+				}
+				save_scope_as = wusun_frontier_anchor
+				create_country = {
+					name = {
+						name = wusun_country_name
+						adjective = wusun_country_adjective
+					}
+					change_country_color = arabian_green
+					change_government = tribal_kingdom
+					set_country_religion = indo_iranian_religion
+					save_scope_as = wusun_country_scope
+					set_variable = {
+						name = is_not_allowed_to_go_broke
+						days = 9125
+					}
+					set_variable = {
+						name = is_ignoring_ae
+						days = 3650
+					}
+				}
+			}
+		}
+		scope:wusun_country_scope = {
+            hidden_effect = {
+			scope:wusun_frontier_anchor = {
+				if = {
+					limit = { num_of_fortress_building < 1 }
+					if = {
+						limit = { free_building_slots < 1 }
+						destroy_building_effect = yes
+					}
+					add_building_level = fortress_building
+				}
+			}
+			region:sogdiana_region = {
+				every_region_province = { add_claim = scope:wusun_country_scope }
+			}
+			scope:wusun_frontier_anchor = {
+				ordered_neighbor_province = {
+					limit = {
+						is_capital = no
+						is_uninhabitable = no
+						is_sea = no
+					}
+					order_by = total_population
+					max = 2
+					set_owned_by = scope:wusun_country_scope
+					every_neighbor_province = {
+						limit = {
+							has_owner = no
+							is_uninhabitable = no
+							is_sea = no
+						}
+						set_owned_by = scope:wusun_country_scope
+					}
+				}
+				every_neighbor_province = {
+					limit = {
+						has_owner = no
+						is_uninhabitable = no
+						is_sea = no
+					}
+					set_owned_by = scope:wusun_country_scope
+				}
+			}
+				ordered_owned_province = {
+					order_by = total_population
+					max = 5
+					ordered_pops_in_province = {
+						limit = {
+							NOT = { pop_culture = wusun }
+						}
+						order_by = pop_hapiness
+						max = 20
+						set_pop_culture = wusun
+					}
+				}
+				if = {
+					limit = {
+						NOT = { primary_culture = wusun }
+					}
+					set_primary_culture_cleanup_effect = {
+						NEW_PRIMARY_CULTURE = wusun
+						MAKE_OLD_CULTURE_INTEGRATED = yes
+					}
+				}
+            	set_variable = {
+					name = horde_invasion_origin
+					days = 9125
+				}
+	            add_country_modifier = {
+	            	name = wusun_country_modifier
+	            	duration = 1825
+	            }
+				set_antagonist = yes
+				trigger_event = { id = invasions.90 days = 10950 }
+	                add_treasury = 750
+	                add_manpower = 75
+                create_unit = {
+                    navy = no
+	                    location = scope:wusun_frontier_anchor
+                    while = {
+                       	count = 5
+                        add_subunit = light_infantry
+                    }
+                    while = {
+						count = 15
+	                        add_subunit = horse_archers
+                    }
+                    while = {
+                       	count = 10
+                        add_subunit = light_cavalry
+                    }                                 
+                    add_food = 100
+                    add_morale = 2
+                }
+                create_unit = {
+                    navy = no
+	                    location = scope:wusun_frontier_anchor
+                    while = {
+                       	count = 5
+                        add_subunit = light_infantry
+                    }
+                    while = {
+						count = 15
+	                        add_subunit = horse_archers
+                    }
+                    while = {
+                       	count = 10
+                        add_subunit = light_cavalry
+                    }                                 
+                    add_food = 100
+                    add_morale = 2
+                }
+            }
+   		}
+    }
+
+    option = {	#I can hear the hooves from here
+        name = invasions_2_invasion.a
+        hidden_effect = {
+	        scope:wusun_country_scope = {
+		        declare_war_with_wargoal = {
+		            war_goal = horde_conquest
+		           	target = scope:wusun_invasion_defender
+		        }
+	        }
+        }
+        custom_tooltip = invasions_2_tooltip
+		trigger_event = {
+			id = invasions.8
+			days = { 5 10 }
+		}
+    }
+	option = {
+		name = invasions_2.b
+		trigger = { is_ai = no }
+		highlight = yes
+		custom_tooltip = invasions_2_switch_tt
+		hidden_effect = {
+			scope:wusun_country_scope = {
+				declare_war_with_wargoal = {
+					war_goal = horde_conquest
+					target = scope:wusun_invasion_defender
+				}
+			}
+		}
+		trigger_event = {
+			id = invasions.8
+			days = { 5 10 }
+		}
+		hidden_effect = {
+			scope:wusun_country_scope = {
+				create_unit = {
+					navy = no
+					location = scope:wusun_frontier_anchor
+					while = {
+						count = 5
+						add_subunit = light_infantry
+					}
+					while = {
+						count = 15
+						add_subunit = horse_archers
+					}
+					while = {
+						count = 10
+						add_subunit = light_cavalry
+					}
+					add_food = 100
+					add_morale = 2
+				}
+			}
+			set_player_country = scope:wusun_country_scope
+		}
+	}
+}
+invasions.3 = {		#Arrival of the Yuezhi (Some yuezhi pops show up)
+    type = country_event
+    title = invasions_3_title
+    desc = invasions_3_desc
+    picture = event_infantry_horse_bodies_desert
+    left_portrait = current_ruler
+	weight_multiplier = {
+		modifier = {
+			factor = 15
+			current_date >= 570.1.1
+		}
+		modifier = {
+			factor = 50
+			current_date >= 580.1.1
+		}
+		modifier = {
+			factor = 200
+			current_date >= 590.1.1
+		}
+	}
+	trigger = {
+		current_date >= 560.1.1
+		NOT = { has_global_variable = yuezhi_pops_arrived }
+		has_global_variable = steppe_migration_started
+    	any_owned_province = {
+			OR = {
+				is_in_area = north_tarim_area
+				is_in_area = south_tarim_area
+				is_in_area = tarim_area
+				is_in_area = talas_area
+				is_in_area = ferghana_area
+				is_in_area = sirdarya_area
+				is_in_area = beishan_area
+				is_in_area = kapchagay_area
+				is_in_area = taraz_area
+				is_in_area = chu_area
+			}
+    	}
+    }
+
+    immediate = {
+    	set_global_variable = yuezhi_pops_arrived
+    	if = {
+    		limit = {
+		    	any_owned_province = {
+					OR = {
+						is_in_area = north_tarim_area
+						is_in_area = south_tarim_area
+						is_in_area = tarim_area
+						is_in_area = talas_area
+						is_in_area = ferghana_area
+						is_in_area = sirdarya_area
+						is_in_area = beishan_area
+						is_in_area = kapchagay_area
+						is_in_area = taraz_area
+						is_in_area = chu_area
+					}
+		    	}    			
+    		}
+			set_variable = received_yuezhi_migrants
+			if = {
+				limit = { is_ai = no }
+				set_global_variable = {
+					name = yuezhi_adoption_pending
+					days = 730
+				}
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						is_in_area = north_tarim_area
+						is_in_area = south_tarim_area
+						is_in_area = tarim_area
+						is_in_area = talas_area
+						is_in_area = ferghana_area
+						is_in_area = sirdarya_area
+						is_in_area = beishan_area
+						is_in_area = kapchagay_area
+						is_in_area = taraz_area
+						is_in_area = chu_area
+					}
+				}
+				save_scope_as = yuezhi_target
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						is_in_area = north_tarim_area
+						is_in_area = south_tarim_area
+						is_in_area = tarim_area
+						is_in_area = talas_area
+						is_in_area = ferghana_area
+						is_in_area = sirdarya_area
+						is_in_area = beishan_area
+						is_in_area = kapchagay_area
+						is_in_area = taraz_area
+						is_in_area = chu_area
+					}
+					NOT = {
+						this = scope:yuezhi_target
+					}
+				}
+				save_scope_as = yuezhi_target_2
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						is_in_area = north_tarim_area
+						is_in_area = south_tarim_area
+						is_in_area = tarim_area
+						is_in_area = talas_area
+						is_in_area = ferghana_area
+						is_in_area = sirdarya_area
+						is_in_area = beishan_area
+						is_in_area = kapchagay_area
+						is_in_area = taraz_area
+						is_in_area = chu_area
+					}
+					NOR = {
+						this = scope:yuezhi_target
+						this = scope:yuezhi_target_2
+					}
+				}
+				save_scope_as = yuezhi_target_3
+			}
+			scope:yuezhi_target = {
+				hidden_effect = {
+					create_state_pop = tribesmen
+					create_state_pop = tribesmen
+					create_state_pop = tribesmen
+					create_state_pop = tribesmen
+					create_state_pop = tribesmen
+					while = {
+						count = 5
+						random_pops_in_province = {
+							limit = {
+								pop_type = tribesmen 
+							}
+							set_pop_culture = yuezhi
+						}
+					}
+				}
+			}
+			if = {
+				limit = { exists = scope:yuezhi_target_2 }
+				scope:yuezhi_target_2 = {
+					hidden_effect = {
+					create_state_pop = tribesmen
+					create_state_pop = tribesmen
+					create_state_pop = tribesmen
+					create_state_pop = tribesmen
+					create_state_pop = tribesmen
+					while = {
+						count = 5
+						random_pops_in_province = {
+							limit = {
+								pop_type = tribesmen 
+							}
+							set_pop_culture = yuezhi
+						}
+					}
+					}
+				}
+			}
+			if = {
+				limit = { exists = scope:yuezhi_target_3 }
+				scope:yuezhi_target_3 = {
+					hidden_effect = {
+					create_state_pop = tribesmen
+					create_state_pop = tribesmen
+					create_state_pop = tribesmen
+					create_state_pop = tribesmen
+					create_state_pop = tribesmen
+					while = {
+						count = 5
+						random_pops_in_province = {
+							limit = {
+								pop_type = tribesmen 
+								NOT = {
+									pop_culture = yuezhi
+								}
+							}
+							set_pop_culture = yuezhi
+						}
+					}
+					}
+				}
+			}			
+    	}
+    }
+
+    option = {	#How many more could there be... 
+        name = invasions_3.a
+        custom_tooltip = invasions_3_tooltip
+		if = {
+			limit = {
+				is_ai = no
+				has_variable = received_yuezhi_migrants
+			}
+			trigger_event = {
+				id = invasions.4
+				days = { 120 365 }
+			}
+		}
+		else = {
+			random_country = {
+				limit = {
+					any_owned_province = {
+						is_steppe_invasion_frontier_candidate = yes
+						is_capital = no
+					}
+				}
+				trigger_event = { id = invasions.5 days = { 365 720 } }
+			}
+		}
+    }
+}
+invasions.4 = {		#The Yuezhi People
+    type = country_event
+    title = invasions_4_title
+    desc = invasions_4_desc
+    picture = event_wooden_gate_fortifications
+    left_portrait = current_ruler
+    option = {	#Embrace Yuezhi Culture
+        name = invasions_4.a
+		remove_global_variable = yuezhi_adoption_pending
+		set_global_variable = yuezhi_invasion_happened
+		set_global_variable = {
+			name = yuezhi_country_var
+			value = root
+		}
+		hidden_effect = {
+	        random_owned_province = {
+	       		random_pops_in_province = {
+	       			set_pop_culture = yuezhi
+	       		}
+	        }
+        }
+        custom_tooltip = invasions_4_tooltip
+		if = {
+            limit = {
+                NOT = {
+                    primary_culture = yuezhi
+                }
+            }
+            set_primary_culture_cleanup_effect = {
+                NEW_PRIMARY_CULTURE = yuezhi
+                MAKE_OLD_CULTURE_INTEGRATED = yes
+            }
+        }
+		if = {
+			limit = {
+				OR = {
+					country_culture_group = scythia
+					country_culture_group = scythian_east
+					country_culture_group = bactrian
+				}
+			}
+			add_stability = -15
+		}
+		else = {
+			add_stability = -25
+		}
+		change_country_name = "YUEZHI_NAME"
+		hidden_effect = {
+			change_country_adjective = "YUEZHI_ADJECTIVE"
+			change_country_tag = YZI
+			change_country_color = "yuezhi_color"
+			ordered_owned_province = {
+				limit = {
+					OR = {
+						is_in_area = north_tarim_area
+						is_in_area = south_tarim_area
+						is_in_area = tarim_area
+						is_in_area = talas_area
+						is_in_area = ferghana_area
+						is_in_area = sirdarya_area
+						is_in_area = beishan_area
+						is_in_area = kapchagay_area
+						is_in_area = taraz_area
+						is_in_area = chu_area
+					} 				
+				}
+				order_by = total_population
+				max = 5
+				ordered_pops_in_province = {
+					limit = {
+						NOT = { pop_culture = yuezhi}
+					}
+					order_by = pop_hapiness
+					max = 10
+					set_pop_culture = yuezhi
+				}
+			}
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = formable_capital_tribal_modifier
+				duration = 7300
+			}
+			capital_formable_tribal_effect = yes
+		}
+		set_variable = {
+			name = horde_invasion_origin
+			days = 9125
+		}
+    }
+    option = {	#Fight them off
+    	name = invasions_4.b
+		remove_global_variable = yuezhi_adoption_pending
+		random_country = {
+			limit = {
+				any_owned_province = {
+					is_steppe_invasion_frontier_candidate = yes
+					is_capital = no
+				}
+			}
+			trigger_event = { id = invasions.5 days = { 365 720 } }
+    	}
+    }
+}
+invasions.5 = {
+	type = country_event
+	title = invasions_5_title
+	desc = invasions_5_warning_desc
+	picture = event_empty_fields
+	left_portrait = current_ruler
+	weight_multiplier = {
+		modifier = {
+			factor = 15
+			current_date >= 590.1.1
+		}
+		modifier = {
+			factor = 50
+			current_date >= 600.1.1
+		}
+		modifier = {
+			factor = 200
+			current_date >= 615.1.1
+		}
+	}
+	trigger = {
+		NOT = { has_global_variable = yuezhi_invasion_warned }
+		NOT = { has_global_variable = yuezhi_invasion_happened }
+		NOT = { has_global_variable = yuezhi_adoption_pending }
+		has_global_variable = yuezhi_pops_arrived
+		any_owned_province = {
+			is_steppe_invasion_frontier_candidate = yes
+			is_capital = no
+		}
+	}
+	immediate = {
+		set_global_variable = {
+			name = yuezhi_invasion_warned
+			days = 730
+		}
+	}
+	option = {
+		name = invasions_5_warning.a
+		trigger_event = { id = invasions.50 days = { 180 365 } }
+	}
+}
+
+invasions.50 = {		#Yuezhi Invasion
+    type = country_event
+    title = invasions_5_title
+    desc = invasions_5_desc
+    picture = event_large_armies_in_formation
+	left_portrait = current_ruler
+	trigger = {
+		NOT = { has_global_variable = yuezhi_invasion_happened }
+		any_owned_province = { is_steppe_invasion_frontier_candidate = yes is_capital = no }
+	}
+
+    immediate = {
+    	set_global_variable = yuezhi_invasion_happened
+		save_scope_as = yuezhi_invasion_defender
+    	random_list = {
+    		50 = {
+    			set_variable = {
+    				name = massive_yuezhi_invasion
+    				days = 365
+    			}
+    		}
+    		50 = {}
+    	}
+    	custom_tooltip = invasions_5_tooltip
+    	hidden_effect = {
+			random_owned_province = {
+				limit = { is_steppe_invasion_frontier_candidate = yes is_capital = no }
+				save_scope_as = yuezhi_frontier_anchor
+				create_country = {
+					name = {
+						name = YUEZHI_NAME
+						adjective = YUEZHI_ADJECTIVE
+					}
+				#	change_country_flag = KUSH_CLIENT_FLAG
+				#	set_country_heritage = indo_greek_heritage
+					change_country_color = "yuezhi_color"
+					change_government = tribal_kingdom
+					set_country_religion = indo_iranian_religion
+					save_scope_as = yuezhi_country_scope
+					set_variable = {
+						name = is_not_allowed_to_go_broke
+						days = 9125
+					}
+					set_variable = {
+						name = is_ignoring_ae
+						days = 3650
+					}
+				}
+			}
+			scope:yuezhi_frontier_anchor = {
+				if = {
+					limit = { num_of_fortress_building < 1 }
+					if = {
+						limit = { free_building_slots < 1 }
+						destroy_building_effect = yes
+					}
+					add_building_level = fortress_building
+				}
+				ordered_neighbor_province = {
+					limit = {
+						is_capital = no
+						is_uninhabitable = no
+						is_sea = no
+					}
+					order_by = total_population
+					max = 2
+					set_owned_by = scope:yuezhi_country_scope
+					every_neighbor_province = {
+						limit = {
+							has_owner = no
+							is_uninhabitable = no
+							is_sea = no
+						}
+						set_owned_by = scope:yuezhi_country_scope
+					}
+				}
+				every_neighbor_province = {
+					limit = {
+						has_owner = no
+						is_uninhabitable = no
+						is_sea = no
+					}
+					set_owned_by = scope:yuezhi_country_scope
+				}
+			}
+			scope:yuezhi_country_scope = {
+				region:sogdiana_region = {
+					every_region_province = { add_claim = scope:yuezhi_country_scope }
+				}
+				ordered_owned_province = {
+					order_by = total_population
+					max = 5
+					ordered_pops_in_province = {
+						limit = {
+							NOT = { pop_culture = yuezhi }
+						}
+						order_by = pop_hapiness
+						max = 20
+						set_pop_culture = yuezhi
+					}
+				}
+				if = {
+					limit = {
+						NOT = { primary_culture = yuezhi }
+					}
+					set_primary_culture_cleanup_effect = {
+						NEW_PRIMARY_CULTURE = yuezhi
+						MAKE_OLD_CULTURE_INTEGRATED = yes
+					}
+				}
+				set_variable = {
+					name = horde_invasion_origin
+					days = 9125
+				}
+				add_country_modifier = {
+					name = yuezhi_country_modifier
+					duration = 1825
+				}
+				set_antagonist = yes
+				trigger_event = { id = invasions.90 days = 10950 }
+				if = {
+					limit = {
+						ROOT = { has_variable = massive_yuezhi_invasion }
+					}
+					add_treasury = 1000
+					add_manpower = 100
+				}
+				else = {
+					add_treasury = 600
+					add_manpower = 85
+				}
+				create_unit = {
+					navy = no
+					location = scope:yuezhi_frontier_anchor
+					while = {
+						count = 5
+						add_subunit = light_infantry
+					}
+					while = {
+						count = 15
+						add_subunit = horse_archers
+					}
+					if = {
+						limit = {
+							ROOT = { has_variable = massive_yuezhi_invasion }
+						}
+						while = {
+							count = 10
+							add_subunit = horse_archers
+						}
+					}
+					while = {
+						count = 15
+						add_subunit = light_cavalry
+					}
+					add_food = 100
+					add_morale = 2
+				}
+				create_unit = {
+					navy = no
+					location = scope:yuezhi_frontier_anchor
+					while = {
+						count = 5
+						add_subunit = light_infantry
+					}
+					while = {
+						count = 15
+						add_subunit = horse_archers
+					}
+					while = {
+						count = 15
+						add_subunit = light_cavalry
+					}
+					add_food = 100
+					add_morale = 2
+				}
+				declare_war_with_wargoal = {
+					war_goal = horde_conquest
+					target = scope:yuezhi_invasion_defender
+				}
+			}
+		}
+    }
+
+    option = {	#They won't get far
+        name = invasions_5.a
+    }
+	option = {
+		name = invasions_5.b
+		trigger = { is_ai = no }
+		highlight = yes
+		custom_tooltip = invasions_5_switch_tt
+		hidden_effect = {
+			set_player_country = scope:yuezhi_country_scope
+		}
+	}
+    after = {
+    	set_global_variable = {
+    		name = yuezhi_country_var
+    		value = scope:yuezhi_country_scope
+    	}
+		if = {
+			limit = { current_date >= 625.1.1 }
+			random_country = {
+				limit = {
+					any_owned_province = { is_steppe_invasion_frontier_candidate = yes is_capital = no }
+				}
+				trigger_event = { id = invasions.6 days = { 730 2920 } }
+			}
+		}
+		else = {
+			random_country = {
+				limit = {
+					any_owned_province = { is_steppe_invasion_frontier_candidate = yes is_capital = no }
+				}
+				trigger_event = { id = invasions.6 days = { 1095 2920 } }
+			}
+		}
+    }
+}
+invasions.6 = {
+	type = country_event
+	title = invasions_6_title
+	desc = invasions_6_warning_desc
+	picture = interesting_histories_asia_mountains
+	left_portrait = current_ruler
+	trigger = {
+		current_date >= 625.1.1
+		has_global_variable = yuezhi_invasion_happened
+		NOT = { has_global_variable = saka_invasion_warned }
+		NOT = { has_global_variable = saka_invasion_happened }
+		any_owned_province = { is_steppe_invasion_frontier_candidate = yes is_capital = no }
+	}
+	immediate = {
+		set_global_variable = {
+			name = saka_invasion_warned
+			days = 730
+		}
+	}
+	option = {
+		name = invasions_6.a
+		trigger_event = { id = invasions.60 days = { 180 365 } }
+	}
+}
+
+invasions.60 = {		#The Sakan Horde
+    type = country_event
+    title = invasions_6_title
+    desc = invasions_6_desc
+    picture = event_large_armies_in_formation
+    left_portrait = current_ruler
+	trigger = {
+		NOT = { has_global_variable = saka_invasion_happened }
+		any_owned_province = { is_steppe_invasion_frontier_candidate = yes is_capital = no }
+	}
+
+    immediate = {
+		set_global_variable = saka_invasion_happened
+		save_scope_as = sakia_invasion_defender
+    	custom_tooltip = invasions_6_tooltip
+    	hidden_effect = {
+			random_owned_province = {
+				limit = { is_steppe_invasion_frontier_candidate = yes is_capital = no }
+				save_scope_as = saka_frontier_anchor
+					create_country = {
+					    name = {
+					    name = SAKIA_NAME
+					    adjective = SAKIA_ADJ
+					    }
+					#   change_country_flag = KUSH_CLIENT_FLAG
+					#   set_country_heritage = indo_greek_heritage
+					    change_country_color = "onyx_black"
+					    change_government = tribal_kingdom
+					    set_country_religion = indo_iranian_religion               
+					    save_scope_as = sakia_country_scope
+					    set_variable = {
+					        name = is_not_allowed_to_go_broke
+					        days = 9125
+					    }
+					    set_variable = {
+					        name = is_ignoring_ae
+					        days = 3650
+					    }
+					}
+			}
+			scope:saka_frontier_anchor = {
+			if = {
+				limit = { num_of_fortress_building < 1 }
+				if = {
+					limit = { free_building_slots < 1 }
+					destroy_building_effect = yes
+				}
+				add_building_level = fortress_building
+			}
+			ordered_neighbor_province = {
+				limit = {
+					is_capital = no
+					is_uninhabitable = no
+					is_sea = no
+				}
+				order_by = total_population
+				max = 2
+				set_owned_by = scope:sakia_country_scope
+				every_neighbor_province = {
+					limit = {
+						has_owner = no
+						is_uninhabitable = no
+						is_sea = no
+					}
+					set_owned_by = scope:sakia_country_scope
+				}
+	    	}
+			every_neighbor_province = {
+				limit = {
+					has_owner = no
+					is_uninhabitable = no
+					is_sea = no
+				}
+				set_owned_by = scope:sakia_country_scope
+	    	}
+	    	}
+		    scope:sakia_country_scope = {
+				hidden_effect = {
+					region:sogdiana_region = {
+						every_region_province = { add_claim = scope:sakia_country_scope }
+					}
+					ordered_owned_province = {
+						limit = {
+							 				
+						}
+						order_by = total_population
+						max = 5
+						ordered_pops_in_province = {
+							limit = {
+								NOT = { pop_culture = sakan}
+							}
+							order_by = pop_hapiness
+							max = 20 
+							set_pop_culture = sakan
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								primary_culture = sakan
+							}
+						}
+						set_primary_culture_cleanup_effect = {
+							NEW_PRIMARY_CULTURE = sakan
+							MAKE_OLD_CULTURE_INTEGRATED = yes
+						}
+					}			    
+				}
+		    	hidden_effect = {
+			    	set_variable = {
+						name = horde_invasion_origin
+						days = 9125
+					}
+				    add_country_modifier = {
+				    	name = saka_country_modifier
+				        duration = 1925
+				    }
+					set_antagonist = yes
+					trigger_event = { id = invasions.90 days = 10950 }
+			        add_treasury = 2000	#ai is stupid...
+			        add_manpower = 100
+			        create_unit = {
+			            navy = no
+			            location = scope:saka_frontier_anchor
+			           	while = {
+			                count = 5
+			                add_subunit = light_infantry
+			            }
+			            while = {
+			                count = 15
+			                add_subunit = horse_archers
+			            }
+			            while = {
+			                count = 10
+			                add_subunit = light_cavalry
+			            }                                 
+			            add_food = 100
+			            add_morale = 2
+			        }
+			        create_unit = {
+			            navy = no
+			            location = scope:saka_frontier_anchor
+			           	while = {
+			                count = 5
+			                add_subunit = light_infantry
+			            }
+			            while = {
+			                count = 20
+			                add_subunit = horse_archers
+			            }
+			            while = {
+			                count = 15
+			                add_subunit = light_cavalry
+			            }                                 
+			            add_food = 100
+			            add_morale = 2
+			        }
+					declare_war_with_wargoal = {
+					    war_goal = horde_conquest
+					    target = scope:sakia_invasion_defender
+					}
+				}
+			}
+		}
+    }
+
+    option = {	#This can't be good...
+        name = invasions_6_invasion.a
+    }
+	option = {
+		name = invasions_6.b
+		trigger = { is_ai = no }
+		highlight = yes
+		custom_tooltip = invasions_6_switch_tt
+		hidden_effect = {
+			set_player_country = scope:sakia_country_scope
+		}
+	}
+}
+invasions.8 = {
+	type = country_event
+	title = invasions_8_title
+	desc = invasions_8_warning_desc
+	picture = Event_dangerous_mountain_crossing
+	left_portrait = current_ruler
+	fire_only_once = yes
+	option = {
+		name = invasions_8.a
+		trigger_event = { id = invasions.80 days = { 180 365 } }
+	}
+}
+
+invasions.80 = {		#Yuezhi Invasion of Bactria
+    type = country_event
+    title = invasions_8_title
+    desc = invasions_8_desc
+    picture = event_large_armies_in_formation
+    left_portrait = current_ruler
+    fire_only_once = yes
+
+	immediate = {
+		if = {
+			limit = {
+				exists = global_var:yuezhi_country_var
+				global_var:yuezhi_country_var = {
+					has_land = yes
+					is_subject = no
+				}
+				any_province = {
+					OR = {
+						province_id = 6698
+						province_id = 6699
+						province_id = 6701
+					}
+					is_capital = no
+					has_owner = yes
+					NOT = { owner = global_var:yuezhi_country_var }
+				}
+			}
+			custom_tooltip = invasions_8_A_tooltip
+			hidden_effect = {
+				random_province = {
+					limit = {
+						OR = {
+							province_id = 6698
+							province_id = 6699
+							province_id = 6701
+						}
+						is_capital = no
+						has_owner = yes
+						NOT = { owner = global_var:yuezhi_country_var }
+					}
+					save_scope_as = yuezhi_bactria_foothold
+				}
+				if = {
+					limit = {
+						p:6678 = {
+							has_owner = yes
+							NOT = { owner = global_var:yuezhi_country_var }
+						}
+					}
+					p:6678.owner = { save_scope_as = yuezhi_bactria_invasion_defender }
+				}
+				else = {
+					scope:yuezhi_bactria_foothold.owner = { save_scope_as = yuezhi_bactria_invasion_defender }
+				}
+				scope:yuezhi_bactria_foothold = {
+					set_owned_by = global_var:yuezhi_country_var
+				}
+				global_var:yuezhi_country_var = {
+					set_variable = {
+						name = horde_invasion_origin
+						days = 9125
+					}
+					save_scope_as = yuezhi_country_scope_2
+					add_treasury = 1000	#ai is stupid
+					add_manpower = 50
+					create_unit = {
+						navy = no
+						location = scope:yuezhi_bactria_foothold
+						while = {
+							count = 5
+							add_subunit = light_infantry
+						}
+						while = {
+							count = 10
+							add_subunit = horse_archers
+						}
+						while = {
+							count = 10
+							add_subunit = light_cavalry
+						}
+						add_food = 100
+						add_morale = 2
+					}
+					create_unit = {
+						navy = no
+						location = scope:yuezhi_bactria_foothold
+						while = {
+							count = 5
+							add_subunit = light_infantry
+						}
+						while = {
+							count = 10
+							add_subunit = horse_archers
+						}
+						while = {
+							count = 10
+							add_subunit = light_cavalry
+						}
+						add_food = 100
+						add_morale = 2
+					}
+					scope:yuezhi_bactria_foothold = {
+						ordered_neighbor_province = {
+							limit = {
+								is_capital = no
+								is_uninhabitable = no
+								is_sea = no
+							}
+							order_by = total_population
+							max = 2
+							set_owned_by = scope:yuezhi_country_scope_2
+							every_neighbor_province = {
+								limit = {
+									has_owner = no
+									is_uninhabitable = no
+									is_sea = no
+								}
+								set_owned_by = scope:yuezhi_country_scope_2
+							}
+						}
+						every_neighbor_province = {
+							limit = {
+								has_owner = no
+								is_uninhabitable = no
+								is_sea = no
+							}
+							set_owned_by = scope:yuezhi_country_scope_2
+						}
+					}
+					declare_war_with_wargoal = {
+						war_goal = horde_conquest
+						target = scope:yuezhi_bactria_invasion_defender
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				any_province = {
+					OR = {
+						province_id = 6698
+						province_id = 6699
+						province_id = 6701
+					}
+					is_capital = no
+					has_owner = yes
+				}
+			}
+			custom_tooltip = invasions_8_B_tooltip
+			hidden_effect = {
+				random_province = {
+					limit = {
+						OR = {
+							province_id = 6698
+							province_id = 6699
+							province_id = 6701
+						}
+						is_capital = no
+						has_owner = yes
+					}
+					save_scope_as = yuezhi_bactria_foothold
+				}
+				if = {
+					limit = {
+						p:6678 = { has_owner = yes }
+					}
+					p:6678.owner = { save_scope_as = yuezhi_bactria_invasion_defender }
+				}
+				else = {
+					scope:yuezhi_bactria_foothold.owner = { save_scope_as = yuezhi_bactria_invasion_defender }
+				}
+				scope:yuezhi_bactria_foothold = {
+					create_country = {
+						name = {
+							name = YUEZHI_NAME
+							adjective = YUEZHI_ADJECTIVE
+						}
+				#		change_country_flag = KUSH_CLIENT_FLAG
+				#		set_country_heritage = indo_greek_heritage
+						change_country_color = "yuezhi_color"
+						change_government = tribal_kingdom
+						set_country_religion = indo_iranian_religion
+						save_scope_as = yuezhi_country_scope
+						set_variable = {
+							name = is_not_allowed_to_go_broke
+							days = 9125
+						}
+						set_variable = {
+							name = is_ignoring_ae
+							days = 3650
+						}
+					}
+					ordered_neighbor_province = {
+						limit = {
+							is_capital = no
+							is_uninhabitable = no
+							is_sea = no
+						}
+						order_by = total_population
+						max = 2
+						set_owned_by = scope:yuezhi_country_scope
+						every_neighbor_province = {
+							limit = {
+								has_owner = no
+								is_uninhabitable = no
+								is_sea = no
+							}
+							set_owned_by = scope:yuezhi_country_scope
+						}
+					}
+					every_neighbor_province = {
+						limit = {
+							has_owner = no
+							is_uninhabitable = no
+							is_sea = no
+						}
+						set_owned_by = scope:yuezhi_country_scope
+					}
+				}
+				set_global_variable = {
+					name = yuezhi_country_var
+					value = scope:yuezhi_country_scope
+				}
+				scope:yuezhi_country_scope = {
+					ordered_owned_province = {
+						order_by = total_population
+						max = 5
+						ordered_pops_in_province = {
+							limit = {
+								NOT = { pop_culture = yuezhi }
+							}
+							order_by = pop_hapiness
+							max = 20
+							set_pop_culture = yuezhi
+						}
+					}
+					if = {
+						limit = {
+							NOT = { primary_culture = yuezhi }
+						}
+						set_primary_culture_cleanup_effect = {
+							NEW_PRIMARY_CULTURE = yuezhi
+							MAKE_OLD_CULTURE_INTEGRATED = yes
+						}
+					}
+					set_variable = {
+						name = horde_invasion_origin
+						days = 9125
+					}
+					add_treasury = 1000	#ai is stupid
+					add_manpower = 50
+					create_unit = {
+						navy = no
+						location = scope:yuezhi_bactria_foothold
+						while = {
+							count = 5
+							add_subunit = light_infantry
+						}
+						while = {
+							count = 10
+							add_subunit = horse_archers
+						}
+						while = {
+							count = 10
+							add_subunit = light_cavalry
+						}
+						add_food = 100
+						add_morale = 2
+					}
+					create_unit = {
+						navy = no
+						location = scope:yuezhi_bactria_foothold
+						while = {
+							count = 5
+							add_subunit = light_infantry
+						}
+						while = {
+							count = 10
+							add_subunit = horse_archers
+						}
+						while = {
+							count = 10
+							add_subunit = light_cavalry
+						}
+						add_food = 100
+						add_morale = 2
+					}
+					declare_war_with_wargoal = {
+						war_goal = horde_conquest
+						target = scope:yuezhi_bactria_invasion_defender
+					}
+				}
+			}
+		}
+	}
+
+    option = {	#This can't be good...
+        name = invasions_8.a
+    }
+}
+
+invasions.90 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		set_antagonist = no
+	}
+}
