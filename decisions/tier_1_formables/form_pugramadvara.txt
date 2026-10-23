@@ -25,6 +25,8 @@
 					is_in_area = beikthano_area
 					is_in_area = halin_area
 					is_in_area = pubu_area
+					is_in_area = pyu_area
+					is_in_area = shan_area
 				}
 			}
 		}
@@ -39,9 +41,13 @@
 				}
 			}
 			can_form_nation_trigger = yes
+			AND = {
 			owns_or_subject_owns_area = beikthano_area
 			owns_or_subject_owns_area = halin_area
+			owns_or_subject_owns_area = pyu_area
+			owns_or_subject_owns_area = shan_area
 			owns_or_subject_owns_area = pubu_area
+			}
 		}
 		
 		effect = {
@@ -58,7 +64,6 @@
 				switch_government_type_event_clearup_effect = yes
 			}			
 			hidden_effect = {
-				change_country_adjective = INDGER_ADJECTIVE
 				change_country_tag = PRU
 				change_country_color = ocean_blue		
 			}

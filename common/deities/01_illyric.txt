@@ -219,23 +219,7 @@ deity_vidasus = {
 
 	on_activate = {
 		economy_apotheosis_province_improvement_effect = yes
-		if = {
-			limit = {
-				exists = scope:deified_ruler
-				is_ai = no
-			}
-			hidden_effect = {
-				random_character = {
-					limit = {
-						is_ruler = no
-						is_head_of_family = no
-					}
-					death = {
-						death_reason = death_mysteriously_retired
-					}
-				}
-			}
-		}
+		harsh_deadly_apotheosis_effect = yes
 	}
 
 	deification_trigger = {
@@ -287,7 +271,7 @@ deity_deipatros = {
 	passive_modifier = { ruler_popularity_gain = deity_ruler_popularity_gain_svalue }
 	omen = { agressive_expansion_monthly_change = omen_aggressive_expansion_monthly_change_svalue } #Bonus from Omen
 	religion = illyrian_pantheon
-	deity_category = justice #This Deity uses a Justice Slot
+	deity_category = culture #This Deity uses a Culture Slot
 
 	on_activate = {
 		culture_apotheosis_rel_tech_effect = yes
@@ -311,11 +295,11 @@ deity_sentona = {
 			primary_culture = liburnian_culture
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_eloquence
 	passive_modifier = { global_monthly_civilization = deity_global_monthly_civilization_svalue }
 	omen = { global_population_growth = deity_global_population_growth_svalue }
 	religion = illyrian_pantheon
-	deity_category = wisdom
+	deity_category = culture
 
 	on_activate = {
 		culture_apotheosis_assimilate_effect = yes
@@ -367,11 +351,11 @@ deity_enji = {
 			primary_culture = messapian
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_war
 	passive_modifier = { military_tech_investment = deity_military_tech_investment_svalue }
 	omen = { global_pop_assimilation_speed_modifier = omen_global_pop_assimilation_speed_modifier_svalue }
 	religion = illyrian_pantheon
-	deity_category = wisdom
+	deity_category = war
 
 	on_activate = {
 		military_apotheosis_military_experience_effect = yes
@@ -426,11 +410,11 @@ deity_aecorna = {
 			}
 		}
 	}
-	icon = deity_justice
+	icon = deity_wealth
 	passive_modifier = { global_nobles_output = deity_global_nobles_output_svalue }
 	omen = { global_tax_modifier = omen_global_tax_modifier_svalue }
 	religion = illyrian_pantheon
-	deity_category = justice
+	deity_category = economy
 
 	on_activate = {
 		economy_apotheosis_province_improvement_effect = yes
@@ -568,11 +552,11 @@ deity_lahona = {
 			}
 		}
 	}
-	icon = deity_justice
+	icon = deity_love
 	passive_modifier = { global_population_capacity_modifier = deity_global_population_capacity_modifier_svalue }
 	omen = { monthly_wage_modifier = omen_monthly_wage_modifier_svalue } #Bonus from Omen
 	religion = roman_pantheon
-	deity_category = justice #This Deity uses a Justice Slot
+	deity_category = fertility #This Deity uses a Fertility Slot
 
 	on_activate = {
 		fertility_apotheosis_capital_effect = yes
@@ -600,7 +584,7 @@ deity_zis = {
 	passive_modifier = { ruler_popularity_gain = deity_ruler_popularity_gain_svalue }
 	omen = { agressive_expansion_monthly_change = omen_aggressive_expansion_monthly_change_svalue } #Bonus from Omen
 	religion = roman_pantheon
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = culture #This Deity uses a Culture Slot
 
 	on_activate = {
 		culture_apotheosis_rel_tech_effect = yes

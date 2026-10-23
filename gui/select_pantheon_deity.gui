@@ -172,7 +172,7 @@ base_sub_window = {
 							position = { 4 0 }
 							parentanchor = vcenter
 							onclick = "[SelectableDeity.OnClick]"
-							tooltip = "[SelectableDeity.GetDeityTooltip]"
+							tooltip = "[SelectableDeity.GetDeityTooltip]#TF [SelectableDeity.GetDeity.GetDesc]#!"
 						}
 						flowcontainer = {
 							

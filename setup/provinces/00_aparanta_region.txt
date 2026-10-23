@@ -396,7 +396,6 @@
 		amount=3
 	}
 	freemen={
-		religion="charvaka"
 		amount=2
 	}
 	freemen={
@@ -636,11 +635,7 @@
 		amount=6
 	}
 	freemen={
-		amount=4
-	}
-	freemen={
-		religion="charvaka"
-		amount=3
+		amount=7
 	}
 	slaves={
 		religion="hindu"
@@ -1023,7 +1018,6 @@
 		amount=4
 	}
 	freemen={
-		religion="charvaka"
 		amount=5
 	}
 	freemen={
@@ -1067,7 +1061,7 @@
 7070={ #Maski
 	terrain="plains"
 	culture="kuntalan"
-	religion="charvaka"
+	religion="agama"
 	trade_goods="vegetables"
 	civilization_value=11
 	barbarian_power=0
@@ -1461,20 +1455,18 @@
 7106={ #Buravhala
 	terrain="jungle"
 	culture="kuntalan"
-	religion="charvaka"
+	religion="agama"
 	trade_goods="woad"
 	civilization_value=9
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
-		religion="agama"
 		amount=1
 	}
 	freemen={
 		amount=3
 	}
 	slaves={
-		religion="agama"
 		amount=2
 	}
 	tribesmen={
@@ -1482,7 +1474,7 @@
 	}
 	freemen={
 		culture="dardic"
-		religion="masto_pantheon"
+		religion="hindu"
 		amount=1
 	}
 	citizen={
@@ -2164,7 +2156,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
-		amount=3
+		amount=4
 	}
 	freemen={
 		amount=2

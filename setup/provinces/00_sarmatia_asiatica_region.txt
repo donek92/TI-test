@@ -10,7 +10,7 @@
 		amount=1
 	}
 	tribesmen={
-		amount=2
+		amount=4
 	}
 }
 
@@ -22,6 +22,9 @@
 	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
+	citizen={
+		amount=1
+	}
 	tribesmen={
 		amount=3
 	}
@@ -36,7 +39,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=3
+		amount=2
 	}
 }
 
@@ -49,7 +52,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=4
+		amount=3
 	}
 }
 
@@ -62,7 +65,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=4
+		amount=3
 	}
 }
 
@@ -101,7 +104,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=4
+		amount=3
 	}
 }
 
@@ -127,7 +130,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
-		amount=1
+		amount=2
 	}
 	tribesmen={
 		amount=3
@@ -142,8 +145,11 @@
 	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
+	freemen={
+		amount=1
+	}
 	tribesmen={
-		amount=3
+		amount=4
 	}
 }
 
@@ -159,7 +165,7 @@
 		amount=1
 	}
 	tribesmen={
-		amount=5
+		amount=4
 	}
 }
 
@@ -200,11 +206,11 @@
 	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
-		citizen={
+	citizen={
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
 	}
 }
 
@@ -217,7 +223,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=1
+		amount=2
 	}
 }
 
@@ -230,7 +236,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
-		amount=1
+		amount=2
 	}
 	tribesmen={
 		amount=1
@@ -319,6 +325,14 @@
 	tribesmen={
 		amount=2
 	}
+	slaves={
+		amount=1
+	}
+	slaves={
+		culture="sarmatian"
+		religion="indo_iranian_religion"
+		amount=1
+	}
 }
 
 6143={ #Aghonor
@@ -330,6 +344,14 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
+		amount=3
+	}
+	slaves={
+		amount=2
+	}
+	slaves={
+		culture="sarmatian"
+		religion="indo_iranian_religion"
 		amount=1
 	}
 }
@@ -346,9 +368,14 @@
 		amount=1
 	}
 	slaves={
-		amount=1
+		amount=3
 	}
 	tribesmen={
+		amount=4
+	}
+	tribesmen={
+		culture="sarmatian"
+		religion="indo_iranian_religion"
 		amount=2
 	}
 }
@@ -361,8 +388,8 @@
 	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
-	freemen={
-		amount=1
+	tribesmen={
+		amount=2
 	}
 	slaves={
 		amount=1
@@ -438,7 +465,7 @@
 	culture="sarmatian"
 	religion="indo_iranian_religion"
 	trade_goods="steppe_horses"
-	civilization_value=0
+	civilization_value=6
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
@@ -450,15 +477,21 @@
 }
 
 6155={ #Kisko
-	terrain="steppes"
+	terrain="plains"
 	culture="sarmatian"
 	religion="indo_iranian_religion"
 	trade_goods="steppe_horses"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
-	tribesmen={
+	freemen={
 		amount=1
+	}
+	slaves={
+		amount=3
+	}
+	tribesmen={
+		amount=4
 	}
 }
 
@@ -471,7 +504,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=1
+		amount=2
 	}
 }
 
@@ -487,7 +520,7 @@
 		amount=1
 	}
 	tribesmen={
-		amount=1
+		amount=2
 	}
 }
 
@@ -561,14 +594,14 @@
 	culture="sarmatian"
 	religion="indo_iranian_religion"
 	trade_goods="grain"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
-		amount=1
+		amount=2
 	}
 	tribesmen={
-		amount=2
+		amount=5
 	}
 }
 
@@ -584,7 +617,7 @@
 		amount=1
 	}
 	tribesmen={
-		amount=1
+		amount=2
 	}
 }
 
@@ -593,10 +626,16 @@
 	culture="sarmatian"
 	religion="indo_iranian_religion"
 	trade_goods="woad"
-	civilization_value=0
+	civilization_value=6
 	barbarian_power=0
 	province_rank="settlement"
+	freemen={
+		amount=1
+	}
 	tribesmen={
+		amount=3
+	}
+	slaves={
 		amount=2
 	}
 }
@@ -765,13 +804,16 @@
 	culture="sarmatian"
 	religion="indo_iranian_religion"
 	trade_goods="cloth"
-	civilization_value=0
+	civilization_value=8
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
 		amount=1
 	}
 	tribesmen={
+		amount=2
+	}
+	slaves={
 		amount=2
 	}
 }
@@ -885,7 +927,7 @@
 	culture="sarmatian"
 	religion="indo_iranian_religion"
 	trade_goods="base_metals"
-	civilization_value=0
+	civilization_value=7
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -914,7 +956,7 @@
 	culture="sarmatian"
 	religion="indo_iranian_religion"
 	trade_goods="wood"
-	civilization_value=0
+	civilization_value=9
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -931,7 +973,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=8
+		amount=7
 	}
 }
 
@@ -975,8 +1017,11 @@
 	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
+	slaves={
+		amount=1
+	}
 	tribesmen={
-		amount=3
+		amount=5
 	}
 }
 
@@ -1099,7 +1144,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=1
+		amount=2
 	}
 }
 
@@ -1128,7 +1173,7 @@
 		amount=1
 	}
 	tribesmen={
-		amount=1
+		amount=2
 	}
 }
 
@@ -1136,7 +1181,7 @@
 	terrain="forest"
 	culture="sarmatian"
 	religion="indo_iranian_religion"
-	trade_goods="cattle"
+	trade_goods="nuts"
 	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
@@ -1192,7 +1237,7 @@
 
 6209={ #Ydomor
 	terrain="steppes"
-	culture="sarmatian"
+	culture="alani"
 	religion="indo_iranian_religion"
 	trade_goods="grain"
 	civilization_value=0
@@ -1205,7 +1250,7 @@
 
 6210={ #Ghenarcha
 	terrain="steppes"
-	culture="sarmatian"
+	culture="alani"
 	religion="indo_iranian_religion"
 	trade_goods="leather"
 	civilization_value=0
@@ -1285,7 +1330,7 @@
 
 6215={ #Urghat
 	terrain="steppes"
-	culture="sarmatian"
+	culture="alani"
 	religion="indo_iranian_religion"
 	trade_goods="grain"
 	civilization_value=0
@@ -1330,8 +1375,11 @@
 	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
-	freemen={
+	citizen={
 		amount=1
+	}
+	freemen={
+		amount=2
 	}
 	slaves={
 		amount=2

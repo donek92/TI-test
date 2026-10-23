@@ -220,11 +220,13 @@
 
 #1.6
  ganges_delta_mod:0 "Ganges Delta"
- ganges_delta_mod_desc:0 "The great Sundarbans mangrove forests of the Ganges Delta have been a forbidding environment to outsiders for millenia, with only the local peoples able to adapt to exploit this rich farmland and it's resources."
+ ganges_delta_mod_desc:0 "The great Sundarbans mangrove forests of the Ganges Delta have been a forbidding environment to outsiders for millennia, with only the local peoples able to adapt to exploit this rich farmland and it's resources."
  cannabis_steppe_mod:0 "Steppe Cannabis"
- cannabis_steppe_mod_desc:0 "While Cannabis has been in use for millenia, the Indo-European riders of the Scythian Steppe grew and used the substance for textiles and recreation at prolific rates. Scythian culture was instrumental in the spread of cannabis from the borders of Germany to China, as evidenced by large stashes of the substance in Scythian kurgan burials across Eurasia."
+ cannabis_steppe_mod_desc:0 "While Cannabis has been in use for millennia, the Indo-European riders of the Scythian Steppe grew and used the substance for textiles and recreation at prolific rates. Scythian culture was instrumental in the spread of cannabis from the borders of Germany to China, as evidenced by large stashes of the substance in Scythian kurgan burials across Eurasia."
  arabian_dates_mod:0 "Arabian Dates"
  arabian_dates_mod_desc:0 "The peoples of the oases of the Arabia have been prolific date cultivators for thousands of years, using their limited water resources to grow forests of date palms able to feed tens of thousands of their tribesmen, facilitating Arabian trade and conquest."
+ allow_mercenary_training:0 "Allow #Y Mercenaries#! to drill."
+ unlock_mercenary_training_tt:0 "#Y Mercenaries#! can drill."
  
  #Units
  spearmen_discipline:0 "Spearmen Discipline"
@@ -249,6 +251,7 @@
  spearmen_coastal_terrain_combat_bonus:0 "Spearmen Coastal Terrain Combat Bonus"
  spearmen_riverine_terrain_combat_bonus:0 "Spearmen River Combat Bonus"
  warelephant_mountain_combat_bonus:0 "War Elephant Mountain Combat Bonus"
+ culture_tribesmen_happiness: "Culture Tribesman Happiness"
 
  spearmen_discipline_desc:0 "$MODIFIER_DISCIPLINE_desc$"
  spearmen_morale_desc:0 "$MODIFIER_LAND_MORALE_desc$"
@@ -256,7 +259,8 @@
  spearmen_defensive_desc:0 "$MODIFIER_LAND_DEFENSE_desc$"
  spearmen_maintenance_cost_desc:0 "$MODIFIER_ARMY_MAINTENANCE_COST_desc$"
  spearmen_movement_speed_desc:0 "$MODIFIER_LAND_MOVEMENT_SPEED_desc$"
- 
+
+
  province_diminishment_extremely_looted:0 "Extremely Looted"
  desc_province_diminishment_extremely_looted:0 "This city was thoroughly massacred by a conqueror after the city was captured."
  
@@ -277,3 +281,46 @@ ebony_mod_desc:0 "Since the times of the early pharaohs of Egypt, ebony wood has
 
 xishi_mod:0 "Temple of the Beauty Xi Shi"
 xishi_mod_desc:0 "The legendary Xi Shi, the first beauty of China, was born in Zhuji and lived in the early 5th century BC. Xi Shi's beauty was said to be so extreme that while leaning over a balcony to look at the fish in the pond, the fish would be so dazzled that they forgot to swim and sank below the surface. She was discovered by minister Fan Li of the Yue kingdom and gifted to the rival Wu Kingdom. He became hypnotized by her and built a large temple for her and other beauties. Little did King Fuchai of Wu know that minister Fan Li plotted with the beauty Xi Shi in one of history's first recorded sexpionage operations - Xi Shi successfully seduced the king, convinced him to kill his advisors and greatest general, and ignore state affairs, leading to the downfall of the kingdom shortly thereafter. Xi Shi's stunning beauty has inspired songs and stories for millenia since."
+
+ # AI only modifier, localized to silence imperator-tiger warning
+ conquer_ibasim: "Conquest of Ibasim"
+ thracian_capital_defence_cheat:0 "Lysimacheian Fortifications"
+
+ me_scy_1_12_pmod: "Skythoi Patrols"
+ me_scy_1_32c_cmod: "Head of Religious State"
+ steppe_insanity_unleashed: "Steppe Insanity Unleashed"
+ migratory_insanity_unleashed: "Migratory Insanity Unleashed"
+ tribal_insanity_unleashed: "Tribal Insanity Unleashed"
+ celtic_hordes: "Celtic Hordes"
+ 
+ # Pureon location specific local modifiers
+ ring_of_brodgar_modifier:0 "Ring of Brodgar"
+ desc_ring_of_brodgar_modifier:1 "This territory contains the neolithic stone circle called the Ring of Brodgar."
+ carnac_stones_modifier:0 "Carnac Stones"
+ desc_carnac_stones_modifier:1 "The Carnac stones are the largest collection of prehistoric megalithic standing stones."
+ newgrange_monument_modifier:0 "Newgrange"
+ desc_newgrange_monument_modifier:1 "Newgrange is a grand Neolithic passage tomb, famous for its winter solstice sun alignment."
+ sheba_temples_modifier:0 "Sheba Temples"
+ desc_sheba_temples_modifier:1 "The temple complexes of the Kingdom of Saba, like the Temple of Awwam and the Barran Temple, serve as major religious and cultural centers."
+ kurgan_mounds1_modifier:0 "Kurgan Burial Mounds"
+ desc_kurgan_mounds1_modifier:1 "Scythian kurgan mounds are large, earthen burial mounds of the nomadic Scythian elite."
+ kurgan_mounds2_modifier:0 "Kurgan Burial Mounds"
+ desc_kurgan_mounds2_modifier:1 "Scythian kurgan mounds are large, earthen burial mounds of the nomadic Scythian elite."
+ kurgan_mounds3_modifier:0 "Kurgan Burial Mounds"
+ desc_kurgan_mounds3_modifier:1 "Scythian kurgan mounds are large, earthen burial mounds of the nomadic Scythian elite."
+ kurgan_mounds4_modifier:0 "Kurgan Burial Mounds"
+ desc_kurgan_mounds4_modifier:1 "Scythian kurgan mounds are large, earthen burial mounds of the nomadic Scythian elite."
+ kurgan_mounds5_modifier:0 "Kurgan Burial Mounds"
+ desc_kurgan_mounds5_modifier:1 "Scythian kurgan mounds are large, earthen burial mounds of the nomadic Scythian elite."
+ oracle_melqart_modifier:0 "Oracle of Melqart"
+ desc_oracle_melqart_modifier:1 "The Temple of Melqart is one of the most important and famous Phoenician sanctuaries in the ancient world."
+ arados_island_modifier:0 "Island-city of Arados"
+ desc_arados_island_modifier:1 "The fortified Phoenician island-city of Arados submitted peacefully to Alexander the Great in 333 BCE."
+ 
+ #Aftermath of the Revolution Modifiers
+  cr_carthage_numidian_cavalry:0 "Numidian Allies"
+ desc_cr_carthage_numidian_cavalry:0 "Our bonds with the kings of Massylia and Musulamia run deeper than tribute."
+ cr_carthage_africa_secured:0 "Secured Homeland"
+ desc_cr_carthage_africa_secured:0 "The heartland of Carthage is fortified, its allies bound close, and its rivals humbled."
+ rm_5_british_dominance_smod:0 "Dominance over Britannia"
+ desc_rm_5_british_dominance_smod:0 "We broke the spirit of the British tribes we conquered, and they are now moving towards a peaceful Roman life rather than continuing their violent insurgency."

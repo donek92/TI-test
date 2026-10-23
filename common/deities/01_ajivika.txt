@@ -14,11 +14,11 @@ deity_makkhali_gosala = {
 			}
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_love
 	passive_modifier = { global_population_growth = omen_global_population_growth }
 	omen = { monthly_political_influence_modifier = deity_monthly_political_influence_modifier_svalue } #Bonus from Omen
 	religion = ajivika
-	deity_category = wisdom #This Deity uses a Wisdom slot.
+	deity_category = fertility #This Deity uses a Fertility slot.
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -122,7 +122,7 @@ deity_paramanu = {
 	}
 	icon = deity_wealth
 	passive_modifier = { global_commerce_modifier = deity_global_commerce_modifier_svalue }
-	omen = { enact_holy_site_cost_modifier = -0.1 } #Bonus from Omen
+	omen = { enact_holy_site_cost_modifier = -0.4 } #Bonus from Omen
 	religion = ajivika
 	deity_category = economy #This Deity uses an Economy slot.
 	deification_trigger = {
@@ -201,11 +201,11 @@ deity_purana = {
 			}
 		}
 	}
-	icon = deity_justice
+	icon = deity_war
 	passive_modifier = { land_morale_modifier = deity_land_morale_modifier_svalue }
 	omen = { global_slaves_happyness = omen_global_slaves_happiness_svalue } #Bonus from Omen
 	religion = ajivika
-	deity_category = justice #This Deity uses a Justice slot.
+	deity_category = war #This Deity uses a War slot.
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -282,11 +282,11 @@ deity_roha = {
 			}
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_wealth
 	passive_modifier = { war_exhaustion = deity_war_exhaustion_svalue }
 	omen = { research_points_modifier = omen_research_points_modifier_svalue } #Bonus from Omen
 	religion = ajivika
-	deity_category = wisdom  #This Deity uses a Wisdom slot.
+	deity_category = economy  #This Deity uses an Economy slot.
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -340,7 +340,7 @@ deity_udai = {
 	passive_modifier = { global_monthly_civilization = deity_global_monthly_civilization_svalue }
 	omen = { global_monthly_state_loyalty = omen_global_monthly_state_loyalty } #Bonus from Omen
 	religion = ajivika
-	deity_category = justice  #This Deity uses a Justice slot.
+	deity_category = culture  #This Deity uses a Culture slot.
 	deification_trigger = {
 		can_deify_trigger = yes
 	}

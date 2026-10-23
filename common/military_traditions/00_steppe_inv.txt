@@ -4,13 +4,11 @@
 	
 	allow = {
 		trigger_if = {
-			limit = { 
-				country_culture_group = saka_g 
-			}
+			limit = { country_culture_group = scythia }
 			custom_tooltip = {
 				text = "began_with_tradition_group"
 			}
-			country_culture_group = saka_g
+			country_culture_group = scythia
 		}
 		trigger_else_if = {
 			limit = {
@@ -23,75 +21,21 @@
 		}
 		trigger_else_if = {
 			limit = {
-				country_culture_group = caucasian
+				country_culture_group = scythian_east
 			}
 			custom_tooltip = {
 				text = "began_with_tradition_group"
 			}
-			country_culture_group = caucasian
+			country_culture_group = scythian_east
 		}
 		trigger_else_if = {
 			limit = {
-				country_culture_group = sarmatian_group
+				country_culture_group = chinese
 			}
 			custom_tooltip = {
 				text = "began_with_tradition_group"
 			}
-			country_culture_group = sarmatian_group
-		}
-		trigger_else_if = {
-			limit = {
-				country_culture_group = finnic_group
-			}
-			custom_tooltip = {
-				text = "began_with_tradition_group"
-			}
-			country_culture_group = finnic_group
-		}
-		trigger_else_if = {
-			limit = {
-				country_culture_group = uralic_group
-			}
-			custom_tooltip = {
-				text = "began_with_tradition_group"
-			}
-			country_culture_group = uralic_group
-		}
-		trigger_else_if = {
-			limit = {
-				country_culture_group = xiyu
-			}
-			custom_tooltip = {
-				text = "began_with_tradition_group"
-			}
-			country_culture_group = xiyu
-		}
-		trigger_else_if = {
-			limit = {
-				country_culture_group = scythia
-			}
-			custom_tooltip = {
-				text = "began_with_tradition_group"
-			}
-			country_culture_group = scythia
-		}
-		trigger_else_if = {
-			limit = {
-				tag = BAC
-			}
-			custom_tooltip = {
-				text = "began_with_tradition_group"
-			}
-			tag = BAC
-		}
-		trigger_else_if = {
-			limit = {
-				tag = ARS
-			}
-			custom_tooltip = {
-				text = "began_with_tradition_group"
-			}
-			tag = ARS
+			country_culture_group = chinese
 		}
 		trigger_else_if = {
 			limit = {
@@ -101,6 +45,15 @@
 				text = "began_with_tradition_group"
 			}
 			tag = PAR
+		}
+		trigger_else_if = {
+			limit = {
+				tag = ANP
+			}
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			tag = ANP
 		}
 		trigger_else_if = {
 			limit = {
@@ -119,6 +72,33 @@
 				text = "began_with_tradition_group"
 			}
 			heritage = bosporan_heritage
+		}
+		trigger_else_if = {
+			limit = {
+				heritage = bosporan_league_heritage
+			}
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			heritage = bosporan_league_heritage
+		}
+		trigger_else_if = {
+			limit = {
+				heritage = bosporan_empire_heritage
+			}
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			heritage = bosporan_empire_heritage
+		}
+		trigger_else_if = {
+			limit = {
+				has_variable = scythian_traditions
+			}
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			has_variable = scythian_traditions
 		}
 		trigger_else = {
 			custom_tooltip = {
@@ -154,7 +134,6 @@
 		}
 		modifier = { 
 			light_infantry_offensive = 0.1
-			axemen_offensive = 0.1
 		} 
 		icon = mauryan_mauryas_path_1
 		requires = { }

@@ -9,9 +9,16 @@
 	tribesmen={
 		amount=5
 	}
+	freemen={
+		amount=1
+	}
+	citizen={
+		amount=1
+	}
 	slaves={
 		amount=2
 	}
+	holy_site=omen_agathyrus
 }
 
 4771={ #Leucaristus
@@ -87,7 +94,7 @@
 
 4889={ #Tantonum
 	terrain="hills"
-	culture="celtic_pannonian"
+	culture="cotinian"
 	religion="druidism"
 	trade_goods="gems"
 	civilization_value=0
@@ -494,8 +501,8 @@
 
 6047={ #Olnish
 	terrain="forest"
-	culture="agathyrsian"
-	religion="indo_iranian_religion"
+	culture="sporic"
+	religion="matrist_religion"
 	trade_goods="hemp"
 	civilization_value=0
 	barbarian_power=0
@@ -514,7 +521,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=2
+		amount=1
 	}
 }
 
@@ -527,13 +534,13 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=3
+		amount=2
 	}
 }
 
 6089={ #Vurdant
 	terrain="forest"
-	culture="neuric"
+	culture="sporic"
 	religion="matrist_religion"
 	trade_goods="fur"
 	civilization_value=0
@@ -614,8 +621,8 @@
 
 6238={ #Arhao
 	terrain="forest"
-	culture="agathyrsian"
-	religion="indo_iranian_religion"
+	culture="sporic"
+	religion="matrist_religion"
 	trade_goods="leather"
 	civilization_value=0
 	barbarian_power=0
@@ -776,8 +783,8 @@
 
 6250={ #Arha
 	terrain="forest"
-	culture="agathyrsian"
-	religion="indo_iranian_religion"
+	culture="sporic"
+	religion="matrist_religion"
 	trade_goods="hemp"
 	civilization_value=0
 	barbarian_power=0

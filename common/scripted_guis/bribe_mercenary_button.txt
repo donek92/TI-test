@@ -26,9 +26,23 @@
 		in_command = yes
 		custom_tooltip = {
 			text = eligible_merc_buyoff_tt
+			# Hiding duplicate of is_shown here in case it breaks or someone will attempt to do some funny stuff
+			is_mercenary = yes
+			OR = {
+				is_general = yes
+				is_admiral = yes
+			}
+			NOT = {
+				employer = {
+					OR = {
+						tag = MER
+						this = scope:player
+					}
+				}
+			}
 			any_character_unit = {
-				unit_size > 0
-				in_combat = no
+				unit_size > 0 # Should be here rather than in is_shown for consistent behavior between all the buttons
+				in_combat = no # This is the only trigger that matters if everything works normally
 			}
 		}
 		trigger_if = {
@@ -43,7 +57,12 @@
 		}
 		scope:player = {
 			war_with = root.employer
-			treasury >= army_size_merc_estimation_sg 
+			treasury >= army_size_merc_estimation_sg
+            # Bribing is allowed up until max stacks + 1
+			custom_tooltip = {
+				text = merc_buyoff_stack_limit
+				num_mercenaries_employed_svalue < max_mercenary_stacks_plus_1
+			}
 		}
 		custom_tooltip = {
 			text = merc_1_year_buyoff_tt
@@ -62,6 +81,7 @@
 				subtract = army_size_merc_estimation_sg
 			}
 		}
+		custom_tooltip = merc_buyoff_effect_tooltip_sg
 		set_variable = {
 			name = merc_buyoff_cooldown
 			days = 365

@@ -306,7 +306,7 @@ me_macedon_2_mastery.31 = {                            # Cretan Subjugation - EN
                 }
                 scope:crete_scope = {
                     change_country_name = "formable_crete"
-                    change_country_tag = "1KR"
+                    change_country_tag = "KRE"
                     change_country_color =  "cretan_blue"
                     change_country_adjective = "CRETE_ADJECTIVE"
                 }
@@ -319,7 +319,7 @@ me_macedon_2_mastery.31 = {                            # Cretan Subjugation - EN
                     }
                     create_country = {
                         change_country_name = "formable_crete"
-                        change_country_tag = "1KR"
+                        change_country_tag = "KRE"
                         change_country_color = "cretan_blue"
                         change_country_adjective = "CRETE_ADJECTIVE"
                         change_country_flag = CRETE_FLAG
@@ -750,7 +750,7 @@ me_macedon_2_mastery.71 = {                            # God Among Men - START
     picture = throneroom
     left_portrait = current_ruler
     right_portrait = char:39
-    right_portrait = char:714
+    right_portrait = char:35
 
     trigger = { 
         has_dlc = "Heirs of Alexander"

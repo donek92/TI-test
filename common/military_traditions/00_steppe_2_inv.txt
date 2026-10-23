@@ -4,11 +4,11 @@
 	
 	allow = {
 		trigger_if = {
-			limit = { country_culture_group = saka_g }
+			limit = { country_culture_group = scythia }
 			custom_tooltip = {
 				text = "began_with_tradition_group"
 			}
-			country_culture_group = saka_g
+			country_culture_group = scythia
 		}
 		trigger_else_if = {
 			limit = {
@@ -21,21 +21,21 @@
 		}
 		trigger_else_if = {
 			limit = {
-				country_culture_group = sarmatian_group
+				country_culture_group = scythian_east
 			}
 			custom_tooltip = {
 				text = "began_with_tradition_group"
 			}
-			country_culture_group = sarmatian_group
+			country_culture_group = scythian_east
 		}
 		trigger_else_if = {
 			limit = {
-				country_culture_group = scythia
+				country_culture_group = chinese
 			}
 			custom_tooltip = {
 				text = "began_with_tradition_group"
 			}
-			country_culture_group = scythia
+			country_culture_group = chinese
 		}
 		trigger_else_if = {
 			limit = {
@@ -47,25 +47,10 @@
 			custom_tooltip = {
 				text = "began_with_tradition_group"
 			}
-			tag = BAC
-		}
-		trigger_else_if = {
-			limit = {
-				tag = ARS
+			OR = {
+				has_variable = was_bactria
+				tag = BAC
 			}
-			custom_tooltip = {
-				text = "began_with_tradition_group"
-			}
-			tag = ARS
-		}
-		trigger_else_if = {
-			limit = {
-				tag = PAR
-			}
-			custom_tooltip = {
-				text = "began_with_tradition_group"
-			}
-			tag = PAR
 		}
 		trigger_else_if = {
 			limit = {
@@ -75,6 +60,15 @@
 				text = "began_with_tradition_group"
 			}
 			tag = TAY
+		}
+		trigger_else_if = {
+			limit = {
+				has_variable = unlock_bactrian_mil_trads_var
+			}
+			custom_tooltip = {
+				text = "unlocked_via_mission_tree_tt"
+				has_variable = unlock_bactrian_mil_trads_var
+			}
 		}
 		#trigger_else_if = {
 		#	limit = {
@@ -287,5 +281,75 @@
 		} 
 		icon = north_african_army_path_4
 		requires = { bactrian_path_13 }
+	}
+
+	qin_path_1 = { # Bai Qi 
+		modifier = {
+			enslavement_efficiency = 0.05
+			army_weight_modifier = -0.1
+		}
+		icon = celtic_britannic_path_2
+		requires = {bactrian_path_11} 
+		potential = {
+			OR = {
+				primary_culture = qin
+				AND = {
+					has_variable = allow_qin_mil_trad_mission_task_reward
+					has_variable = bai_qi_var
+				}
+			}
+		}
+	}
+
+	qin_path_2 = { # Lian Po
+		modifier = {
+			global_defensive = 0.1
+			general_loyalty = 5
+		}
+		icon = mauryan_noble_path_4
+		requires = {bactrian_path_13} 
+		potential = {
+			OR = {
+				primary_culture = qin
+				AND = {
+					has_variable = allow_qin_mil_trad_mission_task_reward
+					has_variable = lian_po_var
+				}
+			}
+		}
+	}
+	qin_path_3 = { # Li Mu
+		modifier = {
+			global_defensive = 0.1
+			steppes_combat_bonus = 0.1
+		}
+		icon = persian_scythian_path_5
+		requires = {bactrian_path_13} 
+		potential = {
+			OR = {
+				primary_culture = qin
+				AND = {
+					has_variable = allow_qin_mil_trad_mission_task_reward
+					has_variable = li_mu_var
+				}
+			}
+		}
+	}
+	qin_path_4 = { # Wang Jian
+		modifier = {
+			discipline = 0.03
+			civil_war_threshold = 0.02
+		}
+		icon = greek_antigonid_path_7
+		requires = {bactrian_path_10} 
+		potential = {
+			OR = {
+				primary_culture = qin
+				AND = {
+					has_variable = allow_qin_mil_trad_mission_task_reward
+					has_variable = wang_jian_var
+				}
+			}
+		}
 	}
 }

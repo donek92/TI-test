@@ -24,7 +24,7 @@ deity_chinese_sheshen = {
 		fertility_apotheosis_capital_effect = yes
 	}
 	religion = chinese_religions
-	deity_category = justice
+	deity_category = fertility
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -54,7 +54,7 @@ deity_chinese_jishen = {
 		economy_income_effect = yes
 	}
 	religion = chinese_religions
-	deity_category = justice
+	deity_category = culture
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -328,7 +328,7 @@ deity_chinese_fengshi = {
 		economy_apotheosis_capital_citizens_effect = yes
 	}
 	religion = chinese_religions
-	deity_category = wisdom
+	deity_category = economy
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -542,7 +542,7 @@ deity_chinese_huashan = {
 		culture_apotheosis_oratory_tech_effect = yes
 	}
 	religion = chinese_religions
-	deity_category = justice
+	deity_category = war
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -804,7 +804,7 @@ deity_chinese_xihe = {
 		culture_apotheosis_rel_tech_effect = yes
 	}
 	religion = chinese_religions
-	deity_category = wisdom
+	deity_category = culture
 	deification_trigger = {
 		can_deify_trigger = yes
 	}

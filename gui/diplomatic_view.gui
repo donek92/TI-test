@@ -11,9 +11,15 @@ base_window = {
 	#using = FadeStates
 	state = {
 		name = _show
-		
-		on_start = "[GetVariableSystem.Set( 'diplomatic_tabs', 'diplomatic' )]"
-		onclick = "[GetScriptedGui('clear_diplo_view_disabled_var').Execute( GuiScope.SetRoot( Player.MakeScope ).End )]"
+
+		on_start = "[PdxGuiTriggerAllAnimations('instantiate_then_hide_subwindow')]"
+	}
+
+	using = main_window_template
+
+	### Audio ###
+	state = {
+		name = _show
 		start_sound = {
 			soundeffect = "event:/SFX/UI/Generic/2.0/sfx_ui_window_tab_close"
 		}
@@ -29,6 +35,11 @@ base_window = {
 		on_start = "[GetVariableSystem.Set( 'diplomatic_tabs', 'diplomatic' )]"
 		on_start = "[GetScriptedGui('remove_player_subjects_variables_button').Execute( GuiScope.SetRoot( Player.MakeScope ).End )]"
 	}
+	### TODO THIS DOES NOT WORK (because of above stated FadeStates?)
+	#state = {
+	#	name = _hide
+	#	on_start = "[PdxGuiTriggerAllAnimations('diplomacy_view_closed')]"
+	#}
 
 	vbox = {
 		using = MainWindowHeaderBox
@@ -140,8 +151,8 @@ base_window = {
 				hbox = {
 					layoutpolicy_horizontal = expanding
 					spacing = 7
-					
-					flowcontainer = { 
+
+					flowcontainer = {
 						direction = vertical
 						
 						ignoreinvisible = yes
@@ -149,7 +160,7 @@ base_window = {
 						@icon_width = 100
 
 						widget = {
-							size = { 3 3 }	
+							size = { 3 3 }
 						}
 						icon_and_text = {
 							size = { @icon_width 0 }
@@ -157,7 +168,7 @@ base_window = {
 							blockoverride "LineSize"
 							{
 								size = { 200 4 }
-							} 
+							}
 							blockoverride "Icon"
 							{
 								visible = no
@@ -241,7 +252,7 @@ base_window = {
 								}
 							}
 						}
-						 
+
 						icon_and_text = {
 							position = { 0 12 }
 							size = { @icon_width 0 }
@@ -287,7 +298,7 @@ base_window = {
 								}
 							}
 						}
-						
+
 						icon_and_text = {
 							position = { 0 56 }
 							size = { @icon_width 0 }
@@ -303,7 +314,7 @@ base_window = {
 							tooltip = "[DiplomaticView.GetTargetCountry.GetManpowerTooltip]"
 						}
 					}
-					 
+
 					flowcontainer = {
 						name = "population_and_territories"
 						direction = vertical
@@ -323,7 +334,7 @@ base_window = {
 							}
 							tooltip = "[DiplomaticView.GetTargetCountry.BuildTotalPopulationToolTip]"
 						}
-						
+
 						icon_and_text = {
 							size = { 90 0 }
 							visible = "[Not(DiplomaticView.GetTargetCountry.IsBarbarian)]"
@@ -384,13 +395,13 @@ base_window = {
 							blockoverride "On_click" { onclick = "[DiplomaticView.ViewCharacters]" }
 							tooltip = "SHOW_THEIR_CHARACTERS"
 						}
-					
+
 						widget = {
 							name = "civil_war_pie"
 							size = { 52 52 }
 							visible = "[Not(DiplomaticView.GetTargetCountry.IsBarbarian)]"
 							tooltip = "[DiplomaticView.GetTargetCountry.GetPossibleCivilWarTooltip]"
-							
+
 							icon = {
 								texture = "gfx/interface/map/on_map_siege_bar_bg.dds"
 								size = { 52 52 }
@@ -408,7 +419,7 @@ base_window = {
 									#spriteType = Corneredtiled
 								}
 							}
-							
+
 							progresspie = {
 								name = "progress"
 								parentanchor = center
@@ -428,7 +439,7 @@ base_window = {
 						}
 					}
 				}
-			} 
+			}
 		}
 
 		margin_widget = {
@@ -979,18 +990,18 @@ base_window = {
 						}
 					}
 
-					cpt_button = {
-						size = { 82 126 }
-						block "Context" 
-						{
-							visible = "[DiplomaticView.GetTargetCountry.IsBarbarian]"
-							datacontext = "[DiplomaticView.GetHorde.GetLeader]"
-						}
-					}
-				
-					flowcontainer = {
-						direction = vertical
+				cpt_button = {
+					size = { 82 126 }
+					block "Context"
+					{
 						visible = "[DiplomaticView.GetTargetCountry.IsBarbarian]"
+						datacontext = "[DiplomaticView.GetHorde.GetLeader]"
+					}
+				}
+
+				flowcontainer = {
+					direction = vertical
+					visible = "[DiplomaticView.GetTargetCountry.IsBarbarian]"
 
 						margin_left = 12
 						sub_header = {
@@ -2032,28 +2043,66 @@ base_window = {
 		}
 	}
 
+	widgetid = "right_attach"
+	widgetanchor = top
+
 	base_sub_window = {
 		gfxtype = windowgfx
 		name = "diplo_view_inherited"
 		size = { 380 892 }
-		visible = "[Not(LessThan_CFixedPoint( Player.MakeScope.Var('diplo_view_disabled').GetValue, '(CFixedPoint)5' ))]"
+		visible = yes #TODO
 		movable = no
 		allow_outside = yes
-		minimumsize = { 380 540 } 
-		position = { 640 8 }
+		minimumsize = { 380 540 }
+		position = { 0 8 }
+
 		blockoverride "Title_text"
 		{
 			text = "FOREIGN_POWERS_LIST"
 		}
-		blockoverride "White_buttons" 
+		blockoverride "White_buttons"
 		{
-		
+
 			button_close = {
-				onclick = "[GetScriptedGui('clear_diplo_view_disabled_var').Execute( GuiScope.SetRoot( Player.MakeScope ).End )]"
+				onclick = "[PdxGuiTriggerAllAnimations('on_details_hidden')]"
 				tooltip = "CLOSE"
 			}
 		}
-	
+
+		attachto = {
+			widgetid = "right_attach"
+			parentanchor = right
+		}
+
+		state = {
+			name = diplo_reset_size
+
+			animation = {
+				size = { 340 740 }
+			}
+
+		}
+
+		state = {
+			name = instantiate_then_hide_subwindow
+
+			on_finish = "[PdxGuiWidget.Hide]"
+		}
+
+		state = {
+			name = "on_details_shown"
+
+			on_start = "[PdxGuiWidget.Show]"
+
+		}
+
+		state = {
+			name = "on_details_hidden"
+
+			on_start = "[PdxGuiWidget.Hide]"
+
+		}
+
 		vbox = {
 			margin_top = 30
 			margin_widget = {
@@ -2088,7 +2137,7 @@ base_window = {
 										}
 									}
 								}
-								blockoverride "Text" 
+								blockoverride "Text"
 								{
 									text = "SHOW_NEIGHBOR"
 									align = left
@@ -2364,11 +2413,11 @@ base_window = {
 									size = { 280 28 }
 									parentanchor = vcenter
 									datacontext = "[DiplomaticStanceItem.GetStance]"
-									blockoverride "Center_text" 
+									blockoverride "Center_text"
 									{
 										text = "[DiplomaticStanceItem.GetStance.GetName]"
 									}
-									blockoverride "On_click" 
+									blockoverride "On_click"
 									{
 										onclick = "[DiplomaticStanceItem.OnClick]"
 									}
@@ -2377,8 +2426,8 @@ base_window = {
 									enabled = "[DiplomaticStanceItem.CanClick]"
 								}
 
-							
-								textbox = { 
+
+								textbox = {
 									size = { 70 36 }
 									autoresize = yes
 									parentanchor = vcenter
@@ -2390,7 +2439,7 @@ base_window = {
 						}
 					}
 				}
-			} 
+			}
 		}
 	}
 }
@@ -2404,7 +2453,7 @@ template diplomatic_actions_v2
 		margin_top = 4
 		margin_bottom = 4
 		alpha = 1
-		layoutpolicy_horizontal = expanding	
+		layoutpolicy_horizontal = expanding
 		item = {
 			margin_widget = {
 				name = "child_actions_category"
@@ -2413,14 +2462,14 @@ template diplomatic_actions_v2
 				margin_right = 6
 				margin_left = 6
 
-				diplomacy_action_button = { 
+				diplomacy_action_button = {
 					size = { 100% 100% }
 					parentanchor = hcenter
 					visible = "[Or( DiplomaticActionItem.RequireAcceptance, DiplomaticActionItem.HasPrice )]"
 					layoutpolicy_horizontal = expanding
 					blockoverride "On_click" { onclick = "[DiplomaticActionItem.OnClick]" }
-					blockoverride "Button_text" 
-					{ 
+					blockoverride "Button_text"
+					{
 						text = "[DiplomaticActionItem.GetTitle]"
 					}
 

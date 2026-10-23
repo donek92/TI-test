@@ -1,6 +1,6 @@
 ﻿4521={ #Nobiodounos
 	terrain="marsh"
-	culture="getian"
+	culture="harpii"
 	religion="shamanism"
 	trade_goods="salt"
 	civilization_value=1
@@ -10,19 +10,24 @@
 		amount=1
 	}
 	freemen={
-		amount=3
+		amount=2
 	}
 	slaves={
-		amount=1
+		amount=3
 	}
 	tribesmen={
-		amount=2
+		amount=3
+	}
+	freemen={
+		culture="bosporan"
+		religion="roman_pantheon"
+		amount=1
 	}
 }
 
 4522={ #Ta Antiphilou
 	terrain="forest"
-	culture="getian"
+	culture="harpii"
 	religion="shamanism"
 	trade_goods="fish"
 	civilization_value=3
@@ -30,29 +35,42 @@
 	province_rank="settlement"
 	tribesmen={
 		amount=3
+	}
+	freemen={
+		amount=2
+	}
+	freemen={
+		culture="bosporan"
+		religion="roman_pantheon"
+		amount=1
+	}
+	slaves={
+		culture="bosporan"
+		religion="roman_pantheon"
+		amount=1
 	}
 	port_building=1
 }
 
 4523={ #Kremniskoi
 	terrain="forest"
-	culture="getian"
+	culture="harpii"
 	religion="shamanism"
 	trade_goods="fish"
 	civilization_value=3
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
-		amount=1
+		amount=2
 	}
 	tribesmen={
-		amount=2
+		amount=3
 	}
 }
 
 4524={ #Aipolion
 	terrain="forest"
-	culture="getian"
+	culture="harpii"
 	religion="shamanism"
 	trade_goods="wild_game"
 	civilization_value=3
@@ -70,7 +88,7 @@
 	terrain="marsh"
 	culture="bosporan"
 	religion="roman_pantheon"
-	trade_goods="salt"
+	trade_goods="marble"
 	civilization_value=22
 	barbarian_power=0
 	province_rank="city"
@@ -80,10 +98,23 @@
 	freemen={
 		amount=4
 	}
+	slaves={
+		amount=4
+	}
 	tribesmen={
 		culture="getian"
 		religion="shamanism"
 		amount=5
+	}
+	freemen={
+		culture="scythian"
+		religion="indo_iranian_religion"
+		amount=1
+	}
+	slaves={
+		culture="scythian"
+		religion="indo_iranian_religion"
+		amount=2
 	}
 }
 
@@ -91,12 +122,12 @@
 	terrain="marsh"
 	culture="bosporan"
 	religion="roman_pantheon"
-	trade_goods="steppe_horses"
+	trade_goods="fish"
 	civilization_value=22
 	barbarian_power=0
-	province_rank="city"
+	province_rank="settlement"
 	citizen={
-		amount=3
+		amount=1
 	}
 	freemen={
 		amount=2
@@ -106,6 +137,11 @@
 		religion="indo_iranian_religion"
 		amount=2
 	}
+	slaves={
+		culture="scythian"
+		religion="roman_pantheon"
+		amount=1
+	}
 	tribesmen={
 		culture="scythian"
 		religion="indo_iranian_religion"
@@ -114,7 +150,7 @@
 	port_building=1
 }
 
-4527={ #Istrianon
+4527={ #Histrianon Limen
 	terrain="plains"
 	culture="bosporan"
 	religion="roman_pantheon"
@@ -150,7 +186,7 @@
 	tribesmen={
 		culture="scythian"
 		religion="indo_iranian_religion"
-		amount=1
+		amount=2
 	}
 }
 
@@ -176,8 +212,8 @@
 		religion="indo_iranian_religion"
 		amount=4
 	}
-	port_building=1
 	holy_site=omen_ariantes
+	port_building=1
 }
 
 4800={ #Dinogetia
@@ -534,7 +570,7 @@
 	terrain="forest"
 	culture="getian"
 	religion="shamanism"
-	trade_goods="fur"
+	trade_goods="nuts"
 	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
@@ -1178,7 +1214,15 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=1
+		amount=3
+	}
+	slaves={
+		amount=2
+	}
+	slaves={
+		culture="chernolian"
+		religion="matrist_religion"
+		amount=2
 	}
 }
 
@@ -1191,7 +1235,10 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=1
+		amount=3
+	}
+	slaves={
+		amount=2
 	}
 }
 
@@ -1220,7 +1267,10 @@
 		amount=1
 	}
 	tribesmen={
-		amount=1
+		amount=2
+	}
+	slaves={
+		amount=2
 	}
 }
 
@@ -1239,12 +1289,15 @@
 
 6114={ #Selb
 	terrain="forest"
-	culture="scythian"
+	culture="gelonian"
 	religion="indo_iranian_religion"
 	trade_goods="horses"
 	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
+	freemen={
+		amount=2
+	}
 	tribesmen={
 		amount=1
 	}
@@ -1258,14 +1311,20 @@
 	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
+	freemen={
+		amount=1
+	}
 	tribesmen={
-		amount=2
+		amount=3
+	}
+	slaves={
+		amount=3
 	}
 }
 
 6116={ #Syuthgrat
 	terrain="forest"
-	culture="scythian"
+	culture="gelonian"
 	religion="indo_iranian_religion"
 	trade_goods="cattle"
 	civilization_value=0
@@ -1287,8 +1346,14 @@
 	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
-	tribesmen={
+	freemen={
 		amount=1
+	}
+	tribesmen={
+		amount=3
+	}
+	slaves={
+		amount=3
 	}
 }
 
@@ -1388,7 +1453,10 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=1
+		amount=3
+	}
+	slaves={
+		amount=2
 	}
 }
 
@@ -1435,6 +1503,9 @@
 	tribesmen={
 		amount=2
 	}
+	slaves={
+		amount=3
+	}
 }
 
 6129={ #Gyonal
@@ -1459,7 +1530,10 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=1
+		amount=3
+	}
+	slaves={
+		amount=2
 	}
 }
 

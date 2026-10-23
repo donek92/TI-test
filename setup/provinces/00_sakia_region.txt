@@ -1,7 +1,7 @@
-﻿5394={ #Khiva
+﻿5394={ #Xiveh
 	terrain="desert"
 	culture="kharesmian"
-	religion="vaksh_religion"
+	religion="indo_iranian_religion"
 	trade_goods="woad"
 	civilization_value=2
 	barbarian_power=0
@@ -20,7 +20,7 @@
 5395={ #Dharakh
 	terrain="desert"
 	culture="kharesmian"
-	religion="vaksh_religion"
+	religion="indo_iranian_religion"
 	trade_goods="fur"
 	civilization_value=2
 	barbarian_power=0
@@ -42,9 +42,9 @@
 5396={ #Ghore
 	terrain="desert"
 	culture="kharesmian"
-	religion="vaksh_religion"
+	religion="indo_iranian_religion"
 	trade_goods="hemp"
-	civilization_value=7
+	civilization_value=2
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
@@ -58,9 +58,9 @@
 5397={ #Shenia
 	terrain="desert"
 	culture="kharesmian"
-	religion="vaksh_religion"
+	religion="indo_iranian_religion"
 	trade_goods="cattle"
-	civilization_value=7
+	civilization_value=2
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -100,7 +100,7 @@
 }
 
 5452={ #Oshin
-	terrain="steppes"
+	terrain="desert"
 	culture="derbiccan"
 	religion="indo_iranian_religion"
 	trade_goods="vegetables"
@@ -119,7 +119,7 @@
 }
 
 5453={ #Zatra
-	terrain="steppes"
+	terrain="desert"
 	culture="derbiccan"
 	religion="indo_iranian_religion"
 	trade_goods="woad"
@@ -138,7 +138,7 @@
 }
 
 5454={ #Yatsha
-	terrain="plains"
+	terrain="steppes"
 	culture="derbiccan"
 	religion="indo_iranian_religion"
 	trade_goods="steppe_horses"
@@ -196,12 +196,15 @@
 
 5457={ #Ustret
 	terrain="steppes"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="steppe_horses"
 	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
+	citizen={
+		amount=2
+	}
 	slaves={
 		amount=3
 	}
@@ -320,7 +323,7 @@
 
 5464={ #Karon
 	terrain="steppes"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="cattle"
 	civilization_value=6
@@ -339,7 +342,7 @@
 
 5465={ #Mroshika
 	terrain="steppes"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="cloth"
 	civilization_value=6
@@ -371,7 +374,7 @@
 
 5467={ #Teike
 	terrain="steppes"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="fur"
 	civilization_value=5
@@ -390,7 +393,7 @@
 
 5468={ #Shachkra
 	terrain="steppes"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="woad"
 	civilization_value=5
@@ -409,7 +412,7 @@
 
 5469={ #Byrshchre
 	terrain="desert"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="cattle"
 	civilization_value=3
@@ -428,7 +431,7 @@
 
 5470={ #Vyenim
 	terrain="desert"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="woad"
 	civilization_value=3
@@ -444,7 +447,7 @@
 
 5471={ #Tamaasan
 	terrain="steppes"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="leather"
 	civilization_value=5
@@ -533,7 +536,7 @@
 
 5476={ #Sthura
 	terrain="desert"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="steppe_horses"
 	civilization_value=2
@@ -549,7 +552,7 @@
 
 5477={ #Kilich
 	terrain="desert"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="leather"
 	civilization_value=2
@@ -565,7 +568,7 @@
 
 5478={ #Zhanit
 	terrain="desert"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="cattle"
 	civilization_value=2
@@ -579,9 +582,9 @@
 	}
 }
 
-5479={ #Alicodra
-	terrain="plains"
-	culture="derbiccan"
+5479={ #Moinak
+	terrain="steppes"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="cattle"
 	civilization_value=5
@@ -600,7 +603,7 @@
 
 5480={ #Dyruzh
 	terrain="desert"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="base_metals"
 	civilization_value=2
@@ -619,7 +622,7 @@
 
 5481={ #Zantem
 	terrain="desert"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="steppe_horses"
 	civilization_value=2
@@ -634,8 +637,8 @@
 }
 
 5482={ #Gyesch
-	terrain="plains"
-	culture="derbiccan"
+	terrain="marsh"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="wood"
 	civilization_value=5
@@ -653,18 +656,18 @@
 }
 
 5483={ #Tubek
-	terrain="plains"
-	culture="derbiccan"
-	religion="indo_iranian_religion"
+	terrain="marsh"
+	culture="massagetaean"
+	religion="vaksh_religion"
 	trade_goods="cattle"
 	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
+		religion="indo_iranian_religion"
 		amount=2
 	}
 	slaves={
-		religion="vaksh_religion"
 		amount=1
 	}
 	tribesmen={
@@ -674,13 +677,14 @@
 
 5484={ #Cammei
 	terrain="marsh"
-	culture="derbiccan"
-	religion="indo_iranian_religion"
+	culture="massagetaean"
+	religion="vaksh_religion"
 	trade_goods="horses"
 	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
+		religion="indo_iranian_religion"
 		amount=1
 	}
 	slaves={
@@ -692,11 +696,11 @@
 }
 
 5485={ #Gran
-	terrain="steppes"
-	culture="derbiccan"
+	terrain="plains"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="honey"
-	civilization_value=2
+	civilization_value=6
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -706,13 +710,13 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=5
 	}
 }
 
 5486={ #Sechoria
 	terrain="desert"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="fur"
 	civilization_value=2
@@ -727,8 +731,8 @@
 }
 
 5487={ #Thema
-	terrain="steppes"
-	culture="derbiccan"
+	terrain="desert"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="leather"
 	civilization_value=2
@@ -744,7 +748,7 @@
 
 5488={ #Tirim
 	terrain="steppes"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="steppe_horses"
 	civilization_value=2
@@ -760,7 +764,7 @@
 
 5489={ #Vyache
 	terrain="steppes"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="fur"
 	civilization_value=2
@@ -776,7 +780,7 @@
 
 5490={ #Yanmal
 	terrain="desert"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="wild_game"
 	civilization_value=2
@@ -791,8 +795,8 @@
 }
 
 5491={ #Gyoshach
-	terrain="desert"
-	culture="derbiccan"
+	terrain="steppes"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="steppe_horses"
 	civilization_value=2
@@ -808,7 +812,7 @@
 
 5492={ #Erim
 	terrain="desert"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="wild_game"
 	civilization_value=2
@@ -824,12 +828,15 @@
 
 5493={ #Thurissa
 	terrain="steppes"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="salt"
 	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
+	citizen={
+		amount=1
+	}
 	slaves={
 		amount=1
 	}
@@ -840,7 +847,7 @@
 
 5494={ #Kurchina
 	terrain="steppes"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="fur"
 	civilization_value=2
@@ -858,8 +865,8 @@
 }
 
 5495={ #Gyranchi
-	terrain="desert"
-	culture="derbiccan"
+	terrain="steppes"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="hemp"
 	civilization_value=2
@@ -875,7 +882,7 @@
 
 5496={ #Donom
 	terrain="steppes"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="salt"
 	civilization_value=5
@@ -891,7 +898,7 @@
 
 5497={ #Kylorica
 	terrain="steppes"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="steppe_horses"
 	civilization_value=2
@@ -907,7 +914,7 @@
 
 5498={ #Vyoros
 	terrain="steppes"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="steppe_horses"
 	civilization_value=5
@@ -923,7 +930,7 @@
 
 5499={ #Satticha
 	terrain="steppes"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="vegetables"
 	civilization_value=5
@@ -962,7 +969,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=3
+		amount=5
 	}
 }
 
@@ -974,14 +981,11 @@
 	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
-	citizen={
-		amount=1
-	}
 	slaves={
 		amount=1
 	}
 	tribesmen={
-		amount=3
+		amount=2
 	}
 }
 
@@ -1047,7 +1051,7 @@
 }
 
 5905={ #Iska
-	terrain="steppes"
+	terrain="plains"
 	culture="alani"
 	religion="indo_iranian_religion"
 	trade_goods="fur"
@@ -1086,7 +1090,7 @@
 }
 
 5908={ #Gyashech
-	terrain="steppes"
+	terrain="plains"
 	culture="alani"
 	religion="indo_iranian_religion"
 	trade_goods="cattle"
@@ -1184,10 +1188,10 @@
 
 5915={ #Alsita
 	terrain="steppes"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="wood"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1200,7 +1204,7 @@
 
 5916={ #Chevka
 	terrain="steppes"
-	culture="derbiccan"
+	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="horses"
 	civilization_value=0
@@ -1214,9 +1218,9 @@
 6683={ #Rhea
 	terrain="desert"
 	culture="margian"
-	religion="vaksh_religion"
+	religion="zoroaster"
 	trade_goods="horses"
-	civilization_value=7
+	civilization_value=18
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -1240,16 +1244,21 @@
 	}
 }
 
-6707={ #Tribactra
-	terrain="steppes"
+6707={ #Buxoro
+	terrain="plains"
 	culture="kharesmian"
 	religion="vaksh_religion"
 	trade_goods="cloth"
-	civilization_value=5
+	civilization_value=8
 	barbarian_power=0
 	province_rank="settlement"
-	freemen={
+	citizen={
+		religion="indo_iranian_religion"
 		amount=1
+	}
+	freemen={
+		religion="indo_iranian_religion"
+		amount=2
 	}
 	slaves={
 		amount=2
@@ -1260,11 +1269,11 @@
 }
 
 6708={ #Amul
-	terrain="steppes"
+	terrain="plains"
 	culture="kharesmian"
-	religion="vaksh_religion"
+	religion="indo_iranian_religion"
 	trade_goods="woad"
-	civilization_value=17
+	civilization_value=10
 	barbarian_power=0
 	province_rank="city"
 	citizen={
@@ -1275,27 +1284,33 @@
 	}
 	freemen={
 		culture="sogdian"
+		religion="vaksh_religion"
 		amount=1
 	}
 	slaves={
-		amount=2
+		religion="vaksh_religion"
+		amount=1
+	}
+	slaves={
+		religion="zoroaster"
+		amount=1
 	}
 	tribesmen={
 		amount=4
 	}
 	tribesmen={
 		culture="sogdian"
+		religion="vaksh_religion"
 		amount=1
 	}
-	holy_site=omen_vish
 }
 
 6709={ #Rapete
 	terrain="desert"
 	culture="margian"
-	religion="vaksh_religion"
+	religion="zoroaster"
 	trade_goods="hemp"
-	civilization_value=7
+	civilization_value=2
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -1327,11 +1342,9 @@
 	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
-	citizen={
-		amount=1
-	}
 	freemen={
-		amount=2
+		religion="indo_iranian_religion"
+		amount=1
 	}
 	slaves={
 		amount=2
@@ -1342,7 +1355,7 @@
 }
 
 6796={ #Qanga
-	terrain="plains"
+	terrain="steppes"
 	culture="derbiccan"
 	religion="indo_iranian_religion"
 	trade_goods="woad"
@@ -1398,7 +1411,50 @@
 6799={ #Zamakshahr
 	terrain="plains"
 	culture="kharesmian"
-	religion="vaksh_religion"
+	religion="indo_iranian_religion"
+	trade_goods="cattle"
+	civilization_value=5
+	barbarian_power=0
+	province_rank="settlement"
+	freemen={
+		amount=3
+	}
+	slaves={
+		religion="vaksh_religion"
+		amount=2
+	}
+	tribesmen={
+		amount=1
+	}
+}
+
+6800={ #Hazarasp
+	terrain="steppes"
+	culture="kharesmian"
+	religion="indo_iranian_religion"
+	trade_goods="horses"
+	civilization_value=5
+	barbarian_power=0
+	province_rank="settlement"
+	citizen={
+		amount=1
+	}
+	freemen={
+		amount=2
+	}
+	slaves={
+		religion="vaksh_religion"
+		amount=2
+	}
+	tribesmen={
+		amount=1
+	}
+}
+
+6801={ #Jirbend
+	terrain="steppes"
+	culture="kharesmian"
+	religion="indo_iranian_religion"
 	trade_goods="cattle"
 	civilization_value=5
 	barbarian_power=0
@@ -1476,6 +1532,7 @@
 		amount=2
 	}
 	slaves={
+		religion="vaksh_religion"
 		amount=2
 	}
 	tribesmen={
@@ -1486,11 +1543,11 @@
 6803={ #Gurganj
 	terrain="plains"
 	culture="kharesmian"
-	religion="vaksh_religion"
+	religion="indo_iranian_religion"
 	trade_goods="earthware"
 	civilization_value=5
 	barbarian_power=0
-	province_rank="settlement"
+	province_rank="city"
 	citizen={
 		amount=2
 	}
@@ -1498,7 +1555,7 @@
 		amount=4
 	}
 	slaves={
-		amount=2
+		amount=4
 	}
 	tribesmen={
 		amount=3
@@ -1592,7 +1649,7 @@
 	culture="sogdian"
 	religion="vaksh_religion"
 	trade_goods="steppe_horses"
-	civilization_value=7
+	civilization_value=21
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1609,11 +1666,11 @@
 	culture="sogdian"
 	religion="vaksh_religion"
 	trade_goods="wild_game"
-	civilization_value=7
+	civilization_value=21
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=2
+		amount=1
 	}
 }
 
@@ -1622,10 +1679,11 @@
 	culture="sogdian"
 	religion="vaksh_religion"
 	trade_goods="vegetables"
-	civilization_value=7
+	civilization_value=21
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
+		religion="vaksh_religion"
 		amount=2
 	}
 	tribesmen={
@@ -1638,10 +1696,11 @@
 	culture="sogdian"
 	religion="vaksh_religion"
 	trade_goods="steppe_horses"
-	civilization_value=7
+	civilization_value=21
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
+		religion="vaksh_religion"
 		amount=1
 	}
 	tribesmen={
@@ -1654,7 +1713,7 @@
 	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="fur"
-	civilization_value=7
+	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1667,11 +1726,14 @@
 	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="steppe_horses"
-	civilization_value=7
+	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	freemen={
+		amount=1
 	}
 }
 
@@ -1680,11 +1742,20 @@
 	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="horses"
-	civilization_value=7
+	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=6
+		amount=2
+	}
+	freemen={
+		amount=2
+	}
+	slaves={
+		amount=2
+	}
+	citizen={
+		amount=2
 	}
 }
 
@@ -1693,7 +1764,7 @@
 	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="cattle"
-	civilization_value=7
+	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1706,7 +1777,7 @@
 	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="cattle"
-	civilization_value=7
+	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1732,7 +1803,7 @@
 	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="horses"
-	civilization_value=5
+	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1745,11 +1816,14 @@
 	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="fur"
-	civilization_value=5
+	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=3
+		amount=2
+	}
+	freemen={
+		amount=1
 	}
 }
 
@@ -1758,11 +1832,17 @@
 	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="steppe_horses"
-	civilization_value=5
+	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=5
+		amount=3
+	}
+	freemen={
+		amount=1
+	}
+	slaves={
+		amount=1
 	}
 }
 
@@ -1771,11 +1851,14 @@
 	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="leather"
-	civilization_value=5
+	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=2
+		amount=1
+	}
+	slaves={
+		amount=1
 	}
 }
 
@@ -1783,8 +1866,8 @@
 	terrain="steppes"
 	culture="massagetaean"
 	religion="indo_iranian_religion"
-	trade_goods="horses"
-	civilization_value=5
+	trade_goods="hemp"
+	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1823,7 +1906,7 @@
 	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="wild_game"
-	civilization_value=5
+	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1836,7 +1919,7 @@
 	culture="kharesmian"
 	religion="vaksh_religion"
 	trade_goods="cattle"
-	civilization_value=7
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1849,7 +1932,7 @@
 	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="steppe_horses"
-	civilization_value=7
+	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1862,7 +1945,7 @@
 	culture="massagetaean"
 	religion="indo_iranian_religion"
 	trade_goods="horses"
-	civilization_value=7
+	civilization_value=0
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1880,6 +1963,9 @@
 	province_rank="settlement"
 	tribesmen={
 		amount=2
+	}
+	slaves={
+		amount=1
 	}
 }
 
@@ -2063,6 +2149,9 @@
 	tribesmen={
 		amount=2
 	}
+	slaves={
+		amount=1
+	}
 }
 
 11354={ #Tatan
@@ -2087,7 +2176,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=2
+		amount=1
 	}
 }
 
@@ -2106,14 +2195,17 @@
 
 11369={ #Mazgi
 	terrain="steppes"
-	culture="massagetaean"
+	culture="sakan"
 	religion="indo_iranian_religion"
 	trade_goods="hemp"
 	civilization_value=6
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=2
+		amount=1
+	}
+	slaves={
+		amount=1
 	}
 }
 
@@ -2126,13 +2218,16 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=2
+		amount=1
+	}
+	freemen={
+		amount=1
 	}
 }
 
 11371={ #Axsini
 	terrain="steppes"
-	culture="massagetaean"
+	culture="sakan"
 	religion="indo_iranian_religion"
 	trade_goods="horses"
 	civilization_value=6
@@ -2145,7 +2240,7 @@
 
 11372={ #Sturi
 	terrain="steppes"
-	culture="massagetaean"
+	culture="sakan"
 	religion="indo_iranian_religion"
 	trade_goods="cattle"
 	civilization_value=6
@@ -2158,7 +2253,7 @@
 
 11373={ #Tigdi
 	terrain="steppes"
-	culture="massagetaean"
+	culture="sakan"
 	religion="indo_iranian_religion"
 	trade_goods="iron"
 	civilization_value=6
@@ -2174,7 +2269,7 @@
 
 11374={ #Kafkasos
 	terrain="steppes"
-	culture="massagetaean"
+	culture="sakan"
 	religion="indo_iranian_religion"
 	trade_goods="grain"
 	civilization_value=6
@@ -2188,7 +2283,7 @@
 11501={ #Qarako'l
 	terrain="steppes"
 	culture="kharesmian"
-	religion="indo_iranian_religion"
+	religion="vaksh_religion"
 	trade_goods="hemp"
 	civilization_value=5
 	barbarian_power=0
@@ -2197,15 +2292,15 @@
 		amount=2
 	}
 	tribesmen={
+		religion="indo_iranian_religion"
 		amount=1
-		religion="vaksh_religion"
 	}
 }
 
 11502={ #Nar Gyz
 	terrain="desert"
 	culture="kharesmian"
-	religion="indo_iranian_religion"
+	religion="vaksh_religion"
 	trade_goods="wild_game"
 	civilization_value=5
 	barbarian_power=0
@@ -2218,7 +2313,7 @@
 11503={ #Sho'rtakli
 	terrain="steppes"
 	culture="kharesmian"
-	religion="indo_iranian_religion"
+	religion="vaksh_religion"
 	trade_goods="steppe_horses"
 	civilization_value=6
 	barbarian_power=0
@@ -2227,7 +2322,7 @@
 		amount=3
 	}
 	tribesmen={
-		religion="vaksh_religion"
+		religion="indo_iranian_religion"
 		amount=1
 	}
 }
@@ -2235,7 +2330,7 @@
 11504={ #Sarymay
 	terrain="desert"
 	culture="kharesmian"
-	religion="indo_iranian_religion"
+	religion="vaksh_religion"
 	trade_goods="leather"
 	civilization_value=5
 	barbarian_power=0
@@ -2248,7 +2343,7 @@
 11505={ #Sokkul
 	terrain="plains"
 	culture="kharesmian"
-	religion="indo_iranian_religion"
+	religion="vaksh_religion"
 	trade_goods="grain"
 	civilization_value=8
 	barbarian_power=0
@@ -2257,26 +2352,29 @@
 		amount=2
 	}
 	tribesmen={
-		religion="vaksh_religion"
+		religion="indo_iranian_religion"
 		amount=2
 	}
 	slaves={
 		amount=2
 	}
+	holy_site=omen_yamsh
 }
 
 11506={ #Qo'yqirilgan
 	terrain="plains"
 	culture="kharesmian"
-	religion="indo_iranian_religion"
+	religion="vaksh_religion"
 	trade_goods="dye"
 	civilization_value=17
 	barbarian_power=0
 	province_rank="city"
 	nobles={
+		religion="indo_iranian_religion"
 		amount=1
 	}
 	citizen={
+		religion="indo_iranian_religion"
 		amount=2
 	}
 	citizen={
@@ -2296,10 +2394,10 @@
 	}
 	slaves={
 		culture="sakan"
+		religion="indo_iranian_religion"
 		amount=1
 	}
 	tribesmen={
-		religion="vaksh_religion"
 		amount=3
 	}
 }
@@ -2307,7 +2405,7 @@
 11507={ #Kukcha
 	terrain="steppes"
 	culture="kharesmian"
-	religion="indo_iranian_religion"
+	religion="vaksh_religion"
 	trade_goods="camel"
 	civilization_value=7
 	barbarian_power=0
@@ -2320,7 +2418,7 @@
 11508={ #Nazarkhan
 	terrain="marsh"
 	culture="kharesmian"
-	religion="indo_iranian_religion"
+	religion="vaksh_religion"
 	trade_goods="vegetables"
 	civilization_value=7
 	barbarian_power=0

@@ -72,7 +72,7 @@ deity_kothar = {
 	passive_modifier = { research_points_modifier = deity_research_points_modifier_svalue }
 	omen = { global_citizen_output = omen_global_citizen_output_svalue } #Bonus from Omen
 	religion = carthaginian_pantheon
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = culture #This Deity uses a Culture Slot
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -209,7 +209,7 @@ deity_shapash = {
 	passive_modifier = { monthly_corruption = deity_monthly_corruption_svalue }
 	omen = { global_monthly_state_loyalty = omen_global_monthly_state_loyalty } #Bonus from Omen
 	religion = carthaginian_pantheon
-	deity_category = justice #This Deity uses a Justice Slot
+	deity_category = culture #This Deity uses a Culture Slot
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -235,7 +235,7 @@ deity_eshmun = {
     passive_modifier = { global_citizen_happyness = deity_global_citizen_happiness_svalue }
     omen = { global_monthly_civilization = omen_global_monthly_civilization_svalue } #Bonus from Omen
     religion = carthaginian_pantheon
-    deity_category = wisdom #This Deity uses a Wisdom Slot
+    deity_category = culture #This Deity uses a Culture Slot
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -285,12 +285,12 @@ deity_gad = {
 		}
 	}
 
-	icon = deity_justice
+	icon = deity_diadochi_culture
 	passive_modifier = { stability_monthly_change = deity_stability_monthly_change }
 	omen = { monthly_corruption = omen_monthly_corruption }
 	religion = carthaginian_pantheon
 
-	deity_category = justice # This Deity uses a Justice slot
+	deity_category = economy # This Deity uses a Economy slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -527,7 +527,7 @@ deity_mot = {
 	passive_modifier = { stability_monthly_change = deity_stability_monthly_change }
 	omen = { monthly_corruption = omen_monthly_corruption }
 	religion = carthaginian_pantheon
-	deity_category = justice
+	deity_category = fertility
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -553,7 +553,7 @@ deity_milkom = {
 	passive_modifier = { religious_tech_investment = omen_religious_tech_investment_svalue }
 	omen = { oratory_tech_investment = omen_oratory_tech_investment }
 	religion = carthaginian_pantheon
-	deity_category = wisdom
+	deity_category = culture
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -743,6 +743,33 @@ deity_baalat = {
 	}
 }
 
+### Gadir ###
+
+#deity_melqart_archegetes = { # CULTURE
+#	trigger = {
+#		polytheistic_check_religion_trigger = yes
+#		OR = {
+#			tag = GAD
+#			deity:omen_melqart_archegetes = {
+#				holy_site_deity_check_trigger = yes
+#			}
+#			owns = p:1348
+#		}
+#	}
+#	icon = deity_eloquence
+#	passive_modifier = { diplomatic_relations = deity_diplomatic_relations_svalue }
+#	omen = { global_monthly_state_loyalty = omen_global_monthly_state_loyalty } #Bonus from Omen
+#	religion = carthaginian_pantheon
+#	deity_category = culture #This Deity uses a Culture Slot
+#	deification_trigger = {
+#		can_deify_trigger = yes
+#	}
+#	
+#	on_activate = {
+#		economy_apotheosis_province_improvement_effect = yes
+#	}
+#}
+
 ### Nabatea/Edom ###
 
 deity_qaus = { #Province 4714, Hegra ; Province 706, Bossia
@@ -765,7 +792,7 @@ deity_qaus = { #Province 4714, Hegra ; Province 706, Bossia
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
-
+	
 	on_activate = {
 		economy_apotheosis_province_improvement_effect = yes
 	}
@@ -858,5 +885,33 @@ deity_bethel = {
 
 	on_activate = {
 		military_apotheosis_manpower_effect = yes
+	}
+}
+
+
+deity_eshmun_melqart = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			rare_deity_trigger = {
+				RELIGION = carthaginian_pantheon
+			}
+			capital_scope = { is_in_area = cyprus_area }
+			deity:omen_eshmun_melqart = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_cr_car_melqart
+	passive_modifier = { global_population_growth = deity_global_population_growth_svalue }
+	omen = { global_population_happiness = omen_global_population_happiness }
+	religion = carthaginian_pantheon
+	deity_category = fertility #This Deity uses a Fertility Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
 	}
 }

@@ -68,7 +68,7 @@
 
 2138={ #Augustodurum
 	terrain="plains"
-	culture="aremorican"
+	culture="aulercian"
 	religion="druidism"
 	trade_goods="hemp"
 	civilization_value=11
@@ -78,7 +78,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="aremorican"
+		amount=1
 	}
 }
 
@@ -94,7 +98,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="aulercian"
+		amount=1
 	}
 }
 
@@ -176,7 +184,7 @@
 
 2144={ #Sipia
 	terrain="forest"
-	culture="aulercian"
+	culture="aremorican"
 	religion="druidism"
 	trade_goods="fur"
 	civilization_value=9
@@ -224,7 +232,7 @@
 
 2147={ #Duretie
 	terrain="plains"
-	culture="aulercian"
+	culture="aremorican"
 	religion="druidism"
 	trade_goods="base_metals"
 	civilization_value=11
@@ -325,7 +333,7 @@
 
 2153={ #Grannona
 	terrain="plains"
-	culture="aulercian"
+	culture="aremorican"
 	religion="druidism"
 	trade_goods="precious_metals"
 	civilization_value=11
@@ -411,7 +419,7 @@
 	trade_goods="base_metals"
 	civilization_value=14
 	barbarian_power=0
-	province_rank="settlement"
+	province_rank="city"
 	citizen={
 		amount=2
 	}
@@ -458,7 +466,7 @@
 
 2209={ #Sipia Occidentalis
 	terrain="forest"
-	culture="aulercian"
+	culture="aremorican"
 	religion="druidism"
 	trade_goods="iron"
 	civilization_value=9
@@ -474,7 +482,7 @@
 
 2212={ #Namnetum
 	terrain="plains"
-	culture="aulercian"
+	culture="aremorican"
 	religion="druidism"
 	trade_goods="hemp"
 	civilization_value=11
@@ -484,7 +492,11 @@
 		amount=2
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="pictonian"
+		amount=1
 	}
 	port_building=1
 }
@@ -501,7 +513,11 @@
 		amount=2
 	}
 	tribesmen={
-		amount=3
+		amount=2
+	}
+	slaves={
+		culture="aremorican"
+		amount=1
 	}
 }
 
@@ -517,7 +533,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="aulercian"
+		amount=1
 	}
 }
 
@@ -555,6 +575,7 @@
 		amount=1
 	}
 	slaves={
+		culture="aremorican"
 		amount=1
 	}
 	tribesmen={
@@ -564,7 +585,7 @@
 
 2218={ #Aregenua
 	terrain="plains"
-	culture="aremorican"
+	culture="aulercian"
 	religion="druidism"
 	trade_goods="wood"
 	civilization_value=11
@@ -608,7 +629,7 @@
 
 2220={ #Esuvia Borealis
 	terrain="plains"
-	culture="aremorican"
+	culture="aulercian"
 	religion="druidism"
 	trade_goods="leather"
 	civilization_value=11
@@ -624,7 +645,7 @@
 
 2221={ #Esuvia Australis
 	terrain="plains"
-	culture="aremorican"
+	culture="aulercian"
 	religion="druidism"
 	trade_goods="wine"
 	civilization_value=11
@@ -640,7 +661,7 @@
 
 2222={ #Lexoviorum
 	terrain="plains"
-	culture="aremorican"
+	culture="aulercian"
 	religion="druidism"
 	trade_goods="leather"
 	civilization_value=11
@@ -656,7 +677,7 @@
 
 2223={ #Esta
 	terrain="plains"
-	culture="aremorican"
+	culture="aulercian"
 	religion="druidism"
 	trade_goods="wood"
 	civilization_value=11
@@ -666,7 +687,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="veliocassian"
+		amount=1
 	}
 }
 
@@ -685,6 +710,7 @@
 		amount=1
 	}
 	slaves={
+		culture="aulercian"
 		amount=1
 	}
 	tribesmen={
@@ -701,10 +727,14 @@
 	barbarian_power=0
 	province_rank="city"
 	freemen={
-		amount=4
+		amount=1
 	}
 	tribesmen={
-		amount=5
+		amount=7
+	}
+	slaves={
+		culture="sennonian"
+		amount=1
 	}
 }
 
@@ -732,7 +762,7 @@
 
 2352={ #Andecavorum
 	terrain="plains"
-	culture="aulercian"
+	culture="aremorican"
 	religion="druidism"
 	trade_goods="vegetables"
 	civilization_value=11
@@ -761,13 +791,17 @@
 		amount=5
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="aulercian"
+		amount=1
 	}
 }
 
 2400={ #Robrica
 	terrain="plains"
-	culture="aulercian"
+	culture="aremorican"
 	religion="druidism"
 	trade_goods="leather"
 	civilization_value=11
@@ -777,7 +811,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="pictonian"
+		amount=1
 	}
 }
 
@@ -793,7 +831,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="pictonian"
+		amount=1
 	}
 }
 
@@ -809,6 +851,7 @@
 		amount=1
 	}
 	slaves={
+		culture="aremorican"
 		amount=1
 	}
 	tribesmen={
@@ -818,7 +861,7 @@
 
 2403={ #Salica
 	terrain="farmland"
-	culture="aulercian"
+	culture="aremorican"
 	religion="druidism"
 	trade_goods="wood"
 	civilization_value=13
@@ -828,7 +871,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="aulercian"
+		amount=1
 	}
 }
 
@@ -844,7 +891,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="pictonian"
+		amount=1
 	}
 }
 
@@ -860,7 +911,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=3
+		amount=2
+	}
+	slaves={
+		culture="pictonian"
+		amount=1
 	}
 }
 
@@ -908,7 +963,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="aulercian"
+		amount=1
 	}
 }
 
@@ -927,6 +986,7 @@
 		amount=4
 	}
 	slaves={
+		culture="veliocassian"
 		amount=1
 	}
 	tribesmen={
@@ -946,7 +1006,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="biturigan"
+		amount=1
 	}
 }
 
@@ -978,7 +1042,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=3
+		amount=2
+	}
+	slaves={
+		culture="aulercian"
+		amount=1
 	}
 }
 
@@ -994,7 +1062,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="biturigan"
+		amount=1
 	}
 }
 
@@ -1010,13 +1082,17 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="aulercian"
+		amount=1
 	}
 }
 
 2461={ #Carnutia Occidentalis
 	terrain="forest"
-	culture="aulercian"
+	culture="biturigan"
 	religion="druidism"
 	trade_goods="cattle"
 	civilization_value=9
@@ -1074,7 +1150,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=5
+		amount=4
+	}
+	slaves={
+		culture="biturigan"
+		amount=1
 	}
 }
 
@@ -1112,7 +1192,7 @@
 
 2467={ #Pentale
 	terrain="plains"
-	culture="aremorican"
+	culture="aulercian"
 	religion="druidism"
 	trade_goods="vegetables"
 	civilization_value=11
@@ -1144,7 +1224,7 @@
 
 3308={ #Conbaristum
 	terrain="forest"
-	culture="aulercian"
+	culture="aremorican"
 	religion="druidism"
 	trade_goods="earthware"
 	civilization_value=9

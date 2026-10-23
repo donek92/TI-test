@@ -1,4 +1,4 @@
-@SideBarButtonSize = 36
+﻿@SideBarButtonSize = 36
 
 @PauseVignetteAnimationSpeed = 0.15
 @PauseVignetteAlpha = 0.5

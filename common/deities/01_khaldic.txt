@@ -156,7 +156,7 @@ deity_dsvininaue = { # ECONOMY
 	}
 }
 
-deity_arubani = { # WISDOM
+deity_arubani = { # CULTURE
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -175,14 +175,14 @@ deity_arubani = { # WISDOM
 		culture_apotheosis_oratory_tech_effect = yes
 	}
 	religion = armenian_religion
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = culture #This Deity uses a Culture Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
 }
 
-deity_bagvarti = { # JUSTICE
+deity_bagvarti = { # FERTILITY
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -201,7 +201,7 @@ deity_bagvarti = { # JUSTICE
 		fertility_apotheosis_capital_slaves_effect = yes
 	}
 	religion = armenian_religion
-	deity_category = justice #This Deity uses a Justice Slot
+	deity_category = fertility #This Deity uses a Fertility Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes

@@ -8,39 +8,22 @@
 levy_egyptian = {	#Egyptian
 	default = no
 
-	slingers = 0.2
-	camels = 0.3
-	chariots = 0.15
-	axemen = 0.35
+	camels = 0.4
+	light_infantry = 0.3
+	light_cavalry = 0.2
+	
+	heavy_cavalry = 0.1
 }
 
 levy_nubian = {	#Nubian
 	default = no
 
 	archers = 0.4
-	heavy_infantry = 0.2
-	camels = 0.2
-	light_infantry = 0.2
+	light_cavalry = 0.15
+	horse_archers = 0.2
+	warelephant = 0.25
 }
 
-levy_blemmyan = {	#Blemmyan
-	default = no
-
-	light_infantry = 0.2
-	archers = 0.3
-	camels = 0.4
-	heavy_infantry = 0.1
-
-}
-
-levy_ethiopian = {	#Axumite
-	default = no
-
-	light_infantry = 0.35
-	archers = 0.25
-	camels = 0.25
-	heavy_infantry = 0.15
-}
 levy_nilotic = {	#Nilotic
 	default = no
 
@@ -48,4 +31,27 @@ levy_nilotic = {	#Nilotic
 	light_cavalry = 0.15
 	camels = 0.2
 	warelephant = 0.3
+}
+
+levy_blemmyan = {	#Blemmyan
+	default = no
+
+	light_infantry = 0.3
+	archers = 0.2
+	camels = 0.5
+}
+
+levy_blemmye = {	#Blemmye
+	default = no
+
+	light_infantry = 1
+}
+
+levy_ethiopian = {	#Axumite
+	default = no
+
+	light_infantry = 0.35
+	archers = 0.3
+	camels = 0.15
+	warelephant = 0.2
 }

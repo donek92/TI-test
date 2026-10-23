@@ -99,7 +99,12 @@ olympic.3 = {
 			age >= 17
 			is_ruler = no
 			is_primary_heir = no
+			is_mercenary = no
+			is_head_of_family = no
 			is_co_ruler = no
+			is_pregnant = no
+			prisoner = no
+			NOT = { has_variable = pyrrhus_travelling }
 		}
 	}
 	
@@ -121,6 +126,8 @@ olympic.3 = {
 					is_mercenary = no
 					is_head_of_family = no
 					is_co_ruler = no
+					is_pregnant = no
+					prisoner = no
 					NOT = { has_variable = pyrrhus_travelling }
 				}
 			}
@@ -140,6 +147,8 @@ olympic.3 = {
 					is_mercenary = no
 					is_head_of_family = no
 					is_co_ruler = no
+					is_pregnant = no
+					prisoner = no
 					NOT = { has_variable = pyrrhus_travelling }
 				}
 				weight = {
@@ -190,6 +199,8 @@ olympic.3 = {
 					is_mercenary = no
 					is_head_of_family = no
 					is_co_ruler = no
+					is_pregnant = no
+					prisoner = no
 					NOT = { has_variable = pyrrhus_travelling }
 					NOT = {
 						this = scope:olympic_champion
@@ -213,6 +224,8 @@ olympic.3 = {
 					is_mercenary = no
 					is_head_of_family = no
 					is_co_ruler = no
+					is_pregnant = no
+					prisoner = no
 					NOT = { has_variable = pyrrhus_travelling }
 					NOT = {
 						this = scope:olympic_champion
@@ -645,11 +658,11 @@ olympic.6 = {
 			if = {
 				limit = {
 					NOT = {
-						has_trait = victorious
+						has_trait = olympic_champion
 					}
 					is_alive = yes
 				}
-				add_trait = victorious
+				force_add_trait = olympic_champion
 			}
 			else_if = {
 				limit = {
@@ -690,19 +703,21 @@ olympic.6 = {
 				if = {
 					limit = {
 						NOT = {
-							has_trait = victorious
+							has_trait = olympic_champion
 						}
 						is_alive = yes
 					}
-					add_trait = victorious
+					force_add_trait = olympic_champion
 				}
 				else_if = {
 					limit = {
 						is_alive = no
 					}
-					add_country_modifier = {
-						name = olympic_mourning
-						duration = 1460
+					scope:victorious_competitor.employer = {
+						add_country_modifier = {
+							name = olympic_mourning
+							duration = 1460
+						}
 					}
 				}
 			}
@@ -733,6 +748,9 @@ olympic.7 = {
 			value = 0
 			subtract = root.has_monthly_income
 			multiply = 12
+			floor = yes
+			max = -20
+			min = -4000
 		}
 		scope:imprisoned_athlete = {
 			hidden_effect = {
@@ -812,6 +830,7 @@ olympic.9 = {
 		add_treasury = {
 			value = scope:imprisoned_athlete_country.has_monthly_income
 			multiply = 12
+			max = 5000
 		}
 	}
 }

@@ -131,6 +131,10 @@ deity_devasena = { # FERTILITY
 			common_deity_trigger = {
 				RELIGION = agama
 			}
+			common_deity_culture_trigger = {
+				CULTURE = kuru
+				RELIGION = hindu
+			}
 			deity:omen_devasena = {
 				holy_site_deity_check_trigger = yes
 			}
@@ -303,7 +307,7 @@ deity_bangaramma = { # ECONOMY
 		can_deify_trigger = yes
 	}
 }
-deity_dili_polasi = { # JUSTICE
+deity_dili_polasi = { # CULTURE
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -322,7 +326,7 @@ deity_dili_polasi = { # JUSTICE
 		economy_apotheosis_capital_noble_effect = yes
 	}
 	religion = agama
-	deity_category = justice #This Deity uses a Justice Slot
+	deity_category = culture #This Deity uses a Culture Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -381,7 +385,7 @@ deity_meenakshi = { # CULTURE
 		can_deify_trigger = yes
 	}
 }
-deity_ankalamma = { # WISDOM
+deity_ankalamma = { # CULTURE
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -401,13 +405,13 @@ deity_ankalamma = { # WISDOM
 		culture_apotheosis_civic_tech_effect = yes
 	}
 	religion = agama
-	deity_category = wisdom #This Deity uses a wisdom slot.
+	deity_category = culture #This Deity uses a culture slot.
 
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
 }
-deity_poleramma = { # WISDOM
+deity_poleramma = { # CULTURE
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -427,13 +431,13 @@ deity_poleramma = { # WISDOM
 		culture_apotheosis_civic_tech_effect = yes
 	}
 	religion = agama
-	deity_category = wisdom #This Deity uses a wisdom slot.
+	deity_category = culture #This Deity uses a culture slot.
 
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
 }
-deity_renuka = { # WISDOM
+deity_renuka = { # CULTURE
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -457,7 +461,7 @@ deity_renuka = { # WISDOM
 		culture_apotheosis_civic_tech_effect = yes
 	}
 	religion = agama
-	deity_category = wisdom #This Deity uses a wisdom slot.
+	deity_category = culture #This Deity uses a culture slot.
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -471,7 +475,7 @@ deity_shiva = { # WAR
 			rare_deity_trigger = {
 				RELIGION = agama
 			}
-			rare_deity_trigger = {
+			common_deity_trigger = {
 				RELIGION = hindu
 			}
 			deity:omen_shiva = {
@@ -487,7 +491,7 @@ deity_shiva = { # WAR
 	on_activate = {
 		military_apotheosis_capital_freemen_effect = yes
 	}
-	religion = agama
+	religion = hindu
 	deity_category = war #This Deity uses a War slot.
 
 	deification_trigger = {
@@ -501,10 +505,10 @@ deity_krishna = { # FERTILITY
 			religion = jainism
 		}
 		OR = {
-			rare_deity_trigger = {
+			common_deity_trigger = {
 				RELIGION = hindu
 			}
-			common_deity_trigger = {
+			rare_deity_trigger = {
 				RELIGION = agama
 			}
 			deity:omen_krishna = {
@@ -518,7 +522,7 @@ deity_krishna = { # FERTILITY
 	on_activate = {
 		culture_apotheosis_oratory_tech_effect = yes
 	}
-	religion = agama
+	religion = hindu
 	deity_category = fertility #This Deity uses a War slot.
 
 	deification_trigger = {
@@ -532,10 +536,10 @@ deity_rama = { # WAR
 			religion = jainism
 		}
 		OR = {
-			rare_deity_trigger = {
+			common_deity_trigger = {
 				RELIGION = hindu
 			}
-			common_deity_trigger = {
+			rare_deity_trigger = {
 				RELIGION = agama
 			}
 			deity:omen_rama = {
@@ -549,14 +553,14 @@ deity_rama = { # WAR
 	on_activate = {
 		war_apotheosis_martial_tech_effect = yes
 	}
-	religion = agama
+	religion = hindu
 	deity_category = war #This Deity uses a War slot.
 
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
 }
-deity_kanya_devi = { # JUSTICE
+deity_kanya_devi = { # FERTILITY
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -578,7 +582,7 @@ deity_kanya_devi = { # JUSTICE
 		culture_apotheosis_rel_tech_effect = yes
 	}
 	religion = agama
-	deity_category = justice #This Deity uses a Justice slot.
+	deity_category = fertility #This Deity uses a Fertility slot.
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -591,7 +595,7 @@ deity_durga = { # ECONOMY
 			rare_deity_trigger = {
 				RELIGION = hindu
 			}
-			rare_deity_trigger = {
+			common_deity_trigger = {
 				RELIGION = agama
 			}
 			deity:omen_durga = {

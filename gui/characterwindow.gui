@@ -18,16 +18,17 @@ template character_experience_bar
 
 base_window = {
 	name = "character_window"
-
+	
 	parentanchor = top|left
 	size = { 755 930 }
 	movable = no
 	using = main_window_template
+	
 	vbox = {
 		using = MainWindowHeaderBox
-
+		
 		blockoverride "Title_text" { text = "[CharacterWindow.GetCharacter.GetName]"  }
-
+		
 		blockoverride "White_buttons"
 		{
 			container = {
@@ -62,13 +63,13 @@ base_window = {
 		hbox = {
 			layoutpolicy_vertical = expanding
 			layoutpolicy_horizontal = expanding
-
-			margin_widget = {
+			
+			margin_widget = { 
 				size = { 0 0 }
 				layoutpolicy_vertical = expanding
 				layoutpolicy_horizontal = expanding
 				margin_left = 4
-
+				
 				margin_top = 10
 				hbox = {
 					layoutpolicy_horizontal = expanding
@@ -90,7 +91,7 @@ base_window = {
 								blockoverride "Context" { datacontext = "[CharacterWindow.GetCharacter]" }
 								blockoverride "BottomPortraitPosition" { position = { -10 45 } }
 								blockoverride "portrait_button_template_tooltip" {}
-								blockoverride "PartyIconVisibility"
+								blockoverride "PartyIconVisibility" 
 								{
 									visible = no
 								}
@@ -222,8 +223,8 @@ base_window = {
 							}
 
 						}
-
-
+					
+						
 						margin_widget = {
 							size = { 0 538 }
 							layoutpolicy_horizontal = expanding
@@ -527,56 +528,56 @@ base_window = {
 										}
 
 										cpt_button = {
-											visible = "[And(CharacterWindow.GetCharacter.HasCheckedAmbition, GreaterThan_int32(CharacterWindow.GetCharacter.GetAge, '(int32)15'))]"
+											visible = "[And(CharacterWindow.GetCharacter.HasCheckedAmbition, GreaterThan_int32(CharacterWindow.GetCharacter.GetAge, '(int32)15'))]" 
 											size = { @rival_portrait_width @rival_portrait_height }
 											position = { 0 30 }
 											datacontext = "[CharacterWindow.GetCharacter.MakeScope.GetVariable('ongoing_scheme_target').GetCharacter]"
 											blockoverride "ShowIcons" { visible = no }
 										}
-
+										
 										flowcontainer = {
 											position = { 68 54 }
 											spacing = 6
 											ignoreinvisible = yes
 											visible = "[CharacterWindow.GetCharacter.HasCheckedAmbition]"
 											icon_button_square = {
-												datacontext = "[GetScriptedGui('scheme_assist')]"
+												datacontext = "[GetScriptedGui('scheme_assist')]" 
 												visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).AddScope('player', Player.MakeScope ).End )]"
 												enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).AddScope('player', Player.MakeScope ).End )]"
 												tooltip = "ASSIST_SCHEME_BUTTON_TOOLTIP"
-												blockoverride "On_click" {
+												blockoverride "On_click" { 
 													onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).AddScope('player', Player.MakeScope ).End )]"
 												}
-												blockoverride "Icon"
+												blockoverride "Icon" 
 												{
-													texture = "gfx/interface/icons/shared_icons/assist_with_scheme.dds"
+													texture = "gfx/interface/icons/shared_icons/assist_with_scheme.dds" 
 													size = { 34 34 }
-												}
+												}							
 											}
 											icon_button_square = {
 												datacontext = "[GetScriptedGui('scheme_interfere')]"
 												visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).AddScope('player', Player.MakeScope ).End )]"
 												enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).AddScope('player', Player.MakeScope ).End )]"
 												tooltip = "SCHEME_INTERFERE_BUTTON_TOOLTIP"
-												blockoverride "On_click" {
+												blockoverride "On_click" { 
 													onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).AddScope('player', Player.MakeScope ).End )]"
 												}
-												blockoverride "Icon"
+												blockoverride "Icon" 
 												{
-													texture = "gfx/interface/icons/shared_icons/interfere_in_scheme.dds"
+													texture = "gfx/interface/icons/shared_icons/interfere_in_scheme.dds"  
 													size = { 34 34 }
-												}
+												}							
 											}
 											icon_button_square = {
 												datacontext = "[GetScriptedGui('scheme_abort')]"
 												visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).AddScope('player', Player.MakeScope ).End )]"
 												enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).AddScope('player', Player.MakeScope ).End )]"
 												tooltip = "SCHEME_ABORT_TOOLTIP"
-												blockoverride "On_click" {
+												blockoverride "On_click" { 
 													onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).AddScope('player', Player.MakeScope ).End )]"
 												}
-												blockoverride "Icon"
-												{
+												blockoverride "Icon" 
+												{ 
 													texture = "gfx/interface/icons/shared_icons/persuade_to_drop_scheme.dds"
 													size = { 34 34 }
 												}
@@ -701,7 +702,7 @@ base_window = {
 												texture = "[TimedModifier.GetModifier.GetIcon]"
 												size = { 32 32 }
 											}
-
+											
 											tooltip = "[TimedModifier.GetTooltip]"
 										}
 									}

@@ -15,10 +15,15 @@
 		amount=2
 	}
 	freemen={
+		amount=3
+	}
+	freemen={
+		culture="turdetanian"
+		religion="animism"
 		amount=2
 	}
 	slaves={
-		amount=1
+		amount=4
 	}
 	slaves={
 		culture="socossian"
@@ -27,11 +32,12 @@
 	}
 	tribesmen={
 		culture="socossian"
-		religion="berber_religion"
-		amount=7
+		amount=1
 	}
 	tribesmen={
-		amount=2
+		culture="socossian"
+		religion="berber_religion"
+		amount=3
 	}
 	holy_site=omen_anti
 	port_building=1
@@ -44,42 +50,71 @@
 	trade_goods="stone"
 	civilization_value=24
 	barbarian_power=0
-	province_rank="settlement"
-	freemen={
+	province_rank="city"
+	citizen={
+		religion="carthaginian_pantheon"
 		amount=1
 	}
 	freemen={
 		religion="carthaginian_pantheon"
+		amount=2
+	}
+	freemen={
+		culture="socossian"
+		religion="carthaginian_pantheon"
+		amount=1
+	}
+	freemen={
+		culture="turdetanian"
+		religion="carthaginian_pantheon"
 		amount=1
 	}
 	slaves={
+		culture="socossian"
 		amount=2
 	}
 	tribesmen={
-		amount=2
+		culture="socossian"
+		amount=1
 	}
 	tribesmen={
+		culture="socossian"
 		religion="carthaginian_pantheon"
 		amount=1
 	}
 }
 
-3063={ #Tamusidat
+3063={ #Tamdo'
 	terrain="forest"
 	culture="carthaginian"
 	religion="berber_religion"
 	trade_goods="base_metals"
 	civilization_value=24
 	barbarian_power=0
-	province_rank="settlement"
+	province_rank="city"
+	citizen={
+		religion="carthaginian_pantheon"
+		amount=2
+	}
 	freemen={
+		religion="carthaginian_pantheon"
+		amount=2
+	}
+	freemen={
+		culture="socossian"
+		amount=1
+	}
+	freemen={
+		culture="turdetanian"
 		religion="carthaginian_pantheon"
 		amount=1
 	}
 	slaves={
+		culture="socossian"
 		amount=2
 	}
 	tribesmen={
+		culture="socossian"
 		amount=1
 	}
 }
@@ -91,19 +126,30 @@
 	trade_goods="earthware"
 	civilization_value=24
 	barbarian_power=0
-	province_rank="settlement"
+	province_rank="city"
 	citizen={
+		amount=2
+	}
+	freemen={
+		amount=2
+	}
+	freemen={
+		culture="turdetanian"
 		amount=1
 	}
 	freemen={
-		amount=1
+		culture="socossian"
+		religion="berber_religion"
+		amount=2
 	}
 	slaves={
+		culture="socossian"
+		religion="berber_religion"
 		amount=1
 	}
 }
 
-3065={ #Frigida
+3065={ #Nahor Qor
 	terrain="forest"
 	culture="carthaginian"
 	religion="carthaginian_pantheon"
@@ -115,10 +161,16 @@
 		amount=1
 	}
 	slaves={
+		culture="socossian"
+		religion="berber_religion"
+		amount=1
+	}
+	slaves={
 		amount=1
 	}
 	tribesmen={
 		culture="socossian"
+		religion="berber_religion"
 		amount=2
 	}
 }
@@ -136,6 +188,7 @@
 		amount=1
 	}
 	freemen={
+		culture="socossian"
 		amount=1
 	}
 	freemen={
@@ -143,9 +196,11 @@
 		amount=1
 	}
 	slaves={
+		culture="socossian"
 		amount=1
 	}
 	tribesmen={
+		culture="socossian"
 		amount=1
 	}
 }
@@ -169,7 +224,7 @@
 	}
 }
 
-3068={ #Shalat
+3068={ #Sha'lot
 	terrain="forest"
 	culture="carthaginian"
 	religion="berber_religion"
@@ -182,9 +237,11 @@
 		amount=1
 	}
 	citizen={
+		culture="socossian"
 		amount=1
 	}
 	freemen={
+		culture="socossian"
 		amount=1
 	}
 	freemen={
@@ -195,6 +252,7 @@
 		amount=1
 	}
 	tribesmen={
+		culture="socossian"
 		amount=2
 	}
 	port_building=1
@@ -219,7 +277,7 @@
 	}
 }
 
-3070={ #Banasa
+3070={ #Banasoh
 	terrain="forest"
 	culture="socossian"
 	religion="berber_religion"
@@ -400,7 +458,7 @@
 	terrain="forest"
 	culture="socossian"
 	religion="berber_religion"
-	trade_goods="stone"
+	trade_goods="nuts"
 	civilization_value=18
 	barbarian_power=0
 	province_rank="settlement"
@@ -415,7 +473,7 @@
 	}
 }
 
-3080={ #Rusaddir
+3080={ #Rush 'Addir
 	terrain="forest"
 	culture="carthaginian"
 	religion="berber_religion"
@@ -431,10 +489,15 @@
 	freemen={
 		culture="carthaginian"
 		religion="carthaginian_pantheon"
+		amount=3
+	}
+	freemen={
+		culture="turdetanian"
+		religion="carthaginian_pantheon"
 		amount=1
 	}
 	tribesmen={
-		religion="carthaginian_pantheon"
+		culture="socossian"
 		amount=2
 	}
 	port_building=1
@@ -497,9 +560,11 @@
 		amount=1
 	}
 	citizen={
+		culture="socossian"
 		amount=1
 	}
 	freemen={
+		culture="socossian"
 		amount=1
 	}
 	freemen={
@@ -642,6 +707,11 @@
 		religion="carthaginian_pantheon"
 		amount=1
 	}
+	freemen={
+		culture="turdetanian"
+		religion="carthaginian_pantheon"
+		amount=1
+	}
 	slaves={
 		culture="carthaginian"
 		religion="carthaginian_pantheon"
@@ -702,13 +772,18 @@
 		amount=2
 	}
 	freemen={
+		culture="turdetanian"
+		religion="carthaginian_pantheon"
+		amount=1
+	}
+	freemen={
 		amount=1
 	}
 	port_building=1
 }
 
 3096={ #Tasaccora
-	terrain="desert_hills"
+	terrain="hills"
 	culture="massaesylian"
 	religion="berber_religion"
 	trade_goods="wine"
@@ -724,7 +799,7 @@
 }
 
 3097={ #Lucu
-	terrain="hills"
+	terrain="plains"
 	culture="massaesylian"
 	religion="berber_religion"
 	trade_goods="fur"
@@ -740,7 +815,7 @@
 }
 
 3098={ #Aquae Sirenses
-	terrain="hills"
+	terrain="plains"
 	culture="massaesylian"
 	religion="berber_religion"
 	trade_goods="wine"
@@ -759,18 +834,21 @@
 }
 
 3099={ #Ala Miliaria
-	terrain="hills"
+	terrain="plains"
 	culture="massaesylian"
 	religion="berber_religion"
 	trade_goods="elephants"
 	civilization_value=11
 	barbarian_power=0
 	province_rank="settlement"
+	freemen={
+		amount=2
+	}
 	slaves={
-		amount=1
+		amount=2
 	}
 	tribesmen={
-		amount=1
+		amount=2
 	}
 }
 
@@ -829,7 +907,7 @@
 }
 
 3103={ #Breucorum
-	terrain="hills"
+	terrain="plains"
 	culture="massaesylian"
 	religion="berber_religion"
 	trade_goods="horses"
@@ -902,7 +980,7 @@
 }
 
 3107={ #Caudium Castra
-	terrain="desert_hills"
+	terrain="hills"
 	culture="massaesylian"
 	religion="berber_religion"
 	trade_goods="base_metals"
@@ -923,7 +1001,7 @@
 	}
 }
 
-3108={ #Qartan
+3108={ #Qart Tenes
 	terrain="hills"
 	culture="massaesylian"
 	religion="berber_religion"
@@ -1024,28 +1102,30 @@
 	culture="carthaginian"
 	religion="carthaginian_pantheon"
 	trade_goods="dye"
-	civilization_value=26
+	civilization_value=18
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
 		amount=1
 	}
 	tribesmen={
+		culture="autolalean"
 		religion="berber_religion"
-		amount=1
+		amount=3
 	}
 	tribesmen={
-		amount=3
+		culture="autolalean"
+		amount=1
 	}
 	port_building=1
 }
 
 6302={ #Zemour
 	terrain="hills"
-	culture="socossian"
+	culture="nectiberean"
 	religion="berber_religion"
 	trade_goods="vegetables"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1055,10 +1135,10 @@
 
 6470={ #Rob'a
 	terrain="forest"
-	culture="socossian"
+	culture="nectiberean"
 	religion="berber_religion"
 	trade_goods="base_metals"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1068,10 +1148,10 @@
 
 6471={ #Mousa
 	terrain="plains"
-	culture="socossian"
+	culture="nectiberean"
 	religion="berber_religion"
 	trade_goods="cedar"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1081,10 +1161,10 @@
 
 6472={ #Amer
 	terrain="plains"
-	culture="socossian"
+	culture="nectiberean"
 	religion="berber_religion"
 	trade_goods="leather"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1094,10 +1174,10 @@
 
 6473={ #Ouardigha
 	terrain="hills"
-	culture="socossian"
+	culture="nectiberean"
 	religion="berber_religion"
 	trade_goods="horses"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1107,10 +1187,10 @@
 
 6474={ #Meskine
 	terrain="plains"
-	culture="socossian"
+	culture="nectiberean"
 	religion="berber_religion"
 	trade_goods="spices"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1123,7 +1203,7 @@
 	culture="socossian"
 	religion="berber_religion"
 	trade_goods="fish"
-	civilization_value=0
+	civilization_value=18
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1149,10 +1229,10 @@
 
 6477={ #Frej
 	terrain="forest"
-	culture="socossian"
+	culture="autolalean"
 	religion="berber_religion"
 	trade_goods="cattle"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1164,31 +1244,31 @@
 	terrain="plains"
 	culture="carthaginian"
 	religion="carthaginian_pantheon"
-	trade_goods="tortoise_shell"
-	civilization_value=26
+	trade_goods="fish"
+	civilization_value=18
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
 		amount=1
 	}
 	slaves={
-		amount=1
-	}
-	tribesmen={
+		culture="autolalean"
 		religion="berber_religion"
 		amount=1
 	}
 	tribesmen={
-		amount=2
+		culture="autolalean"
+		religion="berber_religion"
+		amount=3
 	}
 }
 
 6479={ #Bouzerrara
 	terrain="forest"
-	culture="socossian"
+	culture="autolalean"
 	religion="berber_religion"
-	trade_goods="cedar"
-	civilization_value=0
+	trade_goods="hemp"
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1198,10 +1278,10 @@
 
 6480={ #Amrane
 	terrain="forest"
-	culture="socossian"
+	culture="autolalean"
 	religion="berber_religion"
 	trade_goods="grain"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1211,10 +1291,10 @@
 
 6481={ #Haouzia
 	terrain="hills"
-	culture="socossian"
+	culture="autolalean"
 	religion="berber_religion"
 	trade_goods="vegetables"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1224,10 +1304,10 @@
 
 6484={ #Ifran
 	terrain="forest"
-	culture="socossian"
+	culture="nectiberean"
 	religion="berber_religion"
 	trade_goods="ivory"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1252,7 +1332,7 @@
 	terrain="forest"
 	culture="socossian"
 	religion="berber_religion"
-	trade_goods="cedar"
+	trade_goods="nuts"
 	civilization_value=18
 	barbarian_power=0
 	province_rank="settlement"
@@ -1263,10 +1343,10 @@
 
 6487={ #Mdakra
 	terrain="hills"
-	culture="socossian"
+	culture="nectiberean"
 	religion="berber_religion"
 	trade_goods="cedar"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
@@ -1279,10 +1359,10 @@
 
 6489={ #Mzamza
 	terrain="hills"
-	culture="socossian"
+	culture="nectiberean"
 	religion="berber_religion"
 	trade_goods="cattle"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1295,7 +1375,7 @@
 	culture="carthaginian"
 	religion="carthaginian_pantheon"
 	trade_goods="spices"
-	civilization_value=26
+	civilization_value=24
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -1305,6 +1385,8 @@
 		amount=1
 	}
 	tribesmen={
+		culture="autolalean"
+		religion="berber_religion"
 		amount=2
 	}
 	tribesmen={
@@ -1320,7 +1402,7 @@
 	culture="socossian"
 	religion="berber_religion"
 	trade_goods="spices"
-	civilization_value=0
+	civilization_value=18
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1330,10 +1412,10 @@
 
 6492={ #Zaakna
 	terrain="forest"
-	culture="socossian"
+	culture="autolalean"
 	religion="berber_religion"
 	trade_goods="leather"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1343,10 +1425,10 @@
 
 7221={ #Mizab
 	terrain="plains"
-	culture="socossian"
+	culture="autolalean"
 	religion="berber_religion"
 	trade_goods="vegetables"
-	civilization_value=0
+	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1357,7 +1439,7 @@
 	}
 }
 
-10117={ #Zaio
+8322={ #Zaio
 	terrain="plains"
 	culture="socossian"
 	religion="berber_religion"
@@ -1378,7 +1460,7 @@
 	}
 }
 
-10118={ #Laatamna
+8323={ #Laatamna
 	terrain="plains"
 	culture="socossian"
 	religion="berber_religion"
@@ -1400,12 +1482,12 @@
 	holy_site=omen_anzar
 }
 
-10128={ #Kach Kouch
+8346={ #Kach Kouch
 	terrain="hills"
 	culture="socossian"
 	religion="berber_religion"
 	trade_goods="earthware"
-	civilization_value=0
+	civilization_value=11
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1418,12 +1500,12 @@
 	}
 }
 
-10129={ #Jebha
+8347={ #Jebha
 	terrain="hills"
 	culture="socossian"
 	religion="berber_religion"
 	trade_goods="fish"
-	civilization_value=0
+	civilization_value=8
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1431,12 +1513,12 @@
 	}
 }
 
-10130={ #Hoceima
+8348={ #Hoceima
 	terrain="hills"
 	culture="socossian"
 	religion="berber_religion"
 	trade_goods="fish"
-	civilization_value=0
+	civilization_value=8
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1444,12 +1526,12 @@
 	}
 }
 
-10131={ #Sidi Driss
+8349={ #Sidi Driss
 	terrain="hills"
 	culture="socossian"
 	religion="berber_religion"
 	trade_goods="base_metals"
-	civilization_value=0
+	civilization_value=8
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1462,12 +1544,12 @@
 	}
 }
 
-10132={ #Tiztoutine
+8350={ #Tiztoutine
 	terrain="forest"
 	culture="socossian"
 	religion="berber_religion"
 	trade_goods="grain"
-	civilization_value=0
+	civilization_value=8
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1480,12 +1562,12 @@
 	}
 }
 
-10133={ #Midar
+8351={ #Midar
 	terrain="hills"
 	culture="socossian"
 	religion="berber_religion"
 	trade_goods="vegetables"
-	civilization_value=0
+	civilization_value=8
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1493,12 +1575,12 @@
 	}
 }
 
-10134={ #Ajdir
+8352={ #Ajdir
 	terrain="mountain"
 	culture="socossian"
 	religion="berber_religion"
 	trade_goods="precious_metals"
-	civilization_value=0
+	civilization_value=8
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1506,12 +1588,12 @@
 	}
 }
 
-10135={ #Mnoud Nekkour
+8353={ #Mnoud Nekkour
 	terrain="hills"
 	culture="socossian"
 	religion="berber_religion"
 	trade_goods="cattle"
-	civilization_value=0
+	civilization_value=8
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1519,12 +1601,12 @@
 	}
 }
 
-10136={ #Ziam
+8354={ #Ziam
 	terrain="mountain"
 	culture="socossian"
 	religion="berber_religion"
 	trade_goods="wild_game"
-	civilization_value=0
+	civilization_value=8
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -1532,12 +1614,12 @@
 	}
 }
 
-10137={ #Senada
+8355={ #Senada
 	terrain="mountain"
 	culture="socossian"
 	religion="berber_religion"
 	trade_goods="leather"
-	civilization_value=0
+	civilization_value=8
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={

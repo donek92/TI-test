@@ -24,6 +24,19 @@
 			}
 			tag = CAP
 		}
+		trigger_else_if = {
+			limit = {
+				OR = {
+					has_variable = unlock_anatolian_lydian_var
+				}
+			}
+			custom_tooltip = {
+				text = "unlocked_via_mission_tree_tt"
+				OR = {
+					has_variable = unlock_anatolian_lydian_var
+				}
+			}
+		}
 		trigger_else = {
 			custom_tooltip = {
 				text = "tradition_unlock_requirement_cultural_decision"
@@ -68,7 +81,6 @@
 		modifier = { 
 			light_infantry_offensive = 0.1
 			archers_offensive = 0.05
-			slingers_offensive = 0.05
 		} 
 		icon = persian_achaemenid_path_1
 		requires = { lydian_path_2 }
@@ -77,7 +89,7 @@
 
 	lydian_path_5 = { ###
 		modifier = { 
-			light_infantry_discipline = 0.1
+			light_infantry_discipline = 0.05
 			archers_offensive = 0.1
 		} 
 		icon = celtic_germanic_path_end_bonus
@@ -132,7 +144,7 @@
 
 	lydian_path_10 = { ###
 		modifier = { 
-			light_infantry_discipline = 0.1
+			light_infantry_discipline = 0.05
 			manpower_recovery_speed = 0.05
 		} 
 		icon = persian_achaemenid_path_4
@@ -142,8 +154,7 @@
 
 	lydian_path_11 = { ###
 		modifier = { 
-			archers_defensive = 0.1
-			slingers_defensive = 0.1
+			archers_defensive = 0.15
 		} 
 		icon = persian_achaemenid_path_7
 		requires = { lydian_path_8 }
@@ -175,6 +186,11 @@
 		icon = north_african_naval_path_end_bonus
 		requires = { lydian_path_9 }
 
+		ai_will_do = {
+			modifier = {
+				factor = 0.01
+			}
+		}
 	}
 
 	lydian_path_13 = { ###
@@ -199,8 +215,8 @@
 			}
 		}
 		modifier = { 
-			light_infantry_defensive = 0.15
-			axemen_offensive = 0.15
+			light_infantry_defensive = 0.1
+			light_infantry_offensive = 0.05
 		} 
 		icon = levantine_greco_path_2
 		requires = { lydian_path_10 lydian_path_11 }

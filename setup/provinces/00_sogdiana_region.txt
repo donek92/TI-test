@@ -1,7 +1,7 @@
 ﻿6682={ #Marakanda
 	terrain="hills"
 	culture="sogdian"
-	religion="vaksh_religion"
+	religion="zoroaster"
 	trade_goods="earthware"
 	civilization_value=24
 	barbarian_power=0
@@ -14,11 +14,11 @@
 		amount=2
 	}
 	citizen={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=2
 	}
 	freemen={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=2
 	}
 	freemen={
@@ -36,11 +36,11 @@
 		amount=3
 	}
 	slaves={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=1
 	}
 	tribesmen={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=1
 	}
 }
@@ -48,9 +48,9 @@
 6687={ #Gazaba
 	terrain="hills"
 	culture="sogdian"
-	religion="vaksh_religion"
+	religion="zoroaster"
 	trade_goods="grain"
-	civilization_value=12
+	civilization_value=19
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -60,6 +60,7 @@
 		amount=2
 	}
 	slaves={
+		religion="vaksh_religion"
 		amount=1
 	}
 }
@@ -67,13 +68,13 @@
 6698={ #Ikrone
 	terrain="mountain"
 	culture="sogdian"
-	religion="vaksh_religion"
+	religion="zoroaster"
 	trade_goods="cattle"
-	civilization_value=7
+	civilization_value=17
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
-		culture="bactra"
+		culture="bactrian"
 		religion="roman_pantheon"
 		amount=1
 	}
@@ -81,8 +82,8 @@
 		amount=1
 	}
 	slaves={
-		culture="bactra"
-		religion="roman_pantheon"
+		culture="bactrian"
+		religion="vaksh_religion"
 		amount=1
 	}
 	tribesmen={
@@ -93,16 +94,16 @@
 6699={ #Marouka
 	terrain="mountain"
 	culture="sogdian"
-	religion="vaksh_religion"
+	religion="zoroaster"
 	trade_goods="hemp"
-	civilization_value=7
+	civilization_value=17
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
 		amount=1
 	}
 	freemen={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=1
 	}
 	freemen={
@@ -112,7 +113,7 @@
 		amount=1
 	}
 	tribesmen={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=1
 	}
 }
@@ -120,23 +121,24 @@
 6700={ #Petra Arimazou
 	terrain="mountain"
 	culture="sogdian"
-	religion="vaksh_religion"
+	religion="zoroaster"
 	trade_goods="leather"
-	civilization_value=7
+	civilization_value=17
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
 		amount=2
 	}
 	freemen={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=1
 	}
 	slaves={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=1
 	}
 	tribesmen={
+		religion="mithra_religion"
 		amount=1
 	}
 }
@@ -144,15 +146,16 @@
 6701={ #Petra Chorianou
 	terrain="mountain"
 	culture="sogdian"
-	religion="vaksh_religion"
+	religion="zoroaster"
 	trade_goods="gems"
-	civilization_value=13
+	civilization_value=17
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
 		amount=2
 	}
 	freemen={
+		religion="vaksh_religion"
 		amount=1
 	}
 	slaves={
@@ -166,9 +169,9 @@
 6702={ #Shakria
 	terrain="mountain"
 	culture="sogdian"
-	religion="vaksh_religion"
+	religion="zoroaster"
 	trade_goods="earthware"
-	civilization_value=13
+	civilization_value=17
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -178,6 +181,7 @@
 		amount=2
 	}
 	tribesmen={
+		religion="vaksh_religion"
 		amount=1
 	}
 }
@@ -185,7 +189,7 @@
 6703={ #Kyropolis
 	terrain="hills"
 	culture="sogdian"
-	religion="vaksh_religion"
+	religion="zoroaster"
 	trade_goods="cloth"
 	civilization_value=24
 	barbarian_power=0
@@ -208,7 +212,7 @@
 		amount=2
 	}
 	freemen={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=2
 	}
 	freemen={
@@ -218,11 +222,11 @@
 		amount=4
 	}
 	slaves={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=4
 	}
 	tribesmen={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=1
 	}
 }
@@ -239,7 +243,11 @@
 		amount=4
 	}
 	citizen={
-		amount=9
+		amount=8
+	}
+	citizen={
+		culture="cyrenaican"
+		amount=1
 	}
 	citizen={
 		culture="macedonian"
@@ -269,7 +277,7 @@
 	}
 	slaves={
 		culture="sogdian"
-		religion="zoroaster"
+		religion="vaksh_religion"
 		amount=2
 	}
 	slaves={
@@ -293,7 +301,7 @@
 6705={ #Matouaspa
 	terrain="mountain"
 	culture="sogdian"
-	religion="vaksh_religion"
+	religion="zoroaster"
 	trade_goods="hemp"
 	civilization_value=17
 	barbarian_power=0
@@ -302,7 +310,7 @@
 		amount=1
 	}
 	freemen={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=1
 	}
 	freemen={
@@ -312,7 +320,7 @@
 		amount=1
 	}
 	slaves={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=1
 	}
 	tribesmen={
@@ -320,7 +328,7 @@
 	}
 }
 
-6706={ #Nautaka
+6706={ #Kis
 	terrain="hills"
 	culture="sogdian"
 	religion="vaksh_religion"
@@ -359,7 +367,7 @@
 	culture="sogdian"
 	religion="vaksh_religion"
 	trade_goods="cattle"
-	civilization_value=14
+	civilization_value=18
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -376,9 +384,9 @@
 6711={ #Charva
 	terrain="steppes"
 	culture="sogdian"
-	religion="vaksh_religion"
+	religion="indo_iranian_religion"
 	trade_goods="fur"
-	civilization_value=14
+	civilization_value=21
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -392,7 +400,7 @@
 		amount=1
 	}
 	tribesmen={
-		religion="zoroaster"
+		religion="mithra_religion"
 		amount=1
 	}
 }
@@ -402,7 +410,7 @@
 	culture="sogdian"
 	religion="vaksh_religion"
 	trade_goods="cattle"
-	civilization_value=14
+	civilization_value=19
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -429,7 +437,7 @@
 	culture="sogdian"
 	religion="vaksh_religion"
 	trade_goods="earthware"
-	civilization_value=15
+	civilization_value=21
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -451,7 +459,7 @@
 	culture="sogdian"
 	religion="vaksh_religion"
 	trade_goods="cattle"
-	civilization_value=14
+	civilization_value=19
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -466,11 +474,11 @@
 }
 
 6715={ #Naura
-	terrain="plains"
+	terrain="steppes"
 	culture="sogdian"
 	religion="vaksh_religion"
 	trade_goods="cloth"
-	civilization_value=23
+	civilization_value=26
 	barbarian_power=0
 	province_rank="city"
 	citizen={
@@ -492,7 +500,7 @@
 	culture="sogdian"
 	religion="vaksh_religion"
 	trade_goods="fur"
-	civilization_value=13
+	civilization_value=19
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -519,7 +527,7 @@
 	culture="sogdian"
 	religion="vaksh_religion"
 	trade_goods="camel"
-	civilization_value=12
+	civilization_value=18
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -536,9 +544,9 @@
 6719={ #Petra Sisimithrou
 	terrain="hills"
 	culture="sogdian"
-	religion="vaksh_religion"
+	religion="zoroaster"
 	trade_goods="leather"
-	civilization_value=13
+	civilization_value=19
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -548,7 +556,7 @@
 		amount=2
 	}
 	freemen={
-		religion="indo_iranian_religion"
+		religion="vaksh_religion"
 		amount=2
 	}
 	slaves={
@@ -594,9 +602,9 @@
 6721={ #Drepsiana
 	terrain="mountain"
 	culture="sogdian"
-	religion="vaksh_religion"
+	religion="zoroaster"
 	trade_goods="leather"
-	civilization_value=13
+	civilization_value=17
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -613,9 +621,9 @@
 6722={ #Imarash
 	terrain="mountain"
 	culture="sogdian"
-	religion="vaksh_religion"
+	religion="zoroaster"
 	trade_goods="cattle"
-	civilization_value=13
+	civilization_value=17
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -630,11 +638,11 @@
 		amount=2
 	}
 	slaves={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=1
 	}
 	tribesmen={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=1
 	}
 }
@@ -644,7 +652,7 @@
 	culture="tayuan"
 	religion="vaksh_religion"
 	trade_goods="fruits"
-	civilization_value=14
+	civilization_value=21
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -679,7 +687,7 @@
 	culture="tayuan"
 	religion="vaksh_religion"
 	trade_goods="wood"
-	civilization_value=14
+	civilization_value=23
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -696,7 +704,7 @@
 		amount=2
 	}
 	freemen={
-		amount=3
+		amount=4
 	}
 	slaves={
 		culture="sogdian"
@@ -721,7 +729,7 @@
 	culture="tayuan"
 	religion="vaksh_religion"
 	trade_goods="cattle"
-	civilization_value=14
+	civilization_value=19
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -767,16 +775,16 @@
 6733={ #Istarava
 	terrain="mountain"
 	culture="sogdian"
-	religion="vaksh_religion"
+	religion="zoroaster"
 	trade_goods="fur"
-	civilization_value=15
+	civilization_value=17
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
 		amount=1
 	}
 	freemen={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=1
 	}
 	freemen={
@@ -786,7 +794,7 @@
 		amount=1
 	}
 	tribesmen={
-		religion="eastern_animism"
+		religion="vaksh_religion"
 		amount=1
 	}
 }
@@ -796,14 +804,18 @@
 	culture="ionian"
 	religion="roman_pantheon"
 	trade_goods="salt"
-	civilization_value=17
+	civilization_value=24
 	barbarian_power=0
 	province_rank="city"
 	citizen={
 		amount=4
 	}
 	freemen={
-		amount=7
+		amount=6
+	}
+	freemen={
+		culture="cyrenaican"
+		amount=1
 	}
 	freemen={
 		culture="sogdian"
@@ -824,8 +836,8 @@
 	terrain="hills"
 	culture="tayuan"
 	religion="vaksh_religion"
-	trade_goods="steppe_horses"
-	civilization_value=14
+	trade_goods="grain"
+	civilization_value=19
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -840,14 +852,15 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site=omen_zhun
 }
 
 6736={ #Ozola
 	terrain="mountain"
 	culture="tayuan"
-	religion="vaksh_religion"
-	trade_goods="stone"
-	civilization_value=13
+	religion="zoroaster"
+	trade_goods="vegetables"
+	civilization_value=16
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -866,19 +879,15 @@
 	culture="ionian"
 	religion="roman_pantheon"
 	trade_goods="base_metals"
-	civilization_value=21
+	civilization_value=23
 	barbarian_power=0
 	province_rank="city"
-	nobles={
-		amount=1
-	}
 	citizen={
 		amount=5
 	}
-	freemen={
-		culture="tayuan"
-		religion="zoroaster"
-		amount=4
+	citizen={
+		culture="cyrenaican"
+		amount=2
 	}
 	freemen={
 		amount=8
@@ -886,10 +895,10 @@
 	freemen={
 		culture="tayuan"
 		religion="zoroaster"
-		amount=4
+		amount=5
 	}
 	slaves={
-		amount=5
+		amount=6
 	}
 	slaves={
 		culture="sakan"
@@ -897,9 +906,7 @@
 		amount=5
 	}
 	tribesmen={
-		amount=3
-		culture="tayuan"
-		religion="vaksh_religion"
+		amount=4
 	}
 	tribesmen={
 		culture="sakan"
@@ -913,13 +920,18 @@
 	culture="tayuan"
 	religion="vaksh_religion"
 	trade_goods="vegetables"
-	civilization_value=7
+	civilization_value=18
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
 		amount=2
 	}
 	freemen={
+		amount=2
+	}
+	freemen={
+		culture="sogdian"
+		religion="indo_iranian_religion"
 		amount=2
 	}
 	slaves={
@@ -947,7 +959,7 @@
 		amount=1
 	}
 	freemen={
-		religion="roman_pantheon"
+		religion="vaksh_religion"
 		amount=1
 	}
 	freemen={
@@ -966,6 +978,7 @@
 		amount=2
 	}
 	tribesmen={
+		religion="vaksh_religion"
 		amount=1
 	}
 }
@@ -982,7 +995,7 @@
 		amount=3
 	}
 	freemen={
-		amount=1
+		amount=3
 	}
 	slaves={
 		amount=1
@@ -1039,19 +1052,24 @@
 
 6777={ #Uvikat
 	terrain="hills"
-	culture="sakan"
+	culture="sogdian"
 	religion="vaksh_religion"
 	trade_goods="cattle"
-	civilization_value=7
+	civilization_value=18
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
 		amount=1
 	}
+	freemen={
+		amount=3
+	}
 	slaves={
 		amount=2
 	}
 	tribesmen={
+		culture="sakan"
+		religion="indo_iranian_religion"
 		amount=2
 	}
 }

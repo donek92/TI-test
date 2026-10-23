@@ -26,7 +26,7 @@ deity_kubera = { # ECONOMY
 	}
 }
 
-deity_saraswati = { # WISDOM
+deity_saraswati = { # ECONOMY
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -45,7 +45,7 @@ deity_saraswati = { # WISDOM
 		economy_apotheosis_capital_citizens_effect = yes
 	}
 	religion = hindu
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = economy #This Deity uses a Economy Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -134,7 +134,7 @@ deity_samudra = { # ECONOMY
 	}
 }
 
-deity_soma = { # WISDOM
+deity_soma = { # CULTURE
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -157,7 +157,7 @@ deity_soma = { # WISDOM
 		culture_apotheosis_oratory_tech_effect = yes
 	}
 	religion = hindu
-	deity_category = wisdom #This Deity uses a Wisdom slot.
+	deity_category = culture #This Deity uses a War slot.
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -189,7 +189,7 @@ deity_samba = { # ECONOMY
 	}
 }
 
-deity_vishwanath = { # JUSTICE
+deity_vishwanath = { # CULTURE
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -211,14 +211,14 @@ deity_vishwanath = { # JUSTICE
 		culture_apotheosis_capital_effect = yes
 	}
 	religion = hindu
-	deity_category = justice #This Deity uses a Justice slot.
+	deity_category = culture #This Deity uses a War slot.
 
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
 }
 
-deity_bhrigu = { # JUSTICE
+deity_bhrigu = { # CULTURE
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -237,7 +237,7 @@ deity_bhrigu = { # JUSTICE
 		culture_apotheosis_assimilate_effect = yes
 	}
 	religion = hindu
-	deity_category = justice #This Deity uses a Justice slot.
+	deity_category = culture #This Deity uses a War slot.
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -356,6 +356,37 @@ deity_varuna = { # Fertility
 	icon = deity_hindu_love
 	passive_modifier = { global_population_capacity_modifier = deity_global_population_capacity_modifier_svalue }
 	omen = { stability_monthly_change = omen_stability_monthly_change_svalue } #Bonus from Omen
+	on_activate = {
+		culture_apotheosis_assimilate_effect = yes
+	}
+	religion = hindu
+	deity_category = fertility
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+deity_mitra = { # Culture
+	trigger = {
+		OR = {
+			polytheistic_check_religion_trigger = yes
+		}
+		OR = {
+			rare_deity_trigger = {
+				RELIGION = hindu
+			}
+			common_deity_culture_trigger = {
+				RELIGION = hindu
+				CULTURE = mitanni
+			}
+			deity:omen_mitra = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_hindu_eloquence
+	passive_modifier = { global_supply_limit_modifier = deity_global_supply_limit_modifier_svalue }
+	omen = { monthly_tyranny = omen_monthly_tyranny_svalue } #Bonus from Omen
 	on_activate = {
 		culture_apotheosis_assimilate_effect = yes
 	}
@@ -531,7 +562,7 @@ deity_prajapati = { # WAR
 		can_deify_trigger = yes
 	}
 }
-deity_shani = { # JUSTICE
+deity_shani = { # ECONOMY
 	trigger = {
 		OR = {
 			polytheistic_check_religion_trigger = yes
@@ -555,7 +586,7 @@ deity_shani = { # JUSTICE
 		economy_apotheosis_province_improvement_effect = yes
 	}
 	religion = hindu
-	deity_category = justice
+	deity_category = economy
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -729,7 +760,7 @@ deity_vayu = {
 		economy_apotheosis_province_improvement_effect = yes
 	}
 	religion = hindu
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = economy #This Deity uses an Economy Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -759,5 +790,44 @@ deity_nasatyanna = {
 
 	deification_trigger = {
 		can_deify_trigger = yes
+	}
+}
+
+## Waaqi Syncretism ##
+deity_waaq_brahma = {
+	trigger = {
+		#polytheistic_check_religion_trigger = yes
+		OR = {
+			AND = {
+				religion = puntic_religion
+				religion_pops_in_country = {
+					target = hindu
+					value >= common_deity_svalue
+				}
+			}
+			AND = {
+				religion = hindu
+				religion_pops_in_country = {
+					target = puntic_religion
+					value >= common_deity_svalue
+				}
+			}
+			deity:omen_waaq_brahma = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_hindu_eloquence
+	passive_modifier = { global_pop_promotion_speed_modifier = 0.1 }
+	omen = { hostile_attrition = omen_hostile_attrition_svalue } #Bonus from Omen
+	religion = hindu
+	deity_category = culture #This Deity uses a Culture slot.
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+
+	on_activate = {
+		culture_apotheosis_assimilate_effect = yes
 	}
 }

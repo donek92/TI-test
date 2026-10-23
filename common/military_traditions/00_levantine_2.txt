@@ -29,6 +29,22 @@
 			}
 			country_culture_group = north_african
 		}
+		trigger_else_if = {
+			limit = { primary_culture = syriote }
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			primary_culture = syriote
+		}
+		trigger_else_if = {
+			limit = {
+				has_variable = unlock_levant_var
+			}
+			custom_tooltip = {
+				text = "unlocked_via_mission_tree_tt"
+				has_variable = unlock_levant_var
+			}
+		}
 		trigger_else = {
 			custom_tooltip = {
 				text = "tradition_unlock_requirement_cultural_decision"
@@ -131,6 +147,12 @@
 				}
 			}
 		}
+
+		ai_will_do = {
+			modifier = {
+				factor = 0.01
+			}
+		}
 	}
 
 	levantine_egyptian_path_5 = { ###Levantine 5A
@@ -145,7 +167,7 @@
 	}
 
 	levantine_greco_path_4 = { ###Levantine 1B
-		modifier = { discipline = 0.02 }
+		modifier = { discipline = 0.025 }
 		enable_tactic = greek_phalanx
 		icon = levantine_greco_path_4
 		requires = {}
@@ -178,8 +200,7 @@
 
 	levantine_greco_path_2 = { ###Levantine 3BA
 		modifier = {
-			light_infantry_morale = 0.075
-			axemen_morale = 0.075
+			light_infantry_morale = 0.1
 		}
 		icon = levantine_greco_path_2
 		requires = {levantine_egyptian_path_1}
@@ -197,7 +218,7 @@
 	levantine_egyptian_path_end_bonus = { ###Levantine 4BA
 		modifier = {
 			light_infantry_offensive = 0.15
-			axemen_offensive = 0.15
+			light_infantry_defensive = 0.15
 		}
 		icon = levantine_egyptian_path_end_bonus
 		requires = {levantine_greco_path_2}

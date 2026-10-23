@@ -57,6 +57,8 @@ sea = {
 		meshes = {
 			"sea_03_01_mesh"
 			"sea_03_02_mesh"
+			"sea_03_03_mesh"
+			"sea_03_04_mesh"
 			"burmese_03_01_mesh"
 			"burmese_03_02_mesh"
 			"burmese_03_03_mesh"

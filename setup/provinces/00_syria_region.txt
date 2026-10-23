@@ -44,7 +44,7 @@
 	terrain="hills"
 	culture="phoenician"
 	religion="carthaginian_pantheon"
-	trade_goods="cedar"
+	trade_goods="nuts"
 	civilization_value=24
 	barbarian_power=0
 	province_rank="settlement"
@@ -84,7 +84,7 @@
 	holy_site=omen_deborah
 }
 
-743={ #Tyros
+743={ #Tzur
 	terrain="plains"
 	culture="phoenician"
 	religion="carthaginian_pantheon"
@@ -96,7 +96,17 @@
 		amount=1
 	}
 	citizen={
-		amount=7
+		amount=4
+	}
+	citizen={
+		culture="carthaginian"
+		religion="carthaginian_pantheon"
+		amount=1
+	}
+	freemen={
+		culture="macedonian"
+		religion="roman_pantheon"
+		amount=2
 	}
 	citizen={
 		culture="hebrew"
@@ -109,7 +119,17 @@
 		amount=1
 	}
 	freemen={
-		amount=9
+		culture="macedonian"
+		religion="roman_pantheon"
+		amount=1
+	}
+	freemen={
+		culture="carthaginian"
+		religion="carthaginian_pantheon"
+		amount=1
+	}
+	freemen={
+		amount=7
 	}
 	slaves={
 		amount=6
@@ -186,8 +206,13 @@
 	nobles={
 		amount=2
 	}
+	freemen={
+		culture="carthaginian"
+		religion="carthaginian_pantheon"
+		amount=1
+	}
 	citizen={
-		amount=5
+		amount=4
 	}
 	citizen={
 		culture="hebrew"
@@ -200,7 +225,12 @@
 		amount=1
 	}
 	freemen={
-		amount=5
+		culture="carthaginian"
+		religion="carthaginian_pantheon"
+		amount=1
+	}
+	freemen={
+		amount=4
 	}
 	slaves={
 		amount=5
@@ -214,7 +244,7 @@
 	port_building=4
 }
 
-748={ #Berytos
+748={ #Berut
 	terrain="forest"
 	culture="phoenician"
 	religion="carthaginian_pantheon"
@@ -512,7 +542,7 @@
 	terrain="forest"
 	culture="aramaic"
 	religion="carthaginian_pantheon"
-	trade_goods="cedar"
+	trade_goods="nuts"
 	civilization_value=24
 	barbarian_power=0
 	province_rank="settlement"
@@ -595,7 +625,7 @@
 	}
 }
 
-766={ #Gebal
+766={ #Gebol
 	terrain="forest"
 	culture="phoenician"
 	religion="carthaginian_pantheon"
@@ -638,7 +668,7 @@
 	port_building=4
 }
 
-767={ #Botrys
+767={ #Bitron
 	terrain="plains"
 	culture="phoenician"
 	religion="carthaginian_pantheon"
@@ -657,7 +687,7 @@
 	}
 }
 
-769={ #Tripolis
+769={ #'Ator
 	terrain="forest"
 	culture="phoenician"
 	religion="carthaginian_pantheon"
@@ -852,7 +882,7 @@
 	}
 }
 
-779={ #Arpad
+779={ #'Arwod
 	terrain="forest"
 	culture="phoenician"
 	religion="carthaginian_pantheon"
@@ -922,7 +952,7 @@
 	terrain="forest"
 	culture="macedonian"
 	religion="roman_pantheon"
-	trade_goods="glass"
+	trade_goods="wax"
 	civilization_value=29
 	barbarian_power=0
 	province_rank="city"
@@ -1211,7 +1241,11 @@
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
-		amount=2
+		amount=1
+	}
+	freemen={
+		religion="hurrian_pantheon"
+		amount=1
 	}
 	slaves={
 		amount=1
@@ -1255,7 +1289,11 @@
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
-		amount=2
+		amount=1
+	}
+	freemen={
+		religion="hurrian_pantheon"
+		amount=1
 	}
 	slaves={
 		amount=2
@@ -1540,7 +1578,7 @@
 		amount=1
 	}
 	slaves={
-		amount=5
+		amount=3
 	}
 	slaves={
 		culture="aramaic"
@@ -1577,6 +1615,7 @@
 		amount=5
 	}
 	tribesmen={
+		religion="hurrian_pantheon"
 		amount=2
 	}
 }
@@ -1593,12 +1632,14 @@
 		amount=2
 	}
 	freemen={
+		religion="hurrian_pantheon"
 		amount=1
 	}
 	slaves={
 		amount=2
 	}
 	tribesmen={
+		religion="hurrian_pantheon"
 		amount=1
 	}
 }
@@ -1748,6 +1789,7 @@
 		amount=1
 	}
 	freemen={
+		religion="hurrian_pantheon"
 		amount=1
 	}
 	slaves={
@@ -1773,6 +1815,7 @@
 		amount=1
 	}
 	freemen={
+		religion="hurrian_pantheon"
 		amount=1
 	}
 	freemen={
@@ -1783,6 +1826,7 @@
 		amount=1
 	}
 	tribesmen={
+		religion="hurrian_pantheon"
 		amount=1
 	}
 }

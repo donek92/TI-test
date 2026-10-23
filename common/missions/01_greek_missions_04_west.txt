@@ -23,7 +23,7 @@
 					}
 				}
 				any_owned_province = {
-					is_port = yes
+					num_of_port_building >= 1
 					OR = {
 						is_in_region = transalpine_gaul_region
 						is_in_region = tarraconensis_region
@@ -37,7 +37,7 @@
 				tag = ELE
 				num_of_cities >= 5
 				any_owned_province = {
-					is_port = yes
+					num_of_port_building >= 1
 					OR = {
 						is_in_region = central_italy_region
 						is_in_region = magna_graecia_region
@@ -128,13 +128,13 @@
 					owns_or_subject_owns = 1347
 					owns_or_subject_owns = 3061
 				}
-    		}
+            }
     		set_variable = me_gre_4_3_block
-    	}
+        }
     	if = {
     		limit = {
     			any_owned_province = {
-					is_port = yes
+					num_of_port_building >= 1
 					has_city_status = yes
 					total_population >= 20
 					province_dominant_culture_group = hellenic
@@ -156,9 +156,9 @@
 						is_in_region = baetica_region
 					}
 				}
-    		}
+            }
     		set_variable = greek_4_2_block
-    	}
+        }
     	if = {
     		limit = {
     			any_in_list = {
@@ -191,10 +191,10 @@
 						NOT = { is_in_region = tarraconensis_region }
 					}
 				}
-    		}
+            }
     		set_variable = me_gre_4_6_block
-    	}
-    	trigger_event = { id = me_greek_4_west.1 }
+        }
+        trigger_event = { id = me_greek_4_west.1 }
     }
 
     on_abort = {
@@ -206,59 +206,59 @@
 		if = {
     		limit = { has_variable = me_gre_4_3_block }
     		remove_variable = me_gre_4_3_block
-    	}
+        }
     	if = {
     		limit = { has_variable = greek_4_2_block }
     		remove_variable = greek_4_2_block
-    	}
+        }
     	if = {
     		limit = { has_variable = me_gre_4_6_block }
     		remove_variable = me_gre_4_6_block
-    	}
+        }
     	if = {
     		limit = { 
     			any_character = { has_variable = gm_family_head_4_flag }
-    		}
+            }
 			every_character = {
 				limit = { has_variable = gm_family_head_4_flag }
 				remove_variable = gm_family_head_4_flag
 			}
-    	}
+        }
     	remove_variable = gm_4_greek_country_flag
     	if = {
     		limit = {
     			any_country = { 
     				tag = PHK 
     				has_land = yes
-    			}
+                }
 				root = {
 					NOT = { tag = PHK }
 				}
-    		}
+            }
     		trigger_event = me_greek_4_west.29
-    	}
+        }
     }
 
     on_completion = {
-    	trigger_event = { id = me_greek_4_west.2 }
+        trigger_event = { id = me_greek_4_west.2 }
     	complete_mission_effect = yes
     	if = {
     		limit = { has_variable = me_gre_4_3_block }
     		remove_variable = me_gre_4_3_block
-    	}
+        }
     	if = {
     		limit = { has_variable = greek_4_2_block }
     		remove_variable = greek_4_2_block
-    	}
+        }
     	if = {
     		limit = { 
     			any_character = { has_variable = gm_family_head_4_flag }
-    		}
+            }
 			every_character = {
 				limit = { has_variable = gm_family_head_4_flag }
 				remove_variable = gm_family_head_4_flag
 			}
-    	}
+        }
     	remove_variable = gm_4_greek_country_flag
     }
 
@@ -271,19 +271,19 @@
 		}
 
 		allow = {
-			owns_or_subject_owns = 3504
-			owns_or_subject_owns = 3515
-			owns_or_subject_owns = 96
-			owns_or_subject_owns = 3481
+			owns_or_subject_owns = 2257
+			owns_or_subject_owns = 1005
+			owns_or_subject_owns = 1006
+			owns_or_subject_owns = 1009
 		}
 
 		highlight = {
 			scope:province = {
 				OR = {
-					province_id = 3504
-					province_id = 3515
-					province_id = 96
-					province_id = 3481
+					province_id = 2257
+					province_id = 1005
+					province_id = 1006
+					province_id = 1009
 				}
 			}
 		}
@@ -324,7 +324,7 @@
 
 		highlight = {
 			scope:province = {
-				is_port = yes
+				num_of_port_building >= 1
 				trigger_if = {
 					limit = {
 						NOT = {
@@ -477,7 +477,7 @@
 
 		highlight = {
 			scope:province = {
-                is_port = yes
+                num_of_port_building >= 1
                 control_range = root
 			}
 		}
@@ -848,7 +848,8 @@
 			custom_tooltip = greek_4_loyalty_reward_tt
 			show_as_tooltip = {
 				custom_tooltip = me_greek_4_west.14.tt
-	            p:1342.state = { me_gre_new_markets_effect = yes }
+				p:1032.state = { me_gre_new_markets_effect = yes }
+	            p:1037.state = { me_gre_new_markets_effect = yes }
 			}
 		}
 
@@ -1706,11 +1707,11 @@
 		on_completion = {
 			add_treasury = -100
 			custom_tooltip = masiliot_claims_up_in_gaul_time_tt
-			p:2311 = {
-				add_province_modifier = { name = me_gre_4_34_pmod }
+			p:2311.state = {
+				add_state_modifier = { name = me_gre_4_34_pmod }
 			}
-			p:2297 = {
-				add_province_modifier = { name = me_gre_4_34_pmod }
+			p:2297.state = {
+				add_state_modifier = { name = me_gre_4_34_pmod }
 			}
 			trigger_event = { id = me_greek_4_west.34 }
 			
@@ -1962,18 +1963,18 @@
 			custom_tooltip = epirus_2_magna_11_reward_tt_2
 			current_ruler = {
 				add_popularity = 15
-				add_nickname = "Eleutherios"
+				add_nickname = NICKNAME_ELEUTHERIOS
 			}
 			add_country_modifier = {
 				name = glorious_battle
 				duration = 3650
 			}
         	p:84 = {
-        		add_province_modifier = {
+                add_province_modifier = {
         			name = pacified_sicily
                 duration = -1
-        		}
-        	}
+                }
+            }
 			trigger_event = { id = me_greek_4_west.40 }
 		}
 	}
@@ -2073,7 +2074,14 @@
 					limit = { 
 						has_city_status = no 
 					}
-					found_city_effect = yes
+					add_province_modifier = {
+						name = founding_city_in_progress
+						duration = 730
+					}
+					trigger_event = {
+						id = state_improvement.6
+						days = 730
+					}
 				}
 				add_province_modifier = {
 					name = me_gre_4_42_pmod

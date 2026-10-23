@@ -771,3 +771,280 @@ has_cheap_trade_good = {
 		trade_goods = fruits
 	}
 }
+
+#cultural triggers
+is_chinese_culture_group_trigger = {
+	OR = {
+		this.culture.culture_group = culture_group:chinese
+		this.culture.culture_group = culture_group:yi
+		this.culture.culture_group = culture_group:yue
+	}
+}
+is_east_asian_culture_group_trigger = {
+	OR = {
+		this.culture.culture_group = culture_group:chinese
+		this.culture.culture_group = culture_group:yi
+		this.culture.culture_group = culture_group:yue
+		this.culture.culture_group = culture_group:miao
+		this.culture.culture_group = culture_group:samhan
+		this.culture.culture_group = culture_group:japan
+		this.culture.culture_group = culture_group:jomon
+		this.culture.culture_group = culture_group:di
+		this.culture.culture_group = culture_group:hu
+		this.culture.culture_group = culture_group:xiyu
+		this.culture.culture_group = culture_group:huimo
+		this.culture.culture_group = culture_group:tibetan
+		this.culture.culture_group = culture_group:rong
+		this.culture.culture_group = culture_group:austronesian
+		this.culture.culture_group = culture_group:pu
+	}
+}
+is_western_culture_group_trigger = {
+	or = {
+		this.culture.culture_group = culture_group:latin
+		this.culture.culture_group = culture_group:gallic
+		this.culture.culture_group = culture_group:celto_pannonian_group
+		this.culture.culture_group = culture_group:belgae_group
+		this.culture.culture_group = culture_group:britannic
+		this.culture = culture:carthaginian
+		this.culture.culture_group = culture_group:hellenic
+		this.culture.culture_group = culture_group:anatolian
+		this.culture.culture_group = culture_group:caucasian
+		this.culture.culture_group = culture_group:illyrian_group
+		this.culture.culture_group = culture_group:dacia_group
+		this.culture.culture_group = culture_group:thrace_group
+		this.culture.culture_group = culture_group:germanic
+		this.culture.culture_group = culture_group:baltic
+		this.culture.culture_group = culture_group:celt_iberia
+		this.culture.culture_group = culture_group:iberia
+		this.culture.culture_group = culture_group:proto_european
+	}
+}
+is_middle_eastern_culture_group_trigger = { #military traditions
+	OR = {
+		AND = {
+			this.culture.culture_group = culture_group:west_levantine
+			NOT = {
+				this.culture = culture:carthaginian
+			}
+		}
+		this.culture.culture_group = culture_group:north_african
+		this.culture.culture_group = culture_group:south_levantine
+		this.culture.culture_group = culture_group:south_arabian
+		this.culture.culture_group = culture_group:persia
+		this.culture.culture_group = culture_group:east_levantine
+	}
+}
+is_berber_culture_group = {
+	or = {
+		this.culture.culture_group = culture_group:numidian
+		this.culture.culture_group = culture_group:fezzani
+	}
+}
+is_mainland_greek_culture_group = {
+	this.culture = culture:carthaginian
+}
+is_west_barbarian_culture_group = {
+	OR = {
+		this.culture.culture_group = culture_group:gallic
+		this.culture.culture_group = culture_group:celto_pannonian_group
+		this.culture.culture_group = culture_group:belgae_group
+		this.culture.culture_group = culture_group:britannic
+		this.culture.culture_group = culture_group:germanic
+		this.culture.culture_group = culture_group:baltic
+		this.culture.culture_group = culture_group:celt_iberia
+		this.culture.culture_group = culture_group:iberia
+		this.culture.culture_group = culture_group:proto_european
+	}
+}
+
+has_food_trade_good_trigger = {
+	custom_tooltip = {
+		text = food_tradegood_required
+		food_trade_good_trigger = yes
+	}
+}
+
+has_non_food_trade_good_trigger = {
+	food_trade_good_trigger = no
+}
+food_trade_good_trigger = {
+    OR = {
+        trade_goods = grain
+		trade_goods = fish
+		trade_goods = cattle
+		trade_goods = vegetables
+		trade_goods = fruits
+		trade_goods = olive
+		trade_goods = dates
+		trade_goods = rice
+		trade_goods = citrus
+    }
+}
+has_minable_trade_good_trigger = {
+	custom_tooltip = {
+		text = minable_tradegood_required #Needs updating when trigger is updated.
+		OR = {
+			trade_goods = marble
+			trade_goods = stone
+			trade_goods = precious_metals
+			trade_goods = base_metals
+			trade_goods = iron
+			trade_goods = cinnabar
+			trade_goods = lapis
+			trade_goods = jade
+			trade_goods = gems
+			trade_goods = flint
+			trade_goods = salt
+		}
+	}
+}
+has_logging_trade_good_trigger = {
+	custom_tooltip = {
+		text = logging_tradegood_required #Needs updating when trigger is updated.
+		OR = {
+			trade_goods = wood
+			trade_goods = cedar
+			trade_goods = amber
+			trade_goods = myrrh
+			trade_goods = incense
+		}
+	}
+}
+
+has_farmabale_trade_good_trigger = {
+	custom_tooltip = {
+		text = faramable_tradegood_required #Needs updating when trigger is updated.
+		OR = {
+			trade_goods = sugar
+			trade_goods = grain
+			trade_goods = rice
+			trade_goods = vegetables
+			trade_goods = hemp
+			trade_goods = 
+			trade_goods = wine
+			trade_goods = olive
+			trade_goods = gems
+			trade_goods = flint
+			trade_goods = salt
+
+		}
+	}
+}
+has_gardenable_trade_good_trigger = {
+	custom_tooltip = {
+		text = faramable_tradegood_required #Needs updating when trigger is updated.
+		OR = {
+			trade_goods = fruits
+			trade_goods = dates
+			trade_goods = citrus
+			trade_goods = nuts
+			trade_goods = wine
+			trade_goods = olive
+
+		}
+	}
+}
+has_animal_product_trade_good_trigger = {
+	custom_tooltip = {
+		text = animal_tradegood_required #Needs updating when trigger is updated.
+		OR = {
+			trade_goods = cattle
+			trade_goods = leather
+			trade_goods = wax
+			trade_goods = fur
+			trade_goods = honey
+			trade_goods = ivory
+
+		}
+	}
+}
+has_breedable_trade_good_trigger = {
+	custom_tooltip = {
+		text = animal_tradegood_required #Needs updating when trigger is updated.
+		OR = {
+			trade_goods = cattle
+			trade_goods = horses
+			trade_goods = steppe_horses
+			trade_goods = camel
+			trade_goods = elephants
+			trade_goods = olive
+			trade_goods = lapis
+			trade_goods = jade
+			trade_goods = gems
+			trade_goods = flint
+			trade_goods = salt
+
+		}
+	}
+}
+has_huntable_trade_good_trigger = {
+	custom_tooltip = {
+		text = animal_tradegood_required #Needs updating when trigger is updated.
+		OR = {
+			trade_goods = fur
+			trade_goods = wild_game
+			trade_goods = fish
+			trade_goods = exotic_beasts
+			trade_goods = ivory
+		}
+	}
+}
+has_artisan_trade_good_trigger = {
+	custom_tooltip = {
+		text = animal_tradegood_required #Needs updating when trigger is updated.
+		OR = {
+			trade_goods = fur
+			trade_goods = wild_game
+			trade_goods = fish
+			trade_goods = exotic_beasts
+			trade_goods = ivory
+		}
+	}
+}
+
+is_chinese_trigger = {
+	OR = {
+		country_culture_group = chinese
+		country_culture_group = yi
+		country_culture_group = yue
+	}
+}
+
+
+
+has_unminable_trade_good_trigger = {
+	NOR = {
+		trade_goods = marble
+		trade_goods = stone
+		trade_goods = precious_metals
+		trade_goods = base_metals
+		trade_goods = iron
+		trade_goods = cinnabar
+		trade_goods = lapis
+		trade_goods = jade
+		trade_goods = gems
+	}
+}
+#Nothing changed about the urban goods as of yet
+has_urban_trade_good_trigger = {
+	OR = {
+		trade_goods = papyrus
+		trade_goods = cloth
+		trade_goods = earthware
+		trade_goods = dye
+		trade_goods = glass
+		trade_goods = silk
+	}
+}
+
+has_non_urban_trade_good_trigger = {
+	NOR = {
+		trade_goods = papyrus
+		trade_goods = cloth
+		trade_goods = earthware
+		trade_goods = dye
+		trade_goods = glass
+		trade_goods = silk
+	}
+}

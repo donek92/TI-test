@@ -1,8 +1,7 @@
-version="1.7.1"
+version="0.1"
 tags={
-	"Overhaul"
-	"Total Conversions"
+	"Historical"
+	"Characters"
 }
-name="Terra-Indomita"
-supported_version="2.*"
-remote_file_id="2856497654"
+name="TI Test"
+supported_version="2.0.5"

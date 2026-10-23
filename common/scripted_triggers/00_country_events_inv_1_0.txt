@@ -20,8 +20,9 @@
 		tag = KYA
 		tag = BIT
 		tag = AST
-		tag = KIO
+		tag = MIT
 		tag = IOA
+		tag = LES
 		tag = ION
 		tag = RHO
 		tag = HKS
@@ -917,5 +918,74 @@ not_exists_already_iter_trigger = {
 			limit = { exists = scope:tenth }
 			this = scope:tenth
 		}
+	}
+}
+
+is_valid_satrapy_subject = {#
+	OR = {
+		is_subject_type = satrapy
+		is_tradition_tree_allowed = persian_philosophy #Persians and East Levantines
+		is_tradition_tree_allowed = anatolian_philosophy #Anatolians and Caucasians
+		is_tradition_tree_allowed = steppe_philosophy #Scythians and Bactrians
+	}
+	num_of_cities >= 25 #Regional Power
+	is_monarchy = yes
+}
+
+is_valid_satrapy_overlord = {#Invictus accidently reduced the range of cultures that could become a Satrapy when it reworked military traditions
+	is_subject = no
+	num_of_cities >= 100 #Major Power
+	is_monarchy = yes
+}
+
+is_theocratic = {
+	OR = {
+		government = theocratic_republic
+		government = theocratic_monarchy
+		government = imperial_cult
+		government = judean_empire
+	}
+}
+
+can_make_temple_state_diplo = {
+	is_subject = no
+	OR = {
+		country_culture_group = anatolian
+		country_culture_group = persia	
+		country_culture_group = east_levantine
+		religion = zoroaster
+		religion = anatolian_religion
+		religion = anahitic_religion
+		religion = mesopotamian_religion
+		has_variable = temple_state_variable
+		invention = temple_estates_inv
+	}
+}
+
+can_make_temple_state = {#placeholder
+	is_subject = no
+	OR = {
+		# any_subject = {
+		# 	is_subject_type = temple_state
+		# }
+		country_culture_group = anatolian
+		country_culture_group = persia	
+		country_culture_group = east_levantine
+		religion = zoroaster
+		religion = anatolian_religion
+		religion = anahitic_religion
+		religion = mesopotamian_religion
+		has_variable = temple_state_variable
+		invention = temple_estates_inv
+	}
+}
+
+is_cilician = {
+	OR = {
+		primary_culture = cilician
+		primary_culture = isaurian
+		primary_culture = kennataian
+		primary_culture = lalasian
+		primary_culture = ciliciote
 	}
 }

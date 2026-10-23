@@ -70,6 +70,7 @@ cr_sicily_flavour_events.2 = {
 			value = has_monthly_income
 			multiply = -3.0
 			max = 150
+			min = -6000
 		}
 		create_country_treasure = {
 			key = cr_treasure_charioteer_of_motya
@@ -274,7 +275,7 @@ cr_sicily_flavour_events.10 = {
 	desc = "cr_sicily_flavour_events.10.desc"
 
 	goto_location = p:94
-	interface_lock = no
+
 	left_portrait = p:94.governor
 
 	trigger = {
@@ -307,6 +308,7 @@ cr_sicily_flavour_events.10 = {
 			value = has_monthly_income
 			multiply = -3.0
 			max = 150
+			min = -6000
 		}
 		create_country_treasure = {
 			key = cr_treasure_charioteer_of_motya
@@ -341,6 +343,19 @@ cr_sicily_flavour_events.11 = {
 					}
 				}
 				desc = cr_sicily_flavour_events.11.desc_magid
+			}
+			triggered_desc = {
+				trigger = {
+					OR = {
+						current_ruler = {
+							 party_type = democratic_party
+						}
+						current_co_ruler = {
+							party_type = democratic_party
+						}
+					}
+				}
+				desc = cr_sicily_flavour_events.11.desc_democratic
 			}
 			triggered_desc = {
 				trigger = {
@@ -401,6 +416,7 @@ cr_sicily_flavour_events.11 = {
 			value = has_monthly_income
 			multiply = -3.0
 			max = 150
+			min = -6000
 		}
 		create_country_treasure = {
 			key = cr_treasure_charioteer_of_motya

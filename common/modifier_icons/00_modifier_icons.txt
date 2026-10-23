@@ -1734,6 +1734,13 @@ local_happiness_for_same_religion_modifier = {
 	positive = "gfx/interface/icons/modifiers/local_happiness_for_same_religion_modifier.dds"
 }
 
+happiness_for_wrong_religion_modifier = {
+	positive = "gfx/interface/icons/modifiers/happiness_for_wrong_religion_modifier.dds"
+}
+local_happiness_for_wrong_religion_modifier = {
+	positive = "gfx/interface/icons/modifiers/local_happiness_for_wrong_religion_modifier.dds"
+}
+
 global_population_happiness = {
 	positive = "gfx/interface/icons/modifiers/global_population_happiness.dds"
 }
@@ -2447,6 +2454,10 @@ cultural_integration_speed_modifier = {
 	positive = "gfx/interface/icons/modifiers/global_cultural_integration_speed_modifier.dds"
 }
 
+cultural_assimilation_speed_modifier = {
+	positive = "gfx/interface/icons/modifiers/global_cultural_integration_speed_modifier.dds"
+}
+
 culture_happiness_modifier = {
 	positive = "gfx/interface/icons/modifiers/culture_happiness_modifier.dds"
 }
@@ -2496,47 +2507,47 @@ change_pop_type_right_cost_modifier = {
 }
 
 forum_building_cost = {
-	positive = "gfx/interface/icons/_default.dds" #Unused
+    positive = "gfx/interface/icons/modifiers/build_cost.dds"
 }
 
 workshop_building_cost = {
-	positive = "gfx/interface/icons/_default.dds" #Unused
+    positive = "gfx/interface/icons/modifiers/build_cost.dds"
 }
 
 library_building_cost = {
-	positive = "gfx/interface/icons/_default.dds" #Unused
+    positive = "gfx/interface/icons/modifiers/build_cost.dds"
 }
 
 town_hall_building_cost = {
-	positive = "gfx/interface/icons/_default.dds" #Unused
+    positive = "gfx/interface/icons/modifiers/build_cost.dds"
 }
 
 theathre_building_cost = {
-	positive = "gfx/interface/icons/_default.dds" #Unused
+    positive = "gfx/interface/icons/modifiers/build_cost.dds"
 }
 
 barracks_building_cost = {
-	positive = "gfx/interface/icons/_default.dds" #Unused
+    positive = "gfx/interface/icons/modifiers/build_cost.dds"
 }
 
 court_building_cost = {
-	positive = "gfx/interface/icons/_default.dds" #Unused
+    positive = "gfx/interface/icons/modifiers/build_cost.dds"
 }
 
 academy_building_cost = {
-	positive = "gfx/interface/icons/_default.dds" #Unused
+    positive = "gfx/interface/icons/modifiers/build_cost.dds"
 }
 
 temple_building_cost = {
-	positive = "gfx/interface/icons/modifiers/commerce_building_cost.dds"
+    positive = "gfx/interface/icons/modifiers/build_cost.dds"
 }
 
 foundry_building_cost = {
-	positive = "gfx/interface/icons/_default.dds" #Unused
+    positive = "gfx/interface/icons/modifiers/build_cost.dds"
 }
 
 aqueduct_building_cost = {
-	positive = "gfx/interface/icons/_default.dds" #Unused
+    positive = "gfx/interface/icons/modifiers/build_cost.dds"
 }
 
 paid_character_loyalty = {
@@ -2651,23 +2662,23 @@ price_found_city_cost_modifier = {
 }
 
 latifundia_building_cost = {
-	positive = "gfx/interface/icons/_default.dds" #Unused
+    positive = "gfx/interface/icons/modifiers/build_cost.dds"
 }
 
 slave_mine_building_cost = {
-	positive = "gfx/interface/icons/_default.dds" #Unused
+    positive = "gfx/interface/icons/modifiers/build_cost.dds"
 }
 
 basic_settlement_infratructure_building_cost = {
-	positive = "gfx/interface/icons/_default.dds" #Unused
+     positive = "gfx/interface/icons/modifiers/build_cost.dds"
 }
 
 hill_fort_cost = {
-	positive = "gfx/interface/icons/_default.dds" #Unused
+    positive = "gfx/interface/icons/modifiers/build_cost.dds"
 }
 
 local_forum_building_cost = {
-	positive = "gfx/interface/icons/_default.dds" #Unused
+    positive = "gfx/interface/icons/modifiers/build_cost.dds"
 }
 
 local_monthly_food = {
@@ -2985,6 +2996,9 @@ fort_limit = {
 local_fort_limit = {
     positive = "gfx/interface/icons/modifiers/local_fort_limit.dds"
 }
+state_fort_limit = {
+    positive = "gfx/interface/icons/modifiers/local_fort_limit.dds"
+}
 
 plains_combat_bonus = {
     positive = "gfx/interface/icons/modifiers/plains_combat_bonus.dds"
@@ -3090,4 +3104,34 @@ max_research_efficiency = {
 }
 max_mercenary_stacks = {
     positive = "gfx/interface/icons/modifiers/recruit_mercenary_cost_modifier.dds"
+}
+
+######### NEW TO INVICTUS #########
+
+gallus_character_interaction_price_cost_modifier = {
+    positive = "gfx/interface/icons/modifiers/assassinate_attempt_cost_modifier.dds"
+}
+
+grant_clan_autonomy_price_cost_modifier = {
+    positive = "gfx/interface/icons/modifiers/barbarian_growth.dds"
+}
+
+grant_satrap_autonomy_price_cost_modifier = {
+    positive = "gfx/interface/icons/modifiers/hold_triumph_cost_modifier.dds"
+}
+
+tribal_raiding_price_cost_modifier = {
+    positive = "gfx/interface/icons/modifiers/monthly_political_influence_modifier.dds"
+}
+
+subject_temple_state_cost_modifier = {
+   positive = "gfx/interface/icons/modifiers/tribe_new_ruler_cost_modifier.dds"
+}
+
+grant_temple_estate_price_cost_modifier = {
+   positive = "gfx/interface/icons/modifiers/tribe_new_ruler_cost_modifier.dds"
+}
+
+depose_priest_king_price_cost_modifier = {
+   positive = "gfx/interface/icons/modifiers/tribe_new_ruler_cost_modifier.dds"
 }

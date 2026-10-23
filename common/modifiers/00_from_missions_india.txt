@@ -76,7 +76,7 @@ royal_indian_city_modifier = {
 	local_migration_attraction = 1
 	local_output_modifier = 0.05
 	local_tax_modifier = 0.1
-	global_population_growth = 0.15
+	local_population_growth = 0.15
 }
 
 breadbasket_of_india_modifier = {
@@ -146,7 +146,7 @@ eastern_indian_trade_modifier = {
 }
 
 ganges_soldiers_modifier = {
-	axemen_offensive = 0.05
+	light_infantry_offensive = 0.05
 	heavy_infantry_discipline = 0.05
 }
 

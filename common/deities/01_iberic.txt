@@ -30,7 +30,7 @@ deity_semnocosus = { # WAR
 	}
 }
 
-deity_dercetius = { # JUSTICE
+deity_dercetius = { # ECONOMY
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -53,14 +53,14 @@ deity_dercetius = { # JUSTICE
 		economy_apotheosis_province_improvement_effect = yes
 	}
 	religion = animism
-	deity_category = justice #This Deity uses a Justice Slot
+	deity_category = economy #This Deity uses an Economy Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
 }
 
-deity_eacus = { # WISDOM
+deity_eacus = { # CULTURE
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -76,14 +76,14 @@ deity_eacus = { # WISDOM
 			primary_culture = oretanian
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_iberian_culture
 	passive_modifier = { diplomatic_reputation = deity_diplomatic_reputation_svalue }
 	omen = { global_pop_conversion_speed_modifier = omen_global_pop_conversion_speed_modifier_svalue } #Bonus from Omen
 	on_activate = {
 		culture_apotheosis_assimilate_effect = yes
 	}
 	religion = animism
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = culture #This Deity uses a Culture Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -143,7 +143,7 @@ deity_endouellicus = { # FERTILITY
 		fertility_apotheosis_food_effect = yes
 	}
 	religion = animism
-	deity_category = fertility #This Deity uses a Culture Slot
+	deity_category = fertility #This Deity uses a Fertility Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -155,7 +155,7 @@ deity_aqueloo = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
 			primary_culture = edetanian
-			#primary_culture = contestani
+			primary_culture = contestanian
 		}
 		OR = {
 			rare_deity_trigger = {
@@ -242,7 +242,7 @@ deity_ataecina = { # CULTURE
 	}
 }
 
-deity_cariocecus = { # Justice
+deity_cariocecus = { # WAR
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -265,7 +265,7 @@ deity_cariocecus = { # Justice
 		military_apotheosis_military_experience_effect = yes
 	}
 	religion = animism
-	deity_category = justice #This Deity uses a Justice slot.
+	deity_category = war #This Deity uses a War slot.
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -332,7 +332,7 @@ deity_nabia = { # ECONOMY
 	}
 }
 
-deity_neto = { # WISDOM
+deity_neto = { # WAR
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -348,14 +348,14 @@ deity_neto = { # WISDOM
 			primary_culture = oretanian
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_iberian_war
 	passive_modifier = { monthly_military_experience_modifier = deity_monthly_military_experience_modifier_svalue }
 	omen = { war_exhaustion = omen_war_exhaustion } #Bonus from Omen
 	on_activate = {
 		military_apotheosis_capital_freemen_effect = yes
 	}
 	religion = animism
-	deity_category = wisdom #This Deity uses a Wisdom slot.
+	deity_category = war #This Deity uses a War slot.
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -392,3 +392,67 @@ deity_borvo = { # ECONOMY
 	}
 }
 ### Exclusive Deity Checks ###
+
+deity_arganthonios = { # Tartessia Exclusive
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			AND = {
+				religion = animism
+				has_variable = deity_unlocked_arganthonios
+			}
+			AND = {
+				religion = carthaginian_pantheon
+				has_variable = deity_unlocked_arganthonios
+			}
+			tag = TAT
+			deity:omen_arganthonios = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_iberian_economy
+	passive_modifier = { global_capital_trade_routes = deity_global_capital_trade_routes_svalue }
+	omen = { oratory_tech_investment = omen_oratory_tech_investment } #Bonus from Omen
+	on_activate = {
+		economy_income_effect = yes
+	}
+	religion = animism
+	deity_category = economy #This Deity uses an Economy Slot
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+
+deity_astarte_turdetani = { # Tartessia Exclusive
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			AND = {
+				religion = animism
+				has_variable = deity_unlocked_astarte_turdetani
+			}
+			AND = {
+				religion = carthaginian_pantheon
+				has_variable = deity_unlocked_astarte_turdetani
+			}
+			tag = TAT
+			deity:omen_astarte_turdetani = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_iberian_astarte
+	passive_modifier = { global_population_growth = deity_global_population_growth_svalue }
+	omen = { happiness_for_same_religion_modifier = omen_happiness_for_same_religion_modifier_svalue } #Bonus from Omen
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+	religion = animism
+	deity_category = fertility #This Deity uses a Fertility Slot
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}

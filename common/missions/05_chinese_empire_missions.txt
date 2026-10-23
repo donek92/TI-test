@@ -43,6 +43,12 @@
         allow = {
 			has_country_modifier = meritocracy_mod_4
 			political_influence >= 50
+			tyranny < 1
+			or = {
+				has_law = qin_administration
+				has_law = han_inspectors
+				has_law = legendary_bureaucracy
+			}
 		}
 
 		on_start = {
@@ -65,12 +71,12 @@
 
         allow = {
 			OR = {
-				has_law = increased_citizenship_quotas
-				has_law = established_courts_for_landholders
+				has_law = minister_lord_law
+				has_law = han_court_law
 			}
 			OR = {
-				has_law = scholarly_pursuits_law
-				has_law = royal_bureaucracy
+				has_law = legalist_law
+				has_law = han_judicial_law
 			}
 		}
 
@@ -651,20 +657,20 @@
         }
 
         allow = {
-			custom_tooltip = {
-				text = missions_chinese_empire_task_15_10_slave_estates_on_salt
-				any_owned_province = {
-					count >= 10
-					trade_goods = salt
-					has_building = latifundia_building
+			any_owned_province = {
+				count >= 10
+				trade_goods = salt
+				or = {
+					has_building = workshop_building
+					has_building = crafts_workshop_building
 				}
 			}
-			custom_tooltip = {
-				text = missions_chinese_empire_task_15_10_slave_estates_on_silk
-				any_owned_province = {
-					count >= 10
-					trade_goods = silk
-					has_building = latifundia_building
+			any_owned_province = {
+				count >= 10
+				trade_goods = silk
+				or = {
+					has_building = workshop_building
+					has_building = crafts_workshop_building
 				}
 			}
 		}
@@ -722,7 +728,7 @@
 					zeal >= 10
 				}
 				any_character = {
-					has_office = office_philosopher
+					has_office = 
 					zeal >= 10
 				}
 				any_character = {
@@ -801,26 +807,50 @@
 				any_owned_province = {
 					is_in_area = dai_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = hengshan_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = shangdang_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = taiyuan_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = yanmen_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = yunzhong_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 			}
 			custom_tooltip = {
@@ -828,30 +858,44 @@
 				any_owned_province = {
 					is_in_area = bohai_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = liaodong_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = liaoxi_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = shanggu_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = youbeiping_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = yuyang_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = zhuo_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 			}
 			custom_tooltip = {
@@ -859,34 +903,50 @@
 				any_owned_province = {
 					is_in_area = dong_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = handan_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = hejian_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = henei_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = julu_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = qinghe_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = wei_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = zhongshan_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 			}
 			custom_tooltip = {
@@ -894,30 +954,44 @@
 				any_owned_province = {
 					is_in_area = beihai_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = donglai_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = jinan_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = linzi_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = pingyuan_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = qiansheng_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = taishan_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 			}
 			custom_tooltip = {
@@ -925,34 +999,50 @@
 				any_owned_province = {
 					is_in_area = daliang_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = henan_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = huaiyang_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = jiyin_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = nanyang_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = runan_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = shanyang_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = yingchuan_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 			}
 			custom_tooltip = {
@@ -960,26 +1050,38 @@
 				any_owned_province = {
 					is_in_area = donghai_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = guangling_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = langya_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = linhuai_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = pei_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = peng_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 			}
 			custom_tooltip = {
@@ -987,22 +1089,32 @@
 				any_owned_province = {
 					is_in_area = changan_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = hedong_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = hongnong_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = xianyang_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = yueyang_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 			}
 			custom_tooltip = {
@@ -1010,38 +1122,56 @@
 				any_owned_province = {
 					is_in_area = changde_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = changsha_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = deng_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = guiyang_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = jiangxia_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = lingling_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = nan_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = wuling_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = yicheng_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 			}
 			custom_tooltip = {
@@ -1049,46 +1179,68 @@
 				any_owned_province = {
 					is_in_area = danyang_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = jianan_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = jiujiang_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = kuaiji_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = linhai_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = lujiang_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = luling_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = wu_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = wuyi_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = yancheng_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 				any_owned_province = {
 					is_in_area = yuzhang_area
 					has_building = court_building
+					num_of_town_hall_building > 1
+					num_of_library_building > 1
 				}
 			}
 		}
@@ -1100,7 +1252,8 @@
 					name = commanderies_chinese_mod
 					duration = 10950
 				}
-				add_3_free_province_investments = yes
+				add_4_free_province_investments = yes
+				add_4_free_province_investments = yes
             }
         }
     }

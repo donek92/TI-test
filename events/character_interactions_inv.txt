@@ -1150,7 +1150,7 @@ ambitions_inv.9 = {	#finesse
     option = {      
         name = ambitions_inv_9.a
         employer = {
-        	add_treasury = -50
+			add_treasury = -50
 	        imprison = {
 	        	target = scope:scheme_target
 	        }
@@ -1158,7 +1158,9 @@ ambitions_inv.9 = {	#finesse
     }
     option = {      
         name = ambitions_inv_9.b
-        employer = { add_treasury = -50 }
+		employer = {
+			add_treasury = -50
+		}
         add_popularity = -5
     }
 }

@@ -31,14 +31,14 @@ deity_napirisha = { # WISDOM
 
 		OR = {
 			rare_deity_trigger = {
-				RELIGION = elamite_pantheon
+				RELIGION = mesopotamian_religion
 			}
 			deity:omen_napirisha = {
 				holy_site_deity_check_trigger = yes
 			}
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_wealth
 	passive_modifier = { global_citizen_output = deity_global_citizen_output_svalue }
 	omen = { global_monthly_civilization = omen_global_monthly_civilization_svalue }
 	religion = elamite_pantheon

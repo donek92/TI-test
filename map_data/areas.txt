@@ -23,6 +23,7 @@ aebocosia_area = { #11
 }
 
 aegean_islands_area = { #10
+	color = rgb { 200 180 53 }
 	provinces = { 263 375 387 437 447 454 1835 1915 1964 7905 }
 }
 

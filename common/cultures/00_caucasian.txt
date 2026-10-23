@@ -63,7 +63,8 @@
 		sindi = {}
 		maeotian = {}
 		colchian = {}
-		abasgoi = {}
+		abasgoi = {male_names = {Stachemfak Bakhsan Daw Lawristan Hapach Weche Tukar Verzacht Kansavuk}
+		gelaean = { levy_template = levy_legian }
 		suani = {}
 		lazi = {}
 		sasperian = {}

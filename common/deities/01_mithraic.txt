@@ -22,7 +22,7 @@
 			tag = PRN
 		}
 	}
-	icon = deity_justice
+	icon = deity_eloquence
 	passive_modifier = { happiness_for_same_religion_modifier = deity_happiness_for_same_religion_modifier }
 	omen = { monthly_corruption = omen_monthly_corruption } #Bonus from Omen
 	on_activate = {
@@ -36,7 +36,7 @@
 		}
 	}
 	religion = mithra_religion
-	deity_category = justice #This Deity uses a Justice Slot
+	deity_category = culture #This Deity uses a Culture Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -53,8 +53,17 @@ deity_cyrus = { # WAR
 			deity:omen_cyrus = {
 				holy_site_deity_check_trigger = yes
 			}
-			very_rare_deity_trigger = {
-				RELIGION = judaism
+			religion = judaism
+			rare_deity_trigger = {
+				RELIGION = zoroaster
+			}
+			trigger_if = {
+				limit = {
+					exists = current_ruler
+				}
+				current_ruler = {
+					has_trait = achaemenid
+				}
 			}
 		}
 	}
@@ -286,7 +295,7 @@ deity_khshathrita = { # CULTURE
 	}
 }
 
-deity_vata = { # WISDOM
+deity_vata = { # FERTILITY
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -301,14 +310,14 @@ deity_vata = { # WISDOM
 			}
 		}
 	}
-	icon = deity_wisdom
-	passive_modifier = { civic_tech_investment = deity_civic_tech_investment_svalue }
+	icon = deity_tribal_love
+	passive_modifier = { global_monthly_food_modifier = deity_global_monthly_food_modifier_svalue }
 	omen = { build_time = -0.08 } #Bonus from Omen
 	on_activate = {
 		economy_apotheosis_province_improvement_effect = yes
 	}
 	religion = mithra_religion
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = fertility #This Deity uses a Fertility Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -322,7 +331,7 @@ deity_angra_mainyu = { # FERTILITY
 			very_rare_deity_trigger = {
 				RELIGION = mithra_religion
 			}
-			deity:omen_angra_mainyu = {
+			deity:omen_vata = {
 				holy_site_deity_check_trigger = yes
 			}
 		}
@@ -367,7 +376,9 @@ deity_zeus_oromasdes = { # CULTURE
 					any_area_province = { owner = root }
 				}
 			}
+			has_variable = hellenic_priestly_class
 		}
+		NOT = { has_variable = special_par_oromasdes }
 	}
 	icon = deity_culture
 	passive_modifier = { ruler_popularity_gain = deity_ruler_popularity_gain_svalue }
@@ -397,6 +408,7 @@ deity_apollo_mithras = { # ECONOMY
 				}
 			}
 		}
+		has_variable = hellenic_priestly_class
 	}
 	icon = deity_wealth
 	passive_modifier = { monthly_corruption = omen_monthly_corruption }
@@ -426,6 +438,7 @@ deity_herakles_artagnes = { # WAR
 				}
 			}
 		}
+		has_variable = hellenic_priestly_class
 	}
 	icon = deity_war
 	passive_modifier = { assault_ability = 0.05 }
@@ -544,5 +557,34 @@ deity_mithra_nergal = { # ECONOMY
 
 	on_activate = {
 		economy_apotheosis_capital_noble_effect = yes
+	}
+}
+
+### Weird Mission Version of Zeus-Oromasdes for Parthia
+
+deity_zeus_oromasdes_par = { # CULTURE
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		has_variable = special_par_oromasdes
+		OR = {
+			rare_deity_trigger = {
+				RELIGION = roman_pantheon
+			}
+			deity:omen_zeus_oromasdes_par = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_culture
+	passive_modifier = { ruler_popularity_gain = deity_ruler_popularity_gain_svalue }
+	omen = { global_citizen_output = omen_global_citizen_output_svalue } #Bonus from Omen
+	on_activate = {
+		culture_apotheosis_oratory_tech_effect = yes
+	}
+	religion = roman_pantheon
+	deity_category = culture #This Deity uses a Culture Slot
+
+	deification_trigger = {
+		can_deify_trigger = yes
 	}
 }

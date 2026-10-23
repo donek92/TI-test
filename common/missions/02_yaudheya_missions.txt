@@ -101,6 +101,7 @@
         icon = "task_battle"
         duration = 60
         requires = { yaudheya_missions_task_1 }
+        bypass = { NOT = { exists = c:MRY } }
         highlight = {
             scope:province = {
                 province_id = 4440
@@ -855,7 +856,7 @@
         }
         allow = {
             political_influence >= 25
-            oligarchic_party_support > 50
+            oligarchic_party_support >= 50
         }
         on_start = {
             trigger_event = me_yaudheya.200

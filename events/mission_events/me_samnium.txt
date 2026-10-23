@@ -1147,7 +1147,14 @@ samnium_event.32 = { #
             }
             max = 2
             check_range_bounds = no
-            found_city_effect = yes
+            add_province_modifier = {
+                name = founding_city_in_progress
+                duration = 730
+            }
+            trigger_event = {
+                id = state_improvement.6
+                days = 730
+            }
         }
     }
 }
@@ -1207,9 +1214,18 @@ samnium_event.35 = { #
 
     option = { # what a shame
         name = "samnium_event.35.a"
-        add_country_modifier = {
-            name = strengthen_the_pagus
-            duration = -1
+        if = {
+            limit = { NOT = { invention = global_settlement_building_slot_inv} }
+            add_country_modifier = {
+                name = strengthen_the_pagus
+                duration = -1
+            }
+        }
+        else = {
+            add_country_modifier = {
+                name = strengthen_the_pagus_2
+                duration = -1
+            }
         }
     }
 }
@@ -1584,9 +1600,8 @@ samnium_event.51 = { #
 
     immediate = {
         hidden_effect = {
-            random_country_culture = {
+            random_integrated_culture = {
                 limit = {
-                    is_integrated = yes
                     is_greek_culture_group_trigger = yes
                 }
                 save_scope_as = greek_integrate_culture
@@ -1745,6 +1760,7 @@ samnium_event.56 = { # visit athens first
         add_treasury = {
             value = has_monthly_income
             multiply = -3
+            min = -6000
         }
         trigger_event = {
             id = samnium_event.59
@@ -1778,6 +1794,7 @@ samnium_event.57 = { # visit sparta
         add_treasury = {
             value = has_monthly_income
             multiply = -3
+            min = -6000
         }
         trigger_event = {
             id = samnium_event.59
@@ -2294,6 +2311,7 @@ samnium_event.65 = { # thebes - enter thebes - market
             value = has_monthly_income
             multiply = -4
             max = -50
+            min = -6000
         }
         create_country_treasure = {
             icon = "treasure_chest"
@@ -2311,6 +2329,7 @@ samnium_event.65 = { # thebes - enter thebes - market
             value = has_monthly_income
             multiply = -4
             max = -50
+            min = -6000
         }
         create_country_treasure = {
             icon = "treasure_chest"
@@ -2348,6 +2367,7 @@ samnium_event.66 = { # arcadia mountains - farmers approach you - sell you somet
             value = has_monthly_income
             multiply = -4
             max = -50
+            min = -6000
         }
         create_country_treasure = {
             icon = "treasure_chest"
@@ -2409,6 +2429,7 @@ samnium_event.67 = { # arrive in athens
             value = has_monthly_income
             multiply = -6
             max = -100
+            min = -6000
         }
         add_research = {
             technology = military_tech
@@ -2428,11 +2449,12 @@ samnium_event.67 = { # arrive in athens
         }
     }
 
-    option = { # visit the harbour
+    option = { # visit the harbor
         name = "samnium_event.67.b"
         add_treasury = { # good deals
             value = has_monthly_income
             multiply = 15
+            max = 5000
         }
         add_military_experience = 20 # war boats
     }
@@ -2507,6 +2529,7 @@ samnium_event.69 = { # athens --> land route home bandits
         add_treasury = {
             value = has_monthly_income
             multiply = -4
+            min = -6000
         }
     }
 
@@ -2533,6 +2556,7 @@ samnium_event.70 = { # athens --> boat pirates
         add_treasury = {
             value = has_monthly_income
             multiply = -4
+            min = -6000
         }
     }
 
@@ -2579,6 +2603,7 @@ samnium_event.72 = { # arrival in sparta
             value = has_monthly_income
             multiply = -6
             max = -50
+            min = -6000
         }
     }
 
@@ -2648,6 +2673,7 @@ samnium_event.74 = { # mountain people
             value = has_monthly_income
             multiply = -6
             max = -50
+            min = -6000
         }
         add_country_modifier = {
             name = sam_travel_cattle
@@ -2880,6 +2906,7 @@ samnium_event.80 = { # new knowledge
             value = has_monthly_income
             multiply = -8
             max = -50
+            min = -6000
         }
         add_innovation = 2
     }
@@ -2899,6 +2926,7 @@ samnium_event.81 = { #
             value = has_monthly_income
             multiply = 2
             min = 50
+            max = 5000
         }
         capital_scope = {
             state = {
@@ -3436,7 +3464,6 @@ samnium_event.90 = { #
         name = "samnium_event.90.a"
         mission_claim_region_effect = { REGION = magna_graecia_region }
         mission_claim_region_effect = { REGION = central_italy_region }
-        mission_claim_region_effect = { REGION = cisalpine_gaul_region }
     }
 }
 
@@ -3585,7 +3612,7 @@ samnium_event.96 = { #
         name = "samnium_event.96.a"
         custom_tooltip = sam_fertile_po_plain_tt
         hidden_effect = {
-            every_province = {
+            every_ownable_province = {
                 limit = {
                     OR = {
                         is_in_area = aemilla_area
@@ -3615,7 +3642,7 @@ samnium_event.97 = { #
         name = "samnium_event.97.a"
         custom_tooltip = sma_appenine_forts_tt
 		hidden_effect = {
-            every_province = {
+            every_ownable_province = {
                 limit = {
                     has_building = fortress_building
                     OR = {
@@ -3722,7 +3749,14 @@ samnium_event.100 = { #
                 limit = {
                     has_city_status = no
                 }
-                found_city_effect = yes
+                add_province_modifier = {
+                    name = founding_city_in_progress
+                    duration = 730
+                }
+                trigger_event = {
+                    id = state_improvement.6
+                    days = 730
+                }
             }
             else = {
                 if = {
@@ -3972,10 +4006,11 @@ samnium_event.107 = { #
         add_treasury = {
             value = has_monthly_income
             multiply = -3
+            min = -6000
         }
         custom_tooltip = samnite_investments_tt
         hidden_effect = {
-            every_province = {
+            every_ownable_province = {
                 limit = {
                     is_in_region = cisalpine_gaul_region
                     has_city_status = yes
@@ -4015,6 +4050,7 @@ samnium_event.107 = { #
         add_treasury = {
             value = has_monthly_income
             multiply = -3
+            min = -6000
         }
         ordered_owned_province = {
             limit = {
@@ -4907,6 +4943,7 @@ samnium_event.1000 = { # burial event
         add_treasury = {
             value = has_monthly_income
             multiply = -0.5
+            min = -6000
         }
         every_in_list = {
             list = sam_grieving_family_list
@@ -4926,6 +4963,7 @@ samnium_event.1000 = { # burial event
         add_treasury = { # steal some of the moeny for the burial
             value = has_monthly_income
             multiply = 3
+            max = 5000
         }
         every_in_list = {
             list = sam_grieving_family_list
@@ -4938,6 +4976,7 @@ samnium_event.1000 = { # burial event
         add_treasury = {
             value = has_monthly_income
             multiply = -2
+            min = -6000
         }
     }
 

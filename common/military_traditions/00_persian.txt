@@ -19,7 +19,7 @@
 			}
 			country_culture_group = east_levantine
 		}
-		#trigger_else_if = { #they get the new steppes ones instead
+		#trigger_else_if = { #they get the new steppe ones instead
 		#	limit = {
 		#		tag = BAC
 		#	}
@@ -28,15 +28,6 @@
 		#	}
 		#	tag = BAC
 		#}
-		trigger_else_if = {
-			limit = {
-				tag = ARS
-			}
-			custom_tooltip = {
-				text = "began_with_tradition_group"
-			}
-			tag = ARS
-		}
 		trigger_else_if = {
 			custom_tooltip = {
 				text = "unlocked_via_mission_tree_tt"

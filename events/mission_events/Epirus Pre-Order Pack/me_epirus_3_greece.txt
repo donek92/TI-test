@@ -609,7 +609,16 @@ me_epirus_3_greece.7 = {							# Alexander's Throne - End
             hidden_effect = {
                 p:379.state = { set_state_capital = 379 }
             }
-            capital_scope = { establish_city_effect = yes }
+            capital_scope = {
+                add_province_modifier = {
+                    name = founding_city_in_progress
+                    duration = 730
+                }
+                trigger_event = {
+                    id = state_improvement.6
+                    days = 730
+                }
+            }
         }
         p:379 = {
             add_province_modifier = {
@@ -623,7 +632,14 @@ me_epirus_3_greece.7 = {							# Alexander's Throne - End
     option = {
         name = me_epirus_3_greece.7.b
         capital_scope = {
-            establish_city_effect = yes
+            add_province_modifier = {
+                name = founding_city_in_progress
+                duration = 730
+            }
+            trigger_event = {
+                id = state_improvement.6
+                days = 730
+            }
             add_province_modifier = {
                 name = epirus_3_greece_7_pmod
                 duration = -1
@@ -658,6 +674,10 @@ me_epirus_3_greece.8 = {							# Thessalian Liberation - End
                         adjective = THESSALY_ADJECTIVE
                     }
                     change_country_flag = THESSALY_FLAG
+                    change_country_tag = THL
+                    change_country_color = thessalian_color   
+                    set_primary_culture = thessalian
+                    set_country_heritage = thessalian_league_heritage   
                     save_scope_as = epi_thessaly_scope
 					if = {
 						limit = {

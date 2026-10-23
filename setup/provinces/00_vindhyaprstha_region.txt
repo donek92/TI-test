@@ -678,7 +678,6 @@
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
-		religion="charvaka"
 		amount=2
 	}
 	freemen={
@@ -853,7 +852,6 @@
 		amount=2
 	}
 	freemen={
-		religion="charvaka"
 		amount=4
 	}
 	slaves={
@@ -1000,7 +998,7 @@
 		amount=2
 	}
 	freemen={
-		religion="charvaka"
+		religion="hindu"
 		amount=2
 	}
 	slaves={
@@ -1756,7 +1754,7 @@
 		amount=2
 	}
 	freemen={
-		religion="agama"
+		religion="hindu"
 		amount=1
 	}
 	slaves={
@@ -1767,7 +1765,7 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
 	}
 	tribesmen={
 		religion="hindu"
@@ -1844,10 +1842,10 @@
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
-		amount=1
+		amount=2
 	}
 	slaves={
-		amount=1
+		amount=2
 	}
 	slaves={
 		religion="buddhism"
@@ -1863,11 +1861,11 @@
 	}
 	slaves={
 		religion="agama"
-		amount=2
+		amount=3
 	}
 	tribesmen={
 		religion="agama"
-		amount=2
+		amount=3
 	}
 	tribesmen={
 		amount=3
@@ -2004,14 +2002,14 @@
 		amount=8
 	}
 	slaves={
-		amount=2
+		amount=1
 	}
 	slaves={
 		religion="agama"
-		amount=6
+		amount=5
 	}
 	tribesmen={
-		amount=11
+		amount=10
 	}
 	tribesmen={
 		religion="agama"
@@ -2164,7 +2162,6 @@
 		amount=7
 	}
 	tribesmen={
-		culture="munda"
 		amount=4
 	}
 	tribesmen={
@@ -2185,7 +2182,6 @@
 		amount=2
 	}
 	slaves={
-		culture="munda"
 		amount=2
 	}
 	slaves={
@@ -2201,7 +2197,6 @@
 		amount=1
 	}
 	tribesmen={
-		religion="charvaka"
 		amount=3
 	}
 }
@@ -2218,14 +2213,14 @@
 		amount=2
 	}
 	freemen={
-		amount=1
+		amount=2
 	}
 	slaves={
 		religion="agama"
 		amount=2
 	}
 	tribesmen={
-		amount=4
+		amount=5
 	}
 	freemen={
 		culture="vidharban"
@@ -2307,7 +2302,6 @@
 		amount=4
 	}
 	slaves={
-		culture="munda"
 		amount=3
 	}
 	tribesmen={
@@ -2606,7 +2600,7 @@
 		amount=2
 	}
 	freemen={
-		religion="charvaka"
+		religion="jainism"
 		amount=1
 	}
 	slaves={
@@ -2630,7 +2624,7 @@
 11511={ #Kamalanga
 	terrain="jungle"
 	culture="kalingan"
-	religion="charvaka"
+	religion="buddhism"
 	trade_goods="exotic_beasts"
 	civilization_value=15
 	barbarian_power=0

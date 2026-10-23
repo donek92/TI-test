@@ -258,7 +258,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="haedui"
+		amount=1
 	}
 }
 
@@ -274,7 +278,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="allobrogian"
+		amount=1
 	}
 }
 
@@ -306,7 +314,11 @@
 		amount=2
 	}
 	tribesmen={
-		amount=5
+		amount=4
+	}
+	slaves={
+		culture="haedui"
+		amount=1
 	}
 }
 
@@ -354,7 +366,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="haedui"
+		amount=1
 	}
 }
 
@@ -401,8 +417,19 @@
 	freemen={
 		amount=1
 	}
+	slaves={
+		amount=3
+	}
+	slaves={
+		culture="allobrogian"
+		amount=1
+	}
 	tribesmen={
-		amount=12
+		amount=17
+	}
+	slaves={
+		culture="haedui"
+		amount=1
 	}
 }
 
@@ -511,7 +538,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="arverni"
+		amount=1
 	}
 }
 
@@ -584,7 +615,11 @@
 		amount=1
 	}
 	slaves={
-		amount=2
+		culture="sennonian"
+		amount=1
+	}
+	slaves={
+		amount=1
 	}
 	tribesmen={
 		amount=5
@@ -670,7 +705,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="arverni"
+		amount=1
 	}
 }
 
@@ -686,7 +725,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="haedui"
+		amount=1
 	}
 }
 
@@ -702,7 +745,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="biturigan"
+		amount=1
 	}
 }
 
@@ -750,7 +797,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="biturigan"
+		amount=1
 	}
 }
 
@@ -816,6 +867,10 @@
 	tribesmen={
 		amount=5
 	}
+	slaves={
+		culture="sennonian"
+		amount=1
+	}
 }
 
 2431={ #Vertillium
@@ -878,7 +933,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="biturigan"
+		amount=1
 	}
 }
 
@@ -997,7 +1056,11 @@
 		amount=2
 	}
 	tribesmen={
-		amount=5
+		amount=4
+	}
+	slaves={
+		culture="haedui"
+		amount=1
 	}
 }
 
@@ -1013,7 +1076,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="sennonian"
+		amount=1
 	}
 }
 
@@ -1029,7 +1096,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="biturigan"
+		amount=1
 	}
 }
 
@@ -1077,7 +1148,11 @@
 		amount=1
 	}
 	tribesmen={
-		amount=4
+		amount=3
+	}
+	slaves={
+		culture="haedui"
+		amount=1
 	}
 }
 

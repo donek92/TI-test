@@ -378,41 +378,87 @@
 				Fuginio.Fuginia.Fuginii.Fuginian
 				Fremaistio.Fremaistia.Fremaistii.Fremaistian
 				Fakios.Fakia.Fakii.Fakian
-				Hostihevio.Hostihevia.Hostihevii.Hostihevian
-				Iantio.Iantia.Iantii.Iantian
-				Iuvantio.Iuvantia.Iuvantii.Iuvantian
-				Kantio.Kantia.Kantii.Kantian
-				Karamnio.Karamnia.Karamnii.Karamnian
-				Lamusio.Lamusia.Lamusii.Lamusian
-				Makknos.Makkna.Makkni.Makknan
-				Muskialonio.Muskialonia.Muskialonii.Muskialonian
-				Naisonio.Naisonia.Naisonii.Naisonian
-				Neirkio.Neirkia.Neirkii.Neirkian
-				Nerkio.Nerkia.Nerkii.Nerkian
-				Ostio.Ostia.Ostii.Ostian
-				Oppio.Oppia.Oppii.Oppian
-				Ossokos.Ossoka.Ossoki.Ossokan
-				Pilpotio.Pilpotia.Pilpotii.Pilpotian
-				Pledio.Pledia.Pledii.Pledian
-				Verkanio.Verkania.Verkanii.Verkanian
-				Voltiomnio.Voltiomnia.Voltiomnii.Voltiomnian
-				Veignio.Veignia.Veignii.Veignian
-				Vantio.Vantia.Vantii.Vantian
-				Votio.Votia.Votii.Votian
-				Voltigenio.Voltigenia.Voltigenii.Voltigenian
-				Akutio.Akutia.Akutii.Akutian
-				Fremio.Fremia.Fremii.Fremian
-				Fremaistinio.Fremaistinia.Fremaistinii.Fremaistinian
-				Keutinio.Keutinia.Keutinii.Keutinian
-				Ktulistio.Ktulistia.Ktulistii.Ktulistian
-				Klutavikos.Klutavika.Klutaviki.Klutavikan
-				Moldio.Moldia.Moldii.Moldian
-				Resunkio.Resunkia.Resunkii.Resunkian
-				Suronio.Suronia.Suronii.Suronian
-				Tomatorinio.Tomatorinia.Tomatorinii.Tomatorinian
-				Tritikonikos.Tritikonika.Tritikoniki.Tritikonikan
-				Vantkinio.Vantkinia.Vantkinii.Vantkinian
-			}		
+				Fouvonikos.Fouvonika.Fouvonikii.Fouvonikan
+				Inijontikos.Inijontika.Inijontikii.Inijontikan
+				Kastikos.Kastika.Kastikii.Kastikan
+				Klutavikos.Klutavika.Klutavikii.Klutavikan
+				Kreviniaios.Kreviniaia.Kreviniaii.Kreviniaian
+				Naisonkos.Naisonka.Naisonkii.Naisonkan
+				Okijaijos.Okijaija.Okijaiji.Okijaijan
+				Ossokos.Ossoka.Ossokii.Ossokan
+				Ostiankos.Ostianka.Ostiankii.Ostiankan
+				Pelonikos.Pelonika.Pelonikii.Pelonikan
+				Pittamnikos.Pittamnika.Pittamnikii.Pittamnikan
+				Resunkos.Resunka.Resunkii.Resunkan
+				Trisikos.Trisika.Trisikii.Trisikan
+				Tritijonijos.Tritijonija.Tritijoniji.Tritijonijan
+				Voltolarikos.Voltolarika.Voltolarikii.Voltolarikan
+				#### CV ####
+		    	Pannarios.Pannaria.Pannarii.Pannarian
+				Pompeteguaios.Pompeteguaia.Pompeteguaii.Pompeteguaian
+				Votunkeos.Votunkea.Votunkeii.Votunkean
+
+			}	
+			nickname = { #cognames from romano-venetic inscriptions
+				NICKNAME_FOUGO
+				NICKNAME_MARSKOS
+				NICKNAME_MAXUMOS
+				NICKNAME_PULLIO
+				NICKNAME_TERTIOS
+				NICKNAME_TIMO
+				NICKNAME_VOLTIIO
+				NICKNAME_URKLESIONOS
+			}	
+		}
+		ligurian = { #Sources: https://lexlep.univie.ac.at/wiki, https://www.academia.edu/123199609/Ligurian_and_Lepontic_the_inscriptions_from_Lunigiana_and_the_Prestino_stone, chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.research.unipd.it/bitstream/11577/3257820/5/ligurians.pdf, - + Various papers by Adolfo Zavaroni - Though of these I'm more sceptical for now.
+			male_names = {
+				# - Ligurian names
+				Enicus Enistalus Ciluos Cilios Cuilios Curtlios Cusar Duilios Dutis Ilamos Istonos Itos Keivale Mezu Ostruos Ruvi Sabos Stodu Tustos Tustis Uvezaru Veltovis Vemetuvis
+				#Enicus Enistalus Keivale Mezu Sabos Uvezaru Veltovis Vemetuvis - From more reliable sources
+				#Ciluos Cilios Cuilios Curtlios Cusar Duilios Dutis Ilamos Istonos Itos Ostruos Ruvi Stodu Tustos Tustis - From more doubious sources
+
+			}
+			female_names = {
+				# - Ligurian names
+				Enica Comba Lasa Ilima Mutua Tomua Tumua
+				#Enica - From more reliable sources
+				#Comba Lasa Ilima Mutua Tomua Tumua - From more doubious sources - ( Comba and Lasa may be divine names, and not personal)
+
+				# - a few Lepontic names (Until more ligurian female names are found) - At least plausible, having shared the same geographical area and there being confusion with some maybe being Ligurian anyhow.
+				Anissa Aua Autesa Esobna Katua Koimilla Mauilla Mita Slania
+			}
+			family = {
+				# - Ligurian names
+				Apus.Apa.Apii.Apian # - Some sources interpret this as part of a single name with Uvezaru (Uvezarupus)
+				Nemunius.Nemunia.Nemunii.Nemunian
+				# - Tribe names (Until more proper ligurian family names are found)
+				Apuanus.Apuana.Apuanii.Apuanian
+				Beretinus.Beretina.Beretinii.Beretinan
+				Bimbellus.Bimbella.Bimbellii.Bimbellan
+				Vagiennus.Vagienna.Vagiennii.Vagienni
+				Briniates.Briniata.Briniatii.Briniatian
+				Casuentillanus.Casuentillana.Casuentillanii.Casuentillani
+				Cavaturinus.Cavaturina.Cavaturinii.Cavaturini
+				Celelates.Celelata.Celelatii.Celelatian
+				Cerdiciates.Cerdiciata.Cerdiciatii.Cerdiciati
+				Deciates.Deciata.Deciatii.Deciatian
+				Eguiturus.Eguitura.Eguiturii.Eguiturian
+				Epanterius.Epanteria.Epanterii.Epanterian 
+				Friniates.Friniata.Friniatii.Friniatian
+				Garulus.Garula.Garulii.Garulian
+				Ingaunus.Ingauna.Ingaunii.Ingaunian
+				Intimilius.Intimilia.Intimilii.Intimilian
+				Ilvatus.Ilvata.Ilvatii.Ilvatian
+				Lapicinus.Lapicina.Lapicinii.Lapicinan
+				Maricus.Marica.Maricii.Marican
+				Nemeturius.Nemeturia.Nemeturii.Nemeturian
+				Oxubius.Oxubia.Oxubii.Oxubian
+				Segusius.Segusia.Segusii.Segusian
+				Statiellus.Statiella.Statiellii.Statiellan
+				Triulattus.Triulatta.Triulattii.Triulattan
+				Vediantius.Vediantia.Vediantii.Vediantian
+				Vesubianus.Vesubiana.Vesubianii.Vesubianan
+			}
 		}
 		ligurian = {}
 		etruscan = {
@@ -756,7 +802,7 @@
 				Pitale Pithamne Pithiave Pithie Piti Pitie Piri Reithe Reituse Remie Tarie Tenakgi Terunie Tnake Tharie Tula 
 				Tulanu Ustitsu Valthikie Vassa Vatsanu Velthie 
 
-				#notes on attested raetic: þ as 'ts'-source:Some remarks on the personal name system of Raetic,CORINNA SALOMON-  θ as dental stop 'th'/'t''?-source:Raetic,CORINNA SALOMON - χ, I've arbitrarilly assigned the letters 'kg', as it corresponds to the same venetic caracter for g, and seems to be exchanged with c in etruscan cognates, (it also corresponds to K in some celtic loan names, and some names in Raetic subsitute χ for g), φ as 'ph' as it is cognate with words that have either f or b, and is suggested by Salomon to be substituted with P.
+				#notes on attested raetic: þ as 'ts'-source:Some remarks on the personal name system of Raetic,CORINNA SALOMON-  θ as dental stop 'th'/'t''?-source:Raetic,CORINNA SALOMON - χ, I've arbitrarily assigned the letters 'kg', as it corresponds to the same venetic character for g, and seems to be exchanged with c in etruscan cognates, (it also corresponds to K in some Celtic loan names, and some names in Raetic substitute χ for g), φ as 'ph' as it is cognate with words that have either f or b, and is suggested by Salomon to be substituted with P.
 			}
 			female_names = { #attested: aruse piri χeli χari/kari remi laviśa lavise kunina kara siara φelna χevisiana arusna perkusi
 				Aruse Arusna Kara Kari Kgari Kgeli Kgevisiana Lavise Lavissa Perkusi Phelna Piri Remi Siara
@@ -1368,7 +1414,18 @@
 				Tomatorinio.Tomatorinia.Tomatorinii.Tomatorinian
 				Tritikonikos.Tritikonika.Tritikoniki.Tritikonikan
 				Vantkinio.Vantkinia.Vantkinii.Vantkinian
+				Voltolarikos.Voltolarika.Voltolarikii.Voltolarikan
 			}
+			nickname = { #cognames from romano-venetic inscriptions
+				NICKNAME_FOUGO
+				NICKNAME_MARSKOS
+				NICKNAME_MAXUMOS
+				NICKNAME_PULLIO
+				NICKNAME_TERTIOS
+				NICKNAME_TIMO
+				NICKNAME_VOLTIIO
+				NICKNAME_URKLESIONOS
+			}	
 		}
 	}
 	

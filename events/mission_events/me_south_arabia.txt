@@ -1215,6 +1215,7 @@ south_arabia.37 = { # trade answer
         add_treasury = {
             value = has_monthly_income
             multiply = -2
+            min = -6000
         }
         add_country_modifier = {
             name = sabaean_judean_trade
@@ -1224,6 +1225,7 @@ south_arabia.37 = { # trade answer
             add_treasury = {
                 value = c:SHB.has_monthly_income
                 multiply = 2
+                max = 5000
             }
             c:JUD = {
                 add_country_modifier = {
@@ -1323,6 +1325,7 @@ south_arabia.38 = { # politics answer
         add_treasury = {
             value = has_monthly_income
             multiply = -2
+            min = -6000
         }
         add_alliance = c:JUD
         hidden_effect = {
@@ -1330,6 +1333,7 @@ south_arabia.38 = { # politics answer
                 add_treasury = {
                     value = c:SHB.has_monthly_income
                     multiply = 2
+                    max = 5000
                 }
             }
         }
@@ -1420,12 +1424,14 @@ south_arabia.39 = { # religion answer
         add_treasury = {
             value = has_monthly_income
             multiply = -2
+            min = -6000
         }
         hidden_effect = {
             c:JUD = {
                 add_treasury = {
                     value = c:SHB.has_monthly_income
                     multiply = 2
+                    max = 5000
                 }
             }
         }
@@ -1638,6 +1644,7 @@ south_arabia.41 = { # isarelite communities: festival when a fire beraks out
         }
         set_variable = {
             name = israelite_communities_events_var
+            value = 0
         }
     }
 
@@ -2265,8 +2272,11 @@ south_arabia.62 = { # claims on arbai and punt
 
     option = {
     	name = south_arabia.62.a
-        mission_claim_region_effect = { REGION = punt_region }
-		mission_claim_region_effect = { REGION = arabia_region }
+        mission_claim_area_effect = { AREA = ona_area }
+				mission_claim_area_effect = { AREA = mosylon_area }
+				mission_claim_area_effect = { AREA = aromata_area }
+				mission_claim_area_effect = { AREA = arabia_maritimae_area }
+				mission_claim_area_effect = { AREA = arabia_ad_sinus_area }
         add_country_modifier = {
             name = colonise_bonus_sarabia
             duration = 3650 # 10 years
@@ -3355,10 +3365,17 @@ south_arabia.89 = { # himyarite rebellion
                         name = "HMJ_NAME"
                         adjective = "HMJ_ADJ"
                     }
-                    set_primary_culture_cleanup_effect = {
-                        NEW_PRIMARY_CULTURE = himjar
-                        MAKE_OLD_CULTURE_INTEGRATED = yes
-                    }
+                    if = {
+                        limit = {
+                            NOT = {
+                                primary_culture = himjar
+                            }
+                        }
+                        set_primary_culture_cleanup_effect = {
+                            NEW_PRIMARY_CULTURE = himjar
+                            MAKE_OLD_CULTURE_INTEGRATED = yes
+                        }
+                    }	
                     change_country_tag = HMJ
                     change_country_flag = HIMYAR_FLAG
                     change_country_color = himyar_color

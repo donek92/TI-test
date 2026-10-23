@@ -10,7 +10,7 @@ propose_marriage = {
 	
 	potential_trigger = {
 		scope:actor = {
-			#is_monarchy = yes
+			is_monarchy = yes
 		}
 		hidden:scope:target.employer = {
 			NOR = { 
@@ -28,14 +28,17 @@ propose_marriage = {
 	
 	allowed_trigger = {
 		hidden:scope:actor = {
-			#is_monarchy = yes
+			is_monarchy = yes
 		}
 		hidden:scope:target.employer = {
-			#is_monarchy = yes
+			is_monarchy = yes
 		}
 		scope:target = {
 			is_ruler = no
 			from_ruler_family = yes
+			is_married = no
+			prisoner = no
+			is_mercenary = no
 			age >= 10
 			is_married = no
 			NOT = {
@@ -65,10 +68,14 @@ propose_marriage = {
 						current_ruler = {
 							is_female = yes
 							is_married = no
+							prisoner = no
 						}
 						any_character = {
 							from_ruler_family = yes
 							is_female = yes
+							is_married = no
+							prisoner = no
+							is_mercenary = no
 							age >= 12
 							is_married = no
 						}
@@ -84,10 +91,14 @@ propose_marriage = {
 						current_ruler = {
 							is_male = yes
 							is_married = no
+							prisoner = no
 						}
 						any_character = {
 							from_ruler_family = yes
 							is_male = yes
+							is_married = no
+							prisoner = no
+							is_mercenary = no
 							age >= 12
 							is_married = no
 						}
@@ -124,6 +135,9 @@ propose_marriage = {
 			is_ruler = yes
 			from_ruler_family = yes
 		}
+		is_married = no
+		prisoner = no
+		is_mercenary = no
 		age >= 12
 		is_married = no
 		NOT = { is_same_gender = scope:target }

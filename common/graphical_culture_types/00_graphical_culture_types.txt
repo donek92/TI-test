@@ -18,11 +18,14 @@ anatolian_gfx = {}
 dacian_gfx = {}
 thracian_gfx = {}
 illyrian_gfx = {}
+sea_gfx = {}
 occidental_gfx = {}
 belgae_gfx = {}
 britannic_gfx = {}
 gallic_gfx = {}
 pannonian_gfx = {}
+baltic_gfx = {}
+tibetan_gfx = {}
 # TI ethnicities
 sea_gfx = {}
 japanese_gfx = {}

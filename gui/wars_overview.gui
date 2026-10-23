@@ -74,12 +74,30 @@ widget = {
 						}
 					}
 
+					#textbox = {
+					#	position = { 55 96 }
+					#	widgetanchor = top|hcenter
+					#	text = "[WarsOverviewWar.GetWarScore]"
+					#	autoresize = yes
+					#}
+
 					button = {
 						position = { 20 20 }
 						size = { 70 100 }
 						onclick = "[WarsOverviewWar.OnClick]"
 						onrightclick = "[WarsOverviewWar.OnClick]"
 						onrightclick = "[PdxGuiTriggerAllAnimations('sue_for_peace')]"
+						# tooltipwidget = {
+						# 	using = double_tooltip_vert
+						# 	blockoverride "line" {}
+						# 	blockoverride "TopText"
+						# 	{
+						# 		text = "[WarsOverviewWar.GetWar.GetName]"
+						# 	}
+						# 	blockoverride "BotText" {
+						# 		text = "rmb_sue_for_peace"
+						# 	}
+						# }
 						tooltip = "[WarsOverviewWar.GetWar.GetName]"
 						clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_tab"
 						oversound = "event:/SFX/UI/Generic/sfx_ui_generic_mouse_over"

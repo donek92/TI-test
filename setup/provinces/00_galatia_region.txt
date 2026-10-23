@@ -13,21 +13,21 @@
 		amount=2
 	}
 	freemen={
-		culture="lycaonian"
+		culture="isaurian"
 		amount=1
 	}
 	slaves={
 		amount=1
 	}
 	slaves={
-		culture="lycaonian"
+		culture="isaurian"
 		amount=1
 	}
 	tribesmen={
 		amount=2
 	}
 	tribesmen={
-		culture="lycaonian"
+		culture="isaurian"
 		amount=1
 	}
 }
@@ -177,7 +177,7 @@
 	terrain="marsh"
 	culture="phrygian"
 	religion="anatolian_religion"
-	trade_goods="wood"
+	trade_goods="nuts"
 	civilization_value=22
 	barbarian_power=0
 	province_rank="settlement"
@@ -337,7 +337,7 @@
 	terrain="plains"
 	culture="phrygian"
 	religion="anatolian_religion"
-	trade_goods="wood"
+	trade_goods="nuts"
 	civilization_value=26
 	barbarian_power=0
 	province_rank="settlement"
@@ -840,7 +840,7 @@
 	terrain="hills"
 	culture="paphlagonian"
 	religion="anatolian_religion"
-	trade_goods="wood"
+	trade_goods="base_metals"
 	civilization_value=18
 	barbarian_power=0
 	province_rank="settlement"
@@ -1012,7 +1012,7 @@
 		amount=1
 	}
 	freemen={
-		culture="carian"
+		culture="lydian"
 		amount=1
 	}
 	slaves={
@@ -1022,7 +1022,7 @@
 		amount=1
 	}
 	tribesmen={
-		culture="carian"
+		culture="lydian"
 		amount=1
 	}
 }
@@ -1137,7 +1137,7 @@
 	terrain="forest"
 	culture="phrygian"
 	religion="anatolian_religion"
-	trade_goods="wood"
+	trade_goods="nuts"
 	civilization_value=24
 	barbarian_power=0
 	province_rank="settlement"
@@ -1973,7 +1973,7 @@
 		amount=2
 	}
 	freemen={
-		culture="carian"
+		culture="milyadian"
 		amount=1
 	}
 	slaves={
@@ -2006,7 +2006,7 @@
 		amount=1
 	}
 	tribesmen={
-		culture="carian"
+		culture="milyadian"
 		amount=1
 	}
 }
@@ -2125,7 +2125,7 @@
 
 1955={ #Thebasa
 	terrain="plains"
-	culture="isaurian"
+	culture="lycaonian"
 	religion="anatolian_religion"
 	trade_goods="honey"
 	civilization_value=15
@@ -2141,7 +2141,7 @@
 		amount=1
 	}
 	tribesmen={
-		culture="lycaonian"
+		culture="isaurian"
 		amount=1
 	}
 }
@@ -2287,16 +2287,20 @@
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
+		amount=2
+	}
+	freemen={
+		culture="isaurian"
 		amount=1
 	}
 	slaves={
 		amount=1
 	}
 	tribesmen={
-		amount=2
-	}
-	tribesmen={
 		culture="isaurian"
+		amount=1
+	}
+	slaves={
 		amount=1
 	}
 }

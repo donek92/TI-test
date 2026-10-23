@@ -632,7 +632,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
-		amount=6
+		amount=7
 	}
 	freemen={
 		amount=3
@@ -842,7 +842,7 @@
 	terrain="jungle"
 	culture="tamil"
 	religion="buddhism"
-	trade_goods="stone"
+	trade_goods="nuts"
 	civilization_value=18
 	barbarian_power=0
 	province_rank="settlement"
@@ -1798,7 +1798,7 @@
 	terrain="hills"
 	culture="tamil"
 	religion="agama"
-	trade_goods="cattle"
+	trade_goods="wax"
 	civilization_value=18
 	barbarian_power=0
 	province_rank="settlement"
@@ -2218,6 +2218,40 @@
 	}
 }
 
+7042={ #Pitoura
+	terrain="hills"
+	culture="andhran"
+	religion="jainism"
+	trade_goods="gems"
+	civilization_value=9
+	barbarian_power=0
+	province_rank="settlement"
+	citizen={
+		amount=2
+	}
+	citizen={
+		religion="agama"
+		amount=1
+	}
+	freemen={
+		amount=3
+	}
+	freemen={
+		religion="agama"
+		amount=1
+	}
+	slaves={
+		amount=2
+	}
+	tribesmen={
+		amount=4
+	}
+	tribesmen={
+		religion="agama"
+		amount=1
+	}
+}
+
 7043={ #Mallayapalam
 	terrain="hills"
 	culture="andhran"
@@ -2256,7 +2290,7 @@
 	terrain="jungle"
 	culture="telugu"
 	religion="agama"
-	trade_goods="fruits"
+	trade_goods="fur"
 	civilization_value=14
 	barbarian_power=0
 	province_rank="city"
@@ -2377,7 +2411,6 @@
 		amount=3
 	}
 	slaves={
-		religion="charvaka"
 		amount=3
 	}
 	tribesmen={
@@ -2447,7 +2480,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
-		amount=3
+		amount=4
 	}
 	freemen={
 		religion="ajivika"

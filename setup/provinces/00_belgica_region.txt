@@ -132,12 +132,9 @@
 	trade_goods="fur"
 	civilization_value=9
 	barbarian_power=0
-	province_rank="city"
+	province_rank="settlement"
 	freemen={
-		amount=2
-	}
-	slaves={
-		amount=2
+		amount=1
 	}
 	tribesmen={
 		amount=5
@@ -1376,7 +1373,7 @@
 	terrain="forest"
 	culture="nervian"
 	religion="druidism"
-	trade_goods="wood"
+	trade_goods="nuts"
 	civilization_value=9
 	barbarian_power=0
 	province_rank="settlement"

@@ -2,6 +2,11 @@
 deity_ninurta = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			rare_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -28,6 +33,11 @@ deity_ninurta = {
 deity_shamash = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			common_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -37,11 +47,11 @@ deity_shamash = {
 			}
 		}
 	}
-	icon = deity_justice
+	icon = deity_wealth
 	passive_modifier = { global_commerce_modifier = deity_global_commerce_modifier_svalue }
 	omen = { monthly_corruption = omen_monthly_corruption } #Bonus from Omen
 	religion = mesopotamian_religion
-	deity_category = justice #This Deity uses a Justice Slot
+	deity_category = economy #This Deity uses an Economy Slot
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -54,6 +64,11 @@ deity_shamash = {
 deity_ea = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			rare_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -63,11 +78,11 @@ deity_ea = {
 			}
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_eloquence
 	passive_modifier = { global_citizen_happyness = deity_global_citizen_happiness_svalue }
 	omen = { religious_tech_investment = omen_religious_tech_investment_svalue } #Bonus from Omen
 	religion = mesopotamian_religion
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = culture #This Deity uses a Culture Slot
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -80,6 +95,11 @@ deity_ea = {
 deity_sin = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			rare_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -106,6 +126,11 @@ deity_sin = {
 deity_ishtar = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			common_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -132,6 +157,11 @@ deity_ishtar = {
 deity_nabu = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			common_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -141,11 +171,11 @@ deity_nabu = {
 			}
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_wealth
 	passive_modifier = { research_points_modifier = deity_research_points_modifier_svalue }
 	omen = { ruler_popularity_gain = omen_ruler_popularity_gain_svalue } #Bonus from Omen
 	religion = mesopotamian_religion
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = economy #This Deity uses an Economy Slot
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -158,6 +188,11 @@ deity_nabu = {
 deity_enlil = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			common_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -184,6 +219,11 @@ deity_enlil = {
 deity_ashshur = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			common_deity_culture_trigger = {
 				RELIGION = mesopotamian_religion
@@ -211,6 +251,11 @@ deity_ashshur = {
 deity_marduk = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			rare_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -238,6 +283,11 @@ deity_marduk = {
 deity_nintur = { #Fertility
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			rare_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -259,9 +309,14 @@ deity_nintur = { #Fertility
 		fertility_apotheosis_capital_effect = yes
 	}
 }
-deity_dumuzid= {
+deity_dumuzid = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			common_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -286,6 +341,11 @@ deity_dumuzid= {
 deity_bau = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			common_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -310,6 +370,11 @@ deity_bau = {
 deity_nanaya = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			common_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -332,9 +397,14 @@ deity_nanaya = {
 	}
 }
 
-deity_ereshkigal = { # JUSTICE
+deity_ereshkigal = { #War
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			common_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -344,11 +414,11 @@ deity_ereshkigal = { # JUSTICE
 			}
 		}
 	}
-	icon = deity_justice
+	icon = deity_war
 	passive_modifier = { cohort_reinforcement_speed = deity_cohort_reinforcement_speed_svalue }
 	omen = { global_manpower_modifier = deity_global_manpower_modifier_svalue }  #Bonus from Omen
 	religion = mesopotamian_religion
-	deity_category = justice #This Deity uses a Justice slot.
+	deity_category = war #This Deity uses a War slot.
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -359,6 +429,11 @@ deity_ereshkigal = { # JUSTICE
 deity_adad = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			common_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -383,6 +458,11 @@ deity_adad = {
 deity_zababa = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			rare_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -407,6 +487,11 @@ deity_zababa = {
 deity_nergal = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			common_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -429,9 +514,14 @@ deity_nergal = {
 	}
 }
 
-deity_ninazu = { # JUSTICE
+deity_ninazu = { #Economy
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			very_rare_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -441,11 +531,11 @@ deity_ninazu = { # JUSTICE
 			}
 		}
 	}
-	icon = deity_justice
+	icon = deity_wealth
 	passive_modifier = { global_tax_modifier = deity_global_tax_modifier_svalue }
 	omen = { manpower_recovery_speed = omen_manpower_recovery_speed }  #Bonus from Omen
 	religion = mesopotamian_religion
-	deity_category = justice #This Deity uses a Justice slot.
+	deity_category = economy #This Deity uses an Economy slot.
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -456,6 +546,11 @@ deity_ninazu = { # JUSTICE
 deity_gula = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			rare_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -480,6 +575,11 @@ deity_gula = {
 deity_ninshubur = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			rare_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -504,6 +604,11 @@ deity_ninshubur = {
 deity_nisaba = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			common_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -513,11 +618,11 @@ deity_nisaba = {
 			}
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_wealth
 	passive_modifier = { research_points_modifier = deity_research_points_modifier_svalue }
 	omen = { global_citizen_output = omen_global_citizen_output_svalue } #Bonus from Omen
 	religion = mesopotamian_religion
-	deity_category = wisdom #This Deity uses a Wisdom slot.
+	deity_category = economy #This Deity uses an Economy slot.
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -529,6 +634,11 @@ deity_nisaba = {
 deity_anu = { #Culture
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			common_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -553,6 +663,11 @@ deity_anu = { #Culture
 deity_istaran = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			very_rare_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -577,6 +692,11 @@ deity_istaran = {
 deity_nanshe = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			common_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -601,6 +721,11 @@ deity_nanshe = {
 deity_ninlil = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			common_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -625,6 +750,11 @@ deity_ninlil = {
 deity_inzak = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			rare_deity_trigger = {
 				RELIGION = mesopotamian_religion
@@ -650,6 +780,11 @@ deity_inzak = {
 deity_meskilak = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
+		NOR = {
+			primary_culture = elamite
+			primary_culture = uxian
+			primary_culture = cossian
+		}
 		OR = {
 			rare_deity_trigger = {
 				RELIGION = mesopotamian_religion

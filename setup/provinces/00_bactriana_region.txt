@@ -70,7 +70,7 @@
 	}
 	tribesmen={
 		culture="sattagydian"
-		religion="zoroaster"
+		religion="vaksh_religion"
 		amount=1
 	}
 	tribesmen={
@@ -121,7 +121,7 @@
 6614={ #Kartane
 	terrain="mountain"
 	culture="sattagydian"
-	religion="buddhism"
+	religion="zoroaster"
 	trade_goods="cattle"
 	civilization_value=31
 	barbarian_power=0
@@ -131,7 +131,7 @@
 		amount=2
 	}
 	slaves={
-		amount=1
+		amount=2
 	}
 	slaves={
 		religion="zoroaster"
@@ -165,7 +165,7 @@
 	}
 	tribesmen={
 		culture="sattagydian"
-		religion="zoroaster"
+		religion="vaksh_religion"
 		amount=2
 	}
 	tribesmen={
@@ -266,7 +266,7 @@
 
 6627={ #Astakana
 	terrain="mountain"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="stone"
 	civilization_value=17
@@ -304,7 +304,7 @@
 
 6629={ #Kourianda
 	terrain="mountain"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="iron"
 	civilization_value=17
@@ -340,7 +340,7 @@
 
 6630={ #Zauiaspa
 	terrain="mountain"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="cedar"
 	civilization_value=17
@@ -375,7 +375,7 @@
 
 6631={ #Daroideia
 	terrain="mountain"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="precious_metals"
 	civilization_value=27
@@ -385,6 +385,7 @@
 		amount=1
 	}
 	slaves={
+		religion="zoroaster"
 		amount=1
 	}
 	tribesmen={
@@ -394,7 +395,7 @@
 
 6634={ #Aspionia
 	terrain="hills"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="leather"
 	civilization_value=19
@@ -434,13 +435,14 @@
 
 6635={ #Tambyzeia
 	terrain="mountain"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="stone"
 	civilization_value=17
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
+		religion="zoroaster"
 		amount=2
 	}
 	freemen={
@@ -457,7 +459,7 @@
 
 6636={ #Tambyziana
 	terrain="mountain"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="stone"
 	civilization_value=17
@@ -494,7 +496,7 @@
 
 6637={ #Alexandreia Baktriane
 	terrain="hills"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="horses"
 	civilization_value=34
@@ -518,7 +520,7 @@
 	terrain="mountain"
 	culture="sattagydian"
 	religion="zoroaster"
-	trade_goods="leather"
+	trade_goods="wax"
 	civilization_value=27
 	barbarian_power=0
 	province_rank="settlement"
@@ -553,7 +555,7 @@
 	terrain="mountain"
 	culture="sattagydian"
 	religion="zoroaster"
-	trade_goods="honey"
+	trade_goods="silk"
 	civilization_value=27
 	barbarian_power=0
 	province_rank="settlement"
@@ -669,6 +671,7 @@
 		amount=1
 	}
 	citizen={
+		religion="zoroaster"
 		amount=2
 	}
 	freemen={
@@ -692,7 +695,7 @@
 
 6649={ #Battak
 	terrain="mountain"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="vegetables"
 	civilization_value=17
@@ -715,13 +718,14 @@
 		amount=1
 	}
 	freemen={
+		religion="zoroaster"
 		amount=1
 	}
 }
 
 6650={ #Kabolitis
 	terrain="mountain"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="stone"
 	civilization_value=17
@@ -731,6 +735,7 @@
 		amount=3
 	}
 	freemen={
+		religion="zoroaster"
 		amount=2
 	}
 	tribesmen={
@@ -740,7 +745,7 @@
 
 6651={ #Choatina
 	terrain="mountain"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="lapis"
 	civilization_value=17
@@ -766,42 +771,52 @@
 		amount=1
 	}
 	slaves={
+		religion="zoroaster"
 		amount=1
 	}
 }
 
 6652={ #Komeia
-	terrain="plains"
-	culture="bactra"
+	terrain="steppes"
+	culture="bactrian"
 	religion="roman_pantheon"
-	trade_goods="fur"
+	trade_goods="nuts"
 	civilization_value=21
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
+		religion="vaksh_religion"
 		amount=1
 	}
 	tribesmen={
-		amount=5
+		amount=4
+	}
+	tribesmen={
+		religion="zoroaster"
+		amount=1
 	}
 }
 
 6653={ #Komiana
-	terrain="plains"
-	culture="bactra"
+	terrain="steppes"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="woad"
 	civilization_value=21
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=5
+		amount=4
+	}
+	tribesmen={
+		religion="zoroaster"
+		amount=1
 	}
 }
 
 6654={ #Indikomordana
 	terrain="plains"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="grain"
 	civilization_value=21
@@ -844,7 +859,7 @@
 
 6655={ #Marakodra
 	terrain="plains"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="cattle"
 	civilization_value=21
@@ -897,6 +912,7 @@
 		amount=2
 	}
 	freemen={
+		religion="zoroaster"
 		amount=1
 	}
 	tribesmen={
@@ -908,7 +924,7 @@
 	terrain="plains"
 	culture="margian"
 	religion="vaksh_religion"
-	trade_goods="vegetables"
+	trade_goods="nuts"
 	civilization_value=21
 	barbarian_power=0
 	province_rank="settlement"
@@ -916,6 +932,7 @@
 		amount=2
 	}
 	freemen={
+		religion="zoroaster"
 		amount=2
 	}
 	slaves={
@@ -938,16 +955,16 @@
 		amount=10
 	}
 	freemen={
-		amount=8
+		amount=7
 	}
 	freemen={
 		culture="margian"
-		religion="zoroaster"
-		amount=1
+		religion="vaksh_religion"
+		amount=2
 	}
 	slaves={
 		culture="margian"
-		religion="zoroaster"
+		religion="vaksh_religion"
 		amount=4
 	}
 	tribesmen={
@@ -958,8 +975,8 @@
 }
 
 6669={ #Tapouria
-	terrain="plains"
-	culture="bactra"
+	terrain="steppes"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="horses"
 	civilization_value=21
@@ -977,6 +994,7 @@
 		amount=1
 	}
 	freemen={
+		religion="zoroaster"
 		amount=1
 	}
 	slaves={
@@ -1000,6 +1018,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
+		religion="zoroaster"
 		amount=3
 	}
 	freemen={
@@ -1015,7 +1034,7 @@
 
 6672={ #Rhoitia
 	terrain="plains"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="camel"
 	civilization_value=26
@@ -1038,6 +1057,7 @@
 		amount=1
 	}
 	freemen={
+		religion="zoroaster"
 		amount=4
 	}
 	slaves={
@@ -1058,13 +1078,14 @@
 
 6673={ #Zeshoi
 	terrain="hills"
-	culture="bactra"
-	religion="vaksh_religion"
+	culture="bactrian"
+	religion="mithra_religion"
 	trade_goods="woad"
 	civilization_value=19
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
+		religion="vaksh_religion"
 		amount=1
 	}
 	freemen={
@@ -1077,6 +1098,7 @@
 		amount=1
 	}
 	freemen={
+		religion="zoroaster"
 		amount=1
 	}
 	slaves={
@@ -1096,8 +1118,8 @@
 }
 
 6674={ #Menapila
-	terrain="plains"
-	culture="bactra"
+	terrain="steppes"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="cattle"
 	civilization_value=21
@@ -1116,7 +1138,12 @@
 		amount=3
 	}
 	slaves={
-		amount=2
+		religion="mithra_religion"
+		amount=1
+	}
+	slaves={
+		religion="zoroaster"
+		amount=1
 	}
 	tribesmen={
 		amount=3
@@ -1125,7 +1152,7 @@
 
 6675={ #Ankui
 	terrain="desert"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="fur"
 	civilization_value=18
@@ -1160,8 +1187,8 @@
 }
 
 6676={ #Ihnum
-	terrain="plains"
-	culture="bactra"
+	terrain="steppes"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="cattle"
 	civilization_value=21
@@ -1179,6 +1206,7 @@
 		amount=1
 	}
 	freemen={
+		religion="zoroaster"
 		amount=3
 	}
 	slaves={
@@ -1191,7 +1219,7 @@
 
 6677={ #Denai
 	terrain="hills"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="fur"
 	civilization_value=19
@@ -1227,9 +1255,9 @@
 
 6678={ #Baktra
 	terrain="hills"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
-	trade_goods="wild_game"
+	trade_goods="earthware"
 	civilization_value=32
 	barbarian_power=0
 	province_rank="city"
@@ -1259,7 +1287,12 @@
 	freemen={
 		culture="ionian"
 		religion="roman_pantheon"
-		amount=2
+		amount=1
+	}
+	freemen={
+		culture="cyrenaican"
+		religion="roman_pantheon"
+		amount=1
 	}
 	freemen={
 		culture="macedonian"
@@ -1290,7 +1323,7 @@
 
 6679={ #Kaouaris
 	terrain="hills"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="earthware"
 	civilization_value=19
@@ -1306,6 +1339,7 @@
 		amount=1
 	}
 	freemen={
+		religion="zoroaster"
 		amount=1
 	}
 	slaves={
@@ -1327,7 +1361,7 @@
 
 6680={ #Tochara
 	terrain="hills"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="hemp"
 	civilization_value=19
@@ -1356,7 +1390,7 @@
 
 6681={ #Tachora
 	terrain="hills"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="cattle"
 	civilization_value=19
@@ -1375,7 +1409,7 @@
 
 6684={ #Haroba
 	terrain="plains"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="cattle"
 	civilization_value=21
@@ -1394,6 +1428,7 @@
 		amount=1
 	}
 	freemen={
+		religion="zoroaster"
 		amount=1
 	}
 	slaves={
@@ -1405,9 +1440,9 @@
 }
 
 6685={ #Argadina
-	terrain="plains"
-	culture="bactra"
-	religion="vaksh_religion"
+	terrain="steppes"
+	culture="bactrian"
+	religion="mithra_religion"
 	trade_goods="horses"
 	civilization_value=21
 	barbarian_power=0
@@ -1417,6 +1452,7 @@
 		amount=1
 	}
 	citizen={
+		religion="zoroaster"
 		amount=1
 	}
 	freemen={
@@ -1430,13 +1466,14 @@
 		amount=1
 	}
 	tribesmen={
+		religion="vaksh_religion"
 		amount=2
 	}
 }
 
 6686={ #Alexandreia Tarmite
 	terrain="farmland"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="hemp"
 	civilization_value=38
@@ -1490,7 +1527,7 @@
 		amount=5
 	}
 	citizen={
-		culture="bactra"
+		culture="bactrian"
 		amount=1
 	}
 	citizen={
@@ -1499,7 +1536,8 @@
 		amount=1
 	}
 	freemen={
-		culture="bactra"
+		culture="bactrian"
+		religion="vaksh_religion"
 		amount=1
 	}
 	freemen={
@@ -1514,7 +1552,7 @@
 		amount=3
 	}
 	tribesmen={
-		culture="bactra"
+		culture="bactrian"
 		amount=1
 	}
 	tribesmen={
@@ -1562,7 +1600,7 @@
 
 6691={ #Oxeiana
 	terrain="plains"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="grain"
 	civilization_value=21
@@ -1599,7 +1637,7 @@
 
 6692={ #Aoronos
 	terrain="hills"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="vegetables"
 	civilization_value=19
@@ -1631,7 +1669,7 @@
 
 6693={ #Astakana
 	terrain="mountain"
-	culture="bactra"
+	culture="bactrian"
 	religion="vaksh_religion"
 	trade_goods="horses"
 	civilization_value=17
@@ -1648,6 +1686,7 @@
 		amount=2
 	}
 	freemen={
+		religion="zoroaster"
 		amount=1
 	}
 	slaves={
@@ -1658,7 +1697,7 @@
 	}
 }
 
-6694={ #Eukratideia
+6694={ #Alexandreia Ochou
 	terrain="farmland"
 	culture="macedonian"
 	religion="roman_pantheon"
@@ -1670,24 +1709,24 @@
 		amount=1
 	}
 	nobles={
-		culture="bactra"
-		religion="zoroaster"
+		culture="bactrian"
+		religion="vaksh_religion"
 		amount=1
 	}
 	citizen={
 		amount=15
 	}
 	citizen={
-		culture="bactra"
-		religion="zoroaster"
+		culture="bactrian"
+		religion="vaksh_religion"
 		amount=2
 	}
 	freemen={
 		amount=10
 	}
 	freemen={
-		culture="bactra"
-		religion="zoroaster"
+		culture="bactrian"
+		religion="vaksh_religion"
 		amount=2
 	}
 	slaves={
@@ -1793,12 +1832,12 @@
 		amount=1
 	}
 	citizen={
-		culture="bactra"
+		culture="bactrian"
 		religion="roman_pantheon"
 		amount=1
 	}
 	freemen={
-		culture="bactra"
+		culture="bactrian"
 		religion="roman_pantheon"
 		amount=2
 	}
@@ -1814,12 +1853,12 @@
 		amount=6
 	}
 	slaves={
-		culture="bactra"
+		culture="bactrian"
 		religion="roman_pantheon"
 		amount=1
 	}
 	tribesmen={
-		culture="bactra"
+		culture="bactrian"
 		religion="roman_pantheon"
 		amount=2
 	}
@@ -1871,14 +1910,15 @@
 		amount=1
 	}
 	slaves={
-		religion="indo_iranian_religion"
+		religion="mithra_religion"
 		amount=1
 	}
 	tribesmen={
-		religion="indo_iranian_religion"
+		religion="zoroaster"
 		amount=1
 	}
 	tribesmen={
+		religion="mithra_religion"
 		amount=1
 	}
 }
@@ -1900,8 +1940,8 @@
 		amount=2
 	}
 	freemen={
-		culture="bactra"
-		religion="eastern_animism"
+		culture="bactrian"
+		religion="vaksh_religion"
 		amount=2
 	}
 	freemen={
@@ -1910,7 +1950,7 @@
 		amount=1
 	}
 	freemen={
-		religion="eastern_animism"
+		religion="indo_iranian_religion"
 		amount=1
 	}
 	freemen={
@@ -1920,8 +1960,8 @@
 		amount=2
 	}
 	slaves={
-		culture="bactra"
-		religion="eastern_animism"
+		culture="bactrian"
+		religion="vaksh_religion"
 		amount=1
 	}
 	tribesmen={
@@ -1964,7 +2004,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		religion="indo_iranian_religion"
+		religion="zoroaster"
 		amount=1
 	}
 	tribesmen={
@@ -1981,7 +2021,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		religion="indo_iranian_religion"
+		religion="vaksh_religion"
 		amount=1
 	}
 	tribesmen={
@@ -1998,7 +2038,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		religion="indo_iranian_religion"
+		religion="vaksh_religion"
 		amount=1
 	}
 	tribesmen={
@@ -2015,7 +2055,11 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=3
+		amount=2
+	}
+	tribesmen={
+		religion="zoroaster"
+		amount=1
 	}
 }
 
@@ -2070,7 +2114,7 @@
 		amount=2
 	}
 	tribesmen={
-		religion="zoroaster"
+		religion="vaksh_religion"
 		amount=1
 	}
 }
@@ -2100,7 +2144,7 @@
 		amount=2
 	}
 	tribesmen={
-		religion="indo_iranian_religion"
+		religion="vaksh_religion"
 		amount=1
 	}
 	tribesmen={
@@ -2133,6 +2177,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
+		religion="indo_iranian_religion"
 		amount=2
 	}
 	tribesmen={

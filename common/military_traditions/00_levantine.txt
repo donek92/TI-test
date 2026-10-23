@@ -26,6 +26,13 @@
 			country_culture_group = north_african
 		}
 		trigger_else_if = {
+			limit = { primary_culture = syriote }
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			primary_culture = syriote
+		}
+		trigger_else_if = {
 			limit = { heritage = ptolemys_heritage }
 			custom_tooltip = {
 				text = "began_with_tradition_group"
@@ -58,7 +65,10 @@
 	}
 
 	levantine_north_africa_enable = { ###Levantine 3AA
-		modifier = { plains_combat_bonus = 0.1 }
+		modifier = { 
+			plains_combat_bonus = 0.1 
+			levy_size_multiplier = 0.025
+		}
 		icon = north_african_tribal_path_3
 		requires = {levantine_arabian_path_4}
 	}
@@ -74,7 +84,6 @@
 	levantine_arabian_path_7 = { ###Levantine 3AB
 		modifier = { 
 			light_cavalry_cost = -0.15
-			horse_skirmishers_cost = -0.15
 			camels_cost = -0.15
 			heavy_cavalry_cost = -0.15
 		}

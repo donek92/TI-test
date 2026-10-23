@@ -2950,8 +2950,9 @@ samaria_inv.102 = {
 		add_treasury = {
 			subtract = root.has_monthly_income
 			multiply = 12
-			min = -1200
+			floor = yes
 			max = -400
+			min = -1200
 		}
 	}
 
@@ -3137,8 +3138,9 @@ samaria_inv.105 = {
 		add_treasury = {
 			subtract = root.has_monthly_income
 			multiply = 12
-			min = -1200
+			floor = yes
 			max = -400
+			min = -1200
 		}
 		hidden_effect = {
 			change_variable = {
@@ -3189,6 +3191,7 @@ samaria_inv.106 = {
 		add_treasury = {
 			value = root.has_monthly_income
 			multiply = 8
+			max = 5000
 		}
 		hidden_effect = {
 			change_variable = {
@@ -3264,15 +3267,15 @@ samaria_inv.107 = {
 		}
 		hidden_effect = {
 			set_variable = fraudulent_menorah
-			random_list = {
-				1 = {}
-				2 = {
-					trigger_event = { #found to be fake
-						id = "samaria_inv.108"
-						days = { 200 9125 }
-					}
-				}
-			}
+			#random_list = {
+			#	1 = {}
+			#	2 = {
+			#		trigger_event = { #found to be fake
+			#			id = "samaria_inv.108"
+			#			days = { 200 9125 }
+			#		}
+			#	}
+			#}
 		}
 		create_country_treasure = {
 			key = "treasure_samaritan_menorah"
@@ -3298,17 +3301,17 @@ samaria_inv.107 = {
 			name = gerizim_sanctuary_quality
 			add = 2
 		}
-		hidden_effect = {
-			random_list = {
-				1 = {}
-				2 = {
-					trigger_event = { #found to be fake
-						id = "samaria_inv.108"
-						days = { 200 9125 }
-					}
-				}
-			}
-		}
+		#hidden_effect = {
+		#	random_list = {
+		#		1 = {}
+		#		2 = {
+		#			trigger_event = { #found to be fake
+		#				id = "samaria_inv.108"
+		#				days = { 200 9125 }
+		#			}
+		#		}
+		#	}
+		#}
 		create_country_treasure = {
 			key = "treasure_samaritan_menorah"
 			icon = "treasure_it_second_temple_menorah"

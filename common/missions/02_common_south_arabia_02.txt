@@ -118,8 +118,11 @@
 		on_completion = {
 			trigger_event = { id = south_arabia.62 }
 			show_as_tooltip = {
-				mission_claim_region_effect = { REGION = punt_region }
-				mission_claim_region_effect = { REGION = arabia_region }
+				mission_claim_area_effect = { AREA = ona_area }
+				mission_claim_area_effect = { AREA = mosylon_area }
+				mission_claim_area_effect = { AREA = aromata_area }
+				mission_claim_area_effect = { AREA = arabia_maritimae_area }
+				mission_claim_area_effect = { AREA = arabia_ad_sinus_area }
 				add_country_modifier = {
 					name = colonise_bonus_sarabia
 					duration = 3650 # 10 years
@@ -512,9 +515,8 @@
 			owns = 729
 			custom_tooltip = {
 				text = nabataeans_integrated_tt
-				any_country_culture = {
+				any_integrated_culture = {
 					is_culture = nabatean
-					is_integrated = yes
 				}
 			}
 		}
@@ -923,9 +925,8 @@
 		allow = {
 			custom_tooltip = {
 				text = aksumite_integrated_tt
-				any_country_culture = {
+				any_integrated_culture = {
 					is_culture = aksumite
-					is_integrated = yes
 				}
 			}
 		}
@@ -1340,7 +1341,7 @@
 				tag = "HMJ" # Himyar
 				has_variable = is_himyar_var
 				NOT = {
-					any_province = {
+					any_ownable_province = {
 						dominant_province_culture = himjar
 					}
 				}
@@ -1625,6 +1626,10 @@
 			political_influence >= 30
 		}
 
+		potential = {
+			always = no
+		}
+
 		on_completion = {
 			trigger_event = { id = south_arabia.96 }
 			show_as_tooltip = {
@@ -1644,6 +1649,10 @@
 
 		allow = {
 			political_influence >= 30
+		}
+
+		potential = {
+			always = no
 		}
 
 		on_completion = {

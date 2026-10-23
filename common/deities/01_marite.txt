@@ -208,7 +208,7 @@ deity_ilargi = { # FERTILITY
 	}
 }
 
-deity_lurraberri = { # JUSTICE
+deity_lurraberri = { # WAR
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -220,11 +220,11 @@ deity_lurraberri = { # JUSTICE
 			}
 		}
 	}
-	icon = deity_justice
+	icon = deity_tribal_war
 	passive_modifier = { manpower_recovery_speed = deity_global_manpower_recovery_speed_svalue }
 	omen = { army_weight_modifier = omen_army_weight_modifier } #Bonus from Omen
 	religion = pre_indo_european_religion
-	deity_category = justice #This Deity uses a Justice Slot
+	deity_category = war #This Deity uses a War Slot
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -286,7 +286,7 @@ deity_lobegi = { # ECONOMY
 	}
 }
 
-deity_sorginak = { # WISDOM
+deity_sorginak = { # ECONOMY
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -302,7 +302,7 @@ deity_sorginak = { # WISDOM
 	passive_modifier = { global_citizen_output = deity_global_citizen_output_svalue }
 	omen = { religious_tech_investment = omen_religious_tech_investment_svalue } #Bonus from Omen
 	religion = pre_indo_european_religion
-	deity_category = wisdom #This Deity uses an Wisdom Slot
+	deity_category = economy #This Deity uses an Economy Slot
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -338,7 +338,7 @@ deity_inguma = { # CULTURE
 	}
 }
 
-deity_aiko = { # WISDOM
+deity_aiko = { # CULTURE
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -350,11 +350,11 @@ deity_aiko = { # WISDOM
 			}
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_tribal_eloquence
 	passive_modifier = { happiness_for_same_culture_modifier = deity_happiness_for_same_culture_modifier_svalue }
 	omen = { global_monthly_civilization = omen_global_monthly_civilization_svalue } #Bonus from Omen
 	religion = pre_indo_european_religion
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = culture #This Deity uses a Culture Slot
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -390,7 +390,7 @@ deity_laminak = { # FERTILITY
 	}
 }
 
-deity_urtzi = { # JUSTICE
+deity_urtzi = { # FERTILITY
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -402,11 +402,11 @@ deity_urtzi = { # JUSTICE
 			}
 		}
 	}
-	icon = deity_justice
+	icon = deity_tribal_love
 	passive_modifier = { global_tribesmen_output = global_tribesmen_output_svalue }
 	omen = { happiness_for_wrong_culture_group_modifier = omen_happiness_for_wrong_culture_group_modifier_svalue } #Bonus from Omen
 	religion = pre_indo_european_religion
-	deity_category = justice #This Deity uses a Fertility Slot
+	deity_category = fertility #This Deity uses a Fertility Slot
 	deification_trigger = {
 		can_deify_trigger = yes
 	}

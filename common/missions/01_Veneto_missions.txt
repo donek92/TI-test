@@ -28,28 +28,19 @@
     }
 
     abort = {
-        ai_mission_back_out_trigger = yes
+        OR = {
+            ai_mission_back_out_trigger = yes
+            AND = {
+               has_variable = spartan_patavium_spawned_tag
+               NOT = { has_variable = venetic_country_that_formed_veneto }
+            }
+        }
     }
 
     on_potential = { }
 
     on_start = {
         start_mission_ai_effect = yes
-		if = {
-		    limit = {
-		        AND = {
-		            current_date <= 500
-		            char:176 = {
-                       is_alive = yes
-                       is_ruler = no
-                    }
-		        }
-		    }
-		    trigger_event = {
-                id = veneto_flavour_event.15
-                days = { 300 700 }
-		    }
-		}
     }
 
     on_abort = {
@@ -142,23 +133,12 @@
 
 		potential = { }
 
-		allow = { 
-        	trigger_if = {
-        		limit = {
-        			NOT = { owns = 3595 }
-        		}
-        		owns = 3595 
-        		hidden:p:3595 = {
-        			has_building = fortress_building
-        			has_no_ongoing_construction = yes
-        		}
-        	}
-        	trigger_else = {
-        		hidden:p:3595 = {
-        			has_building = fortress_building
-        			has_no_ongoing_construction = yes
-        		}
-        	}
+		allow = {
+			owns = 3595
+			hidden:p:3595 = {
+				has_building = fortress_building
+				has_no_ongoing_construction = yes
+			}
 		}
 		
 		highlight = {  
@@ -173,9 +153,10 @@
                 id = secure_venetia_mission_event.3
             } 
             show_as_tooltip = {
-                p:3595 = {
-                    add_province_modifier = {
+                p:3595.state = {
+                    add_state_modifier = {
                         name = me_este_fortifications_pmod
+                        duration = -1
                     }
                 }
             }
@@ -191,9 +172,12 @@
 
 		allow = { 
     	    owns = 4025
-    	    p:4025 = {
-                num_of_fortress_building >= 2
-                has_no_ongoing_construction = yes
+    	    OR = {
+    	        p:4025 = {
+                    num_of_fortress_building >= 2
+                    has_no_ongoing_construction = yes
+    	        }
+    	        treasury >= 200
     	    }
 		}
 		
@@ -209,9 +193,23 @@
                 id = secure_venetia_mission_event.4
             } 
             show_as_tooltip = {
-                p:4025 = {
-                    add_permanent_province_modifier = {
+                if = {
+                    limit = {
+                        p:4025 = { num_of_fortress_building < 2 }
+                    }
+                    add_treasury = -200
+                    p:4025 = {
+                        if = {
+                            limit = { num_of_fortress_building < 1 }
+                            add_building_level = fortress_building
+                        }
+                        add_building_level = fortress_building
+                    }
+                }
+                p:4025.state = {
+                    add_state_modifier = {
                         name = me_carnian_fortifications_pmod
+                        duration = -1
                     }
                 }
             }
@@ -232,8 +230,9 @@
 			    owns_or_subject_owns = p:4018
 			    owns_or_subject_owns = p:4022
 			    owns_or_subject_owns = p:4020
-			    c:HIS = {
-			    	has_land = no
+			    OR = {
+			    	NOT = { exists = c:HIS }
+			    	c:HIS = { has_land = no }
 			    }
 			}
 		}
@@ -253,6 +252,7 @@
 					}
 					AND = {
 					    has_owner = yes
+					    exists = c:HIS
 					    owner = c:HIS
 					}  	    
 			    }
@@ -338,24 +338,26 @@
 		bypass = {
 	 	    OR = {
 	 	        AND = {
-	 	            any_country = {
-	 	                count < 1
-	 	                OR = {
-	 	                    primary_culture = lepontic
-	                        primary_culture = carnian
-	                        primary_culture = sennonian
-	 	                }
-	 	                capital_scope = {
+	 	            NOT = {
+	 	                any_country = {
 	 	                    OR = {
-	                            is_in_region = cisalpine_gaul_region
-	                            is_in_area = ariminum_area
-	                        }
+	 	                        primary_culture = lepontic
+	                            primary_culture = carnian
+	                            primary_culture = sennonian
+	                            primary_culture = noric
+	 	                    }
+	 	                    capital_scope = {
+	 	                        OR = {
+	                                is_in_region = cisalpine_gaul_region
+	                                is_in_area = ariminum_area
+	                            }
+	 	                    }
 	 	                }
 	 	            }
-      		  	    NOT = { exists = c:CNM }
-        		    c:CNM = {
-        		    	has_land = no
-        		    }
+	 	            OR = {
+	 	                NOT = { exists = c:CNM }
+	 	                c:CNM = { has_land = no }
+	 	            }
         		}
         		has_completed_mission_task = secure_venetia_mission_task_20
         	}
@@ -424,20 +426,23 @@
 	        custom_tooltip = {
 	            text = secure_venetia_mission_task_8_tt_1
 	    	    OR = {
-           	    	alliance_with = c:CNM
-                	AND = {
-                   		owns_or_subject_owns = p:3584
-        	        	owns_or_subject_owns = p:3581
-                    	c:CNM = {
-        	    	   		has_land = no
-        	        	}   
-                	}
-        	    }
+		    	    AND = {
+		    	    	exists = c:CNM
+		    	    	alliance_with = c:CNM
+		    	    }
+		    	    AND = {
+		    	    	owns_or_subject_owns = p:3584
+		    	    	owns_or_subject_owns = p:3581
+		    	    	OR = {
+		    	    		NOT = { exists = c:CNM }
+		    	    		c:CNM = { has_land = no }
+		    	    	}
+		    	    }
+		    	}
         	}
         	custom_tooltip = {
 	            text = secure_venetia_mission_task_8_tt_2
-        	    any_country_culture = {
-			        is_integrated = yes
+        	    any_integrated_culture = {
 			        this.culture  = culture:lepontic
 			    }
 			}
@@ -464,7 +469,10 @@
 		requires = { secure_venetia_mission_task_6 }
 		prevented_by = { secure_venetia_mission_task_11 secure_venetia_mission_task_20 }
 
-		allow = { alliance_with = c:ROM }
+		allow = {
+			exists = c:ROM
+			alliance_with = c:ROM
+		}
 	
 		highlight = {
 	    	scope:province = {
@@ -478,15 +486,17 @@
 
 		bypass = {
 	    	OR = {
-	        	is_subject_of = ROM
+	        	is_subject_of = c:ROM
 	        	has_completed_mission_task = secure_venetia_mission_task_11
 	        	has_completed_mission_task = secure_venetia_mission_task_20
 	        	AND = {
-	        	    c:ROM = {
-	        	        num_of_cities <= 6
+	        	    OR = {
+	        	        NOT = { exists = c:ROM }
+	        	        c:ROM = { num_of_cities <= 6 }
 	        	    }
-	        	    c:ETR = {
-	        	        num_of_cities <= 6
+	        	    OR = {
+	        	        NOT = { exists = c:ETR }
+	        	        c:ETR = { num_of_cities <= 6 }
 	        	    }
 	        	}
 	    	}
@@ -555,7 +565,10 @@
 		requires = { secure_venetia_mission_task_6 }
 		prevented_by = { secure_venetia_mission_task_9 secure_venetia_mission_task_20}
 
-		allow = { alliance_with = c:ETR }
+		allow = {
+			exists = c:ETR
+			alliance_with = c:ETR
+		}
 	
 		highlight = {
 	   		scope:province = {
@@ -568,15 +581,17 @@
 
 		bypass = {
 			OR = {
-	        	is_subject_of = ETR
+	        	is_subject_of = c:ETR
 	        	has_completed_mission_task = secure_venetia_mission_task_9
 	        	has_completed_mission_task = secure_venetia_mission_task_20
 	        	AND = {
-	        	    c:ROM = {
-	        	        num_of_cities <= 6
+	        	    OR = {
+	        	        NOT = { exists = c:ROM }
+	        	        c:ROM = { num_of_cities <= 6 }
 	        	    }
-	        	    c:ETR = {
-	        	        num_of_cities <= 6
+	        	    OR = {
+	        	        NOT = { exists = c:ETR }
+	        	        c:ETR = { num_of_cities <= 6 }
 	        	    }
 	        	}
 	    	}
@@ -686,8 +701,8 @@
 	    allow = {    
 	        OR = {
 		        OR = {
-			        is_subject_of = ROM
-			        is_subject_of = ETR
+			        is_subject_of = c:ROM
+			        is_subject_of = c:ETR
 		        }
 		        AND = { 
 		            is_subject = no
@@ -695,21 +710,33 @@
 		            custom_tooltip = {
 		                text = secure_venetia_mission_task_14_tt
 		                OR = {
-    	    	            c:ETR = { 
-		                        opinion = {
-		                            target = ROOT
-		                            value >= 100
+		                    AND = {
+		                        exists = c:ETR
+		                        c:ETR = {
+		                            opinion = {
+		                                target = ROOT
+		                                value >= 90
+		                            }
 		                        }
 		                    }
-		                    c:ROM = { 
-		                        opinion = {
-		                            target = ROOT
-		                            value >= 100
-		                        }   
+		                    AND = {
+		                        exists = c:ROM
+		                        c:ROM = {
+		                            opinion = {
+		                                target = ROOT
+		                                value >= 90
+		                            }
+		                        }
 		                    }
 		                    AND = {
-		                        c:ROM = { has_land = no }
-		                        c:ETR = { has_land = no }
+		                        OR = {
+		                            NOT = { exists = c:ROM }
+		                            c:ROM = { has_land = no }
+		                        }
+		                        OR = {
+		                            NOT = { exists = c:ETR }
+		                            c:ETR = { has_land = no }
+		                        }
 		                    }
 		                }
 		            }
@@ -767,7 +794,7 @@
         	    }
     	    }
 	        war = no
-	        stability >= 60
+	        stability >= 55
 	        is_tribal = no
 	    }
 	
@@ -807,7 +834,7 @@
  	    prevented_by = { secure_venetia_mission_task_20 secure_venetia_mission_task_11 secure_venetia_mission_task_12 }
 
  	    allow = {
- 	        is_subject_of = ROM
+ 	        is_subject_of = c:ROM
  	        custom_tooltip = {
  	            text = secure_venetia_mission_task_10_tt
  	            any_neighbour_country = { tag = ROM	}	            
@@ -820,9 +847,8 @@
  	        }
  	        custom_tooltip = {
  	            text = secure_venetia_mission_task_16_tt_2
- 	            c:ROM = {
- 	                num_of_provinces >= 10
- 	            }
+ 	            exists = c:ROM
+ 	            c:ROM = { num_of_provinces >= 10 }
  	        }
  	    }
 	    on_completion = { 
@@ -830,6 +856,7 @@
         	if = {
         	    limit = {
         	        AND = {
+        	            exists = c:ROM
         	            c:ROM = {
         	                religion = roman_pantheon
         	            }
@@ -971,6 +998,7 @@
  	        OR = {
  	            custom_tooltip = {
  	                text = secure_venetia_mission_task_19_tt1
+    		        exists = c:CNM
     		        c:CNM = { 
     		            opinion = {
     		                target = root
@@ -1000,9 +1028,10 @@
     	}
     
     	bypass = {
-    	    has_completed_mission_task = secure_venetia_mission_task_20
-    	    c:CNM = {
-    	        has_land = no
+    	    OR = {
+    	        has_completed_mission_task = secure_venetia_mission_task_20
+    	        NOT = { exists = c:CNM }
+    	        c:CNM = { has_land = no }
     	    }
     	}
     
@@ -1025,12 +1054,15 @@
     
         allow = {
     	    diplomatic_stance = warmongering_stance
-    	    stability >= 50
+    	    stability >= 45
     	    custom_tooltip = {
     	    	text = secure_venetia_mission_task_20_tt
     	    	any_owned_province = {
     	    	    count >= 1
-    	    	    has_building = barracks_building
+    	    	    OR = {
+    	    	        has_building = barracks_building
+    	    	        has_building = military_building
+    	    	    }
     	    	}
     	    }
         }
@@ -1039,6 +1071,9 @@
         	custom_tooltip = secure_venetia_preemptive_expansion_tt
         	trigger_event = { id = secure_venetia_mission_event.30 }
         	show_as_tooltip = {
+        		add_tyranny = 5
+        		add_aggressive_expansion = 5
+        		add_stability = -10
                 add_country_modifier = {
                     name = me_bellicose_doctrine_veneto_cmod
                     duration = 18250 
@@ -1058,7 +1093,8 @@
         requires = { secure_venetia_mission_task_20 }
         
         allow = {
-            OR= {
+            exists = c:CNM
+            OR = {
                 c:CNM = {
                     has_opinion = {
         	            modifier = opinion_insult
@@ -1096,9 +1132,8 @@
 
         bypass = {
            OR = {
-                c:CNM = {
-                	has_land = no
-                }
+                NOT = { exists = c:CNM }
+                c:CNM = { has_land = no }
                 has_completed_mission_task = secure_venetia_mission_task_6
             }
         }
@@ -1214,6 +1249,9 @@
         on_completion = {
         	custom_tooltip = secure_venetia_seize_spina_and_felsina_tt
         	trigger_event = { id = secure_venetia_mission_event.33 }
+        	show_as_tooltip = {
+        		add_military_experience = 20
+        	}
         }
 
 
@@ -1493,6 +1531,7 @@
 
         allow = {
             owns_or_subject_owns = p:470
+            exists = c:EPI
             c:EPI = {
                 OR = {
         	        opinion = {
@@ -1525,10 +1564,12 @@
         	    has_completed_mission_task = secure_venetia_mission_task_6
         	    AND = {
                     owns_or_subject_owns = p:470
-        	        c:EPI = {
-        	            any_owned_province = {
-        	                count = 0
-        	                is_in_area = epirus_area
+        	        OR = {
+        	            NOT = { exists = c:EPI }
+        	            c:EPI = {
+        	                NOT = {
+        	                    any_owned_province = { is_in_area = epirus_area }
+        	                }
         	            }
         	        } 
         	    }           
@@ -1720,7 +1761,7 @@
 
     }
 
-    secure_venetia_mission_task_34 = { #The Harbour of Adria
+    secure_venetia_mission_task_34 = { #The Harbor of Adria
 
         icon = task_economical	
 
@@ -1827,10 +1868,11 @@
         	treasury >= 200
         }
 
-        duration = 1800 #five years
+        duration = 1825 #five years
 
         on_start = {
             add_treasury = -200
+            trigger_event = { id = secure_venetia_mission_event.151 }
         }
 
         on_completion = {
@@ -1859,53 +1901,11 @@
             }
             custom_tooltip = {
                 text = secure_venetia_task_38_tt
-                trigger_if = {
-				    limit = {
-				        any_character = {
-				            count >= 4
-				            is_head_of_family = yes
-				        }
-				    }
-				    any_character = {
-                        count >= 4
-                        is_head_of_family = yes
-                        loyalty >= 40
-                    }
-                }
-				trigger_else_if = {
-				    limit = {
-				        any_character = {
-				            count = 3
-				            is_head_of_family = yes
-				        }
-				    }
-				    any_character = {
-                        count >= 3
-                        is_head_of_family = yes
-                        loyalty >= 40
-                    }
-                }
-                trigger_else_if = {
-				    limit = {
-				        any_character = {
-				            count = 2
-				            is_head_of_family = yes
-				        }
-				    }
-				    any_character = {
-                        count >= 2
-                        is_head_of_family = yes
-                        loyalty >= 40
-                    }
-                }
-                trigger_else = {
+                NOT = { 
                     any_character = {
-                        count >= 3
+                        count >= 1
                         is_head_of_family = yes
-                        loyalty >= 40
-                        NOT = {
-                            is_ruler = yes
-                        }
+                        loyalty < 40
                     }
                 }
             }
@@ -2020,7 +2020,7 @@
 
     }
 
-    secure_venetia_mission_task_41 = { #Commercial Interests
+    secure_venetia_mission_task_41 = { #Factional Interests
 
         icon = task_political
 
@@ -2028,20 +2028,20 @@
         requires = { secure_venetia_mission_task_40 }
 
         allow = {
-        	custom_tooltip = {
-				text = secure_venetia_task_41_tt
-           	    any_allied_country = {
-           	        OR = {
-           	            government = aristocratic_republic
-           	            government = athenian_republic
-           	            government = democratic_republic
-           	            government = plutocratic_republic
-           	            government = theocratic_republic
-           	            government = oligarchic_republic
-           	        }
-           	    }
-			}
 			OR = {
+				custom_tooltip = {
+			    	text = secure_venetia_task_41_tt
+           	        any_allied_country = {
+           	            OR = {
+           	                government = aristocratic_republic
+           	                government = athenian_republic
+           	                government = democratic_republic
+           	                government = plutocratic_republic
+           	                government = theocratic_republic
+           	                government = oligarchic_republic
+           	            }
+           	        }
+			    }
                 has_law = coin_minting_law
                 has_law = barter_economy_law
 			}	
@@ -2080,29 +2080,30 @@
         requires = { secure_venetia_mission_task_40 }
 
         allow = {
-            custom_tooltip = {
-		    	text = secure_venetia_task_42_tt
-       	        any_allied_country = {
-       	            OR = {
-       	                government = aristocratic_monarchy
-               	        government = despotic_monarchy
-       	                government = dictatorship
-       	                government = imperial_cult
-       	                government = imperium
-               	        government = plutocratic_monarchy
-               	        government = stratocratic_monarchy
-       	                government = theocratic_monarchy
+        	OR = {
+                custom_tooltip = {
+		        	text = secure_venetia_task_42_tt
+       	            any_allied_country = {
+       	                OR = {
+       	                    government = aristocratic_monarchy
+                   	        government = despotic_monarchy
+       	                    government = dictatorship
+       	                    government = imperial_cult
+       	                    government = imperium
+                   	        government = plutocratic_monarchy
+                   	        government = stratocratic_monarchy
+       	                    government = theocratic_monarchy
+       	                }
        	            }
-       	        }
-		    }  
-		    current_ruler = {
-		        popularity >= 95
-		        prominence >= 90
-		    }
-            current_ruler = {
-                popularity >= 50
-            }			
-            has_law = absolute_authority 	
+		        }  
+		        AND = {
+		            current_ruler = {
+                        popularity >= 60
+                        prominence >= 60
+                    }	
+                    has_law = absolute_authority
+                }
+		    }		
             political_influence >= 50    
         }
 
@@ -2142,7 +2143,7 @@
                 centralization >= 100
                 AND = {
                     is_tribal = no
-                    stability >= 60
+                    stability >= 55
                     legitimacy >= 90
                 }
             }
@@ -2241,6 +2242,14 @@
         	custom_tooltip = secure_venetia_venetic_urbanization_program_tt
         	trigger_event = { id = secure_venetia_mission_event.56 }
         	show_as_tooltip = {
+        		capital_scope = {
+        			add_province_modifier = {
+        				name = me_venetic_city_urbanization_pmod
+        				duration = -1
+        			}
+        		}
+        	}
+        	show_as_tooltip = {
                 add_country_modifier = {
                     name = me_venetian_urbanization_program_cmod
                     duration = 18250 #50 years
@@ -2288,15 +2297,12 @@
         on_completion = { 
         	custom_tooltip = secure_venetia_the_illyrian_hinderlands_tt
         	trigger_event = { id = secure_venetia_mission_event.38 }	
-        	show_as_tooltip = {
-                random_owned_province = {
-                    limit = {
-                            is_in_region = illyria_region
-                    }
-                    add_province_modifier = {
-                        name = me_subjugated_illyrians_illyria_pmod
-                        duration = 18250 #50 years
-                    }
+            p:4065 = {
+	            show_as_tooltip = {
+	                add_province_modifier = {
+	                    name = me_subjugated_illyrians_illyria_pmod
+	                    duration = 18250 #50 years
+	                }
                 }
         	}
         }
@@ -2311,7 +2317,7 @@
         requires = { secure_venetia_mission_task_49 }
 
         allow = {
-            treasury >= 200
+            treasury >= 300
             custom_tooltip = {
                 text = secure_venetia_task_48_tt
                 any_country = {
@@ -2335,7 +2341,7 @@
         bypass = {
             OR = {
         	    owns_or_subject_owns = p:144
-        	    has_completed_mission_task = secure_venetia_mission_task_49
+        	    has_completed_mission_task = secure_venetia_mission_task_20
         	}
         }
 
@@ -2368,6 +2374,7 @@
 
         allow = {
             treasury >= 150
+            exists = c:ASP
             c:ASP = { 
                 OR = {
         		    opinion = {
@@ -2392,9 +2399,10 @@
         }
 
         bypass = {
-        	p:4034 = {
-        	    NOT = {
-        	        owner =	c:ASP       
+        	OR = {
+        	    NOT = { exists = c:ASP }
+        	    p:4034 = {
+        	        NOT = { owner = c:ASP }
         	    }
         	}
         }
@@ -2523,10 +2531,24 @@
         	custom_tooltip = secure_venetia_colonies_in_illyria_tt
         	trigger_event = { id = secure_venetia_mission_event.61 }	
         	show_as_tooltip = {
-        	    random_province = {
+        	    every_province = {
+        	        limit = {
+        	            OR = {
+        	                province_id = 4054
+        	                province_id = 4056
+        	                province_id = 4058
+        	                province_id = 4060
+        	                province_id = 4084
+        	                province_id = 8027
+        	                province_id = 4059
+        	                province_id = 4062
+        	                province_id = 4053
+        	                province_id = 4052
+        	            }
+        	        }
         	        add_province_modifier = {
                         name = me_growth_of_venetic_colony_pmod
-                        duration = 5500 #15 years
+                        duration = 5475 #15 years
                     }
                 }
         	}
@@ -2596,9 +2618,8 @@
 	            text = secure_venetia_mission_task_53_tt_1
 	            trigger_if = {
 	                limit = {
-	                    c:CAR = {
-	                        has_land = yes
-	                    }
+	                    exists = c:CAR
+	                    c:CAR = { has_land = yes }
 	                }
 	                num_of_ships > c:CAR.num_of_ships 	        
 	            }
@@ -2607,9 +2628,8 @@
 	            text = secure_venetia_mission_task_53_tt_2   
 	            trigger_if = {
 	                limit = {
-	                    c:CAR = {
-	                        has_land = yes
-	                    }
+	                    exists = c:CAR
+	                    c:CAR = { has_land = yes }
 	                }    
 	                capital_scope = {
 	                    total_population > c:CAR.capital_scope.total_population
@@ -2633,7 +2653,9 @@
 
         highlight = {
             scope:province = {
-                is_capital = yes  
+                has_owner = yes
+                is_capital = yes
+                exists = c:CAR
                 owner = c:CAR              
             }
         }
@@ -2677,6 +2699,90 @@
 
     }
 
+    secure_venetia_mission_task_55 = { #Alliance with the Rhaeti
+
+        icon = task_diplomatic
+
+        prevented_by = { secure_venetia_mission_task_20 secure_venetia_mission_task_12 secure_venetia_mission_task_10 }
+        requires = { secure_venetia_mission_task_19 }
+
+	    allow = { alliance_with = c:RAE }
+	
+	    highlight = {
+	        scope:province = {
+	    		has_owner = yes
+	    		owner = c:RAE
+			} 
+		}
+	
+		on_completion = {
+     	   custom_tooltip = secure_venetia_alliance_with_the_rhaeti_tt
+     	   trigger_event = { id = secure_venetia_mission_event.65 } 
+		}
+
+		bypass = {
+	 	   OR = {
+      		  	NOT = { exists = c:RAE }
+        		c:RAE = {
+        			has_land = no
+        		}
+	 	        has_completed_mission_task = secure_venetia_mission_task_20
+        	}
+		}
+
+    }
+
+    secure_venetia_mission_task_56 = { #Protect Rhaetia
+
+        icon = task_happiness
+
+        prevented_by = { secure_venetia_mission_task_20 secure_venetia_mission_task_12 secure_venetia_mission_task_10 }
+        requires = { secure_venetia_mission_task_55 }
+
+	    allow = {  
+	        trigger_if = {
+	        	limit = { exists = c:RAE }
+    		    c:RAE = { 
+    		        opinion = {
+    		            target = root
+    	        	    value >= 120
+    		        }   
+    		    }
+    		}
+    		trigger_else = {
+                manpower >= 40000
+                has_war_exhaustion <= 1
+    		}
+	    }
+	
+	    highlight = {
+	        scope:province = {
+	            OR = {
+                    province_id = 3661
+                    province_id = 3660
+                    province_id = 3659
+                    province_id = 3658
+                    province_id = 3656
+                    province_id = 3655
+                    province_id = 3654
+                    province_id = 3665
+                    province_id = 3663
+                    province_id = 3666
+                }    
+			} 
+		}
+	
+		on_completion = {
+     	   custom_tooltip = secure_venetia_protect_rhaetia_tt
+     	   trigger_event = { id = secure_venetia_mission_event.66 } 
+		}
+
+		bypass = {
+	 	   has_completed_mission_task = secure_venetia_mission_task_20
+		}
+
+    }
+
     secure_venetia_mission_task_57 = { #Venetic cities
 
         icon = task_political
@@ -2689,12 +2795,14 @@
                     area:venetia_area = {
                         any_area_province = {
                             count >= 2
+                            owned_or_subject_owned = root
                             has_city_status = yes
                         }
                     }
                     area:ferraria_area = {
                         any_area_province = {
                             count >= 4
+                            owned_or_subject_owned = root
                             has_city_status = yes
                         }
                     }
@@ -2913,37 +3021,12 @@
         allow = {
             custom_tooltip = {
                 text = secure_venetia_mission_task_62_tt
-                trigger_if = {
-                	limit = {
-                		any_owned_province = {
-                			is_in_area = p:3595
-                		}
-                		any_owned_province = {
-                			is_in_area = p:3598
-                		}
-                	}
+                any_owned_province = {
                     OR = {
-                        p:3595.state ={
-                            calc_true_if = {
-                                amount >= 1
-                                state_improvement_oratory_trigger = yes
-                            }
-                        }
-                        p:3598.state ={
-                            calc_true_if = {
-                                amount >= 1
-                                state_improvement_oratory_trigger = yes
-                            }
-                        }
+                        is_in_area = ferraria_area
+                        is_in_area = venetia_area
                     }
-                }
-                trigger_else = {
-                	any_owned_province = {
-                		is_in_area = p:3595
-                	}
-                	any_owned_province = {
-                		is_in_area = p:3598
-                	}
+                    state = { state_improvement_oratory_trigger = yes }
                 }
             }
         }
@@ -3234,7 +3317,7 @@
         allow = {
             num_of_cities >= 150
             diplomatic_stance = warmongering_stance
-            stability >= 65
+            stability >= 55
             manpower >= 45
             current_ruler = {
                 prominence >= 50
@@ -3253,6 +3336,9 @@
 
         on_completion = {
             custom_tooltip = secure_venetia_a_venetian_empire_tt
+            show_as_tooltip = {
+                change_government = imperium
+            }
             trigger_event = {
                 id = secure_venetia_mission_event.105
             }  

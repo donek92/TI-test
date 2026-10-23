@@ -18,7 +18,7 @@ deity_gekho = {
 	passive_modifier = { monthly_political_influence_modifier = deity_monthly_political_influence_modifier_svalue }
 	omen = { land_morale_modifier = omen_land_morale_modifier_svalue } #Bonus from Omen
 	religion = bon_religion
-	deity_category = justice #This Deity uses a Justice slot.
+	deity_category = war #This Deity uses a War slot.
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -302,11 +302,11 @@ deity_yeshe_walmo = {
 			}
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_wealth
 	passive_modifier = { build_time = deity_build_time_svalue }
 	omen = { oratory_tech_investment = omen_oratory_tech_investment } #Bonus from Omen
 	religion = bon_religion
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = economy #This Deity uses an Economy Slot
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -328,11 +328,11 @@ deity_sherab_chamma = {
 			}
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_eloquence
 	passive_modifier = { global_pop_assimilation_speed_modifier = deity_global_pop_assimilation_speed_modifier_svalue }
 	omen = { research_points_modifier = omen_research_points_modifier_svalue } #Bonus from Omen
 	religion = bon_religion
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = culture #This Deity uses a Culture Slot
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -406,11 +406,11 @@ deity_satrig_ersang = {
 			}
 		}
 	}
-	icon = deity_justice
+	icon = deity_love
 	passive_modifier = { global_population_capacity_modifier = deity_global_population_capacity_modifier_svalue }
-	omen = { global_monthly_state_loyalty = omen_global_monthly_state_loyalty } #Bonus from Omen
+	omen = { global_tribesmen_output = omen_global_tribesmen_output_svalue } #Bonus from Omen
 	religion = bon_religion
-	deity_category = justice #This Deity uses a Justice Slot
+	deity_category = fertility #This Deity uses a Fertility Slot
 	deification_trigger = {
 		can_deify_trigger = yes
 	}

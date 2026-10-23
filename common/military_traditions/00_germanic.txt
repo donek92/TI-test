@@ -19,6 +19,15 @@
 			}
 			country_culture_group = baltic
 		}
+		trigger_else_if = {
+			limit = {
+				country_culture_group = finnic_group
+			}
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			country_culture_group = finnic_group
+		}
 		trigger_else = {
 			custom_tooltip = {
 				text = "tradition_unlock_requirement_cultural_decision"
@@ -30,7 +39,8 @@
 
 	germanic_path_1 = { ###
 		modifier = { 
-			archers_offensive = 0.15
+			archers_offensive = 0.1
+			archers_defensive = 0.05
 		} 
 		icon = greek_antigonid_path_6
         requires = {}
@@ -40,8 +50,7 @@
 	germanic_path_2 = { ###
 	    enable_tactic = hit_and_run_tactics
 		modifier = { 
-			light_infantry_morale = 0.075
-			axemen_morale = 0.075
+			light_infantry_morale = 0.15
 		} 
 		icon = celtic_gallic_path_4
 		requires = {germanic_path_1}
@@ -50,7 +59,8 @@
 
 	germanic_path_3 = { ###
 		modifier = { 
-			archers_offensive = 0.15
+			archers_offensive = 0.1
+			archers_defensive = 0.05
 			archers_forest_combat_bonus = 0.2
 		} 
 		icon = persian_achaemenid_path_6

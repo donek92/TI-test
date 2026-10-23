@@ -18,7 +18,7 @@ administrators_in_subcultures_cost_svalue = {
 		}
 	}
 	divide = 4
-	round = floor
+	floor = yes
 	min = 80
 	max = 250
 }
@@ -247,15 +247,24 @@ num_pops_same_group_mil_trads = {
 				add = country_culture_pop_count
 			}
 		}
-		else_if = {
+	}
+}
+
+num_pops_same_group_mil_trads_without_target = {
+	value = 0
+	ROOT = {
+		if = {
 			limit = {
 				scope:target_culture = {
-					is_chinese_culture_group_trigger = yes
+					is_italian_culture_group_trigger = yes
 				}
 			}
 			every_country_culture = {
 				limit = {
-					is_chinese_culture_group_trigger = yes
+					NOT = {
+						this = scope:target_culture
+					}
+					is_italian_culture_group_trigger = yes
 					OR = {
 						has_pop_type_right = citizen
 						has_pop_type_right = nobles
@@ -267,12 +276,15 @@ num_pops_same_group_mil_trads = {
 		else_if = {
 			limit = {
 				scope:target_culture = {
-					is_eastern_steppe_culture_group_trigger = yes
+					is_levantine_culture_group_trigger = yes
 				}
 			}
 			every_country_culture = {
 				limit = {
-					is_eastern_steppe_culture_group_trigger = yes
+					NOT = {
+						this = scope:target_culture
+					}
+					is_levantine_culture_group_trigger = yes
 					OR = {
 						has_pop_type_right = citizen
 						has_pop_type_right = nobles
@@ -284,12 +296,15 @@ num_pops_same_group_mil_trads = {
 		else_if = {
 			limit = {
 				scope:target_culture = {
-					is_japanese_culture_group_trigger = yes
+					is_celtic_culture_group_trigger = yes
 				}
 			}
 			every_country_culture = {
 				limit = {
-					is_japanese_culture_group_trigger = yes
+					NOT = {
+						this = scope:target_culture
+					}
+					is_celtic_culture_group_trigger = yes
 					OR = {
 						has_pop_type_right = citizen
 						has_pop_type_right = nobles
@@ -301,12 +316,195 @@ num_pops_same_group_mil_trads = {
 		else_if = {
 			limit = {
 				scope:target_culture = {
-					is_tibetan_culture_group_trigger = yes
+					is_iberian_culture_group_trigger = yes
 				}
 			}
 			every_country_culture = {
 				limit = {
-					is_tibetan_culture_group_trigger = yes
+					NOT = {
+						this = scope:target_culture
+					}
+					is_iberian_culture_group_trigger = yes
+					OR = {
+						has_pop_type_right = citizen
+						has_pop_type_right = nobles
+					}
+				}
+				add = country_culture_pop_count
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target_culture = {
+					is_north_african_culture_group_trigger = yes
+				}
+			}
+			every_country_culture = {
+				limit = {
+					NOT = {
+						this = scope:target_culture
+					}
+					is_north_african_culture_group_trigger = yes
+					OR = {
+						has_pop_type_right = citizen
+						has_pop_type_right = nobles
+					}
+				}
+				add = country_culture_pop_count
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target_culture = {
+					is_big_persia_culture_group_trigger = yes
+				}
+			}
+			every_country_culture = {
+				limit = {
+					NOT = {
+						this = scope:target_culture
+					}
+					is_big_persia_culture_group_trigger = yes
+					OR = {
+						has_pop_type_right = citizen
+						has_pop_type_right = nobles
+					}
+				}
+				add = country_culture_pop_count
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target_culture = {
+					is_greek_culture_group_trigger = yes
+				}
+			}
+			every_country_culture = {
+				limit = {
+					NOT = {
+						this = scope:target_culture
+					}
+					is_greek_culture_group_trigger = yes
+					OR = {
+						has_pop_type_right = citizen
+						has_pop_type_right = nobles
+					}
+				}
+				add = country_culture_pop_count
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target_culture = {
+					is_haemic_culture_group_trigger = yes
+				}
+			}
+			every_country_culture = {
+				limit = {
+					NOT = {
+						this = scope:target_culture
+					}
+					is_haemic_culture_group_trigger = yes
+					OR = {
+						has_pop_type_right = citizen
+						has_pop_type_right = nobles
+					}
+				}
+				add = country_culture_pop_count
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target_culture = {
+					is_arabian_culture_group_trigger = yes
+				}
+			}
+			every_country_culture = {
+				limit = {
+					NOT = {
+						this = scope:target_culture
+					}
+					is_arabian_culture_group_trigger = yes
+					OR = {
+						has_pop_type_right = citizen
+						has_pop_type_right = nobles
+					}
+				}
+				add = country_culture_pop_count
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target_culture = {
+					is_steppe_culture_group_trigger = yes
+				}
+			}
+			every_country_culture = {
+				limit = {
+					NOT = {
+						this = scope:target_culture
+					}
+					is_steppe_culture_group_trigger = yes
+					OR = {
+						has_pop_type_right = citizen
+						has_pop_type_right = nobles
+					}
+				}
+				add = country_culture_pop_count
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target_culture = {
+					is_germanic_culture_group_trigger = yes
+				}
+			}
+			every_country_culture = {
+				limit = {
+					NOT = {
+						this = scope:target_culture
+					}
+					is_germanic_culture_group_trigger = yes
+					OR = {
+						has_pop_type_right = citizen
+						has_pop_type_right = nobles
+					}
+				}
+				add = country_culture_pop_count
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target_culture = {
+					is_anatolian_culture_group_trigger = yes
+				}
+			}
+			every_country_culture = {
+				limit = {
+					NOT = {
+						this = scope:target_culture
+					}
+					is_anatolian_culture_group_trigger = yes
+					OR = {
+						has_pop_type_right = citizen
+						has_pop_type_right = nobles
+					}
+				}
+				add = country_culture_pop_count
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target_culture = {
+					is_indian_culture_group_trigger = yes
+				}
+			}
+			every_country_culture = {
+				limit = {
+					NOT = {
+						this = scope:target_culture
+					}
+					is_indian_culture_group_trigger = yes
 					OR = {
 						has_pop_type_right = citizen
 						has_pop_type_right = nobles

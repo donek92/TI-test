@@ -64,7 +64,7 @@
 		allow = {
             treasury >= 100
 			trigger_if = {
-                limit = {
+                limit = {c
                     is_ai = no
                     has_variable = li_si_character_scope_variable
                     var:li_si_character_scope_variable = {
@@ -168,7 +168,7 @@
         icon = "task_calm"
         requires = { qin_02_li_si_task_2 }
         allow = {
-		has_law = king_of_kings #placeholder law until Stephan's laws are implemented
+		has_law = qin_administration #placeholder law until Stephan's laws are implemented
             #Bureacratic centrilization laws, whatever that means
         }
         on_completion = {
@@ -197,6 +197,8 @@
         }
         on_start = {
             add_political_influence = -25
+            add_legitimacy = 5
+            add_tyranny = 5
 			set_variable = {
 				name = ongoing_mission_pulse_flag
 				days = 365
@@ -231,12 +233,12 @@
             # minority characters, nations, and vassals.
         }
         on_completion = {
-            
+            change_law = conversion_law
             trigger_event = me_qin_li_si.7
             show_as_tooltip = {
 				add_country_modifier = {
 					name = qin_burning_books #global_pop_assimilation_speed = 0.05
-					duration = -1
+					duration = 7200
 				}
             }
         }
@@ -301,6 +303,9 @@
         }
         on_start = {
             add_stability = -10
+            current_ruler = {
+            	add_corruption = 5
+            }
 			set_variable = {
 				name = ongoing_mission_pulse_flag
 				days = 730
@@ -308,6 +313,7 @@
             #Do the events for killing confucian characters
         }
         on_completion = {
+        	add_legitimacy = 5
 			show_as_tooltip = {
 				add_country_modifier = {
 					name = freedom_from_confucian_values_mod
@@ -595,6 +601,10 @@
 					}
 				}
 			}
+			or = {
+				has_law = border_garrison_chinese_law
+				has_law = han_military_law
+			}
 			#Capital region has a legion
         }
         on_completion = {
@@ -685,6 +695,7 @@
         }
         allow = {
 			political_influence >= 50
+			has_law = conversion_law
         }
         on_start = {
 			set_variable = {

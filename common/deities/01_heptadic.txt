@@ -16,7 +16,7 @@ deity_thagimasadas = { # WAR
 	passive_modifier = { global_nobles_happyness = omen_global_nobles_happiness_svalue }
 	omen = { naval_morale_modifier = omen_naval_morale_modifier_svalue } #Bonus from Omen
 	religion = indo_iranian_religion
-	deity_category = justice #This Deity uses a Justice slot.
+	deity_category = war #This Deity uses a War slot.
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -124,11 +124,11 @@ deity_tabiti = { # ECONOMY
 			}
 		}
 	}
-	icon = deity_justice
+	icon = deity_wealth
 	passive_modifier = { stability_monthly_change = deity_stability_monthly_change }
 	omen = { war_exhaustion = omen_war_exhaustion } #Bonus from Omen
 	religion = indo_iranian_religion
-	deity_category = justice #This Deity uses a Justice Slot
+	deity_category = economy #This Deity uses an Economy Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -151,11 +151,11 @@ deity_goitosyrus = { # CULTURE
 			}
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_eloquence
 	passive_modifier = { research_points_modifier = deity_research_points_modifier_svalue }
 	omen = { global_monthly_civilization = omen_global_monthly_civilization_svalue } #Bonus from Omen
 	religion = indo_iranian_religion
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = culture #This Deity uses a Culture Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -371,7 +371,7 @@ deity_agathyrus = { # FERTILITY
 	passive_modifier = { global_population_capacity_modifier = deity_global_population_capacity_modifier_svalue }
 	omen = { global_slaves_output = omen_global_slaves_output_svalue } #Bonus from Omen
 	religion = indo_iranian_religion
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = fertility #This Deity uses a Fertility Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -459,10 +459,7 @@ deity_tur = { # WAR
 	}
 
 	on_activate = {
-		military_apotheosis_capital_freemen_effect = yes
-		current_ruler = {
-			add_trait = brave
-		}
+		tur_apotheosis_effect = yes
 	}
 }
 
@@ -730,17 +727,7 @@ deity_amazons = { # WAR
 	}
 
 	on_activate = {
-		military_apotheosis_manpower_effect = yes
-		if = {
-			limit = {
-				current_ruler = {
-					is_female = yes
-				}
-			}
-			current_ruler = {
-				add_trait = disciplined
-			}
-		}
+		amazons_apotheosis_effect = yes
 	}
 }
 

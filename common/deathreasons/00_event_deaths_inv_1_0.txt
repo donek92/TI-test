@@ -5,3 +5,7 @@ death_tribal_duel = {}
 death_decapitated = {}
 death_pulled_limb_by_limb = {}
 death_by_pirates = {}
+death_killer_rabbit = {}
+death_gross_incompetency = {}
+death_sacrificed_to_cannibals = {}
+death_sacrificed_to_the_sun_god = {}

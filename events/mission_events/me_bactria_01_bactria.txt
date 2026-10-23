@@ -23,10 +23,15 @@ me_bactria_01_bactria.2 = { # Task 1 - The Seleukid Yoke - End
             name = bactrian_levies_modifier
             duration = 3650
         }
-	    c:SEL = {
-            add_opinion = {
-                modifier = bac_insult_sent
-                target = ROOT
+        if = {
+            limit = {
+             is_ai = no
+            }
+            c:SEL = {
+                add_opinion = {
+                    modifier = bac_insult_sent
+                    target = ROOT
+                }
             }
         }
     }
@@ -47,12 +52,12 @@ me_bactria_01_bactria.3 = { # Task 2 - The Capital of Bactria
                 limit = {
                     NOT = { has_province_modifier = bactrian_royal_city_modifier }
                 }
-                add_province_modifier = {
+                add_permanent_province_modifier = {
                     name = bactrian_royal_city_modifier
                     duration = -1
                 }
             }
-    	}
+        }
     }
 }
 
@@ -132,7 +137,7 @@ me_bactria_01_bactria.6 = { # Task 5 - Alexandria on the Oxus
                 limit = {
                     NOT = { has_province_modifier = greco_bactrian_city_modifier }
                 }
-                add_province_modifier = {
+                add_permanent_province_modifier = {
                     name = greco_bactrian_city_modifier
                     duration = -1
                 }
@@ -143,7 +148,7 @@ me_bactria_01_bactria.6 = { # Task 5 - Alexandria on the Oxus
                 }
                 set_variable = greco_bactrian_city_variable
 	    }
-    	}
+        }
     }
 }
 
@@ -195,7 +200,7 @@ me_bactria_01_bactria.8 = { # Task 7 - Refound Alexandria Tharmata
                 limit = {
                     NOT = { has_province_modifier = greco_bactrian_city_modifier }
                 }
-                add_province_modifier = {
+                add_permanent_province_modifier = {
                     name = greco_bactrian_city_modifier
                     duration = -1
                 }
@@ -205,9 +210,9 @@ me_bactria_01_bactria.8 = { # Task 7 - Refound Alexandria Tharmata
                     NOT = { has_variable = greco_bactrian_city_variable }
                 }
                 set_variable = greco_bactrian_city_variable
-                change_province_name = "Demetrias Baktriane"
+                change_province_name = Demetrias_Baktriane
 	    }
-    	}
+        }
     }
 }
 
@@ -251,7 +256,7 @@ me_bactria_01_bactria.10 = { # Task 9 - Marketplaces of Marakanda
                 limit = {
                     NOT = { has_province_modifier = flourishing_commerce_modifier }
                 }
-                add_province_modifier = {
+                add_permanent_province_modifier = {
                     name = flourishing_commerce_modifier
                     duration = -1
                 }
@@ -262,7 +267,7 @@ me_bactria_01_bactria.10 = { # Task 9 - Marketplaces of Marakanda
                 }
                 set_variable = greco_bactrian_city_variable
 	    }
-    	}
+        }
     }
 }
 
@@ -361,7 +366,7 @@ me_bactria_01_bactria.13 = { # Task 12 - City of Cyrus
                 limit = {
                     NOT = { has_province_modifier = greco_bactrian_city_modifier }
                 }
-                add_province_modifier = {
+                add_permanent_province_modifier = {
                     name = greco_bactrian_city_modifier
                     duration = -1
                 }
@@ -372,7 +377,7 @@ me_bactria_01_bactria.13 = { # Task 12 - City of Cyrus
                 }
                 set_variable = greco_bactrian_city_variable
 	    }
-    	}
+        }
     }
 }
 
@@ -438,7 +443,25 @@ me_bactria_01_bactria.14 = { # Task 13 - Alexandria the Furthest
                     }
                 }
             }
-    	}
+        }
+		if = {
+            limit = {
+                NOT = { owns_area = jaxartia_area }
+            }
+            p:7273 = {
+                custom_tooltip = seleukid_mission_02_syria_task_1_effect_tt
+                hidden_effect = {
+                    area = {
+                        every_area_province = {
+                            limit = {
+                                NOT = { owner = root }
+                            }
+                            add_claim = root
+                        }
+                    }
+                }
+            }
+        }
         p:6704 = {
             if = {
                 limit = {
@@ -483,11 +506,18 @@ me_bactria_01_bactria.15 = { # Task 14 - A New City in Sogdiana
                     NOT = { has_variable = greco_bactrian_city_variable }
                 }
                 set_variable = greco_bactrian_city_variable
-                change_province_name = "Antiocheia Skythias"
+                change_province_name = Antiocheia_Skythias
                 capital_formable_medium_effect = yes
-                establish_city_effect = yes
+                add_province_modifier = {
+                    name = founding_city_in_progress
+                    duration = 730
+                }
+                trigger_event = {
+                    id = state_improvement.6
+                    days = 730
+                }
             }
-    	}
+        }
     }
 }
 
@@ -524,7 +554,7 @@ me_bactria_01_bactria.17 = { # Task 16 - Alexandria in Margiana
                 limit = {
                     NOT = { has_province_modifier = greco_bactrian_city_modifier }
                 }
-                add_province_modifier = {
+                add_permanent_province_modifier = {
                     name = greco_bactrian_city_modifier
                     duration = -1
                 }
@@ -535,7 +565,7 @@ me_bactria_01_bactria.17 = { # Task 16 - Alexandria in Margiana
                 }
                 set_variable = greco_bactrian_city_variable
 	    }
-    	}
+        }
     }
 }
 
@@ -583,9 +613,16 @@ me_bactria_01_bactria.19 = { # Task 18 - City of Iasonion
                 }
                 set_variable = greco_bactrian_city_variable
 	  	capital_formable_large_effect = yes
-		establish_city_effect = yes
+		add_province_modifier = {
+			name = founding_city_in_progress
+			duration = 730
+		}
+		trigger_event = {
+			id = state_improvement.6
+			days = 730
+		}
 	    }
-    	}
+        }
     }
 }
 
@@ -646,6 +683,24 @@ me_bactria_01_bactria.21 = { # Task 19 - Conquer Chorasmia - End
                 }
             }
         }
+		if = {
+            limit = {
+                NOT = { owns_area = oxiana_ultima_area }
+            }
+            p:9241 = {
+                custom_tooltip = seleukid_mission_02_syria_task_1_effect_tt
+                hidden_effect = {
+                    area = {
+                        every_area_province = {
+                            limit = {
+                                NOT = { owner = root }
+                            }
+                            add_claim = root
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -670,6 +725,12 @@ me_bactria_01_bactria.22 = { # Task 20 - Urbanize Chorasmia
                 duration = -1
             }
         }
+		p:9241.state = {
+            add_state_modifier = {
+                name = chorasmian_administration_modifier
+                duration = -1
+            }
+        }
     }
 }
 
@@ -687,7 +748,7 @@ me_bactria_01_bactria.23 = { # Task 21 - Capital of Chorasmia
                 limit = {
                     NOT = { has_province_modifier = greco_bactrian_city_modifier }
                 }
-                add_province_modifier = {
+                add_permanent_province_modifier = {
                     name = greco_bactrian_city_modifier
                     duration = -1
                 }
@@ -698,7 +759,7 @@ me_bactria_01_bactria.23 = { # Task 21 - Capital of Chorasmia
                 }
                 set_variable = greco_bactrian_city_variable
 	    }
-    	}
+        }
     }
 }
 
@@ -724,6 +785,12 @@ me_bactria_01_bactria.24 = { # Task 22 - Chorasmian Oasis
                 duration = -1
             }
         }
+		p:9241.state = {
+            add_state_modifier = {
+                name = chorasmian_oasis_modifier
+                duration = -1
+            }
+        }
     }
 }
 
@@ -737,25 +804,22 @@ me_bactria_01_bactria.25 = { # Task 23 - The Rise of Eucratides - Start
     right_portrait = scope:eucratides_character
 
     immediate = {
-	create_character = {
+        create_character = {
             first_name = "Eucratides"
             family_name = "Eucratidid"
-	    age = 25
-	    culture = macedonian
-	    religion = root.religion
-	    save_scope_as = eucratides_character
-	}
-	hidden_effect = {
-	    scope:eucratides_character = {
-	        add_martial = 6
-                add_charisma = 4
-	        add_finesse = 4
-	        add_zeal = 7
-	        add_trait = tactician
-	        add_trait = disciplined
-	        add_prominence = 50
-	    }
-	}
+            age = 25
+            culture = macedonian
+            religion = root.religion
+            no_stats = yes
+            add_martial = 6
+            add_charisma = 4
+            add_finesse = 4
+            add_zeal = 7
+            add_trait = tactician
+            add_trait = disciplined
+            add_prominence = 50
+            save_scope_as = eucratides_character
+        }
     }
 
     option = {
@@ -789,14 +853,14 @@ me_bactria_01_bactria.26 = { # Task 23 - The Rise of Eucratides - End
 
     option = {
         name = me_bactria_01_bactria.26.a
-	set_as_ruler = scope:eucratides_character
-	scope:eucratides_character = {
-                add_popularity = popularity_huge
-	}
+        set_as_ruler = scope:eucratides_character
+        scope:eucratides_character = {
+            add_popularity = popularity_huge
+        }
     }
     option = {
         name = me_bactria_01_bactria.26.b
-	custom_tooltip = "bactrian_leader_not_select_tooltip"
+	    custom_tooltip = "bactrian_leader_not_select_tooltip"
     }
 }
 
@@ -822,7 +886,7 @@ me_bactria_01_bactria.27 = { # Task 24 - A New Capital for Bactria
                 p:6694 = { NOT = { has_province_modifier = great_bactrian_royal_city_modifier } }
             }
             p:6694 = {
-                add_province_modifier = {
+                add_permanent_province_modifier = {
                     name = great_bactrian_royal_city_modifier
                     duration = -1
                 }
@@ -871,7 +935,7 @@ me_bactria_01_bactria.28 = { # Task 25 - Bactrian Military Reforms
         add_country_modifier = {
             name = bactrian_military_reforms_modifier
             duration = 7300
-    	}
+        }
     }
 }
 
@@ -945,13 +1009,6 @@ me_bactria_01_bactria.30 = { # Task 26 - Greek Immigration - End
     desc = me_bactria_01_bactria.30.desc
     picture = diadochi_new_city_founded
 
-    immediate = {
-        set_variable = {
-            name = bactria_pop_move_variable
-            value = 1
-        }
-    }
-
     option = {
         name = me_bactria_01_bactria.30.a
         custom_tooltip = me_bactria_01_bactria.30.a.tt
@@ -988,6 +1045,115 @@ me_bactria_01_bactria.30 = { # Task 26 - Greek Immigration - End
             }
             remove_variable = bactria_pop_move_variable
         }
+    }
+}
+
+me_bactria_01_bactria.31 = { # Task 26 - Greek Settlers - Find
+    type = province_event
+    title = me_bactria_01_bactria.31.t
+    desc = me_bactria_01_bactria.31.desc
+    picture = diadochi_new_city_founded
+
+    trigger = {
+        has_city_status = yes
+        total_population >= 20
+    }
+
+    immediate = {
+        scope:bactrian_nation = {
+            random_owned_province = {
+                limit = {
+                    has_city_status = yes
+		            has_variable = greco_bactrian_city_variable
+                }
+                weight = {
+                    modifier = {
+                        factor = 10
+                        is_capital = yes
+                    }
+                    modifier = {
+                        factor = 5
+                        is_state_capital = yes
+                    }
+                    modifier = {
+                        factor = 3
+                        total_population < population_cap
+                    }
+                    modifier = {
+                        factor = 0.005
+                        total_population > population_cap
+                    }
+                }
+                save_scope_as = bactrian_city
+            }
+        }
+        while = {
+            count = { 5 15 }
+            if = {
+                limit = {
+                    total_population >= 20
+                    any_pops_in_province = {
+                        pop_culture_group = hellenic
+                        NOR = {
+                            pop_type = slaves
+                            pop_type = tribesmen
+                        }
+                    }
+                }
+                random_pops_in_province = {
+                    limit = {
+                        pop_culture_group = hellenic
+                        NOR = {
+                            pop_type = slaves
+                            pop_type = tribesmen
+                        }
+                    }
+                    move_pop = scope:bactrian_city
+                }
+                if = {
+                    limit = {
+                        has_variable = bactria_pop_move_variable
+                    }
+                    change_variable = {
+                        name = bactria_pop_move_variable
+                        add = 1
+                    }
+                }
+                else = {
+                    set_variable = {
+                        name = bactria_pop_move_variable
+                        value = 1
+                    }
+                }
+                scope:bactrian_city = {
+                    if = {
+                        limit = {
+                            has_variable = bactria_pop_move_variable
+                        }
+                        change_variable = {
+                            name = bactria_pop_move_variable
+                            add = 1
+                        }
+                    }
+                    else = {
+                        set_variable = {
+                            name = bactria_pop_move_variable
+                            value = 1
+                        }
+                    }
+                }
+            }
+        }
+        if = {
+            limit = {
+                has_variable = bactrian_chosen_city
+            }
+            remove_variable = bactrian_chosen_city
+        }
+    }
+    #if the event is visible, it needs an option:
+    option = {
+        name = me_bactria_01_bactria.31.a
     }
 }
 
@@ -1104,6 +1270,6 @@ me_bactria_01_bactria.35 = { # Final Task
                 name = bactrian_wealth_modifier
                 duration = -1
             }
-    	}
+        }
     }
 }

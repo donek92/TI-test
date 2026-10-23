@@ -50,7 +50,7 @@
 	}
 }
 
-944={ #Akkaz
+944={ #Arethousa
 	terrain="desert"
 	culture="gerrhan"
 	religion="zoroaster"
@@ -65,6 +65,7 @@
 		amount=1
 	}
 	tribesmen={
+		religion="arabian_pantheon"
 		amount=2
 	}
 }
@@ -425,10 +426,10 @@
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
-		amount=1
+		amount=2
 	}
 	tribesmen={
-		amount=2
+		amount=3
 	}
 }
 
@@ -507,10 +508,10 @@
 	province_rank="settlement"
 	tribesmen={
 		culture="hebrew"
-		amount=1
+		amount=2
 	}
 	tribesmen={
-		amount=1
+		amount=3
 	}
 }
 
@@ -523,7 +524,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
-		amount=1
+		amount=2
 	}
 	tribesmen={
 		amount=2
@@ -539,7 +540,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=1
+		amount=2
 	}
 }
 
@@ -552,11 +553,11 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=3
+		amount=4
 	}
 	tribesmen={
 		religion="judaism"
-		amount=1
+		amount=2
 	}
 }
 
@@ -585,7 +586,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=1
+		amount=2
 	}
 	port_building=1
 }
@@ -615,7 +616,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=1
+		amount=2
 	}
 }
 
@@ -631,10 +632,10 @@
 		amount=2
 	}
 	freemen={
-		amount=1
+		amount=2
 	}
 	slaves={
-		amount=2
+		amount=3
 	}
 	tribesmen={
 		amount=1
@@ -687,7 +688,7 @@
 		amount=2
 	}
 	slaves={
-		amount=1
+		amount=2
 	}
 }
 
@@ -739,7 +740,7 @@
 		amount=1
 	}
 	tribesmen={
-		amount=2
+		amount=3
 	}
 	port_building=1
 }
@@ -759,7 +760,7 @@
 		amount=2
 	}
 	slaves={
-		amount=1
+		amount=2
 	}
 	tribesmen={
 		amount=1
@@ -797,10 +798,10 @@
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
-		amount=1
+		amount=2
 	}
 	tribesmen={
-		amount=1
+		amount=2
 	}
 }
 
@@ -813,7 +814,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=1
+		amount=3
 	}
 }
 
@@ -826,10 +827,10 @@
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
-		amount=1
+		amount=2
 	}
 	tribesmen={
-		amount=2
+		amount=4
 	}
 }
 
@@ -848,10 +849,10 @@
 		amount=2
 	}
 	slaves={
-		amount=1
+		amount=2
 	}
 	tribesmen={
-		amount=1
+		amount=4
 	}
 }
 
@@ -864,7 +865,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=2
+		amount=4
 	}
 }
 
@@ -890,17 +891,17 @@
 	freemen={
 		culture="hebrew"
 		religion="judaism"
-		amount=1
+		amount=2
 	}
 	slaves={
 		amount=2
 	}
 	tribesmen={
-		amount=1
+		amount=3
 	}
 }
 
-4717={ #Gaiopolis
+4717={ #Gaiapolis
 	terrain="desert"
 	culture="qedarite"
 	religion="arabian_pantheon"
@@ -912,7 +913,7 @@
 		amount=2
 	}
 	tribesmen={
-		amount=2
+		amount=3
 	}
 }
 
@@ -928,7 +929,7 @@
 		amount=2
 	}
 	tribesmen={
-		amount=2
+		amount=5
 	}
 }
 
@@ -951,7 +952,7 @@
 		amount=1
 	}
 	tribesmen={
-		amount=1
+		amount=3
 	}
 }
 
@@ -967,7 +968,7 @@
 		amount=2
 	}
 	freemen={
-		amount=1
+		amount=3
 	}
 	slaves={
 		amount=1
@@ -975,7 +976,7 @@
 	tribesmen={
 		culture="nabatean"
 		religion="arabian_pantheon"
-		amount=1
+		amount=2
 	}
 }
 
@@ -1324,7 +1325,7 @@
 	}
 }
 
-5419={ #Mazir
+5419={ #Samad
 	terrain="plains"
 	culture="samad"
 	religion="arabian_pantheon"
@@ -1477,16 +1478,16 @@
 	barbarian_power=0
 	province_rank="city"
 	citizen={
-		amount=12
+		amount=11
 	}
 	freemen={
-		amount=9
+		amount=12
 	}
 	slaves={
-		amount=9
+		amount=10
 	}
 	tribesmen={
-		amount=2
+		amount=1
 	}
 	port_building=1
 }
@@ -1519,7 +1520,7 @@
 		amount=1
 	}
 	slaves={
-		amount=1
+		amount=3
 	}
 }
 
@@ -1539,7 +1540,16 @@
 		amount=7
 	}
 	citizen={
-		culture="babylonian"
+		amount=5
+	}
+	citizen={
+		culture="hebrew"
+		religion="judaism"
+		amount=1
+	}
+	citizen={
+		culture="pasargadi"
+		religion="zoroaster"
 		amount=3
 	}
 	citizen={
@@ -1548,10 +1558,10 @@
 		amount=5
 	}
 	freemen={
-		amount=7
+		amount=3
 	}
 	slaves={
-		amount=3
+		amount=6
 	}
 	tribesmen={
 		amount=1
@@ -1573,6 +1583,9 @@
 	freemen={
 		amount=2
 	}
+	tribesmen={
+		amount=4
+	}
 }
 
 7204={ #Sarkoi
@@ -1584,7 +1597,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
-		amount=1
+		amount=2
 	}
 	tribesmen={
 		amount=3
@@ -1600,7 +1613,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=2
+		amount=4
 	}
 }
 
@@ -1616,7 +1629,7 @@
 		amount=1
 	}
 	slaves={
-		amount=1
+		amount=2
 	}
 	port_building=1
 }
@@ -1633,7 +1646,7 @@
 		amount=3
 	}
 	slaves={
-		amount=1
+		amount=4
 	}
 }
 
@@ -1652,7 +1665,7 @@
 		amount=2
 	}
 	tribesmen={
-		amount=1
+		amount=3
 	}
 }
 
@@ -1665,16 +1678,16 @@
 	barbarian_power=0
 	province_rank="city"
 	citizen={
-		amount=11
+		amount=10
 	}
 	freemen={
-		amount=5
+		amount=6
 	}
 	slaves={
-		amount=3
+		amount=6
 	}
 	tribesmen={
-		amount=6
+		amount=8
 	}
 	port_building=1
 }
@@ -1694,7 +1707,7 @@
 		amount=1
 	}
 	tribesmen={
-		amount=1
+		amount=4
 	}
 }
 
@@ -1710,10 +1723,10 @@
 		amount=1
 	}
 	slaves={
-		amount=2
+		amount=3
 	}
 	tribesmen={
-		amount=1
+		amount=3
 	}
 	port_building=1
 }
@@ -1730,7 +1743,7 @@
 		amount=1
 	}
 	freemen={
-		amount=1
+		amount=2
 	}
 	port_building=1
 }
@@ -1744,7 +1757,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=2
+		amount=3
 	}
 	freemen={
 		amount=1
@@ -1766,10 +1779,10 @@
 		amount=1
 	}
 	freemen={
-		amount=1
+		amount=2
 	}
 	tribesmen={
-		amount=1
+		amount=3
 	}
 }
 
@@ -1785,7 +1798,7 @@
 		amount=2
 	}
 	slaves={
-		amount=1
+		amount=2
 	}
 	tribesmen={
 		amount=2
@@ -1807,7 +1820,7 @@
 		amount=1
 	}
 	tribesmen={
-		amount=2
+		amount=4
 	}
 }
 
@@ -1853,7 +1866,7 @@
 		amount=2
 	}
 	tribesmen={
-		amount=1
+		amount=5
 	}
 }
 
@@ -1865,14 +1878,14 @@
 	civilization_value=7
 	barbarian_power=0
 	province_rank="settlement"
-	citizen={
-		amount=1
-	}
 	freemen={
 		amount=1
 	}
+	slaves={
+		amount=2
+	}
 	tribesmen={
-		amount=1
+		amount=4
 	}
 }
 
@@ -1944,7 +1957,7 @@
 		amount=1
 	}
 	tribesmen={
-		amount=2
+		amount=4
 	}
 }
 
@@ -1979,17 +1992,14 @@
 	civilization_value=10
 	barbarian_power=0
 	province_rank="settlement"
-	citizen={
+	freemen={
 		amount=2
 	}
-	freemen={
+	slaves={
 		amount=3
 	}
-	slaves={
-		amount=1
-	}
 	tribesmen={
-		amount=1
+		amount=7
 	}
 	holy_site=omen_al_uzza
 }
@@ -2002,11 +2012,11 @@
 	civilization_value=8
 	barbarian_power=0
 	province_rank="settlement"
-	citizen={
-		amount=1
+	freemen={
+		amount=2
 	}
 	tribesmen={
-		amount=1
+		amount=6
 	}
 }
 
@@ -2019,7 +2029,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=2
+		amount=3
 	}
 }
 
@@ -2032,7 +2042,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
-		amount=3
+		amount=4
 	}
 }
 

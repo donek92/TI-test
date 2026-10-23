@@ -1,4 +1,4 @@
-﻿"KIO"={
+﻿"KIO"={#Superceeded by MIT
 	country="KIO"
 	28={
 		first_name="Artakama"

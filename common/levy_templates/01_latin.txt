@@ -7,23 +7,25 @@
 
 levy_italic = {
 	default = no
-	heavy_infantry = 0.2
-	spearmen = 0.25
-	light_infantry = 0.35
-	
-	light_cavalry = 0.2
+	heavy_infantry = 0.4
+	light_infantry = 0.2
+	slingers = 0.2
+	horse_skirmishers = 0.2
 }
 
 levy_roman = {
 	default = no
-
-	heavy_infantry = 0.5
-	spearmen = 0.25
-	light_infantry = 0.15
-	
+	heavy_infantry = 0.4
+	spearmen = 0.2
+	light_infantry = 0.3
 	light_cavalry = 0.1
 }
-
+levy_roman_polybian = {
+	default = no
+	light_infantry = 0.35
+	heavy_infantry = 0.55
+	light_cavalry = 0.1
+}
 levy_etruscan = {
 	default = no
 

@@ -89,6 +89,12 @@ arabia_region = { #16 areas
 	}
 }
 
+aral_sea_region = { #1 areas
+	areas = {
+		mare_aral_area
+	}
+}
+
 ariana_region = { #9 areas
 	areas = {
 		arachosia_area
@@ -169,18 +175,23 @@ atlantic_region = { #7 areas
 	}
 }
 
-atlas_region = { #10 areas
+atlas_region = { #14 areas
 	areas = {
 		chefia_area
 		figuig_area
+		ghardaia_area
+		gir_area
 		jedi_area
+		lixus_area
 		lower_moulouya_area
 		marrakesh_area
+		ouargla_area
 		saharan_atlas_area
 		sijilmasa_area
 		souss_area
 		upper_draa_area
 		upper_moulouya_area
+		touggourt_area
 	}
 }
 
@@ -305,15 +316,17 @@ bithynia_region = { #6 areas
 	}
 }
 
-black_sea_river_region = { #3 areas
+black_sea_river_region = { #5 areas
 	areas = {
 		borysthenes_river_area
+		don_river_area
+		hypanis_river_area
 		ister_river_area
 		tyras_river_area
 	}
 }
 
-bohemia_region = { #8 areas
+bohemia_area = { #8 areas
 	color = rgb { 255 36 0 }
 	areas = {
 		boioa_meridionalis_area
@@ -361,6 +374,18 @@ britain_region = { #10 areas
 	}
 }
 
+burma_region = { #6 areas
+	color = rgb { 76 153 0 }
+	areas = {
+		arakan_area
+		kamarupa_area
+		pubu_area
+		pyu_area
+		samatata_area
+		shan_area
+	}
+}
+
 british_river_region = { #3 areas
 	areas = {
 		hull_river_area
@@ -399,6 +424,18 @@ cappadocia_region = { #5 areas
 		cappadocia_garsauritis_area
 		cappadocia_melitene_area
 		cappadocia_saravene_area
+	}
+}
+
+caspian_sea_region = { #1 areas
+	areas = {
+		mare_caspian_area
+	}
+}
+
+caspian_sea_river_region = { #1 areas
+	areas = {
+		volga_river_area
 	}
 }
 
@@ -447,6 +484,12 @@ central_italy_region = { #9 areas
 		sardinia_meridionalis
 		sardinia_septentrionalis
 		south_etruria_area
+	}
+}
+
+central_mediterranean_river_region = { #1 areas
+	areas = {
+		po_river_area
 	}
 }
 
@@ -583,6 +626,20 @@ dravida_region = { #8 areas
 		sriparvata_area
 	}
 }
+eastern_india_river_region = { #1 areas
+	areas = {
+		ganges_river_area
+	}
+}
+
+eastern_mediterranean_river_region = { #4 areas
+	areas = {
+		cydnus_river_area
+		gallikos_river_area
+		nile_river_area
+		pyramus_river_area
+	}
+}
 
 east_asian_river_region = { #2 areas
 	areas = {
@@ -591,9 +648,11 @@ east_asian_river_region = { #2 areas
 	}
 }
 
-fezzan_region = { #11 areas
-	color = rgb { 255 255 127 }
+fezzan_region = { #13 areas
+	color = rgb { 255 249 127 }
 	areas = {
+		ahoggar_area
+		ghat_area
 		girgiri_area
 		hayaa_area
 		himka_area
@@ -604,6 +663,7 @@ fezzan_region = { #11 areas
 		shatti_area
 		soda_area
 		soffegin_area
+		syrtis_area
 		zamzam_area
 	}
 }
@@ -724,6 +784,18 @@ greece_region = { #10 areas
 		epirus_area
 		euboea_area
 		south_peleponnesos_area
+	}
+}
+himalayan_region = { #7 areas
+	color = rgb { 30 22 66 }
+	areas = {
+		gilgit_area
+		north_tarim_area
+		pamir_area
+		south_tarim_area
+		suvarna_gotra_area
+		tarim_area
+		zhangzhung_area
 	}
 }
 
@@ -886,7 +958,7 @@ lower_egypt_region = { #7 areas
 	}
 }
 
-lower_nubia_region = { #9 areas
+lower_nubia_region = { #12 areas
 	color = rgb { 6 100 125 }
 	areas = {
 		alana_area
@@ -894,10 +966,13 @@ lower_nubia_region = { #9 areas
 		aswan_area
 		bayuda_area
 		gabgaba_area
+		meidob_area
+		melik_area
 		napata_area
 		north_nubia_area
 		sinkat_area
 		south_nubia_area
+		yellow_nile_area
 	}
 }
 
@@ -1120,7 +1195,24 @@ nile_region = { #1 areas
 		nile_river_area
 	}
 }
+north_sea_river_region = { #5 areas
+	areas = {
+		albis_river_area
+		hull_river_area
+		limfjord_river_area
+		rhine_river_area
+		thames_river_area
+	}
+}
 
+northern_atlantic_river_region = { #4 areas
+	areas = {
+		garumna_river_area
+		liger_river_area
+		sequana_river_area
+		shannon_river_area
+	}
+}
 nubia_region = { #11 areas
 	color = rgb { 13 9 25 }
 	areas = {
@@ -1135,6 +1227,7 @@ nubia_region = { #11 areas
 		meroe_area
 		muqaddam_area
 		qadarif_area
+		zankor_area
 	}
 }
 
@@ -1427,9 +1520,10 @@ shuofang_region = { #6 areas
 	}
 }
 
-sogdiana_region = { #8 areas
+sogdiana_region = { #10 areas
 	color = rgb { 163 133 58 }
 	areas = {
+		beishan_area
 		chu_area
 		cyropolis_area
 		ferghana_area
@@ -1437,7 +1531,26 @@ sogdiana_region = { #8 areas
 		kapchagay_area
 		sirdarya_area
 		sogdiana_area
+		talas_area
 		taraz_area
+	}
+}
+
+southern_atlantic_river_region = { #4 areas
+	areas = {
+		baetis_river_area
+		flumen_anas_river_area
+		sububus_river_area
+		tagus_river_area
+	}
+}
+
+southern_india_river_region = { #4 areas
+	areas = {
+		cauvery_river_area
+		godavari_river_area
+		krishna_river_area
+		penner_river_area
 	}
 }
 
@@ -1607,6 +1720,13 @@ vistulia_region = { #8 areas
 		vistulia_inferioris_area
 	}
 }
+western_india_river_region = { #3 areas
+	areas = {
+		indus_river_area
+		narmada_river_area
+		tapi_river_area
+	}
+}
 
 wa_region = { #11 areas
 	areas = {
@@ -1638,6 +1758,13 @@ xiyu_region = { #10 areas
 		yanqi_area
 	}
 }
+western_mediterranean_river_region = { #2 areas
+	areas = {
+		ebro_river_area
+		rhodanus_river_area
+	}
+}
+
 
 xu_region = { #6 areas
 	areas = {

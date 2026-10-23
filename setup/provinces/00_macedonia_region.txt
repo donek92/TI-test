@@ -1,5 +1,5 @@
 ﻿356={ #Thasos
-	terrain="hills"
+	terrain="forest"
 	culture="macedonian"
 	religion="roman_pantheon"
 	trade_goods="precious_metals"
@@ -10,8 +10,13 @@
 		amount=1
 	}
 	freemen={
-		amount=3
+		amount=2
 	}
+	freemen={
+		culture="phoenician"
+		religion="carthaginian_pantheon"
+		amount=1
+	}	
 	slaves={
 		amount=2
 	}
@@ -342,7 +347,7 @@
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
-		amount=7
+		amount=9
 	}
 	freemen={
 		amount=6
@@ -750,7 +755,7 @@
 	terrain="forest"
 	culture="macedonian"
 	religion="roman_pantheon"
-	trade_goods="cattle"
+	trade_goods="wax"
 	civilization_value=24
 	barbarian_power=0
 	province_rank="settlement"
@@ -851,8 +856,18 @@
 	citizen={
 		amount=1
 	}
+	citizen={
+		culture="taulantian"
+		religion="illyrian_pantheon"
+		amount=1
+	}
 	freemen={
-		amount=3
+		culture="taulantian"
+		religion="illyrian_pantheon"
+		amount=2
+	}
+	freemen={
+		amount=2
 	}
 	slaves={
 		amount=2
@@ -887,14 +902,19 @@
 	civilization_value=33
 	barbarian_power=0
 	province_rank="city"
+	nobles={
+		amount=1
+	}
 	citizen={
-		amount=2
+		amount=1
 	}
 	freemen={
 		amount=3
 	}
 	slaves={
-		amount=2
+		culture="taulantian"
+		religion="illyrian_pantheon"
+		amount=5
 	}
 }
 
@@ -985,8 +1005,8 @@
 
 499={ #Spinopara
 	terrain="farmland"
-	culture="triballoi"
-	religion="shamanism"
+	culture="paeonian"
+	religion="illyrian_pantheon"
 	trade_goods="leather"
 	civilization_value=13
 	barbarian_power=0
@@ -1167,8 +1187,8 @@
 
 4097={ #Helice
 	terrain="hills"
-	culture="triballoi"
-	religion="shamanism"
+	culture="paeonian"
+	religion="illyrian_pantheon"
 	trade_goods="base_metals"
 	civilization_value=9
 	barbarian_power=0
@@ -1223,7 +1243,7 @@
 	}
 }
 
-4153={ #Paroikopolis
+4153={ #Alexandropolis Maedica
 	terrain="hills"
 	culture="paeonian"
 	religion="illyrian_pantheon"
@@ -1345,10 +1365,10 @@
 	barbarian_power=0
 	province_rank="city"
 	citizen={
-		amount=5
+		amount=3
 	}
 	freemen={
-		amount=5
+		amount=4
 	}
 	slaves={
 		amount=3

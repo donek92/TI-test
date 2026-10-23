@@ -52,7 +52,7 @@ deity_aramazd = { # WAR
 	}
 }
 
-deity_mihr = { # WISDOM
+deity_mihr = { # CULTURE
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -64,14 +64,14 @@ deity_mihr = { # WISDOM
 			}
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_eloquence
 	passive_modifier = { global_freemen_output = deity_global_freemen_output_svalue }
 	omen = { manpower_recovery_speed = omen_manpower_recovery_speed } #Bonus from Omen
 	on_activate = {
 		culture_apotheosis_civic_tech_effect = yes
 	}
 	religion = anahitic_religion
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = culture #This Deity uses a Culture Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -104,7 +104,7 @@ deity_tsovinar = { # ECONOMY
 	}
 }
 
-deity_tir = { # WISDOM
+deity_tir = { # CULTURE
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -116,14 +116,14 @@ deity_tir = { # WISDOM
 			}
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_eloquence
 	passive_modifier = { research_points_modifier = deity_research_points_modifier_svalue }
 	omen = { monthly_tyranny = omen_monthly_tyranny_svalue } #Bonus from Omen
 	on_activate = {
 		culture_apotheosis_civic_tech_effect = yes
 	}
 	religion = anahitic_religion
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = culture #This Deity uses a Culture Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -185,7 +185,7 @@ deity_vahagn = { # WAR
 	}
 }
 
-deity_spandaremet = { # CULTURE
+deity_spandaremet = { # FERTILITY
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -197,14 +197,14 @@ deity_spandaremet = { # CULTURE
 			}
 		}
 	}
-	icon = deity_eloquence
+	icon = deity_love
 	passive_modifier = { global_monthly_food_modifier = deity_global_monthly_food_modifier_svalue }
 	omen = { war_exhaustion = omen_war_exhaustion } #Bonus from Omen
 	on_activate = {
 		fertility_apotheosis_capital_slaves_effect = yes
 	}
 	religion = anahitic_religion
-	deity_category = culture #This Deity uses a Culture Slot
+	deity_category = fertility #This Deity uses a Fertility Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -289,7 +289,7 @@ deity_vanatur = { # ECONOMY
 	}
 }
 
-deity_amanor = { # JUSTICE
+deity_amanor = { # ECONOMY
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -301,21 +301,21 @@ deity_amanor = { # JUSTICE
 			}
 		}
 	}
-	icon = deity_justice
+	icon = deity_wealth
 	passive_modifier = { enact_holy_site_cost_modifier = -0.2 }
 	omen = { global_tax_modifier = omen_global_tax_modifier_svalue } #Bonus from Omen
 	on_activate = {
 		fertility_apotheosis_food_effect = yes
 	}
 	religion = anahitic_religion
-	deity_category = justice #This Deity uses a Justice slot.
+	deity_category = economy #This Deity uses an Economy slot.
 
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
 }
 
-deity_barshamin = { # JUSTICE
+deity_barshamin = { # WAR
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -327,14 +327,14 @@ deity_barshamin = { # JUSTICE
 			}
 		}
 	}
-	icon = deity_justice
+	icon = deity_war
 	passive_modifier = { war_breaking_truce_cost_modifier = -0.125 }
 	omen = { mercenary_land_maintenance_cost = omen_mercenary_land_maintenance_cost_svalue } #Bonus from Omen
 	on_activate = {
 		military_apotheosis_capital_freemen_effect = yes
 	}
 	religion = anahitic_religion
-	deity_category = justice #This Deity uses a Justice slot.
+	deity_category = war #This Deity uses a War slot.
 
 	deification_trigger = {
 		can_deify_trigger = yes

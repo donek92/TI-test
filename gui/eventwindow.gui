@@ -606,7 +606,9 @@ base_window = {
 	}
 }
 
-base_window = { ####Currently unused
+#Use for tutorial window also
+window = { ####Currently unused
+	gfxtype = windowgfx
 	name = "major_event_window"
 	parentanchor = center
 	position = { 0 10 }

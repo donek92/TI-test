@@ -210,16 +210,15 @@
 		#Own at least 10 provinces that have city status that have dominant tamil, pandyan, cholan, or cheran culture.
 		#Have one of those cultures be integrated
 			custom_tooltip = {
-			text = lankan_missions_task_6_A_tooltip
-			any_country_culture = {
-			is_integrated = yes
-				OR = {
-					is_culture = tamil
-					is_culture = pandyan
-					is_culture = cholan
-					is_culture = cheran
+				text = lankan_missions_task_6_A_tooltip
+				any_integrated_culture = {
+					OR = {
+						is_culture = tamil
+						is_culture = pandyan
+						is_culture = cholan
+						is_culture = cheran
+					}
 				}
-			}
 			}
 			custom_tooltip = {
 			text = lankan_missions_task_6_B_tooltip		
@@ -320,7 +319,7 @@
 					}				
 					25 = {
 						current_ruler = {
-							force_add_trait = pandya
+							grant_bloodline_to_descendants_effect = { BLOODLINE = pandya }
 							family = {
 								ordered_family_member = {
 									limit = {
@@ -368,8 +367,8 @@
 		}
 
 		on_completion = {
-		#Small chance to get the blood of Chola
-		add_political_influence = 25
+			#Small chance to get the blood of Chola
+			add_political_influence = 25
 			custom_tooltip = lankan_missions_task_8_B_tooltip
 			hidden_effect = {
 				random_list = {
@@ -380,7 +379,7 @@
 					}
 					25 = {
 						current_ruler = {
-							force_add_trait = chola
+							grant_bloodline_to_descendants_effect = { BLOODLINE = chola }
 							force_add_trait = victorious
 							family = {
 								ordered_family_member = {
@@ -470,7 +469,7 @@
 					75 = {}
 					25 = {
 						current_ruler = {
-							force_add_trait = chera
+							grant_bloodline_to_descendants_effect = { BLOODLINE = chera }
 							family = {
 								ordered_family_member = {
 									limit = {

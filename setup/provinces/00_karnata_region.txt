@@ -178,7 +178,7 @@
 6890={ #Naura
 	terrain="hills"
 	culture="alupan"
-	religion="charvaka"
+	religion="agama"
 	trade_goods="spices"
 	civilization_value=9
 	barbarian_power=0
@@ -691,11 +691,9 @@
 		amount=11
 	}
 	slaves={
-		religion="charvaka"
 		amount=3
 	}
 	tribesmen={
-		religion="charvaka"
 		amount=3
 	}
 }
@@ -712,7 +710,6 @@
 		amount=1
 	}
 	citizen={
-		religion="charvaka"
 		amount=5
 	}
 	freemen={
@@ -757,7 +754,7 @@
 		amount=1
 	}
 	tribesmen={
-		amount=5
+		amount=4
 	}
 	tribesmen={
 		religion="ajivika"
@@ -905,7 +902,7 @@
 		amount=2
 	}
 	tribesmen={
-		amount=3
+		amount=4
 	}
 }
 
@@ -983,7 +980,7 @@
 		amount=1
 	}
 	tribesmen={
-		religion="charvaka"
+		religion="agama"
 		amount=1
 	}
 	tribesmen={
@@ -1049,11 +1046,9 @@
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
-		religion="ajivika"
 		amount=3
 	}
 	freemen={
-		religion="ajivika"
 		amount=2
 	}
 	slaves={
@@ -1136,7 +1131,7 @@
 	terrain="jungle"
 	culture="kannadan"
 	religion="agama"
-	trade_goods="glass"
+	trade_goods="fruits"
 	civilization_value=8
 	barbarian_power=0
 	province_rank="settlement"
@@ -1341,11 +1336,7 @@
 		amount=5
 	}
 	tribesmen={
-		amount=6
-	}
-	tribesmen={
-		religion="charvaka"
-		amount=3
+		amount=9
 	}
 	holy_site=omen_bhadrabahu
 }
@@ -1441,7 +1432,7 @@
 	terrain="hills"
 	culture="kannadan"
 	religion="agama"
-	trade_goods="fruits"
+	trade_goods="glass"
 	civilization_value=13
 	barbarian_power=0
 	province_rank="city"
@@ -1518,7 +1509,7 @@
 7034={ #Kadiri
 	terrain="plains"
 	culture="telugu"
-	religion="charvaka"
+	religion="agama"
 	trade_goods="glass"
 	civilization_value=11
 	barbarian_power=0
@@ -1642,7 +1633,7 @@
 7072={ #Palkigunda
 	terrain="plains"
 	culture="kuntalan"
-	religion="charvaka"
+	religion="agama"
 	trade_goods="cattle"
 	civilization_value=11
 	barbarian_power=0
@@ -1681,7 +1672,7 @@
 	terrain="jungle"
 	culture="alupan"
 	religion="agama"
-	trade_goods="cattle"
+	trade_goods="wax"
 	civilization_value=9
 	barbarian_power=0
 	province_rank="settlement"

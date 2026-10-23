@@ -41,7 +41,7 @@ deity_dactyl = {
 	passive_modifier = { civic_tech_investment = deity_civic_tech_investment_svalue }
 	omen = { global_citizen_output = omen_global_citizen_output_svalue } #Bonus from Omen
 	religion = anatolian_religion
-	deity_category = wisdom #This Deity uses an Wisdom Slot
+	deity_category = economy #This Deity uses an Economy Slot
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -67,7 +67,7 @@ deity_men = {
 	passive_modifier = { monthly_tyranny = deity_monthly_tyranny_svalue }
 	omen = { global_monthly_state_loyalty = omen_global_monthly_state_loyalty } #Bonus from Omen
 	religion = anatolian_religion
-	deity_category = justice #This Deity uses a Justice Slot
+	deity_category = culture #This Deity uses a Culture Slot
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -141,11 +141,11 @@ deity_attis = {
 			}
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_love
 	passive_modifier = { global_monthly_food_modifier = deity_global_monthly_food_modifier_svalue }
 	omen = { global_monthly_civilization = omen_global_monthly_civilization_svalue } #Bonus from Omen
 	religion = anatolian_religion
-	deity_category = wisdom #This Deity uses a Wisdom Slot
+	deity_category = fertility #This Deity uses a Fertility Slot
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
@@ -190,7 +190,14 @@ deity_kakasbos = {
 deity_ma = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
-		tag = CAP
+		OR = {
+			very_rare_deity_trigger = {
+				RELIGION = anatolian_religion
+			}
+			deity:omen_ma = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
 	}
 	icon = deity_war
 	passive_modifier = { army_maintenance_cost = deity_army_maintenance_cost_svalue }
@@ -205,6 +212,40 @@ deity_ma = {
 		military_apotheosis_manpower_effect = yes
 	}
 }
+
+deity_ma_aniketos = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			primary_culture = cappadocian
+			any_integrated_culture = {
+				is_culture = cappadocian
+			}			
+			rare_deity_trigger = {
+				RELIGION = anatolian_religion
+			}
+			deity:omen_ma_aniketos = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_war
+	passive_modifier = { discipline = deity_discipline_svalue }
+	omen = { global_nobles_happyness = omen_global_nobles_happiness_svalue } #Bonus from Omen
+	religion = anatolian_religion
+	deity_category = war #This Deity uses a War slot.
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+
+	on_activate = {
+		military_apotheosis_manpower_effect = yes
+	}
+
+}
+
+### Exclusive Deity Checks ###
 
 deity_sandon = {
 	trigger = {
@@ -250,12 +291,12 @@ deity_bagaios = {
 		}
 	}
 
-	icon = deity_justice
+	icon = deity_diadochi_culture
 	passive_modifier = { stability_cost_modifier = deity_stability_cost_modifier }
 	omen = { agressive_expansion_monthly_change = omen_aggressive_expansion_monthly_change_svalue }
 	religion = anatolian_religion
 
-	deity_category = justice # This Deity uses a Justice slot
+	deity_category = culture # This Deity uses a Culture slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -530,5 +571,81 @@ deity_nicaea = {
 
 	on_activate = {
 		military_apotheosis_capital_freemen_effect = yes
+	}
+}
+
+deity_midas = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		rare_deity_trigger = {
+			RELIGION = anatolian_religion
+		}
+		has_variable = deity_unlocked_midas
+	}
+
+	icon = deity_wealth
+	passive_modifier = { global_commerce_modifier = deity_global_commerce_modifier_svalue }
+	omen = { global_tax_modifier = omen_global_tax_modifier_svalue }
+	religion = anatolian_religion
+
+	deity_category = economy # This Deity uses an Economy slot
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+
+	on_activate = {
+		midas_apotheosis_effect = yes
+	}
+}
+
+deity_pylaemenes = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		rare_deity_trigger = {
+			RELIGION = anatolian_religion
+		}
+		has_variable = deity_unlocked_pylaemenes
+		primary_culture = paphlagonian
+	}
+
+	icon = deity_war
+	passive_modifier = { discipline = deity_discipline_svalue }
+	omen = { agressive_expansion_monthly_change = omen_aggressive_expansion_monthly_change_svalue }
+	religion = anatolian_religion
+
+	deity_category = war # This Deity uses a War slot
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+
+	on_activate = {
+		pylaemenes_apotheosis_effect = yes
+	}
+}
+
+deity_gordias = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		rare_deity_trigger = {
+			RELIGION = anatolian_religion
+		}
+		has_variable = deity_unlocked_gordias
+	}
+
+	icon = deity_diadochi_fertility
+	passive_modifier = { build_cost = deity_build_cost_svalue }
+	omen = { global_population_happiness = omen_global_population_happiness }
+	religion = anatolian_religion
+
+	deity_category = fertility # This Deity uses a Fertility slot
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+
+	on_activate = {
+		gordias_apotheosis_effect = yes
 	}
 }

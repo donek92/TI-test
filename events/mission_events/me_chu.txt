@@ -105,6 +105,7 @@ me_chu.1000 = { # Declare war on Chu - (event for player choice)
                     province = 8828 # Wuling
                     target = CHU
                 }
+                custom_tooltip = me_chu_qin_tt
             }
 
             HAN = {

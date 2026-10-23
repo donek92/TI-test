@@ -64,10 +64,12 @@ template internal_starting_country_flag
 	icon = {
 		name = "shadow"
 		texture = "gfx/interface/map/flag_shadow.dds"
-		
-		block "size"
-		{
-			size = { 120 120 }
+
+		block "shadow" {
+			block "size"
+			{
+				size = { 120 120 }
+			}
 		}
 	}
 
@@ -85,6 +87,7 @@ template internal_starting_country_flag
 		distribute_visual_state = no
 		
 		onclick = "[GetVariableSystem.Set('country_selection', 'selected')]"
+		onclick = "[GetVariableSystem.Clear('mission_map')]" # to hide map selection
 		clicksound = "event:/SFX/UI/Province/sfx_ui_province_select"
 		oversound = "event:/SFX/UI/Generic/sfx_ui_generic_mouse_over"
 
@@ -132,6 +135,17 @@ types InvictusTypes {
 		size = { 50 50 }
 		using = internal_starting_country_flag
 
+		onmousehierarchyenter = "[SetHighlightCountry( Country.Self )]"
+		blockoverride "flag"
+		{
+			texture = "[Country.AccessCoatOfArms.GetTexture('(int32)120','(int32)120')]"
+			frame = "[Country.AccessCoatOfArms.GetFrame('(int32)120','(int32)120')]"
+		}
+		blockoverride "click"
+		{
+			onclick = "[SetLobbyCountryTag(Country.GetTag)]"
+		}
+
 		blockoverride "size"
 		{
 			size = { 50 50 }
@@ -162,6 +176,14 @@ types InvictusTypes {
 		}
 		onmousehierarchyleave = "[ClearHighlightColors]"
 	}
+
+	type starting_nation_map = starting_nation {
+		scale = 0.7
+		blockoverride "shadow" {
+			size = { 53 53 }
+		}
+	}
+
 	type button_resize = button  {
 		texture = "gfx/interface/base_parts/white_button_color_200fs.dds"
 		spriteType = Corneredtiled
@@ -177,7 +199,25 @@ types InvictusTypes {
 		modify_texture = {
 			name = "Alpha"
 			texture = "gfx/icons/expand.dds"
-			blend_mode = alphamultiply			
+			blend_mode = alphamultiply
+		}
+	}
+
+	type button_tab_inv = widget {
+		layoutpolicy_horizontal = expanding
+		size = { 0 26 }
+		tab_button = {
+			size = { 100% 100% }
+		}
+		category_button_open = {
+			size = { 100% 100% }
+			background = {
+				using = flat_background_white
+				shaderfile = "gfx/FX/pdxgui_default.shader"
+			}
+			block "MaxVisible" {
+				visible = no
+			}
 		}
 	}
 }

@@ -80,7 +80,7 @@ deity_nerthus = { # FERTILITY
 	}
 }
 
-deity_vagdavercustis = { # WISDOM
+deity_vagdavercustis = { # WAR
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -92,14 +92,14 @@ deity_vagdavercustis = { # WISDOM
 			}
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_tribal_war
 	passive_modifier = { experience_decay = deity_experience_decay_svalue }
-	omen = { research_points_modifier = omen_research_points_modifier_svalue } #Bonus from Omen
+	omen = { land_morale_modifier = omen_land_morale_modifier_svalue } #Bonus from Omen
 	on_activate = {
 		military_apotheosis_capital_freemen_effect = yes
 	}
 	religion = germanic_religion
-	deity_category = wisdom #This Deity uses a Wisdom slot.
+	deity_category = war #This Deity uses a War slot.
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -132,7 +132,7 @@ deity_tamfana = { # ECONOMY
 	}
 }
 
-deity_tuisto = { # JUSTICE
+deity_tuisto = { # CULTURE
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -144,21 +144,21 @@ deity_tuisto = { # JUSTICE
 			}
 		}
 	}
-	icon = deity_justice
+	icon = deity_tribal_eloquence
 	passive_modifier = { global_monthly_state_loyalty = deity_global_monthly_state_loyalty_svalue }
 	omen = { ruler_popularity_gain = omen_ruler_popularity_gain_svalue } #Bonus from Omen
 	on_activate = {
 		culture_apotheosis_assimilate_effect = yes
 	}
 	religion = germanic_religion
-	deity_category = justice #This Deity uses a Justice Slot
+	deity_category = culture #This Deity uses a Culture Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
 	}
 }
 
-deity_hludana = { # JUSTICE
+deity_hludana = { # FERTILITY
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -170,14 +170,14 @@ deity_hludana = { # JUSTICE
 			}
 		}
 	}
-	icon = deity_justice
+	icon = deity_tribal_love
 	passive_modifier = { global_population_growth = deity_global_population_growth_svalue }
 	omen = { war_exhaustion = omen_war_exhaustion } #Bonus from Omen
 	on_activate = {
 		fertility_apotheosis_capital_effect = yes
 	}
 	religion = germanic_religion
-	deity_category = justice #This Deity uses a Justice Slot
+	deity_category = fertility #This Deity uses a Fertility Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -212,7 +212,7 @@ deity_alcis = { # CULTURE
 
 #Added deities by Invictus
 
-deity_mannus = { # WAR
+deity_mannus = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -238,7 +238,7 @@ deity_mannus = { # WAR
 	}
 }
 
-deity_yngvi = { # ECONOMY
+deity_yngvi = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -266,7 +266,7 @@ deity_yngvi = { # ECONOMY
 	}
 }
 
-deity_irmin = { # JUSTICE
+deity_irmin = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -278,12 +278,12 @@ deity_irmin = { # JUSTICE
 			}
 		}
 	}
-	icon = deity_justice
+	icon = deity_tribal_wealth
 	passive_modifier = { stability_monthly_change = deity_stability_monthly_change }
 	omen = { fort_maintenance_cost = omen_fort_maintenance_cost_svalue } #Bonus from Omen
 
 	religion = germanic_religion
-	deity_category = justice
+	deity_category = economy
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -294,7 +294,7 @@ deity_irmin = { # JUSTICE
 	}
 }
 
-deity_istaevo = { # ECONOMY
+deity_istaevo = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -322,7 +322,7 @@ deity_istaevo = { # ECONOMY
 	}
 }
 
-deity_gautr = { # WISDOM
+deity_gautr = {
 	trigger = {
 		polytheistic_check_religion_trigger = yes
 		OR = {
@@ -334,12 +334,12 @@ deity_gautr = { # WISDOM
 			}
 		}
 	}
-	icon = deity_wisdom
+	icon = deity_tribal_wealth
 	passive_modifier = { monthly_experience_gain = deity_monthly_experience_gain_svalue }
 	omen = { religious_tech_investment = omen_religious_tech_investment_svalue }
 
 	religion = germanic_religion
-	deity_category = wisdom
+	deity_category = economy
 
 	deification_trigger = {
 		can_deify_trigger = yes
@@ -350,7 +350,7 @@ deity_gautr = { # WISDOM
 	}
 }
 
-deity_tiwaz = { # CULTURE
+deity_tiwaz = {
     trigger = {
         polytheistic_check_religion_trigger = yes
         OR = {
@@ -378,7 +378,7 @@ deity_tiwaz = { # CULTURE
     }
 }
 
-deity_wodenaz = { # WISDOM
+deity_wodenaz = {
     trigger = {
         polytheistic_check_religion_trigger = yes
         OR = {
@@ -390,12 +390,12 @@ deity_wodenaz = { # WISDOM
             }
         }
     }
-    icon = deity_wisdom
+    icon = deity_tribal_eloquence
     passive_modifier = { research_points_modifier = deity_research_points_modifier_svalue }
     omen = { monthly_corruption = omen_monthly_corruption }
 
     religion = germanic_religion
-    deity_category = wisdom
+    deity_category = culture
 
     deification_trigger = {
         can_deify_trigger = yes
@@ -406,7 +406,7 @@ deity_wodenaz = { # WISDOM
     }
 }
 
-deity_wulthuz = { # CULTURE
+deity_wulthuz = {
     trigger = {
         polytheistic_check_religion_trigger = yes
         OR = {
@@ -434,7 +434,7 @@ deity_wulthuz = { # CULTURE
     }
 }
 
-deity_frijjo = { # FERTILITY
+deity_frijjo = {
     trigger = {
         polytheistic_check_religion_trigger = yes
         OR = {
@@ -461,7 +461,7 @@ deity_frijjo = { # FERTILITY
     }
 }
 
-deity_frawjo = { # FERTILITY
+deity_frawjo = {
     trigger = {
         polytheistic_check_religion_trigger = yes
         OR = {
@@ -489,7 +489,7 @@ deity_frawjo = { # FERTILITY
     }
 }
 
-deity_halja = { # JUSTICE
+deity_halja = {
 	trigger = {
         polytheistic_check_religion_trigger = yes
         OR = {
@@ -501,12 +501,12 @@ deity_halja = { # JUSTICE
             }
         }
     }
-	icon = deity_justice
+	icon = deity_tribal_eloquence
     passive_modifier = { global_supply_limit_modifier = deity_global_supply_limit_modifier_svalue }
     omen = { war_score_cost = omen_war_score_cost_svalue }
 
     religion = germanic_religion
-    deity_category = justice
+    deity_category = culture
 
     deification_trigger = {
         can_deify_trigger = yes
@@ -516,7 +516,7 @@ deity_halja = { # JUSTICE
     }
 }
 
-deity_haimadallaz = { # WISDOM
+deity_haimadallaz = {
     trigger = {
         polytheistic_check_religion_trigger = yes
         OR = {
@@ -528,12 +528,12 @@ deity_haimadallaz = { # WISDOM
             }
         }
     }
-    icon = deity_wisdom
-    passive_modifier = { civic_tech_investment = deity_civic_tech_investment_svalue }
+    icon = deity_tribal_love
+    passive_modifier = { global_supply_limit_modifier = deity_global_supply_limit_modifier_svalue }
     omen = { fort_maintenance_cost = omen_fort_maintenance_cost_svalue }
 
     religion = germanic_religion
-    deity_category = wisdom
+    deity_category = fertility
 
     deification_trigger = {
         can_deify_trigger = yes
@@ -544,7 +544,7 @@ deity_haimadallaz = { # WISDOM
 	}
 }
 
-deity_luk = { # ECONOMY
+deity_luk = {
 	trigger = {
         polytheistic_check_religion_trigger = yes
         OR = {
@@ -572,7 +572,7 @@ deity_luk = { # ECONOMY
     }
 }
 
-deity_baloraz = { # WAR
+deity_baloraz = {
 	trigger = {
         polytheistic_check_religion_trigger = yes
         OR = {

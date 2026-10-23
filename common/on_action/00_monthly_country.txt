@@ -17,20 +17,29 @@
 		flavor_egy.15
 		me_thrace_2_paper_kingdom.3 # Odrysia - revolt or not?
 		me_thrace_2_paper_kingdom.30 # Odrysia - losing war with Thrace, surrender or not?
+		punic_resurgence.16 # check if army landed
+		punic_resurgence.13 # check if state should leave
 		slave_revolts.3
 		me_thebes.17 #Add troops during the first war.
 		character_interactions_inv.9 #Child needs a tutor minor event
 		character_interactions_inv.10 #Man needs his wife
+		flavor_gad.1 # Gadir negotiating white peace at the start 
+		flavor_turdetanian.1 # Turdetanian Coallition
+		me_turdetania_2_heirs_tartessia.65 # Chosing a High Priestess
 	}
 
 	random_events = {
 		550 = 0
+		635 = 0
 		5 = comet.4
 		5 = flavor_germanics.1
 		5 = flavor_gaul.1
 		25 = flavor_germanics.6
 		25 = flavor_germanics.7
 		25 = flavor_germanics.13
+		15 = punic_resurgence.10 # random punic league events
+		15 = punic_resurgence.11 # random punic league event 2
+		15 = punic_resurgence.18 # carthage wants boats?
 	}
 	on_actions = {
 		dictatorship_power_held_pulse

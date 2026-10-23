@@ -17,7 +17,7 @@
 	culture="socossian"
 	religion="berber_religion"
 	trade_goods="stone"
-	civilization_value=18
+	civilization_value=3
 	barbarian_power=0
 	province_rank="settlement"
 	tribesmen={
@@ -30,9 +30,9 @@
 	culture="carthaginian"
 	religion="carthaginian_pantheon"
 	trade_goods="dye"
-	civilization_value=9
+	civilization_value=22
 	barbarian_power=0
-	province_rank="settlement"
+	province_rank="city"
 	citizen={
 		amount=1
 	}
@@ -49,6 +49,11 @@
 		religion="berber_religion"
 		amount=2
 	}
+	tribesmen={
+		culture="lixitoi"
+		religion="berber_religion"
+		amount=2
+	}
 	port_building=1
 }
 
@@ -60,6 +65,10 @@
 	civilization_value=5
 	barbarian_power=0
 	province_rank="settlement"
+	tribesmen={
+		culture="lixitoi"
+		amount=2
+	}
 	tribesmen={
 		amount=2
 	}
@@ -352,7 +361,23 @@
 	}
 }
 
-10087={ #Agdz
+8280={ #Timlilt
+	terrain="hills"
+	culture="autolalean"
+	religion="berber_religion"
+	trade_goods="base_metals"
+	civilization_value=5
+	barbarian_power=0
+	province_rank="settlement"
+	slaves={
+		amount=1
+	}
+	tribesmen={
+		amount=2
+	}
+}
+
+8291={ #Agdz
 	terrain="desert_hills"
 	culture="perorsian"
 	religion="berber_religion"
@@ -823,7 +848,27 @@
 	}
 }
 
-10119={ #Ifri
+8324={ #Atlas Pass
+	terrain="mountain"
+	culture="canarian"
+	religion="berber_religion"
+	trade_goods=""
+	civilization_value=0
+	barbarian_power=0
+	province_rank=""
+}
+
+8325={ #Atlas Pass
+	terrain="mountain"
+	culture="canarian"
+	religion="berber_religion"
+	trade_goods=""
+	civilization_value=0
+	barbarian_power=0
+	province_rank=""
+}
+
+8326={ #Ifri
 	terrain="desert_hills"
 	culture="canarian"
 	religion="berber_religion"
@@ -952,7 +997,17 @@
 	}
 }
 
-10138={ #Boudenib
+8335={ #Atlas Pass
+	terrain="mountain"
+	culture="canarian"
+	religion="berber_religion"
+	trade_goods=""
+	civilization_value=0
+	barbarian_power=0
+	province_rank=""
+}
+
+8356={ #Boudenib
 	terrain="desert"
 	culture="daphnitaean"
 	religion="berber_religion"
@@ -1248,7 +1303,7 @@
 		amount=2
 	}
 	tribesmen={
-		amount=5
+		amount=7
 	}
 }
 
@@ -1445,6 +1500,20 @@
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
+		culture="gaetulian"
+		amount=2
+	}
+}
+
+9441={ #Reguiba
+	terrain="desert"
+	culture="melanogaetulian"
+	religion="berber_religion"
+	trade_goods="leather"
+	civilization_value=5
+	barbarian_power=0
+	province_rank="settlement"
+	tribesmen={
 		amount=1
 	}
 	tribesmen={

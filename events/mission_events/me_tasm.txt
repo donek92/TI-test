@@ -749,9 +749,10 @@ me_tasm.30 = {
 		}
         p:8829 = { set_owned_by = root }
         p:8830 = { set_owned_by = root }
-        p:11213 = { set_owned_by = root }
+        p:8831 = { set_owned_by = root }
         p:8832 = { set_owned_by = root }
         p:8833 = { set_owned_by = root }
+        p:8834 = { set_owned_by = root }
     }
 }
 
@@ -795,7 +796,10 @@ me_tasm.32 = {
     option = {
         name = "me_tasm_32.a"
         custom_tooltip = me_tasm_32_tooltip
-        mission_claim_region_effect = { REGION = punt_region }
+        mission_claim_area_effect = { AREA = punt_area }
+        mission_claim_area_effect = { AREA = aromata_area }
+        mission_claim_area_effect = { AREA = mosylon_area }
+        mission_claim_area_effect = { AREA = upper_punt_area }
     }
 }
 

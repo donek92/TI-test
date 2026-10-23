@@ -20,7 +20,7 @@ festival_type = {
 
 	text = {
 		localization_key = marzeah
-		trigger = {
+		trigger = { 
 			has_deity_in_pantheon = deity:omen_melqart
 			NOT = { religion = roman_pantheon }
 		}
@@ -28,19 +28,19 @@ festival_type = {
 
 	text = {
 		localization_key = adonia
-		trigger = {
+		trigger = { 
 			has_deity_in_pantheon = deity:omen_astarte
-			NOT = { has_deity_in_pantheon = deity:omen_melqart }
+			NOT = { has_deity_in_pantheon = deity:omen_melqart } 
 			NOT = { religion = roman_pantheon }
 		}
 	}
-
+	
 	text = {
 		localization_key = mayumas
-		trigger = {
-			has_deity_in_pantheon = deity:omen_atargatis
-			NOT = { has_deity_in_pantheon = deity:omen_astarte }
-			NOT = { has_deity_in_pantheon = deity:omen_melqart }
+		trigger = { 
+			has_deity_in_pantheon = deity:deity_atargatis
+			NOT = { has_deity_in_pantheon = deity:omen_astarte } 
+			NOT = { has_deity_in_pantheon = deity:omen_melqart } 
 			NOT = { religion = roman_pantheon }
 		}
 	}
@@ -81,122 +81,122 @@ get_food_trade_good_icon = {
 		localization_key = get_salt_icon
 		trigger = { trade_goods = salt }
 	}
-
+	
 	text = {
 		localization_key = get_iron_icon
 		trigger = { trade_goods = iron }
 	}
-
+	
 	text = {
 		localization_key = get_horses_icon
 		trigger = { trade_goods = horses }
 	}
-
+	
 	text = {
 		localization_key = get_wine_icon
 		trigger = { trade_goods = wine }
 	}
-
+	
 	text = {
 		localization_key = get_wood_icon
 		trigger = { trade_goods = wood }
 	}
-
+	
 	text = {
 		localization_key = get_amber_icon
 		trigger = { trade_goods = amber }
 	}
-
+	
 	text = {
 		localization_key = get_stone_icon
 		trigger = { trade_goods = stone }
 	}
-
+	
 	text = {
 		localization_key = get_spices_icon
 		trigger = { trade_goods = spices }
 	}
-
+	
 	text = {
 		localization_key = get_elephants_icon
 		trigger = { trade_goods = elephants }
 	}
-
+	
 	text = {
 		localization_key = get_papyrus_icon
 		trigger = { trade_goods = papyrus }
 	}
-
+	
 	text = {
 		localization_key = get_cloth_icon
 		trigger = { trade_goods = cloth }
 	}
-
+	
 	text = {
 		localization_key = get_wild_game_icon
 		trigger = { trade_goods = wild_game }
 	}
-
+	
 	text = {
 		localization_key = get_precious_metals_icon
 		trigger = { trade_goods = precious_metals }
 	}
-
+	
 	text = {
 		localization_key = get_steppe_horses_icon
 		trigger = { trade_goods = steppe_horses }
 	}
-
+	
 	text = {
 		localization_key = get_earthware_icon
 		trigger = { trade_goods = earthware }
 	}
-
+	
 	text = {
 		localization_key = get_dye_icon
 		trigger = { trade_goods = dye }
 	}
-
+	
 	text = {
 		localization_key = get_fur_icon
 		trigger = { trade_goods = fur }
 	}
-
+	
 	text = {
 		localization_key = get_olive_icon
 		trigger = { trade_goods = olive }
 	}
-
+	
 	text = {
 		localization_key = get_leather_icon
 		trigger = { trade_goods = leather }
 	}
-
+	
 	text = {
 		localization_key = get_base_metals_icon
 		trigger = { trade_goods = base_metals }
 	}
-
+	
 	text = {
 		localization_key = get_woad_icon
 		trigger = { trade_goods = woad }
 	}
-
+	
 	text = {
 		localization_key = get_marble_icon
 		trigger = { trade_goods = marble }
 	}
-
+	
 	text = {
 		localization_key = get_honey_icon
 		trigger = { trade_goods = honey }
 	}
-
+	
 	text = {
 		localization_key = get_incense_icon
 		trigger = { trade_goods = incense }
 	}
-
+	
 	text = {
 		localization_key = get_hemp_icon
 		trigger = { trade_goods = hemp }
@@ -304,8 +304,8 @@ get_trait_icon = {
 	}
 	text = {
 		localization_key = get_victorious_icon
-		trigger = { always = yes }
-	}
+		trigger = { always = yes }		
+	}		
 }
 get_picture_icon = {
 	type = province
@@ -331,55 +331,55 @@ get_picture_icon = {
 	#Events
 	text = {
 		localization_key = get_event_pic1_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_event_pic2_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_event_pic3_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_event_pic4_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_event_pic5_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_event_pic6_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_event_pic7_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_event_pic8_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_event_pic9_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_event_pic10_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_event_pic11_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_event_pic12_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_event_pic13_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	#Portraits
 	text = {
@@ -406,79 +406,79 @@ get_picture_icon = {
 	#GREEK
 	text = {
 		localization_key = get_greek_mil1_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil2_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil3_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil4_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil5_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil6_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil7_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil8_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil9_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil10_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil11_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil12_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil13_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil14_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil15_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil16_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil17_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil18_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_greek_mil19_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	#EGYPT
 	text = {
@@ -491,95 +491,95 @@ get_picture_icon = {
 	}
 	text = {
 		localization_key = get_egypt_mil3_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil4_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil5_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil6_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil7_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil8_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil9_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil10_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil11_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil12_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil13_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil14_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil15_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil16_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil17_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil18_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil19_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil20_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil21_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil22_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil23_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil24_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil25_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_egypt_mil26_icon
@@ -607,79 +607,79 @@ get_picture_icon = {
 	}
 	text = {
 		localization_key = get_india_mil6_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_india_mil7_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_india_mil8_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_india_mil9_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_india_mil10_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_india_mil11_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_india_mil12_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_india_mil13_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_india_mil14_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_india_mil15_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_india_mil16_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_india_mil17_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_india_mil18_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_india_mil19_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_india_mil20_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_india_mil21_icon
-		trigger = { always = yes }
-	}
+		trigger = { always = yes }		
+	}	
 	text = {
 		localization_key = get_india_mil22_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_india_mil23_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_celt_mil1_icon
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_celt_mil2_icon
@@ -987,7 +987,7 @@ get_local_terrain = {
 			}
 		}
 	}
-
+	
 	text = {
 		localization_key = get_desert
 		trigger = {
@@ -997,7 +997,7 @@ get_local_terrain = {
 			}
 		}
 	}
-
+	
 	text = {
 		localization_key = get_jungle
 		trigger = {
@@ -1007,7 +1007,7 @@ get_local_terrain = {
 			}
 		}
 	}
-
+	
 	text = {
 		localization_key = get_marsh
 		trigger = {
@@ -1017,7 +1017,7 @@ get_local_terrain = {
 			}
 		}
 	}
-
+	
 	text = {
 		localization_key = get_snow
 		trigger = {
@@ -1027,7 +1027,7 @@ get_local_terrain = {
 			}
 		}
 	}
-
+	
 	text = {
 		localization_key = get_forest
 		trigger = {
@@ -1037,7 +1037,7 @@ get_local_terrain = {
 			}
 		}
 	}
-
+	
 	text = {
 		localization_key = get_hillside
 		trigger = {
@@ -1127,123 +1127,123 @@ get_duel_combat_injury = {
 
 	text = {
 		localization_key = get_duel_combat_injury_1
-		trigger = { always = yes }
-	}
+		trigger = { always = yes }		
+	}	
 	text = {
 		localization_key = get_duel_combat_injury_2
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_3
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_4
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_5
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_6
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_7
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_8
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_9
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_10
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_11
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_12
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_13
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_14
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_15
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_16
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_17
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_18
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_19
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_20
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_21
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_22
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_23
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_24
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_25
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_26
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_27
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_28
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_29
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 	text = {
 		localization_key = get_duel_combat_injury_30
-		trigger = { always = yes }
+		trigger = { always = yes }		
 	}
 }
 
@@ -1303,5 +1303,92 @@ clear_scheme_custom_tt = {
 	text = {
 		localization_key = get_ambition_old
 		trigger = { always = yes }
+	}
+}
+
+get_law_clan_chiefs_icon = {
+	type = province
+	random_valid = no
+	
+	text = {
+		localization_key = get_clan_chiefs_icon
+		trigger = { always = yes }
+	}
+}
+
+parthia_dhe_1_loc = {
+	type = country
+	random_valid = no
+
+	text = {
+		localization_key = parthia_dhe_1a
+		trigger = {
+			tag = PAR
+			NOT = { has_variable = par_not_pth_var }
+		}
+	}
+
+	text = {
+		localization_key = parthia_dhe_1b
+		trigger = {
+			tag = PAR
+			has_variable = par_not_pth_var
+		}
+	}
+
+	text = {
+		localization_key = parthia_dhe_1c
+		trigger = {
+			NOT = { tag = PAR }
+			NOT = { tag = SEL }
+			NOT = { tag = PRN }
+			NOT = { tag = ZNT }
+			NOT = { tag = PSS }
+			NOT = { tag = SCA }
+			NOT = { tag = SA4 }
+			NOT = { tag = DHE }
+			NOT = { tag = PTH }
+		}
+	}
+
+	text = {
+		localization_key = parthia_dhe_1d
+		trigger = {
+			tag = SEL
+		}
+	}
+
+	text = {
+		localization_key = parthia_dhe_1e
+		trigger = {
+			OR = {
+				tag = PRN
+				tag = ZNT
+				tag = PSS
+				tag = SCA
+				tag = SA4
+				tag = DHE
+				tag = PTH
+			}
+		}
+	}
+}
+
+move_capital_title_confirm_loc = {
+	type = country
+	random_valid = no
+
+	text = {
+		localization_key = move_capital_title_confirm_loc_1
+		trigger = {
+			NOT = { has_variable = inp_move_capital_var }
+		}
+	}
+
+	text = {
+		localization_key = move_capital_title_confirm_loc_2
+		trigger = {
+			has_variable = inp_move_capital_var
+		}
 	}
 }

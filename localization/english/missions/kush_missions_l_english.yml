@@ -4,6 +4,7 @@
  kush_missions_DESCRIPTION:0 "The people of Kush have all but faded into obscurity after the fall of the 25th dynasty. We will reverse our fortunes and grow to become the strongest Pharaoh the world has ever seen!"
  kush_missions_CRITERIA_DESCRIPTION:0 "This mission will be considered complete when we have assured our hegemony over much of the Greek world."
  kush_missions_BUTTON_TOOLTIP:0 "Egypt will be ours!"
+ kush_missions_BUTTON_DETAILS: ""
 
  kush_missions_task_1:0 "Kushite Kingdom"
  kush_missions_task_1_DESC:0 "We stand poised on the edge of greatness; prepare our claims and let our borders expand. The Kingdom of Kush will awe the world!\n\n\n\n\n\n\n\n\n\n@egypt_mil25!"
@@ -144,7 +145,7 @@
  kush_mission_22_A_effect_tt:0 "Release Palestine as a #T Kushite Client#! or establish #T Kushite Colonies#!."
  kush_mission_23_effect_tt:0 "Gain claims on the regions of #Y Assyria#!, #Y Mesopotamia#! and #Y Armenia#!."
  kush_mission_23_A_effect_tt:0 "Release Syria as a #T Kushite Client#! or establish #T Kushite Colonies#!."
- kush_mission_24_effect_tt:0 "Gain claims on all provinces in #Y Asia Minor#! and the region of #Y Greece#!. Choose to release Cyprus as a #T Kushite Client#!."
+ kush_mission_24_effect_tt:0 "Choose to release Cyprus as a #T Kushite Client#!."
  kush_mission_25_effect_tt:0 "At least 5 provinces owned by [mission_country.GetName] that produce Vegetables @vegetables! have a #Y Farming Settlement#! building or have at least #Y 2 Granary#! buildings."
  kush_mission_25_effect_2_tt:0 "Choose a province in the #Y Meroe#! area to start producing #Y Vegetables#!@vegetables!."
 
@@ -334,7 +335,7 @@
 
  ####EVENTS
  me_kush_1_title:0 "The Kushite Kingdom"
- me_kush_1_desc:0 "The Twenty-fifth Dynasty of Egypt was established by the Kushite kings in 757 BC. The dynasty's reunification of Lower Egypt, Upper Egypt, and Kush created the largest Egyptian empire since the New Kingdom. They were succeeded by the Twenty-sixth Dynasty, the last native dynasty to rule Egypt before the Achaemenid Empire invaded them. However, now the powerful Macedonian Ptolemaic dynasty rules over the sacred lands of Egypt. We have waited for far too long to restore the glory of the Twenty-fifth dynasty, but now the time has come for Kush to sail down the Nile and take our place as the Kings of Egypt once again!"
+ me_kush_1_desc:0 "The Twenty-fifth Dynasty of Egypt was established by the Kushite kings in 757 BCE. The dynasty's reunification of Lower Egypt, Upper Egypt, and Kush created the largest Egyptian empire since the New Kingdom. They were succeeded by the Twenty-sixth Dynasty, the last native dynasty to rule Egypt before the Achaemenid Empire invaded them. However, now the powerful Macedonian Ptolemaic dynasty rules over the sacred lands of Egypt. We have waited for far too long to restore the glory of the Twenty-fifth dynasty, but now the time has come for Kush to sail down the Nile and take our place as the Kings of Egypt once again!"
  me_kush_1.a:0 "Kush will rise to greatness!"
 
  me_kush_2_title:0 "An Aksumite Client"
@@ -407,7 +408,7 @@
  me_kush_14.d:0 "We can't afford this nonsense at the moment"
 
  me_kush_15_title:0 "Kushite Colony in Cyrenaica"
- me_kush_15_desc:0 "Should we consider sending colonists to Cyrenaica? Taking advantage of the silphium trade that flourishes there could eventually bring us fabulous riches. \n\n(A colony specialization for all colonies in this region will be selected in 1-3 years)."
+ me_kush_15.desc:0 "Should we consider sending colonists to Cyrenaica? Taking advantage of the silphium trade that flourishes there could eventually bring us fabulous riches. \n\n(A colony specialization for all colonies in this region will be selected in 1-3 years)."
  me_kush_15.a:0 "Establish Five Colonies"
  me_kush_15.b:0 "Establish Three Colonies"
  me_kush_15.c:0 "Establish One Colony"
@@ -567,7 +568,7 @@
  me_kush_42.a:0 "Glory to Kush!"
 
  me_kush_43_title:0 "A New Pharaoh"
- me_kush_43_desc:0 "All the Pharaohs that have ruled before us have passed; they are now known as the Osiris, the King of Eternity. Now a new era has arrived, and a new Pharaoh has ascended to rule over the great Egyptian people. (Egyptian pharaohs must follow Egyptian traditions or they will lose the #Y Pharaoh#! trait and gain the #R Dishonored Pharaoh#! trait.)"
+ me_kush_43_desc:0 "All the Pharaohs that have ruled before us have passed; they are now known as the Osiris, the King of Eternity. Now a new era has arrived, and a new Pharaoh has ascended to rule over the great Egyptian people. (Egyptian Pharaohs must follow Egyptian traditions or they will lose the #Y Pharaoh#! trait and gain the #R Dishonored Pharaoh#! trait.)"
  me_kush_43.a:0 "All hail the Pharaoh, a God amongst men."
 
  me_kush_47_title:0 "Colony in Cyprus"
@@ -789,6 +790,7 @@
  aksumite_integration:0 "Aksumite Integration"
  aksumite_ambitions:0 "Aksumite Ambitions"
  nile_prosperity:0 "Nile Prosperity"
+ nile_nobility: "Nile Nobility"
 
  ##Decisions
  apedemaks_blessing:0 "Seek Apedemak's Blessing"
@@ -803,7 +805,7 @@
  temple_of_hathor:0 "Temple of Hathor"
  temple_of_hathor_desc:0 "Considering that Dendera is the cult city of Hathor, a large temple complex devoted to Hathor should be built in the city."
  temple_of_amun:0 "Temple of Amun"
- temple_of_amun_desc:0 "Waset is the center of the cult of Amun in Egypt. Amun is one of the most widely worshipped gods in all of Egypt. It would be wise to construct a great temple complex devoted to Amun in this province."
+ temple_of_amun_desc:0 "Waset is the center of the cult of Amun in Egypt. Amun is one of the most widely worshiped gods in all of Egypt. It would be wise to construct a great temple complex devoted to Amun in this province."
  ##KEMETIC FLAVOR EVENTS
 
  MAAT_REBELLION_NAME:0 "Curse of Maat"
@@ -811,6 +813,7 @@
  ZZW:0 "Curse of Maat"
  ZZW_ADJ:0 "The Curse of Maat"
 
+ UPP: "Upper Egypt"
  UPPER_EGYPT_NAME:0 "Upper Egypt"
  UPPER_EGYPT_ADJ:0 "Upper Egypt"
 
@@ -861,7 +864,7 @@
  rel_flavor_kemetic.6.b:0 "Some money should change their minds"
 
  rel_flavor_kemetic.7.t:0 "The Curse of Maat"
- rel_flavor_kemetic.7.desc:0 "The peasant rabble in the province of Pattiga from years ago has turned into something truly terrifying...our ruler's duty to maintain Maat throughout the land has not been fulfilled, and now the threatening forces of Isfet stand at our doorstep."
+ rel_flavor_kemetic.7.desc:0 "The peasant rabble in the province of Pattiga from years ago has turned into something truly terrifying... our ruler's duty to maintain Maat throughout the land has not been fulfilled, and now the threatening forces of Isfet stand at our doorstep."
  rel_flavor_kemetic.7.a:0 "Maat has Cursed Us!"
 
  rel_flavor_kemetic.8.t:0 "A Mystic Has Been Found"
@@ -941,7 +944,11 @@
 
  rel_flavor_kemetic.21.t:0 "King Priests Declare Independence!"
  rel_flavor_kemetic.21.desc:0 "Damnable fates! Those troublesome priests from Thebes have declared independence! They have sold all of the religious items in their Temples and have used the funds to raise an army, claiming that the gods will smite us for our blasphemies. The desert sands will run red with the blood of these traitors!"
+ rel_flavor_kemetic.21.tt:0 "#E Upper Egypt#! declares war [SCOPE.GetRootScope.GetCountry.GetName|E] with the #Y Imperial Challenge#! war goal"
  rel_flavor_kemetic.21.a:0 "Time to fight!"
+ rel_flavor_kemetic.21.b:0 "Perhaps we could join their cause..."
+ rel_flavor_kemetic.21.bt:0 "#G Change your country from #E [SCOPE.GetRootScope.GetCountry.GetName|Y]#! to #Y #E  Upper Egypt#!#!#!"
+
 
  #Apis Bull event chain
  rel_flavor_kemetic.22.t:0 "The Apis Bull Has Been Found!"
@@ -1113,10 +1120,11 @@
 
 
  egyptian_revolt.1.t:0 "The Priest Kings of Thebes"
- egyptian_revolt.1.desc:0 "When we first began to expand into Egyptian territory, we were mostly concerned with attacks from foreign enemies, never imagining that the local inhabitants of the conquered lands would cause as many headaches as they have. Now we have received word that the Priests of Thebes, unhappy with their current situation, have been causing trouble; saying that we have no divine right to rule over the Black Land. While this is undoubtedly annoying, we certainly have other, pressing matters that require your attention. What shall be done to these meddling priests?"
+ egyptian_revolt.1.desc:0 "When we first began to expand into Egyptian territory, we were mostly concerned with attacks from foreign enemies, never imagining that the local inhabitants of the conquered lands would cause as many headaches as they have. Now we have received word that the Priests of Thebes, unhappy with their current situation, have been causing trouble; saying that we have no divine right to rule over the Black Land. They have sold all of the religious items in their Temples and have used the funds to raise an army, claiming that the gods will smite us for our blasphemies. The desert sands will run red with the blood of these traitors!"
+ egyptian_revolt.1.tt:0 "#E Upper Egypt#! declares war [SCOPE.GetRootScope.GetCountry.GetName|E] with the #Y Imperial Challenge#! war goal"
  egyptian_revolt.1.a:0 "Time to Fight!"
  egyptian_revolt.1.b:0 "Perhaps we could join their cause..."
- egyptian_revolt.1.tt:0 "#G Change your country from [SCOPE.GetRootScope.GetCountry.GetName|Y] to #Y Upper Egypt#!#!"
+ egyptian_revolt.1.bt:0 "#G Change your country from #E [SCOPE.GetRootScope.GetCountry.GetName|Y]#! to #Y #E  Upper Egypt#!#!#!"
 
  waset_heritage:0 "Waset Heritage"
  waset_heritage_desc:0 ""

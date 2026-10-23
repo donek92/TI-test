@@ -80,7 +80,7 @@
 1027={ #Libisosa
 	terrain="plains"
 	culture="lobetanian"
-	religion="druidism"
+	religion="animism"
 	trade_goods="cattle"
 	civilization_value=11
 	barbarian_power=0
@@ -120,20 +120,35 @@
 	culture="edetanian"
 	religion="animism"
 	trade_goods="salt"
-	civilization_value=15
+	civilization_value=20
 	barbarian_power=0
 	province_rank="city"
 	citizen={
-		amount=1
+		culture="massalian"
+		religion="roman_pantheon"
+		amount=2
+	}
+	citizen={
+		amount=2
 	}
 	freemen={
-		amount=3
+		culture="carthaginian"
+		religion="carthaginian_pantheon"
+		amount=2
+	}
+	freemen={
+		culture="massalian"
+		religion="roman_pantheon"
+		amount=2
+	}
+	freemen={
+		amount=2
 	}
 	slaves={
-		amount=4
+		amount=3
 	}
 	tribesmen={
-		amount=10
+		amount=4
 	}
 	port_building=1
 }
@@ -271,6 +286,10 @@
 	}
 	citizen={
 		amount=2
+	}
+	citizen={
+		culture="turdetanian"
+		amount=1
 	}
 	freemen={
 		amount=2
@@ -480,6 +499,9 @@
 	freemen={
 		amount=1
 	}
+	slaves={
+		amount=1
+	}
 	tribesmen={
 		amount=6
 	}
@@ -530,6 +552,11 @@
 	}
 	tribesmen={
 		amount=2
+	}
+	tribesmen={
+		culture="celtiberian"
+		religion="druidism"
+		amount=1
 	}
 }
 
@@ -606,10 +633,10 @@
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
-		amount=1
+		amount=2
 	}
 	tribesmen={
-		amount=2
+		amount=3
 	}
 }
 
@@ -646,7 +673,6 @@
 	tribesmen={
 		amount=4
 	}
-	holy_site=omen_dercetius
 }
 
 1237={ #Edetania Centralis
@@ -800,10 +826,10 @@
 }
 
 1255={ #Saltigi
-	terrain="plains"
+	terrain="hills"
 	culture="contestanian"
 	religion="animism"
-	trade_goods="vegetables"
+	trade_goods="salt"
 	civilization_value=10
 	barbarian_power=0
 	province_rank="settlement"
@@ -813,12 +839,13 @@
 	tribesmen={
 		amount=5
 	}
+	holy_site=omen_dercetius
 }
 
 1256={ #Parietinae
-	terrain="plains"
+	terrain="marsh"
 	culture="lobetanian"
-	religion="druidism"
+	religion="animism"
 	trade_goods="grain"
 	civilization_value=11
 	barbarian_power=0
@@ -896,7 +923,7 @@
 }
 
 1261={ #Ad Putea
-	terrain="plains"
+	terrain="marsh"
 	culture="edetanian"
 	religion="animism"
 	trade_goods="grain"
@@ -1204,11 +1231,14 @@
 	culture="bastetanian"
 	religion="animism"
 	trade_goods="fur"
-	civilization_value=8
+	civilization_value=13
 	barbarian_power=0
-	province_rank="settlement"
+	province_rank="city"
+	citizen={
+		amount=2
+	}
 	freemen={
-		amount=1
+		amount=3
 	}
 	tribesmen={
 		amount=4
@@ -1250,7 +1280,7 @@
 1451={ #Ad Murum
 	terrain="plains"
 	culture="oretanian"
-	religion="animism"
+	religion="druidism"
 	trade_goods="olive"
 	civilization_value=10
 	barbarian_power=0
@@ -1318,13 +1348,23 @@
 	trade_goods="fish"
 	civilization_value=25
 	barbarian_power=0
-	province_rank="settlement"
-	freemen={
+	province_rank="city"
+	citizen={
 		amount=2
 	}
-	tribesmen={
+	freemen={
 		amount=4
 	}
+	slaves={
+		amount=3
+	}
+	tribesmen={
+		culture="talaiotic"
+		religion="nuragic_pantheon"
+		amount=2
+	}
+	holy_site=omen_rasap_melqart
+	port_building=1
 }
 
 1465={ #Palma
@@ -1332,23 +1372,15 @@
 	culture="talaiotic"
 	religion="nuragic_pantheon"
 	trade_goods="precious_metals"
-	civilization_value=18
+	civilization_value=14
 	barbarian_power=0
-	province_rank="city"
-	citizen={
-		culture="carthaginian"
-		religion="carthaginian_pantheon"
-		amount=1
-	}
+	province_rank="settlement"
 	freemen={
-		culture="carthaginian"
-		religion="carthaginian_pantheon"
 		amount=1
 	}
 	tribesmen={
 		amount=4
 	}
-	port_building=1
 }
 
 1466={ #Guium
@@ -1371,6 +1403,7 @@
 	tribesmen={
 		amount=4
 	}
+	port_building=1
 }
 
 1467={ #Pollentia
@@ -1417,13 +1450,9 @@
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
-		culture="carthaginian"
-		religion="carthaginian_pantheon"
 		amount=1
 	}
 	slaves={
-		culture="carthaginian"
-		religion="carthaginian_pantheon"
 		amount=1
 	}
 	tribesmen={

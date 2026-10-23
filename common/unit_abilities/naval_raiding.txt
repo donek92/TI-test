@@ -9,10 +9,6 @@
 			OR = {
 				num_of_cities < 1
 				NOR = {
-
-					is_tradition_tree_allowed = japanese_philosophy
-					is_tradition_tree_allowed = ti_austronesian_philosophy
-
 					is_tradition_tree_allowed = greek_philosophy
 					is_tradition_tree_allowed = mauryan_philosophy_2
 					is_tradition_tree_allowed = haemic_philosophy #New for Invictus
@@ -22,6 +18,7 @@
 					is_tradition_tree_allowed = germanic_philosophy_2
 					heritage = pirate_heritage
 					heritage = olbe_cilicia_heritage
+					heritage = cilicia_heritage
 					heritage = balearic_heritage
 					has_variable = unlocked_slave_raiding
 				}
@@ -54,6 +51,12 @@
 					has_variable = unlocked_slave_raiding
 				}
 				has_variable = unlocked_slave_raiding
+			}
+			trigger_else_if = {
+				limit = {
+					is_tribal = yes
+				}
+				has_law = tribal_naval_law_4
 			}
 			trigger_else_if = {
 				limit = { is_tradition_tree_allowed = greek_philosophy }
@@ -252,7 +255,7 @@
 							NOT = { is_subject_of = root.unit_owner }
 							NOT = { has_truce_with = root.unit_owner }
 						}
-						is_port = yes
+						num_of_port_building >= 1
 					}
 				}
 			}
@@ -344,6 +347,8 @@
 						naval_raid_target_province_trigger = yes
 						NOT = {	has_province_modifier = port_province_raided }
 					}
+					add_city_smoke_effect = yes
+					add_city_fire_effect = yes
 					order_by = total_population
 					max = root.naval_raid_capacity_svalue
 					hidden_effect = {

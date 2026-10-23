@@ -275,6 +275,7 @@ character_bg = {
 			OR = {
 				this.culture.culture_group = culture_group:scythia
 				this.culture.culture_group = culture_group:sarmatian_group
+				this.culture.culture_group = culture_group:scythian_east
 			}
 		}
 	}

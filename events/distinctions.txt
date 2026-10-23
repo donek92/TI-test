@@ -408,7 +408,18 @@ distinction.11 = { # Pia
                 limit = { has_distinction = distinction_dishonor_impious }
                 remove_distinction = distinction_dishonor_impious
             }
-    		add_distinction = distinction_pious
+    		if = {
+                limit = {
+                    NOT = {
+                        has_distinction = distinction_pious
+                    }
+                }
+                add_distinction = distinction_pious
+            }
+            else = {
+                root = { add_political_influence = 1 }
+                custom_tooltip = has_pia_tt
+            }
     		hidden_effect = {
                 add_legion_history = {
         			key = legion_history_pious
@@ -428,8 +439,20 @@ distinction.12 = { # Barca
     left_portrait = current_ruler
     right_portrait = scope:barca_legion.commander
 
+    immediate = {
+        hidden_effect = {
+            set_variable = {
+                days = 365
+                name = prevent_barca_exploit_var
+            }
+        }
+    }
+
     trigger = {
     	has_dlc = "Heirs of Alexander"
+        NOT = {
+            has_variable = prevent_barca_exploit_var
+        }
         scope:barca_legion.legion = {
             NOT = { has_distinction = distinction_barca }
         }
@@ -447,6 +470,9 @@ distinction.12 = { # Barca
     			}
             }
     	}
+        hidden_effect = {
+            remove_variable = prevent_barca_exploit_var
+        }
     }
 }
 
@@ -855,7 +881,18 @@ distinction.24 = { # Impia
                 limit = { has_distinction = distinction_pious }
                 remove_distinction = distinction_pious
             }
-    		add_distinction = distinction_dishonor_impious
+            if = {
+                limit = {
+                    NOT = {
+                        has_distinction = distinction_dishonor_impious
+                    }
+                }
+                add_distinction = distinction_dishonor_impious
+            }
+            else = {
+                root = { add_political_influence = -1 }
+                custom_tooltip = has_impia_tt
+            }
     		hidden_effect = {
                 add_legion_history = {
         			key = legion_history_impious

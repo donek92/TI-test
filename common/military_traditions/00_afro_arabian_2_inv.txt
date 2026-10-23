@@ -11,6 +11,13 @@
 			country_culture_group = south_levantine
 		}
 		trigger_else_if = {
+			limit = { country_culture_group = south_arabian }
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			country_culture_group = south_arabian
+		}
+		trigger_else_if = {
 			limit = {
 				country_culture_group = meroitic_group
 			}
@@ -30,15 +37,6 @@
 		}
 		trigger_else_if = {
 			limit = {
-				country_culture_group = east_semetic
-			}
-			custom_tooltip = {
-				text = "began_with_tradition_group"
-			}
-			country_culture_group = east_semetic
-		}
-		trigger_else_if = {
-			limit = {
 				country_culture_group = nilotic_group
 			}
 			custom_tooltip = {
@@ -48,12 +46,12 @@
 		}
 		trigger_else_if = {
 			limit = {
-				country_culture_group = south_arabian
+				tag = NBT
 			}
 			custom_tooltip = {
 				text = "began_with_tradition_group"
 			}
-			country_culture_group = south_arabian
+			tag = NBT
 		}
 		trigger_else = {
 			custom_tooltip = {
@@ -76,7 +74,7 @@
 
 	arabian_path_2 = { ###
 		modifier = { 
-			axemen_offensive = 0.1
+			light_infantry_offensive = 0.1
 			global_freemen_output = 0.05
 		} 
 		icon = celtic_gallic_path_2
@@ -288,13 +286,19 @@
 		} 
 		icon = levantine_arabian_path_5
 		requires = { arabian_path_11 }
+
+		ai_will_do = {
+			modifier = {
+				factor = 0.01
+			}
+		}
 	}
 
 	arabian_path_14 = { ###
 		modifier = { 
-			camels_defensive = 0.1
+			camels_defensive = 0.05
 			horse_archers_defensive = 0.05
-			desert_combat_bonus = 0.1
+			desert_combat_bonus = 0.15
 		} 
 		icon = levantine_arabian_path_4
 		requires = { arabian_path_11 arabian_path_12 }
@@ -304,7 +308,6 @@
 		modifier = { 
 			camels_discipline = 0.15
 			light_cavalry_discipline = 0.15
-			horse_skirmishers_discipline = 0.15
 		} 
 		icon = levantine_arabian_path_7
 		requires = { arabian_path_12 }
